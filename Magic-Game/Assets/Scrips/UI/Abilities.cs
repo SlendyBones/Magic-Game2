@@ -6,13 +6,30 @@ using UnityEngine.UI;
 public class Abilities : MonoBehaviour
 {
     public Image abilityImage1;
-    public float cooldown=5;
-    bool isCooldown = false;
+    public float cooldown1=5;
+    bool isCooldown1 = false;
     public KeyCode ability1;
+    public Image abilityImage2;
+    public float cooldown2 = 5;
+    bool isCooldown2 = false;
+    public KeyCode ability2;
+    public Image abilityImage3;
+    public float cooldown3 = 5;
+    bool isCooldown3 = false;
+    public KeyCode ability3;
+    public int manaCost;
+    public int manaCost2;
+    public int manaCost3;
+    
+
+    public HealthBar manaBar;
+    public FalsaVida falsaVida;
     // Start is called before the first frame update
     void Start()
     {
         abilityImage1.fillAmount = 0;
+        abilityImage2.fillAmount = 0;
+        abilityImage3.fillAmount = 0;
 
     }
 
@@ -20,23 +37,73 @@ public class Abilities : MonoBehaviour
     void Update()
     {
         Ability1();
+        Ability2();
+        Ability3();
     }
     void Ability1()
     {
-        if(Input.GetKey(ability1)&& isCooldown == false)
+        if(Input.GetKey(ability1)&& isCooldown1 == false&& falsaVida.currentMana>=manaCost)
         {
-            isCooldown = true;
+            isCooldown1 = true;
             abilityImage1.fillAmount = 1;
+            falsaVida.currentMana = falsaVida.currentMana - manaCost;
+            ManaCheck();
         }
 
-        if (isCooldown)
+        if (isCooldown1)
         {
-            abilityImage1.fillAmount -= 1 / cooldown * Time.deltaTime;
+            abilityImage1.fillAmount -= 1 / cooldown1 * Time.deltaTime;
             if (abilityImage1.fillAmount <= 0)
             {
                 abilityImage1.fillAmount = 0;
-                isCooldown = false;
+                isCooldown1 = false;
             }
         }
+    }
+    void Ability2()
+    {
+        if (Input.GetKey(ability2) && isCooldown2 == false && falsaVida.currentMana >= manaCost2)
+        {
+            isCooldown2 = true;
+            abilityImage2.fillAmount = 1;
+            falsaVida.currentMana = falsaVida.currentMana - manaCost2;
+            ManaCheck();
+        }
+
+        if (isCooldown2)
+        {
+            abilityImage2.fillAmount -= 1 / cooldown2 * Time.deltaTime;
+            if (abilityImage2.fillAmount <= 0)
+            {
+                abilityImage2.fillAmount = 0;
+                isCooldown2 = false;
+            }
+        }
+    }
+
+    void Ability3()
+    {
+        if (Input.GetKey(ability3) && isCooldown3 == false && falsaVida.currentMana >= manaCost3)
+        {
+            isCooldown3 = true;
+            abilityImage3.fillAmount = 1;
+            falsaVida.currentMana = falsaVida.currentMana - manaCost3;
+            ManaCheck();
+        }
+
+        if (isCooldown3)
+        {
+            abilityImage3.fillAmount -= 1 / cooldown3 * Time.deltaTime;
+            if (abilityImage3.fillAmount <= 0)
+            {
+                abilityImage3.fillAmount = 0;
+                isCooldown3 = false;
+            }
+        }
+    }
+
+    public void ManaCheck()
+    {
+        manaBar.SetHealth(falsaVida.currentMana);
     }
 }
