@@ -20,7 +20,8 @@ public class Abilities : MonoBehaviour
     public int manaCost;
     public int manaCost2;
     public int manaCost3;
-    
+    public Transform spawnAbilities;
+    public GameObject jar;
 
     public HealthBar manaBar;
     public FalsaVida falsaVida;
@@ -48,6 +49,7 @@ public class Abilities : MonoBehaviour
             abilityImage1.fillAmount = 1;
             falsaVida.currentMana = falsaVida.currentMana - manaCost;
             ManaCheck();
+            Instantiate(jar, spawnAbilities.position, spawnAbilities.rotation);
         }
 
         if (isCooldown1)
