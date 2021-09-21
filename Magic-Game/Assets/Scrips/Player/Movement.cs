@@ -18,12 +18,9 @@ public class Movement : MonoBehaviour
     private bool _onFloor;
     private int _layerFloor = 8;
 
-    void Start()
-    {
-        
-    }
+    [Header("GameObjects")]
+    public GameObject rotationPoint;
 
-    // Update is called once per frame
     void Update()
     {
         _horizontalMove = Input.GetAxisRaw("Horizontal");
@@ -31,7 +28,7 @@ public class Movement : MonoBehaviour
 
         _movementMagnitud = _playerInput.magnitude;
 
-        _playerInput = transform.right * _horizontalMove + transform.forward * _verticalMove * Mathf.Abs(_verticalMove);
+        _playerInput = rotationPoint.transform.right * _horizontalMove + rotationPoint.transform.forward * _verticalMove * Mathf.Abs(_verticalMove);
 
         _playerInput.y = 0;
 
