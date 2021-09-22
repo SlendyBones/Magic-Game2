@@ -9,6 +9,7 @@ public class MainCamera : MonoBehaviour
 
     void Update()
     {
+        //La camara siempre mira al personaje aunque rote
         _vectorD = player.transform.position - transform.position;
         transform.forward = _vectorD;
     }

@@ -12,27 +12,27 @@ public class CameraRotation : MonoBehaviour
 
     void Start()
     {
+        //Fijar el cursor al centro e invesible
         Cursor.visible = false;
         Cursor.lockState = CursorLockMode.Locked;
     }
 
-    // Update is called once per frame
     void Update()
     {
-        _mouseX = Input.GetAxis("Mouse X");
-        _mouseY = Input.GetAxis("Mouse Y");
+        //Inputs de Mouse
+        _mouseX += Input.GetAxis("Mouse X") * Time.deltaTime * rotationSpeedX;
+        _mouseY += Input.GetAxis("Mouse Y") * Time.deltaTime * rotationSpeedY;
 
-        //_rotationVector = new Vector3(_mouseY * rotationSpeedY, _mouseX * rotationSpeedX, 0);
+        //Clamp Manual, el clamp de unity falla al volver
+        if (_mouseY > 60)
+            _mouseY = 60;
+        else if (_mouseY < -20)
+            _mouseY = -20;
 
-        _rotationVector.y += _mouseX * rotationSpeedX;
-        _rotationVector.x += _mouseY * rotationSpeedY;
+        //Pasando rotacion en X
+        _rotationVector.y = _mouseX;
 
-        _rotationVector.x = Mathf.Clamp(_mouseY, -400, 400);
-        //_rotationVector = transform.up * _mouseX * rotationSpeedX + transform.right * _mouseY * rotationSpeedY;
-
-        //transform.Rotate(_rotationVector * Time.deltaTime);
-        transform.rotation = Quaternion.Euler(_rotationVector);
-
-        //Mathf.Clamp(_rotationVector.z, -40, 80);
+        //Aplicando rotacion
+        transform.localRotation = Quaternion.Euler(_rotationVector);
     }
 }

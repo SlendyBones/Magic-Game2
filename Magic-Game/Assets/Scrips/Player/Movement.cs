@@ -23,6 +23,13 @@ public class Movement : MonoBehaviour
 
     void Update()
     {
+        Walk();
+        Run();
+        Jump();
+    }
+
+    private void Walk()
+    {
         _horizontalMove = Input.GetAxisRaw("Horizontal");
         _verticalMove = Input.GetAxisRaw("Vertical");
 
@@ -34,17 +41,14 @@ public class Movement : MonoBehaviour
 
         if (_movementMagnitud > 1)
         {
-            rb.MovePosition(transform.position + _playerInput.normalized* (speed* Time.deltaTime));
+            rb.MovePosition(transform.position + _playerInput.normalized * (speed * Time.deltaTime));
             _movementMagnitud = 1;
         }
         else
             rb.MovePosition(transform.position + _playerInput * (speed * Time.deltaTime));
-
-        RunJump();
-
     }
 
-    private void RunJump()
+    private void Run()
     {
         //Correr
         if (Input.GetButtonDown("Sprint"))
@@ -53,7 +57,10 @@ public class Movement : MonoBehaviour
         } 
         else if (Input.GetButtonUp("Sprint"))
             speed = 5;
+    }
 
+    private void Jump()
+    {
         //Saltar
         if (Input.GetButtonDown("Jump") && _onFloor)
         {
