@@ -21,7 +21,7 @@ public class CameraRotation : MonoBehaviour
     {
         //Inputs de Mouse
         _mouseX += Input.GetAxis("Mouse X") * Time.deltaTime * rotationSpeedX;
-        _mouseY += Input.GetAxis("Mouse Y") * Time.deltaTime * rotationSpeedY;
+        _mouseY += Input.GetAxis("Mouse Y") * Time.deltaTime * rotationSpeedY * -1;
 
         //Clamp Manual, el clamp de unity falla al volver
         if (_mouseY > 60)
@@ -31,6 +31,7 @@ public class CameraRotation : MonoBehaviour
 
         //Pasando rotacion en X
         _rotationVector.y = _mouseX;
+        _rotationVector.x = _mouseY;
 
         //Aplicando rotacion
         transform.localRotation = Quaternion.Euler(_rotationVector);
