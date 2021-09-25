@@ -6,6 +6,7 @@ public class Entity : MonoBehaviour
 {
     public float life;
     public float mana;
+   
 
     public void TakeDamage(float dmg)
     {
@@ -15,6 +16,7 @@ public class Entity : MonoBehaviour
         {
             Death();
         }
+        
 
     }
 
@@ -33,4 +35,6 @@ public class Entity : MonoBehaviour
         }
       
     }
+
+   
 }
