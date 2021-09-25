@@ -3,7 +3,7 @@ using System.Collections.Generic;
 using UnityEngine;
 
 [RequireComponent(typeof(SphereCollider))]
-public class BlckHoleFuncion : MonoBehaviour
+public class BlackHoleFuncion : MonoBehaviour
 {
     [SerializeField] public float GRAVITY_PULL = .78f;
     public static float m_GravityRadius = 1f;
@@ -11,11 +11,7 @@ public class BlckHoleFuncion : MonoBehaviour
     {
         m_GravityRadius = GetComponent<SphereCollider>().radius;
     }
-    /// <summary>
-    /// Attract objects towards an area when they come within the bounds of a collider.
-    /// This function is on the physics timer so it won't necessarily run every frame.
-    /// </summary>
-    /// <param name="other">Any object within reach of gravity's collider</param>
+    
     void OnTriggerStay(Collider other)
     {
         if (other.attachedRigidbody)
