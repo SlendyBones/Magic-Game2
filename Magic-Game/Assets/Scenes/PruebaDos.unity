@@ -352,7 +352,7 @@ MonoBehaviour:
   _bulletSpawnPoint: {fileID: 509300578}
   _attackDistance: 10
   _followDistance: 200
-  _speed: 0
+  _speed: 100
   player: {fileID: 176333965}
 --- !u!54 &167007036
 Rigidbody:
@@ -462,7 +462,7 @@ MonoBehaviour:
   - {fileID: 243255730}
   - {fileID: 1192161433}
   - {fileID: 1395883202}
-  speed: 30
+  speed: 100
   player: {fileID: 0}
   start: 0
 --- !u!1 &176333960
