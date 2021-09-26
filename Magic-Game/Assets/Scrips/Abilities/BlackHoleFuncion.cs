@@ -5,7 +5,8 @@ using UnityEngine;
 [RequireComponent(typeof(SphereCollider))]
 public class BlackHoleFuncion : MonoBehaviour
 {
-    [SerializeField] public float GRAVITY_PULL = .78f;
+    [SerializeField] 
+    float _gravityPull = .78f;
     public static float m_GravityRadius = 1f;
     void Awake()
     {
@@ -23,7 +24,7 @@ public class BlackHoleFuncion : MonoBehaviour
             else
             {
                 float gravityIntensity = Vector3.Distance(transform.position, other.transform.position) / m_GravityRadius;
-                other.attachedRigidbody.AddForce((transform.position - other.transform.position) * gravityIntensity * other.attachedRigidbody.mass * GRAVITY_PULL * Time.deltaTime);
+                other.attachedRigidbody.AddForce((transform.position - other.transform.position) * gravityIntensity * other.attachedRigidbody.mass * _gravityPull * Time.deltaTime);
                 Debug.DrawRay(other.transform.position, transform.position - other.transform.position);
             }
         }
