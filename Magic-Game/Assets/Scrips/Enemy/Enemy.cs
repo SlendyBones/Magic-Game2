@@ -4,6 +4,7 @@ using UnityEngine;
 
 public class Enemy : Entity
 {
+    public float damage;
     // Start is called before the first frame update
     void Start()
     {
@@ -14,6 +15,13 @@ public class Enemy : Entity
     void Update()
     {
         
+    }
+    private void OnCollisionEnter(Collision collision)
+    {
+        if (collision.gameObject.GetComponent<Pj>())
+        {
+            collision.gameObject.GetComponent<Pj>().PlayerDamage(damage);
+        }
     }
 
 }
