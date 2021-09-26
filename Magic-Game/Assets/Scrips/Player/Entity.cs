@@ -23,15 +23,6 @@ public class Entity : MonoBehaviour
         Destroy(gameObject);
     }
 
-    public bool UseMana(float um)
-    {
-        if (mana > um)
-        {
-            mana -= um;
-            return (true);
-        }
-        else
-            return (false);
-    }
+  
  
 }

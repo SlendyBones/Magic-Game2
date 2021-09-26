@@ -285,8 +285,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: c7969e0e3a633564fb53e7314336b9a2, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  life: 30
-  mana: 30
+  _life: 0
+  _mana: 0
   healthBar: {fileID: 609405453}
 --- !u!136 &176333962
 CapsuleCollider:
@@ -1241,14 +1241,14 @@ MonoBehaviour:
   abilityImage1: {fileID: 1915971947}
   cooldown1: 5
   ability1: 282
+  manaCost: 10
   abilityImage2: {fileID: 634134265}
   cooldown2: 4
   ability2: 283
+  manaCost2: 5
   abilityImage3: {fileID: 677334198}
   cooldown3: 2
   ability3: 284
-  manaCost: 10
-  manaCost2: 5
   manaCost3: 20
   spawnAbilities: {fileID: 1609838416}
   jar: {fileID: 6054725814908208590, guid: e125cc7434cd11d48bac8616488ed259, type: 3}
@@ -1522,7 +1522,7 @@ PrefabInstance:
     - target: {fileID: 2171771462579390006, guid: 48f59e0b84ed406499885d969329c0b0,
         type: 3}
       propertyPath: m_LocalPosition.z
-      value: 225.9
+      value: 265
       objectReference: {fileID: 0}
     - target: {fileID: 2171771462579390006, guid: 48f59e0b84ed406499885d969329c0b0,
         type: 3}
