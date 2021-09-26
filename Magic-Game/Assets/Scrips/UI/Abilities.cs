@@ -5,24 +5,32 @@ using UnityEngine.UI;
 
 public class Abilities : MonoBehaviour
 {
+    [Header("Ability One")]
     public Image abilityImage1;
     public float cooldown1=5;
     bool isCooldown1 = false;
     public KeyCode ability1;
+    public int manaCost;
+
+    [Header("Ability Two")]
     public Image abilityImage2;
     public float cooldown2 = 5;
     bool isCooldown2 = false;
     public KeyCode ability2;
+    public int manaCost2;
+
+    [Header("Ability Three")]
     public Image abilityImage3;
     public float cooldown3 = 5;
     bool isCooldown3 = false;
     public KeyCode ability3;
-    public int manaCost;
-    public int manaCost2;
     public int manaCost3;
+
+    [Header("Spawn Ability")]
     public Transform spawnAbilities;
     public GameObject jar;
 
+    [Header("Var")]
     public HealthBar manaBar;
     public FalsaVida falsaVida;
     // Start is called before the first frame update

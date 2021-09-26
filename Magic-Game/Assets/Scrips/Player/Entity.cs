@@ -16,8 +16,6 @@ public class Entity : MonoBehaviour
         {
             Death();
         }
-        
-
     }
 
     public virtual void Death()
@@ -25,15 +23,15 @@ public class Entity : MonoBehaviour
         Destroy(gameObject);
     }
 
-    public void UseMana(float um)
+    public bool UseMana(float um)
     {
-        
-
         if (mana > um)
         {
             mana -= um;
+            return (true);
         }
-      
+        else
+            return (false);
     }
  
 }

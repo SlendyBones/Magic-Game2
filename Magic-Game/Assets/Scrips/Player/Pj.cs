@@ -7,7 +7,6 @@ public class Pj : Entity
     public HealthBar healthBar;
     public void  PlayerDamage(float dmg)
     {
-        
         TakeDamage(dmg);
         healthcheck();
     }
