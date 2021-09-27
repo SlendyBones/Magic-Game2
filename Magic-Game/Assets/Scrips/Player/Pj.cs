@@ -8,8 +8,10 @@ public class Pj : MonoBehaviour
     private float _life;
     [SerializeField]
     private float _mana;
-    
+
+    public bool manaOn = true;
     public HealthBar healthBar;
+    public HealthBar manaBar;
 
     public void  PlayerDamage(float dmg)
     {
@@ -20,6 +22,11 @@ public class Pj : MonoBehaviour
     public void healthcheck()
     {
         healthBar.SetHealth(_life);
+    }
+
+    public void ManaBar()
+    {
+        manaBar.SetHealth(_mana);
     }
 
     public void TakeDamage(float dmg)
@@ -35,10 +42,12 @@ public class Pj : MonoBehaviour
     }
     public bool UseMana(float um)
     {
-        if (_mana > um)
+        if (_mana >= um)
         {
             _mana -= um;
+            ManaBar();
             return (true);
+            
         }
         else
             return (false);

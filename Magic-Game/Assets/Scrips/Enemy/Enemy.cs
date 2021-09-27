@@ -38,7 +38,7 @@ public class Enemy : Entity
     {
 
         float dist = Vector3.Distance(player.transform.position, this.transform.position);
-        Debug.Log(dist);
+      
         if (dist < _followDistance)
         {
             follow = true;

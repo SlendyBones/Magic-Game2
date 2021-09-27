@@ -7,7 +7,7 @@ public class Abilities : MonoBehaviour
 {
     [Header("Ability One")]
     public Image abilityImage1;
-    public float cooldown1=5;
+    public float cooldown1 = 5;
     bool isCooldown1 = false;
     public KeyCode ability1;
     public int manaCost;
@@ -28,11 +28,13 @@ public class Abilities : MonoBehaviour
 
     [Header("Spawn Ability")]
     public Transform spawnAbilities;
-    public GameObject jar;
+    public GameObject jarAbility;
+    public GameObject bombAbility;
+    public float forceOfTroward = 40f;
 
-    [Header("Var")]
-    public HealthBar manaBar;
-    public FalsaVida falsaVida;
+    [Header("Pj")]
+     public Pj pj;
+
     // Start is called before the first frame update
     void Start()
     {
@@ -51,13 +53,22 @@ public class Abilities : MonoBehaviour
     }
     void Ability1()
     {
-        if(Input.GetKey(ability1)&& isCooldown1 == false&& falsaVida.currentMana>=manaCost)
+        if (Input.GetKey(ability1) && isCooldown1 == false)
         {
-            isCooldown1 = true;
-            abilityImage1.fillAmount = 1;
-            falsaVida.currentMana = falsaVida.currentMana - manaCost;
-            ManaCheck();
-            Instantiate(jar, spawnAbilities.position, spawnAbilities.rotation);
+
+            if (pj.UseMana(manaCost))
+            {
+                isCooldown1 = true;
+                abilityImage1.fillAmount = 1;
+
+
+                GameObject jar =Instantiate(jarAbility, spawnAbilities.position, spawnAbilities.rotation);
+                Rigidbody rb = jar.GetComponent<Rigidbody>();
+                rb.AddForce(transform.forward * forceOfTroward);
+
+            }
+
+
         }
 
         if (isCooldown1)
@@ -72,12 +83,21 @@ public class Abilities : MonoBehaviour
     }
     void Ability2()
     {
-        if (Input.GetKey(ability2) && isCooldown2 == false && falsaVida.currentMana >= manaCost2)
+        if (Input.GetKey(ability2) && isCooldown2 == false)
         {
-            isCooldown2 = true;
-            abilityImage2.fillAmount = 1;
-            falsaVida.currentMana = falsaVida.currentMana - manaCost2;
-            ManaCheck();
+            if (pj.UseMana(manaCost2))
+            {
+                isCooldown2 = true;
+                abilityImage2.fillAmount = 1;
+
+                GameObject bomb = Instantiate(bombAbility, spawnAbilities.position, spawnAbilities.rotation);
+                Rigidbody rb = bomb.GetComponent<Rigidbody>();
+                rb.AddForce(transform.forward * forceOfTroward);
+            }
+           
+
+
+
         }
 
         if (isCooldown2)
@@ -93,12 +113,15 @@ public class Abilities : MonoBehaviour
 
     void Ability3()
     {
-        if (Input.GetKey(ability3) && isCooldown3 == false && falsaVida.currentMana >= manaCost3)
+        if (Input.GetKey(ability3) && isCooldown3 == false)
         {
-            isCooldown3 = true;
-            abilityImage3.fillAmount = 1;
-            falsaVida.currentMana = falsaVida.currentMana - manaCost3;
-            ManaCheck();
+            if (pj.UseMana(manaCost3))
+            {
+                isCooldown3 = true;
+                abilityImage3.fillAmount = 1;
+            }
+          
+            
         }
 
         if (isCooldown3)
@@ -112,8 +135,5 @@ public class Abilities : MonoBehaviour
         }
     }
 
-    public void ManaCheck()
-    {
-        manaBar.SetHealth(falsaVida.currentMana);
-    }
+
 }

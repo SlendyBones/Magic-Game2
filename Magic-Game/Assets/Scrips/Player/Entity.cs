@@ -5,7 +5,7 @@ using UnityEngine;
 public class Entity : MonoBehaviour
 {
     public float life;
-    public float mana;
+    
    
 
     public void TakeDamage(float dmg)
