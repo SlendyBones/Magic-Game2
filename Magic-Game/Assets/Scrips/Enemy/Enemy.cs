@@ -7,6 +7,8 @@ public class Enemy : Entity
     [SerializeField]
     float _damage;
     [SerializeField]
+    float _realDamege;
+    [SerializeField]
     GameObject _bullet;
     [SerializeField]
     Transform _bulletSpawnPoint;
@@ -31,6 +33,7 @@ public class Enemy : Entity
         
         player = GameObject.FindGameObjectWithTag("Player").transform;
         _patrolEnemy = gameObject.GetComponent<PatrolEnemy>();
+        _damage = _realDamege;
     }
 
     // Update is called once per frame
@@ -88,4 +91,13 @@ public class Enemy : Entity
         Instantiate(_bulletSpawnPoint, transform.position, transform.rotation);
     }
 
+    public void CantMakeDamage()
+    {
+        _damage = 0;
+    }
+
+    public void CanMakeDamage()
+    {
+        _damage = _realDamege;
+    }
 }

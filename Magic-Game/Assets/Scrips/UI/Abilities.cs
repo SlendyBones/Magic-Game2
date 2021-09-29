@@ -30,6 +30,7 @@ public class Abilities : MonoBehaviour
     public Transform spawnAbilities;
     public GameObject jarAbility;
     public GameObject bombAbility;
+    public GameObject shield;
     public float forceOfTroward = 40f;
 
     [Header("Pj")]
@@ -119,6 +120,11 @@ public class Abilities : MonoBehaviour
             {
                 isCooldown3 = true;
                 abilityImage3.fillAmount = 1;
+                Shield _sh = shield.GetComponent<Shield>();
+                _sh.activeShield = true;
+                shield.SetActive(true);
+                
+
             }
           
             
