@@ -9553,15 +9553,15 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   abilityImage1: {fileID: 1256693037}
   cooldown1: 5
-  ability1: 282
+  ability1: 49
   manaCost: 10
   abilityImage2: {fileID: 1293110902}
   cooldown2: 4
-  ability2: 283
+  ability2: 50
   manaCost2: 5
   abilityImage3: {fileID: 1441714364}
   cooldown3: 2
-  ability3: 284
+  ability3: 51
   manaCost3: 5
   spawnAbilities: {fileID: 1242129625}
   jarAbility: {fileID: 6054725814908208590, guid: e125cc7434cd11d48bac8616488ed259,
