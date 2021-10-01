@@ -4,19 +4,11 @@ using UnityEngine;
 
 public class Enemy : Entity
 {
-    [SerializeField]
-    float _damage;
-    [SerializeField]
-    float _realDamege;
+
     [SerializeField]
     GameObject _bullet;
     [SerializeField]
     Transform _bulletSpawnPoint;
-    
-    [SerializeField]
-    float _attackDistance = 10f;
-    [SerializeField]
-    float _followDistance = 20f;
 
     bool shoot = false;
     bool follow = false;
@@ -24,14 +16,10 @@ public class Enemy : Entity
     float _speed;
     private PatrolEnemy _patrolEnemy;
 
-    public Transform player;
-
 
     // Start is called before the first frame update
     void Start()
     {
-        
-        player = GameObject.FindGameObjectWithTag("Player").transform;
         _patrolEnemy = gameObject.GetComponent<PatrolEnemy>();
         _damage = _realDamege;
     }
@@ -42,13 +30,13 @@ public class Enemy : Entity
 
         float dist = Vector3.Distance(player.transform.position, this.transform.position);
       
-        if (dist < _followDistance)
+        if (dist < followDistance)
         {
             follow = true;
             if (follow==true)
             {
                 _patrolEnemy.start = false;
-                if (dist < _attackDistance)
+                if (dist < attackDistance)
                 {
                     shoot = true;
                     Shoot();
@@ -91,13 +79,5 @@ public class Enemy : Entity
         Instantiate(_bulletSpawnPoint, transform.position, transform.rotation);
     }
 
-    public void CantMakeDamage()
-    {
-        _damage = 0;
-    }
-
-    public void CanMakeDamage()
-    {
-        _damage = _realDamege;
-    }
+   
 }

@@ -13,7 +13,7 @@ public class Pj : MonoBehaviour
     public HealthBar healthBar;
     public HealthBar manaBar;
 
-    public void  PlayerDamage(float dmg)
+    public void PlayerDamage(float dmg)
     {
         TakeDamage(dmg);
         healthcheck();
@@ -31,14 +31,9 @@ public class Pj : MonoBehaviour
 
     public void TakeDamage(float dmg)
     {
+        _life -= dmg;
         if (_life <= 0)
-        {
             Death();
-        }
-        else
-        {
-            _life -= dmg;
-        }
     }
     public bool UseMana(float um)
     {
@@ -47,7 +42,7 @@ public class Pj : MonoBehaviour
             _mana -= um;
             ManaBar();
             return (true);
-            
+
         }
         else
             return (false);

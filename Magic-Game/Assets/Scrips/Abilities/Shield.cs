@@ -20,15 +20,15 @@ public class Shield : MonoBehaviour
 
     private void OnTriggerEnter(Collider other)
     {
-        if (other.gameObject.GetComponent<Enemy>())
+        if (other.gameObject.GetComponent<Entity>())
         {
             if (activeShield == true)
             {
-                other.GetComponent<Enemy>().CantMakeDamage();
+                other.GetComponent<Entity>().CantMakeDamage();
             }
             else
             {
-                other.GetComponent<Enemy>().CanMakeDamage();
+                other.GetComponent<Entity>().CanMakeDamage();
 
             }
         }
