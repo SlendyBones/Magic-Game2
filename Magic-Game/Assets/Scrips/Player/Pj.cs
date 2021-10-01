@@ -13,6 +13,23 @@ public class Pj : MonoBehaviour
     public HealthBar healthBar;
     public HealthBar manaBar;
 
+    private void Awake()
+    {
+        healthBar.SetMaxHealth(_life);
+        manaBar.SetMaxHealth(_mana);
+    }
+
+    private void Update()
+    {
+        ManaRecharge();
+        ManaBar();
+    }
+
+    public void ManaRecharge()
+    {
+        _mana += 1 * Time.deltaTime;
+    }
+
     public void PlayerDamage(float dmg)
     {
         TakeDamage(dmg);

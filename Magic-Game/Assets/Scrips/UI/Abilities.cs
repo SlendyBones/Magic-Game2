@@ -36,6 +36,8 @@ public class Abilities : MonoBehaviour
     [Header("Pj")]
      public Pj pj;
 
+    public 
+
     // Start is called before the first frame update
     void Start()
     {
@@ -52,6 +54,7 @@ public class Abilities : MonoBehaviour
         Ability2();
         Ability3();
     }
+
     void Ability1()
     {
         if (Input.GetKey(ability1) && isCooldown1 == false)

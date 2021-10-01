@@ -4,6 +4,13 @@ using UnityEngine;
 
 public class FlyEnemy : Entity
 {
+    private void Start()
+    {
+        gameObject.SetActive(true);
+        CanMakeDamage();
+    }
+
+
     void Update()
     {
         Move();
@@ -19,7 +26,7 @@ public class FlyEnemy : Entity
     {
         if(other.gameObject.tag == "Player")
         {
-            other.gameObject.GetComponent<Pj>().TakeDamage(_damage);
+            other.gameObject.GetComponent<Pj>().PlayerDamage(_damage);
         }
         Death();
     }

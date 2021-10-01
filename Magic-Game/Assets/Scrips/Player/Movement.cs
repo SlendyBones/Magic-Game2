@@ -53,10 +53,10 @@ public class Movement : MonoBehaviour
         //Correr
         if (Input.GetButtonDown("Sprint"))
         {
-            speed = 10;
+            speed *= 2;
         } 
         else if (Input.GetButtonUp("Sprint"))
-            speed = 5;
+            speed /= 2;
     }
 
     private void Jump()
