@@ -17,11 +17,8 @@ public class BlackHoleFuncion : MonoBehaviour
     {
         if (other.attachedRigidbody)
         {
-            if (other.gameObject.GetComponent<FalsaVida>())
-            {
-                Debug.Log("Este es el player");
-            }
-            else
+           
+            if(other.gameObject.tag == "Enemy")
             {
                 float gravityIntensity = Vector3.Distance(transform.position, other.transform.position) / m_GravityRadius;
                 other.attachedRigidbody.AddForce((transform.position - other.transform.position) * gravityIntensity * other.attachedRigidbody.mass * _gravityPull * Time.deltaTime);

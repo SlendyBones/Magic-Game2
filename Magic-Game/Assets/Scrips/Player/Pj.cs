@@ -8,6 +8,7 @@ public class Pj : MonoBehaviour
     private float _life;
     [SerializeField]
     private float _mana;
+    public float manararecharge;
 
     public bool manaOn = true;
     public HealthBar healthBar;
@@ -27,7 +28,7 @@ public class Pj : MonoBehaviour
 
     public void ManaRecharge()
     {
-        _mana += 1 * Time.deltaTime;
+        _mana += manararecharge * Time.deltaTime;
     }
 
     public void PlayerDamage(float dmg)

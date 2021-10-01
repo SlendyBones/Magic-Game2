@@ -47,7 +47,7 @@ public class Bomb : MonoBehaviour
         foreach (Collider nearbyObject in collidersToMove)
         {
             Rigidbody _rb = nearbyObject.GetComponent<Rigidbody>();
-            if (_rb != null)
+            if (_rb != null && nearbyObject.gameObject.tag!="Player")
             {
                 _rb.AddExplosionForce(force, transform.position, radius);
             }

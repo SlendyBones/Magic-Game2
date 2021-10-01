@@ -12,10 +12,11 @@ public class BlackHole : MonoBehaviour
         masa = gameObject.GetComponent<Rigidbody>().mass;
     }
 
-    private void OnCollisionEnter(Collision collision)
+    private void OnTriggerEnter(Collider collision)
     {
-        if (collision.gameObject.GetComponent<Rigidbody>())
+        if (collision.gameObject.tag == "Enemy")
         {
+            
             masa += collision.gameObject.GetComponent<Rigidbody>().mass;
             Destroy(collision.gameObject);
         }

@@ -38,7 +38,7 @@ RenderSettings:
   m_ReflectionIntensity: 1
   m_CustomReflection: {fileID: 0}
   m_Sun: {fileID: 705507994}
-  m_IndirectSpecularColor: {r: 0.033278804, g: 0.07800511, b: 0.16837868, a: 1}
+  m_IndirectSpecularColor: {r: 0.03568293, g: 0.07948435, b: 0.16869992, a: 1}
   m_UseRadianceAmbientProbe: 0
 --- !u!157 &3
 LightmapSettings:
@@ -137,6 +137,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: SD_Env_Floor_Stone_Broken_03 (13)
       objectReference: {fileID: 0}
+    - target: {fileID: 164310, guid: 0e20b0fba37f2f449b462588b4be11a3, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 4294967295
+      objectReference: {fileID: 0}
     - target: {fileID: 434746, guid: 0e20b0fba37f2f449b462588b4be11a3, type: 3}
       propertyPath: m_LocalPosition.x
       value: -32.82015
@@ -211,6 +215,14 @@ PrefabInstance:
     - target: {fileID: 163364, guid: 25e618ad9977daf44a684be7ffc5046b, type: 3}
       propertyPath: m_Name
       value: SD_Env_Wall_01 (17)
+      objectReference: {fileID: 0}
+    - target: {fileID: 163364, guid: 25e618ad9977daf44a684be7ffc5046b, type: 3}
+      propertyPath: m_Layer
+      value: 8
+      objectReference: {fileID: 0}
+    - target: {fileID: 163364, guid: 25e618ad9977daf44a684be7ffc5046b, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 4294967295
       objectReference: {fileID: 0}
     - target: {fileID: 461498, guid: 25e618ad9977daf44a684be7ffc5046b, type: 3}
       propertyPath: m_LocalPosition.x
@@ -287,6 +299,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: SD_Env_Floor_Stone_Broken_05 (31)
       objectReference: {fileID: 0}
+    - target: {fileID: 176172, guid: 835caca5433f2a44b95816ffef0a5187, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 4294967295
+      objectReference: {fileID: 0}
     - target: {fileID: 471116, guid: 835caca5433f2a44b95816ffef0a5187, type: 3}
       propertyPath: m_LocalPosition.x
       value: 18.140146
@@ -361,6 +377,14 @@ PrefabInstance:
     - target: {fileID: 190988, guid: 8f7ca30ec6adeda40804f6426d61e3f7, type: 3}
       propertyPath: m_Name
       value: SD_Env_Undead_Pillar_01 (4)
+      objectReference: {fileID: 0}
+    - target: {fileID: 190988, guid: 8f7ca30ec6adeda40804f6426d61e3f7, type: 3}
+      propertyPath: m_Layer
+      value: 8
+      objectReference: {fileID: 0}
+    - target: {fileID: 190988, guid: 8f7ca30ec6adeda40804f6426d61e3f7, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 4294967295
       objectReference: {fileID: 0}
     - target: {fileID: 452526, guid: 8f7ca30ec6adeda40804f6426d61e3f7, type: 3}
       propertyPath: m_LocalPosition.x
@@ -437,6 +461,14 @@ PrefabInstance:
       propertyPath: m_Name
       value: SD_Env_Railing_Stone_Pillar_02 (6)
       objectReference: {fileID: 0}
+    - target: {fileID: 190576, guid: e6969c2c79e4da842b8bc1ed7b1c19fb, type: 3}
+      propertyPath: m_Layer
+      value: 8
+      objectReference: {fileID: 0}
+    - target: {fileID: 190576, guid: e6969c2c79e4da842b8bc1ed7b1c19fb, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 4294967295
+      objectReference: {fileID: 0}
     - target: {fileID: 429468, guid: e6969c2c79e4da842b8bc1ed7b1c19fb, type: 3}
       propertyPath: m_LocalPosition.x
       value: -48.947037
@@ -510,12 +542,12 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 42311628}
-  m_Layer: 0
+  m_Layer: 8
   m_Name: Decoracion
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
+  m_StaticEditorFlags: 4294967295
   m_IsActive: 1
 --- !u!4 &42311628
 Transform:
@@ -556,6 +588,10 @@ PrefabInstance:
     - target: {fileID: 154948, guid: 2cf390c5e9363db42b4f2783fbe5991e, type: 3}
       propertyPath: m_Name
       value: SD_Env_Floor_Stone_ClearEdge_02 (23)
+      objectReference: {fileID: 0}
+    - target: {fileID: 154948, guid: 2cf390c5e9363db42b4f2783fbe5991e, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 4294967295
       objectReference: {fileID: 0}
     - target: {fileID: 401842, guid: 2cf390c5e9363db42b4f2783fbe5991e, type: 3}
       propertyPath: m_LocalPosition.x
@@ -631,6 +667,10 @@ PrefabInstance:
     - target: {fileID: 176172, guid: 835caca5433f2a44b95816ffef0a5187, type: 3}
       propertyPath: m_Name
       value: SD_Env_Floor_Stone_Broken_05 (13)
+      objectReference: {fileID: 0}
+    - target: {fileID: 176172, guid: 835caca5433f2a44b95816ffef0a5187, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 4294967295
       objectReference: {fileID: 0}
     - target: {fileID: 471116, guid: 835caca5433f2a44b95816ffef0a5187, type: 3}
       propertyPath: m_LocalPosition.x
@@ -776,6 +816,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: SD_Env_Floor_Stone_ClearEdge_02 (42)
       objectReference: {fileID: 0}
+    - target: {fileID: 154948, guid: 2cf390c5e9363db42b4f2783fbe5991e, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 4294967295
+      objectReference: {fileID: 0}
     - target: {fileID: 401842, guid: 2cf390c5e9363db42b4f2783fbe5991e, type: 3}
       propertyPath: m_LocalPosition.x
       value: 62.72986
@@ -850,6 +894,14 @@ PrefabInstance:
     - target: {fileID: 163364, guid: 25e618ad9977daf44a684be7ffc5046b, type: 3}
       propertyPath: m_Name
       value: SD_Env_Wall_01 (1)
+      objectReference: {fileID: 0}
+    - target: {fileID: 163364, guid: 25e618ad9977daf44a684be7ffc5046b, type: 3}
+      propertyPath: m_Layer
+      value: 8
+      objectReference: {fileID: 0}
+    - target: {fileID: 163364, guid: 25e618ad9977daf44a684be7ffc5046b, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 4294967295
       objectReference: {fileID: 0}
     - target: {fileID: 461498, guid: 25e618ad9977daf44a684be7ffc5046b, type: 3}
       propertyPath: m_LocalPosition.x
@@ -926,6 +978,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: SD_Env_Floor_Stone_Broken_01 (32)
       objectReference: {fileID: 0}
+    - target: {fileID: 136950, guid: abeede308550bf74c8b88218b6b3e39f, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 4294967295
+      objectReference: {fileID: 0}
     - target: {fileID: 483442, guid: abeede308550bf74c8b88218b6b3e39f, type: 3}
       propertyPath: m_LocalPosition.x
       value: 4.2997093
@@ -1000,6 +1056,10 @@ PrefabInstance:
     - target: {fileID: 154948, guid: 2cf390c5e9363db42b4f2783fbe5991e, type: 3}
       propertyPath: m_Name
       value: SD_Env_Floor_Stone_ClearEdge_02 (54)
+      objectReference: {fileID: 0}
+    - target: {fileID: 154948, guid: 2cf390c5e9363db42b4f2783fbe5991e, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 4294967295
       objectReference: {fileID: 0}
     - target: {fileID: 401842, guid: 2cf390c5e9363db42b4f2783fbe5991e, type: 3}
       propertyPath: m_LocalPosition.x
@@ -1076,6 +1136,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: SD_Env_Floor_Stone_Broken_05 (18)
       objectReference: {fileID: 0}
+    - target: {fileID: 176172, guid: 835caca5433f2a44b95816ffef0a5187, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 4294967295
+      objectReference: {fileID: 0}
     - target: {fileID: 471116, guid: 835caca5433f2a44b95816ffef0a5187, type: 3}
       propertyPath: m_LocalPosition.x
       value: 4.279705
@@ -1150,6 +1214,14 @@ PrefabInstance:
     - target: {fileID: 163364, guid: 25e618ad9977daf44a684be7ffc5046b, type: 3}
       propertyPath: m_Name
       value: SD_Env_Wall_01 (16)
+      objectReference: {fileID: 0}
+    - target: {fileID: 163364, guid: 25e618ad9977daf44a684be7ffc5046b, type: 3}
+      propertyPath: m_Layer
+      value: 8
+      objectReference: {fileID: 0}
+    - target: {fileID: 163364, guid: 25e618ad9977daf44a684be7ffc5046b, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 4294967295
       objectReference: {fileID: 0}
     - target: {fileID: 461498, guid: 25e618ad9977daf44a684be7ffc5046b, type: 3}
       propertyPath: m_LocalPosition.x
@@ -1226,6 +1298,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: SD_Env_Floor_Stone_Broken_02 (21)
       objectReference: {fileID: 0}
+    - target: {fileID: 154696, guid: 09a76891cfd8c9a48b3a6fb9f6676d5e, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 4294967295
+      objectReference: {fileID: 0}
     - target: {fileID: 423078, guid: 09a76891cfd8c9a48b3a6fb9f6676d5e, type: 3}
       propertyPath: m_LocalPosition.x
       value: 55.279854
@@ -1299,12 +1375,13 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 74263184}
-  m_Layer: 0
+  - component: {fileID: 74263185}
+  m_Layer: 8
   m_Name: Mapa
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
+  m_StaticEditorFlags: 4294967295
   m_IsActive: 1
 --- !u!4 &74263184
 Transform:
@@ -1323,6 +1400,22 @@ Transform:
   m_Father: {fileID: 0}
   m_RootOrder: 5
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!54 &74263185
+Rigidbody:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 74263183}
+  serializedVersion: 2
+  m_Mass: 1555555
+  m_Drag: 0
+  m_AngularDrag: 0.05
+  m_UseGravity: 0
+  m_IsKinematic: 1
+  m_Interpolate: 0
+  m_Constraints: 126
+  m_CollisionDetection: 0
 --- !u!1001 &80708535
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -1333,6 +1426,14 @@ PrefabInstance:
     - target: {fileID: 190988, guid: 8f7ca30ec6adeda40804f6426d61e3f7, type: 3}
       propertyPath: m_Name
       value: SD_Env_Undead_Pillar_01 (7)
+      objectReference: {fileID: 0}
+    - target: {fileID: 190988, guid: 8f7ca30ec6adeda40804f6426d61e3f7, type: 3}
+      propertyPath: m_Layer
+      value: 8
+      objectReference: {fileID: 0}
+    - target: {fileID: 190988, guid: 8f7ca30ec6adeda40804f6426d61e3f7, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 4294967295
       objectReference: {fileID: 0}
     - target: {fileID: 452526, guid: 8f7ca30ec6adeda40804f6426d61e3f7, type: 3}
       propertyPath: m_LocalPosition.x
@@ -1409,6 +1510,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: SD_Env_Floor_Stone_ClearEdge_02 (36)
       objectReference: {fileID: 0}
+    - target: {fileID: 154948, guid: 2cf390c5e9363db42b4f2783fbe5991e, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 4294967295
+      objectReference: {fileID: 0}
     - target: {fileID: 401842, guid: 2cf390c5e9363db42b4f2783fbe5991e, type: 3}
       propertyPath: m_LocalPosition.x
       value: 3.75
@@ -1483,6 +1588,10 @@ PrefabInstance:
     - target: {fileID: 164310, guid: 0e20b0fba37f2f449b462588b4be11a3, type: 3}
       propertyPath: m_Name
       value: SD_Env_Floor_Stone_Broken_03 (6)
+      objectReference: {fileID: 0}
+    - target: {fileID: 164310, guid: 0e20b0fba37f2f449b462588b4be11a3, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 4294967295
       objectReference: {fileID: 0}
     - target: {fileID: 434746, guid: 0e20b0fba37f2f449b462588b4be11a3, type: 3}
       propertyPath: m_LocalPosition.x
@@ -1559,6 +1668,14 @@ PrefabInstance:
       propertyPath: m_Name
       value: SD_Env_Undead_Pillar_01 (1)
       objectReference: {fileID: 0}
+    - target: {fileID: 190988, guid: 8f7ca30ec6adeda40804f6426d61e3f7, type: 3}
+      propertyPath: m_Layer
+      value: 8
+      objectReference: {fileID: 0}
+    - target: {fileID: 190988, guid: 8f7ca30ec6adeda40804f6426d61e3f7, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 4294967295
+      objectReference: {fileID: 0}
     - target: {fileID: 452526, guid: 8f7ca30ec6adeda40804f6426d61e3f7, type: 3}
       propertyPath: m_LocalPosition.x
       value: 28.752964
@@ -1633,6 +1750,10 @@ PrefabInstance:
     - target: {fileID: 154948, guid: 2cf390c5e9363db42b4f2783fbe5991e, type: 3}
       propertyPath: m_Name
       value: SD_Env_Floor_Stone_ClearEdge_02 (38)
+      objectReference: {fileID: 0}
+    - target: {fileID: 154948, guid: 2cf390c5e9363db42b4f2783fbe5991e, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 4294967295
       objectReference: {fileID: 0}
     - target: {fileID: 401842, guid: 2cf390c5e9363db42b4f2783fbe5991e, type: 3}
       propertyPath: m_LocalPosition.x
@@ -1709,6 +1830,14 @@ PrefabInstance:
       propertyPath: m_Name
       value: SD_Env_Railing_Stone_Pillar_02 (4)
       objectReference: {fileID: 0}
+    - target: {fileID: 190576, guid: e6969c2c79e4da842b8bc1ed7b1c19fb, type: 3}
+      propertyPath: m_Layer
+      value: 8
+      objectReference: {fileID: 0}
+    - target: {fileID: 190576, guid: e6969c2c79e4da842b8bc1ed7b1c19fb, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 4294967295
+      objectReference: {fileID: 0}
     - target: {fileID: 429468, guid: e6969c2c79e4da842b8bc1ed7b1c19fb, type: 3}
       propertyPath: m_LocalPosition.x
       value: 0.1529665
@@ -1783,6 +1912,10 @@ PrefabInstance:
     - target: {fileID: 176172, guid: 835caca5433f2a44b95816ffef0a5187, type: 3}
       propertyPath: m_Name
       value: SD_Env_Floor_Stone_Broken_05 (11)
+      objectReference: {fileID: 0}
+    - target: {fileID: 176172, guid: 835caca5433f2a44b95816ffef0a5187, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 4294967295
       objectReference: {fileID: 0}
     - target: {fileID: 471116, guid: 835caca5433f2a44b95816ffef0a5187, type: 3}
       propertyPath: m_LocalPosition.x
@@ -1915,6 +2048,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   _life: 50
   _mana: 50
+  manararecharge: 3
   manaOn: 1
   healthBar: {fileID: 919181121}
   manaBar: {fileID: 2054367845}
@@ -1988,6 +2122,10 @@ PrefabInstance:
     - target: {fileID: 154948, guid: 2cf390c5e9363db42b4f2783fbe5991e, type: 3}
       propertyPath: m_Name
       value: SD_Env_Floor_Stone_ClearEdge_02 (41)
+      objectReference: {fileID: 0}
+    - target: {fileID: 154948, guid: 2cf390c5e9363db42b4f2783fbe5991e, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 4294967295
       objectReference: {fileID: 0}
     - target: {fileID: 401842, guid: 2cf390c5e9363db42b4f2783fbe5991e, type: 3}
       propertyPath: m_LocalPosition.x
@@ -2064,6 +2202,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: SD_Env_Floor_Stone_Broken_02 (18)
       objectReference: {fileID: 0}
+    - target: {fileID: 154696, guid: 09a76891cfd8c9a48b3a6fb9f6676d5e, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 4294967295
+      objectReference: {fileID: 0}
     - target: {fileID: 423078, guid: 09a76891cfd8c9a48b3a6fb9f6676d5e, type: 3}
       propertyPath: m_LocalPosition.x
       value: -3.1502953
@@ -2138,6 +2280,10 @@ PrefabInstance:
     - target: {fileID: 154948, guid: 2cf390c5e9363db42b4f2783fbe5991e, type: 3}
       propertyPath: m_Name
       value: SD_Env_Floor_Stone_ClearEdge_02 (53)
+      objectReference: {fileID: 0}
+    - target: {fileID: 154948, guid: 2cf390c5e9363db42b4f2783fbe5991e, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 4294967295
       objectReference: {fileID: 0}
     - target: {fileID: 401842, guid: 2cf390c5e9363db42b4f2783fbe5991e, type: 3}
       propertyPath: m_LocalPosition.x
@@ -2214,6 +2360,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: SD_Env_Floor_Stone_ClearEdge_02 (33)
       objectReference: {fileID: 0}
+    - target: {fileID: 154948, guid: 2cf390c5e9363db42b4f2783fbe5991e, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 4294967295
+      objectReference: {fileID: 0}
     - target: {fileID: 401842, guid: 2cf390c5e9363db42b4f2783fbe5991e, type: 3}
       propertyPath: m_LocalPosition.x
       value: 25.659998
@@ -2288,6 +2438,10 @@ PrefabInstance:
     - target: {fileID: 154696, guid: 09a76891cfd8c9a48b3a6fb9f6676d5e, type: 3}
       propertyPath: m_Name
       value: SD_Env_Floor_Stone_Broken_02 (3)
+      objectReference: {fileID: 0}
+    - target: {fileID: 154696, guid: 09a76891cfd8c9a48b3a6fb9f6676d5e, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 4294967295
       objectReference: {fileID: 0}
     - target: {fileID: 423078, guid: 09a76891cfd8c9a48b3a6fb9f6676d5e, type: 3}
       propertyPath: m_LocalPosition.x
@@ -2364,6 +2518,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: SD_Env_Floor_Stone_ClearEdge_02 (10)
       objectReference: {fileID: 0}
+    - target: {fileID: 154948, guid: 2cf390c5e9363db42b4f2783fbe5991e, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 4294967295
+      objectReference: {fileID: 0}
     - target: {fileID: 401842, guid: 2cf390c5e9363db42b4f2783fbe5991e, type: 3}
       propertyPath: m_LocalPosition.x
       value: -10.580143
@@ -2438,6 +2596,10 @@ PrefabInstance:
     - target: {fileID: 154948, guid: 2cf390c5e9363db42b4f2783fbe5991e, type: 3}
       propertyPath: m_Name
       value: SD_Env_Floor_Stone_ClearEdge_02 (7)
+      objectReference: {fileID: 0}
+    - target: {fileID: 154948, guid: 2cf390c5e9363db42b4f2783fbe5991e, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 4294967295
       objectReference: {fileID: 0}
     - target: {fileID: 401842, guid: 2cf390c5e9363db42b4f2783fbe5991e, type: 3}
       propertyPath: m_LocalPosition.x
@@ -2514,6 +2676,14 @@ PrefabInstance:
       propertyPath: m_Name
       value: SD_Env_Wall_01 (14)
       objectReference: {fileID: 0}
+    - target: {fileID: 163364, guid: 25e618ad9977daf44a684be7ffc5046b, type: 3}
+      propertyPath: m_Layer
+      value: 8
+      objectReference: {fileID: 0}
+    - target: {fileID: 163364, guid: 25e618ad9977daf44a684be7ffc5046b, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 4294967295
+      objectReference: {fileID: 0}
     - target: {fileID: 461498, guid: 25e618ad9977daf44a684be7ffc5046b, type: 3}
       propertyPath: m_LocalPosition.x
       value: 16.251541
@@ -2588,6 +2758,10 @@ PrefabInstance:
     - target: {fileID: 176172, guid: 835caca5433f2a44b95816ffef0a5187, type: 3}
       propertyPath: m_Name
       value: SD_Env_Floor_Stone_Broken_05 (22)
+      objectReference: {fileID: 0}
+    - target: {fileID: 176172, guid: 835caca5433f2a44b95816ffef0a5187, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 4294967295
       objectReference: {fileID: 0}
     - target: {fileID: 471116, guid: 835caca5433f2a44b95816ffef0a5187, type: 3}
       propertyPath: m_LocalPosition.x
@@ -2664,6 +2838,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: SD_Env_Floor_Stone_Broken_01 (30)
       objectReference: {fileID: 0}
+    - target: {fileID: 136950, guid: abeede308550bf74c8b88218b6b3e39f, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 4294967295
+      objectReference: {fileID: 0}
     - target: {fileID: 483442, guid: abeede308550bf74c8b88218b6b3e39f, type: 3}
       propertyPath: m_LocalPosition.x
       value: 33.04
@@ -2738,6 +2916,14 @@ PrefabInstance:
     - target: {fileID: 163364, guid: 25e618ad9977daf44a684be7ffc5046b, type: 3}
       propertyPath: m_Name
       value: SD_Env_Wall_01 (9)
+      objectReference: {fileID: 0}
+    - target: {fileID: 163364, guid: 25e618ad9977daf44a684be7ffc5046b, type: 3}
+      propertyPath: m_Layer
+      value: 8
+      objectReference: {fileID: 0}
+    - target: {fileID: 163364, guid: 25e618ad9977daf44a684be7ffc5046b, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 4294967295
       objectReference: {fileID: 0}
     - target: {fileID: 461498, guid: 25e618ad9977daf44a684be7ffc5046b, type: 3}
       propertyPath: m_LocalPosition.x
@@ -2861,6 +3047,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: SD_Env_Floor_Stone_ClearEdge_02 (3)
       objectReference: {fileID: 0}
+    - target: {fileID: 154948, guid: 2cf390c5e9363db42b4f2783fbe5991e, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 4294967295
+      objectReference: {fileID: 0}
     - target: {fileID: 401842, guid: 2cf390c5e9363db42b4f2783fbe5991e, type: 3}
       propertyPath: m_LocalPosition.x
       value: 40.47
@@ -2935,6 +3125,10 @@ PrefabInstance:
     - target: {fileID: 164310, guid: 0e20b0fba37f2f449b462588b4be11a3, type: 3}
       propertyPath: m_Name
       value: SD_Env_Floor_Stone_Broken_03 (10)
+      objectReference: {fileID: 0}
+    - target: {fileID: 164310, guid: 0e20b0fba37f2f449b462588b4be11a3, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 4294967295
       objectReference: {fileID: 0}
     - target: {fileID: 434746, guid: 0e20b0fba37f2f449b462588b4be11a3, type: 3}
       propertyPath: m_LocalPosition.x
@@ -3011,6 +3205,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: SD_Env_Floor_Stone_ClearEdge_02 (9)
       objectReference: {fileID: 0}
+    - target: {fileID: 154948, guid: 2cf390c5e9363db42b4f2783fbe5991e, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 4294967295
+      objectReference: {fileID: 0}
     - target: {fileID: 401842, guid: 2cf390c5e9363db42b4f2783fbe5991e, type: 3}
       propertyPath: m_LocalPosition.x
       value: -3.0802956
@@ -3085,6 +3283,10 @@ PrefabInstance:
     - target: {fileID: 154948, guid: 2cf390c5e9363db42b4f2783fbe5991e, type: 3}
       propertyPath: m_Name
       value: SD_Env_Floor_Stone_ClearEdge_02 (45)
+      objectReference: {fileID: 0}
+    - target: {fileID: 154948, guid: 2cf390c5e9363db42b4f2783fbe5991e, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 4294967295
       objectReference: {fileID: 0}
     - target: {fileID: 401842, guid: 2cf390c5e9363db42b4f2783fbe5991e, type: 3}
       propertyPath: m_LocalPosition.x
@@ -3161,6 +3363,14 @@ PrefabInstance:
       propertyPath: m_Name
       value: SD_Env_Wall_01 (12)
       objectReference: {fileID: 0}
+    - target: {fileID: 163364, guid: 25e618ad9977daf44a684be7ffc5046b, type: 3}
+      propertyPath: m_Layer
+      value: 8
+      objectReference: {fileID: 0}
+    - target: {fileID: 163364, guid: 25e618ad9977daf44a684be7ffc5046b, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 4294967295
+      objectReference: {fileID: 0}
     - target: {fileID: 461498, guid: 25e618ad9977daf44a684be7ffc5046b, type: 3}
       propertyPath: m_LocalPosition.x
       value: 16.21154
@@ -3235,6 +3445,10 @@ PrefabInstance:
     - target: {fileID: 176172, guid: 835caca5433f2a44b95816ffef0a5187, type: 3}
       propertyPath: m_Name
       value: SD_Env_Floor_Stone_Broken_05 (8)
+      objectReference: {fileID: 0}
+    - target: {fileID: 176172, guid: 835caca5433f2a44b95816ffef0a5187, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 4294967295
       objectReference: {fileID: 0}
     - target: {fileID: 471116, guid: 835caca5433f2a44b95816ffef0a5187, type: 3}
       propertyPath: m_LocalPosition.x
@@ -3311,6 +3525,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: SD_Env_Floor_Stone_ClearEdge_02 (20)
       objectReference: {fileID: 0}
+    - target: {fileID: 154948, guid: 2cf390c5e9363db42b4f2783fbe5991e, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 4294967295
+      objectReference: {fileID: 0}
     - target: {fileID: 401842, guid: 2cf390c5e9363db42b4f2783fbe5991e, type: 3}
       propertyPath: m_LocalPosition.x
       value: 18.16015
@@ -3385,6 +3603,10 @@ PrefabInstance:
     - target: {fileID: 154948, guid: 2cf390c5e9363db42b4f2783fbe5991e, type: 3}
       propertyPath: m_Name
       value: SD_Env_Floor_Stone_ClearEdge_02 (50)
+      objectReference: {fileID: 0}
+    - target: {fileID: 154948, guid: 2cf390c5e9363db42b4f2783fbe5991e, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 4294967295
       objectReference: {fileID: 0}
     - target: {fileID: 401842, guid: 2cf390c5e9363db42b4f2783fbe5991e, type: 3}
       propertyPath: m_LocalPosition.x
@@ -3461,6 +3683,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: SD_Env_Floor_Stone_Broken_01 (22)
       objectReference: {fileID: 0}
+    - target: {fileID: 136950, guid: abeede308550bf74c8b88218b6b3e39f, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 4294967295
+      objectReference: {fileID: 0}
     - target: {fileID: 483442, guid: abeede308550bf74c8b88218b6b3e39f, type: 3}
       propertyPath: m_LocalPosition.x
       value: 47.850006
@@ -3535,6 +3761,10 @@ PrefabInstance:
     - target: {fileID: 154948, guid: 2cf390c5e9363db42b4f2783fbe5991e, type: 3}
       propertyPath: m_Name
       value: SD_Env_Floor_Stone_ClearEdge_02 (40)
+      objectReference: {fileID: 0}
+    - target: {fileID: 154948, guid: 2cf390c5e9363db42b4f2783fbe5991e, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 4294967295
       objectReference: {fileID: 0}
     - target: {fileID: 401842, guid: 2cf390c5e9363db42b4f2783fbe5991e, type: 3}
       propertyPath: m_LocalPosition.x
@@ -3611,6 +3841,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: SD_Env_Floor_Stone_Broken_03 (7)
       objectReference: {fileID: 0}
+    - target: {fileID: 164310, guid: 0e20b0fba37f2f449b462588b4be11a3, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 4294967295
+      objectReference: {fileID: 0}
     - target: {fileID: 434746, guid: 0e20b0fba37f2f449b462588b4be11a3, type: 3}
       propertyPath: m_LocalPosition.x
       value: 55.29986
@@ -3685,6 +3919,10 @@ PrefabInstance:
     - target: {fileID: 154948, guid: 2cf390c5e9363db42b4f2783fbe5991e, type: 3}
       propertyPath: m_Name
       value: SD_Env_Floor_Stone_ClearEdge_02 (5)
+      objectReference: {fileID: 0}
+    - target: {fileID: 154948, guid: 2cf390c5e9363db42b4f2783fbe5991e, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 4294967295
       objectReference: {fileID: 0}
     - target: {fileID: 401842, guid: 2cf390c5e9363db42b4f2783fbe5991e, type: 3}
       propertyPath: m_LocalPosition.x
@@ -3761,6 +3999,14 @@ PrefabInstance:
       propertyPath: m_Name
       value: SD_Env_Wall_01 (11)
       objectReference: {fileID: 0}
+    - target: {fileID: 163364, guid: 25e618ad9977daf44a684be7ffc5046b, type: 3}
+      propertyPath: m_Layer
+      value: 8
+      objectReference: {fileID: 0}
+    - target: {fileID: 163364, guid: 25e618ad9977daf44a684be7ffc5046b, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 4294967295
+      objectReference: {fileID: 0}
     - target: {fileID: 461498, guid: 25e618ad9977daf44a684be7ffc5046b, type: 3}
       propertyPath: m_LocalPosition.x
       value: 16.21154
@@ -3835,6 +4081,10 @@ PrefabInstance:
     - target: {fileID: 164310, guid: 0e20b0fba37f2f449b462588b4be11a3, type: 3}
       propertyPath: m_Name
       value: SD_Env_Floor_Stone_Broken_03 (32)
+      objectReference: {fileID: 0}
+    - target: {fileID: 164310, guid: 0e20b0fba37f2f449b462588b4be11a3, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 4294967295
       objectReference: {fileID: 0}
     - target: {fileID: 434746, guid: 0e20b0fba37f2f449b462588b4be11a3, type: 3}
       propertyPath: m_LocalPosition.x
@@ -3911,6 +4161,14 @@ PrefabInstance:
       propertyPath: m_Name
       value: SD_Env_Wall_01 (12)
       objectReference: {fileID: 0}
+    - target: {fileID: 163364, guid: 25e618ad9977daf44a684be7ffc5046b, type: 3}
+      propertyPath: m_Layer
+      value: 8
+      objectReference: {fileID: 0}
+    - target: {fileID: 163364, guid: 25e618ad9977daf44a684be7ffc5046b, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 4294967295
+      objectReference: {fileID: 0}
     - target: {fileID: 461498, guid: 25e618ad9977daf44a684be7ffc5046b, type: 3}
       propertyPath: m_LocalPosition.x
       value: 16.21154
@@ -3985,6 +4243,10 @@ PrefabInstance:
     - target: {fileID: 136950, guid: abeede308550bf74c8b88218b6b3e39f, type: 3}
       propertyPath: m_Name
       value: SD_Env_Floor_Stone_Broken_01 (2)
+      objectReference: {fileID: 0}
+    - target: {fileID: 136950, guid: abeede308550bf74c8b88218b6b3e39f, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 4294967295
       objectReference: {fileID: 0}
     - target: {fileID: 483442, guid: abeede308550bf74c8b88218b6b3e39f, type: 3}
       propertyPath: m_LocalPosition.x
@@ -4061,6 +4323,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: SD_Env_Floor_Stone_Broken_05 (1)
       objectReference: {fileID: 0}
+    - target: {fileID: 176172, guid: 835caca5433f2a44b95816ffef0a5187, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 4294967295
+      objectReference: {fileID: 0}
     - target: {fileID: 471116, guid: 835caca5433f2a44b95816ffef0a5187, type: 3}
       propertyPath: m_LocalPosition.x
       value: 47.83
@@ -4135,6 +4401,10 @@ PrefabInstance:
     - target: {fileID: 154696, guid: 09a76891cfd8c9a48b3a6fb9f6676d5e, type: 3}
       propertyPath: m_Name
       value: SD_Env_Floor_Stone_Broken_02 (10)
+      objectReference: {fileID: 0}
+    - target: {fileID: 154696, guid: 09a76891cfd8c9a48b3a6fb9f6676d5e, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 4294967295
       objectReference: {fileID: 0}
     - target: {fileID: 423078, guid: 09a76891cfd8c9a48b3a6fb9f6676d5e, type: 3}
       propertyPath: m_LocalPosition.x
@@ -4211,6 +4481,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: SD_Env_Floor_Stone_Broken_01 (20)
       objectReference: {fileID: 0}
+    - target: {fileID: 136950, guid: abeede308550bf74c8b88218b6b3e39f, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 4294967295
+      objectReference: {fileID: 0}
     - target: {fileID: 483442, guid: abeede308550bf74c8b88218b6b3e39f, type: 3}
       propertyPath: m_LocalPosition.x
       value: -25.390148
@@ -4285,6 +4559,10 @@ PrefabInstance:
     - target: {fileID: 164310, guid: 0e20b0fba37f2f449b462588b4be11a3, type: 3}
       propertyPath: m_Name
       value: SD_Env_Floor_Stone_Broken_03 (23)
+      objectReference: {fileID: 0}
+    - target: {fileID: 164310, guid: 0e20b0fba37f2f449b462588b4be11a3, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 4294967295
       objectReference: {fileID: 0}
     - target: {fileID: 434746, guid: 0e20b0fba37f2f449b462588b4be11a3, type: 3}
       propertyPath: m_LocalPosition.x
@@ -4361,6 +4639,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: SD_Env_Floor_Stone_Broken_02 (4)
       objectReference: {fileID: 0}
+    - target: {fileID: 154696, guid: 09a76891cfd8c9a48b3a6fb9f6676d5e, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 4294967295
+      objectReference: {fileID: 0}
     - target: {fileID: 423078, guid: 09a76891cfd8c9a48b3a6fb9f6676d5e, type: 3}
       propertyPath: m_LocalPosition.x
       value: -3.1502953
@@ -4435,6 +4717,10 @@ PrefabInstance:
     - target: {fileID: 136950, guid: abeede308550bf74c8b88218b6b3e39f, type: 3}
       propertyPath: m_Name
       value: SD_Env_Floor_Stone_Broken_01 (17)
+      objectReference: {fileID: 0}
+    - target: {fileID: 136950, guid: abeede308550bf74c8b88218b6b3e39f, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 4294967295
       objectReference: {fileID: 0}
     - target: {fileID: 483442, guid: abeede308550bf74c8b88218b6b3e39f, type: 3}
       propertyPath: m_LocalPosition.x
@@ -4511,6 +4797,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: SD_Env_Floor_Stone_Broken_02 (13)
       objectReference: {fileID: 0}
+    - target: {fileID: 154696, guid: 09a76891cfd8c9a48b3a6fb9f6676d5e, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 4294967295
+      objectReference: {fileID: 0}
     - target: {fileID: 423078, guid: 09a76891cfd8c9a48b3a6fb9f6676d5e, type: 3}
       propertyPath: m_LocalPosition.x
       value: -32.84015
@@ -4585,6 +4875,10 @@ PrefabInstance:
     - target: {fileID: 136950, guid: abeede308550bf74c8b88218b6b3e39f, type: 3}
       propertyPath: m_Name
       value: SD_Env_Floor_Stone_Broken_01 (29)
+      objectReference: {fileID: 0}
+    - target: {fileID: 136950, guid: abeede308550bf74c8b88218b6b3e39f, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 4294967295
       objectReference: {fileID: 0}
     - target: {fileID: 483442, guid: abeede308550bf74c8b88218b6b3e39f, type: 3}
       propertyPath: m_LocalPosition.x
@@ -4661,6 +4955,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: SD_Env_Floor_Stone_Broken_01 (28)
       objectReference: {fileID: 0}
+    - target: {fileID: 136950, guid: abeede308550bf74c8b88218b6b3e39f, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 4294967295
+      objectReference: {fileID: 0}
     - target: {fileID: 483442, guid: abeede308550bf74c8b88218b6b3e39f, type: 3}
       propertyPath: m_LocalPosition.x
       value: 62.72986
@@ -4735,6 +5033,10 @@ PrefabInstance:
     - target: {fileID: 136950, guid: abeede308550bf74c8b88218b6b3e39f, type: 3}
       propertyPath: m_Name
       value: SD_Env_Floor_Stone_Broken_01 (5)
+      objectReference: {fileID: 0}
+    - target: {fileID: 136950, guid: abeede308550bf74c8b88218b6b3e39f, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 4294967295
       objectReference: {fileID: 0}
     - target: {fileID: 483442, guid: abeede308550bf74c8b88218b6b3e39f, type: 3}
       propertyPath: m_LocalPosition.x
@@ -4811,6 +5113,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: SD_Env_Floor_Stone_ClearEdge_02 (30)
       objectReference: {fileID: 0}
+    - target: {fileID: 154948, guid: 2cf390c5e9363db42b4f2783fbe5991e, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 4294967295
+      objectReference: {fileID: 0}
     - target: {fileID: 401842, guid: 2cf390c5e9363db42b4f2783fbe5991e, type: 3}
       propertyPath: m_LocalPosition.x
       value: 47.850006
@@ -4885,6 +5191,14 @@ PrefabInstance:
     - target: {fileID: 163364, guid: 25e618ad9977daf44a684be7ffc5046b, type: 3}
       propertyPath: m_Name
       value: SD_Env_Wall_01 (11)
+      objectReference: {fileID: 0}
+    - target: {fileID: 163364, guid: 25e618ad9977daf44a684be7ffc5046b, type: 3}
+      propertyPath: m_Layer
+      value: 8
+      objectReference: {fileID: 0}
+    - target: {fileID: 163364, guid: 25e618ad9977daf44a684be7ffc5046b, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 4294967295
       objectReference: {fileID: 0}
     - target: {fileID: 461498, guid: 25e618ad9977daf44a684be7ffc5046b, type: 3}
       propertyPath: m_LocalPosition.x
@@ -4961,6 +5275,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: SD_Env_Floor_Stone_Broken_02 (14)
       objectReference: {fileID: 0}
+    - target: {fileID: 154696, guid: 09a76891cfd8c9a48b3a6fb9f6676d5e, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 4294967295
+      objectReference: {fileID: 0}
     - target: {fileID: 423078, guid: 09a76891cfd8c9a48b3a6fb9f6676d5e, type: 3}
       propertyPath: m_LocalPosition.x
       value: 55.279854
@@ -5035,6 +5353,10 @@ PrefabInstance:
     - target: {fileID: 136950, guid: abeede308550bf74c8b88218b6b3e39f, type: 3}
       propertyPath: m_Name
       value: SD_Env_Floor_Stone_Broken_01 (27)
+      objectReference: {fileID: 0}
+    - target: {fileID: 136950, guid: abeede308550bf74c8b88218b6b3e39f, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 4294967295
       objectReference: {fileID: 0}
     - target: {fileID: 483442, guid: abeede308550bf74c8b88218b6b3e39f, type: 3}
       propertyPath: m_LocalPosition.x
@@ -5111,6 +5433,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: SD_Env_Floor_Stone_Broken_01 (9)
       objectReference: {fileID: 0}
+    - target: {fileID: 136950, guid: abeede308550bf74c8b88218b6b3e39f, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 4294967295
+      objectReference: {fileID: 0}
     - target: {fileID: 483442, guid: abeede308550bf74c8b88218b6b3e39f, type: 3}
       propertyPath: m_LocalPosition.x
       value: 33.04
@@ -5184,12 +5510,12 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 456210497}
-  m_Layer: 0
+  m_Layer: 8
   m_Name: GameObject
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
+  m_StaticEditorFlags: 4294967295
   m_IsActive: 1
 --- !u!4 &456210497
 Transform:
@@ -5224,6 +5550,10 @@ PrefabInstance:
     - target: {fileID: 136950, guid: abeede308550bf74c8b88218b6b3e39f, type: 3}
       propertyPath: m_Name
       value: SD_Env_Floor_Stone_Broken_01 (11)
+      objectReference: {fileID: 0}
+    - target: {fileID: 136950, guid: abeede308550bf74c8b88218b6b3e39f, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 4294967295
       objectReference: {fileID: 0}
     - target: {fileID: 483442, guid: abeede308550bf74c8b88218b6b3e39f, type: 3}
       propertyPath: m_LocalPosition.x
@@ -5300,6 +5630,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: SD_Env_Floor_Stone_Broken_02 (27)
       objectReference: {fileID: 0}
+    - target: {fileID: 154696, guid: 09a76891cfd8c9a48b3a6fb9f6676d5e, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 4294967295
+      objectReference: {fileID: 0}
     - target: {fileID: 423078, guid: 09a76891cfd8c9a48b3a6fb9f6676d5e, type: 3}
       propertyPath: m_LocalPosition.x
       value: -32.84015
@@ -5374,6 +5708,10 @@ PrefabInstance:
     - target: {fileID: 164310, guid: 0e20b0fba37f2f449b462588b4be11a3, type: 3}
       propertyPath: m_Name
       value: SD_Env_Floor_Stone_Broken_03 (14)
+      objectReference: {fileID: 0}
+    - target: {fileID: 164310, guid: 0e20b0fba37f2f449b462588b4be11a3, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 4294967295
       objectReference: {fileID: 0}
     - target: {fileID: 434746, guid: 0e20b0fba37f2f449b462588b4be11a3, type: 3}
       propertyPath: m_LocalPosition.x
@@ -5450,6 +5788,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: SD_Env_Floor_Stone_Broken_03 (9)
       objectReference: {fileID: 0}
+    - target: {fileID: 164310, guid: 0e20b0fba37f2f449b462588b4be11a3, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 4294967295
+      objectReference: {fileID: 0}
     - target: {fileID: 434746, guid: 0e20b0fba37f2f449b462588b4be11a3, type: 3}
       propertyPath: m_LocalPosition.x
       value: 25.61
@@ -5524,6 +5866,14 @@ PrefabInstance:
     - target: {fileID: 190576, guid: e6969c2c79e4da842b8bc1ed7b1c19fb, type: 3}
       propertyPath: m_Name
       value: SD_Env_Railing_Stone_Pillar_02 (2)
+      objectReference: {fileID: 0}
+    - target: {fileID: 190576, guid: e6969c2c79e4da842b8bc1ed7b1c19fb, type: 3}
+      propertyPath: m_Layer
+      value: 8
+      objectReference: {fileID: 0}
+    - target: {fileID: 190576, guid: e6969c2c79e4da842b8bc1ed7b1c19fb, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 4294967295
       objectReference: {fileID: 0}
     - target: {fileID: 429468, guid: e6969c2c79e4da842b8bc1ed7b1c19fb, type: 3}
       propertyPath: m_LocalPosition.x
@@ -5600,6 +5950,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: SD_Env_Floor_Stone_Broken_02 (2)
       objectReference: {fileID: 0}
+    - target: {fileID: 154696, guid: 09a76891cfd8c9a48b3a6fb9f6676d5e, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 4294967295
+      objectReference: {fileID: 0}
     - target: {fileID: 423078, guid: 09a76891cfd8c9a48b3a6fb9f6676d5e, type: 3}
       propertyPath: m_LocalPosition.x
       value: 25.589998
@@ -5674,6 +6028,10 @@ PrefabInstance:
     - target: {fileID: 136950, guid: abeede308550bf74c8b88218b6b3e39f, type: 3}
       propertyPath: m_Name
       value: SD_Env_Floor_Stone_Broken_01 (8)
+      objectReference: {fileID: 0}
+    - target: {fileID: 136950, guid: abeede308550bf74c8b88218b6b3e39f, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 4294967295
       objectReference: {fileID: 0}
     - target: {fileID: 483442, guid: abeede308550bf74c8b88218b6b3e39f, type: 3}
       propertyPath: m_LocalPosition.x
@@ -5750,6 +6108,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: SD_Env_Floor_Stone_Broken_02 (22)
       objectReference: {fileID: 0}
+    - target: {fileID: 154696, guid: 09a76891cfd8c9a48b3a6fb9f6676d5e, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 4294967295
+      objectReference: {fileID: 0}
     - target: {fileID: 423078, guid: 09a76891cfd8c9a48b3a6fb9f6676d5e, type: 3}
       propertyPath: m_LocalPosition.x
       value: 40.4
@@ -5824,6 +6186,10 @@ PrefabInstance:
     - target: {fileID: 136950, guid: abeede308550bf74c8b88218b6b3e39f, type: 3}
       propertyPath: m_Name
       value: SD_Env_Floor_Stone_Broken_01 (24)
+      objectReference: {fileID: 0}
+    - target: {fileID: 136950, guid: abeede308550bf74c8b88218b6b3e39f, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 4294967295
       objectReference: {fileID: 0}
     - target: {fileID: 483442, guid: abeede308550bf74c8b88218b6b3e39f, type: 3}
       propertyPath: m_LocalPosition.x
@@ -5900,6 +6266,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: SD_Env_Floor_Stone_Broken_03 (29)
       objectReference: {fileID: 0}
+    - target: {fileID: 164310, guid: 0e20b0fba37f2f449b462588b4be11a3, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 4294967295
+      objectReference: {fileID: 0}
     - target: {fileID: 434746, guid: 0e20b0fba37f2f449b462588b4be11a3, type: 3}
       propertyPath: m_LocalPosition.x
       value: 40.420006
@@ -5974,6 +6344,14 @@ PrefabInstance:
     - target: {fileID: 163364, guid: 25e618ad9977daf44a684be7ffc5046b, type: 3}
       propertyPath: m_Name
       value: SD_Env_Wall_01 (16)
+      objectReference: {fileID: 0}
+    - target: {fileID: 163364, guid: 25e618ad9977daf44a684be7ffc5046b, type: 3}
+      propertyPath: m_Layer
+      value: 8
+      objectReference: {fileID: 0}
+    - target: {fileID: 163364, guid: 25e618ad9977daf44a684be7ffc5046b, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 4294967295
       objectReference: {fileID: 0}
     - target: {fileID: 461498, guid: 25e618ad9977daf44a684be7ffc5046b, type: 3}
       propertyPath: m_LocalPosition.x
@@ -6050,6 +6428,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: SD_Env_Floor_Stone_ClearEdge_02 (39)
       objectReference: {fileID: 0}
+    - target: {fileID: 154948, guid: 2cf390c5e9363db42b4f2783fbe5991e, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 4294967295
+      objectReference: {fileID: 0}
     - target: {fileID: 401842, guid: 2cf390c5e9363db42b4f2783fbe5991e, type: 3}
       propertyPath: m_LocalPosition.x
       value: -17.960148
@@ -6124,6 +6506,10 @@ PrefabInstance:
     - target: {fileID: 136950, guid: abeede308550bf74c8b88218b6b3e39f, type: 3}
       propertyPath: m_Name
       value: SD_Env_Floor_Stone_Broken_01 (12)
+      objectReference: {fileID: 0}
+    - target: {fileID: 136950, guid: abeede308550bf74c8b88218b6b3e39f, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 4294967295
       objectReference: {fileID: 0}
     - target: {fileID: 483442, guid: abeede308550bf74c8b88218b6b3e39f, type: 3}
       propertyPath: m_LocalPosition.x
@@ -6200,6 +6586,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: SD_Env_Floor_Stone_Broken_03 (22)
       objectReference: {fileID: 0}
+    - target: {fileID: 164310, guid: 0e20b0fba37f2f449b462588b4be11a3, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 4294967295
+      objectReference: {fileID: 0}
     - target: {fileID: 434746, guid: 0e20b0fba37f2f449b462588b4be11a3, type: 3}
       propertyPath: m_LocalPosition.x
       value: 40.420006
@@ -6274,6 +6664,10 @@ PrefabInstance:
     - target: {fileID: 154696, guid: 09a76891cfd8c9a48b3a6fb9f6676d5e, type: 3}
       propertyPath: m_Name
       value: SD_Env_Floor_Stone_Broken_02 (29)
+      objectReference: {fileID: 0}
+    - target: {fileID: 154696, guid: 09a76891cfd8c9a48b3a6fb9f6676d5e, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 4294967295
       objectReference: {fileID: 0}
     - target: {fileID: 423078, guid: 09a76891cfd8c9a48b3a6fb9f6676d5e, type: 3}
       propertyPath: m_LocalPosition.x
@@ -6350,6 +6744,14 @@ PrefabInstance:
       propertyPath: m_Name
       value: SD_Env_Wall_01 (5)
       objectReference: {fileID: 0}
+    - target: {fileID: 163364, guid: 25e618ad9977daf44a684be7ffc5046b, type: 3}
+      propertyPath: m_Layer
+      value: 8
+      objectReference: {fileID: 0}
+    - target: {fileID: 163364, guid: 25e618ad9977daf44a684be7ffc5046b, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 4294967295
+      objectReference: {fileID: 0}
     - target: {fileID: 461498, guid: 25e618ad9977daf44a684be7ffc5046b, type: 3}
       propertyPath: m_LocalPosition.x
       value: -64.21432
@@ -6425,6 +6827,14 @@ PrefabInstance:
       propertyPath: m_Name
       value: SD_Env_Wall_01 (13)
       objectReference: {fileID: 0}
+    - target: {fileID: 163364, guid: 25e618ad9977daf44a684be7ffc5046b, type: 3}
+      propertyPath: m_Layer
+      value: 8
+      objectReference: {fileID: 0}
+    - target: {fileID: 163364, guid: 25e618ad9977daf44a684be7ffc5046b, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 4294967295
+      objectReference: {fileID: 0}
     - target: {fileID: 461498, guid: 25e618ad9977daf44a684be7ffc5046b, type: 3}
       propertyPath: m_LocalPosition.x
       value: 16.251541
@@ -6496,6 +6906,11 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 127908763}
     m_Modifications:
+    - target: {fileID: 6233974028401664276, guid: 94f75ae5dabb3f14c8fd119a9dc03d13,
+        type: 3}
+      propertyPath: _defaultTimer
+      value: 20
+      objectReference: {fileID: 0}
     - target: {fileID: 6233974028401664277, guid: 94f75ae5dabb3f14c8fd119a9dc03d13,
         type: 3}
       propertyPath: m_LocalPosition.x
@@ -6574,6 +6989,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: SD_Env_Floor_Stone_ClearEdge_02 (1)
       objectReference: {fileID: 0}
+    - target: {fileID: 154948, guid: 2cf390c5e9363db42b4f2783fbe5991e, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 4294967295
+      objectReference: {fileID: 0}
     - target: {fileID: 401842, guid: 2cf390c5e9363db42b4f2783fbe5991e, type: 3}
       propertyPath: m_LocalPosition.x
       value: 55.349854
@@ -6648,6 +7067,10 @@ PrefabInstance:
     - target: {fileID: 154696, guid: 09a76891cfd8c9a48b3a6fb9f6676d5e, type: 3}
       propertyPath: m_Name
       value: SD_Env_Floor_Stone_Broken_02 (7)
+      objectReference: {fileID: 0}
+    - target: {fileID: 154696, guid: 09a76891cfd8c9a48b3a6fb9f6676d5e, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 4294967295
       objectReference: {fileID: 0}
     - target: {fileID: 423078, guid: 09a76891cfd8c9a48b3a6fb9f6676d5e, type: 3}
       propertyPath: m_LocalPosition.x
@@ -6724,6 +7147,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: SD_Env_Floor_Stone_ClearEdge_02 (26)
       objectReference: {fileID: 0}
+    - target: {fileID: 154948, guid: 2cf390c5e9363db42b4f2783fbe5991e, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 4294967295
+      objectReference: {fileID: 0}
     - target: {fileID: 401842, guid: 2cf390c5e9363db42b4f2783fbe5991e, type: 3}
       propertyPath: m_LocalPosition.x
       value: -25.390148
@@ -6798,6 +7225,10 @@ PrefabInstance:
     - target: {fileID: 154696, guid: 09a76891cfd8c9a48b3a6fb9f6676d5e, type: 3}
       propertyPath: m_Name
       value: SD_Env_Floor_Stone_Broken_02 (30)
+      objectReference: {fileID: 0}
+    - target: {fileID: 154696, guid: 09a76891cfd8c9a48b3a6fb9f6676d5e, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 4294967295
       objectReference: {fileID: 0}
     - target: {fileID: 423078, guid: 09a76891cfd8c9a48b3a6fb9f6676d5e, type: 3}
       propertyPath: m_LocalPosition.x
@@ -6874,6 +7305,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: SD_Env_Floor_Stone_Broken_02 (1)
       objectReference: {fileID: 0}
+    - target: {fileID: 154696, guid: 09a76891cfd8c9a48b3a6fb9f6676d5e, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 4294967295
+      objectReference: {fileID: 0}
     - target: {fileID: 423078, guid: 09a76891cfd8c9a48b3a6fb9f6676d5e, type: 3}
       propertyPath: m_LocalPosition.x
       value: 40.4
@@ -6948,6 +7383,10 @@ PrefabInstance:
     - target: {fileID: 136950, guid: abeede308550bf74c8b88218b6b3e39f, type: 3}
       propertyPath: m_Name
       value: SD_Env_Floor_Stone_Broken_01 (1)
+      objectReference: {fileID: 0}
+    - target: {fileID: 136950, guid: abeede308550bf74c8b88218b6b3e39f, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 4294967295
       objectReference: {fileID: 0}
     - target: {fileID: 483442, guid: abeede308550bf74c8b88218b6b3e39f, type: 3}
       propertyPath: m_LocalPosition.x
@@ -7024,6 +7463,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: SD_Env_Floor_Stone_Broken_03 (4)
       objectReference: {fileID: 0}
+    - target: {fileID: 164310, guid: 0e20b0fba37f2f449b462588b4be11a3, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 4294967295
+      objectReference: {fileID: 0}
     - target: {fileID: 434746, guid: 0e20b0fba37f2f449b462588b4be11a3, type: 3}
       propertyPath: m_LocalPosition.x
       value: -3.130291
@@ -7098,6 +7541,10 @@ PrefabInstance:
     - target: {fileID: 136950, guid: abeede308550bf74c8b88218b6b3e39f, type: 3}
       propertyPath: m_Name
       value: SD_Env_Floor_Stone_Broken_01 (26)
+      objectReference: {fileID: 0}
+    - target: {fileID: 136950, guid: abeede308550bf74c8b88218b6b3e39f, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 4294967295
       objectReference: {fileID: 0}
     - target: {fileID: 483442, guid: abeede308550bf74c8b88218b6b3e39f, type: 3}
       propertyPath: m_LocalPosition.x
@@ -7174,6 +7621,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: SD_Env_Floor_Stone_Broken_03 (3)
       objectReference: {fileID: 0}
+    - target: {fileID: 164310, guid: 0e20b0fba37f2f449b462588b4be11a3, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 4294967295
+      objectReference: {fileID: 0}
     - target: {fileID: 434746, guid: 0e20b0fba37f2f449b462588b4be11a3, type: 3}
       propertyPath: m_LocalPosition.x
       value: 10.73015
@@ -7248,6 +7699,10 @@ PrefabInstance:
     - target: {fileID: 154696, guid: 09a76891cfd8c9a48b3a6fb9f6676d5e, type: 3}
       propertyPath: m_Name
       value: SD_Env_Floor_Stone_Broken_02 (28)
+      objectReference: {fileID: 0}
+    - target: {fileID: 154696, guid: 09a76891cfd8c9a48b3a6fb9f6676d5e, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 4294967295
       objectReference: {fileID: 0}
     - target: {fileID: 423078, guid: 09a76891cfd8c9a48b3a6fb9f6676d5e, type: 3}
       propertyPath: m_LocalPosition.x
@@ -7415,6 +7870,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: SD_Env_Floor_Stone_Broken_02 (33)
       objectReference: {fileID: 0}
+    - target: {fileID: 154696, guid: 09a76891cfd8c9a48b3a6fb9f6676d5e, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 4294967295
+      objectReference: {fileID: 0}
     - target: {fileID: 423078, guid: 09a76891cfd8c9a48b3a6fb9f6676d5e, type: 3}
       propertyPath: m_LocalPosition.x
       value: -18.030148
@@ -7489,6 +7948,14 @@ PrefabInstance:
     - target: {fileID: 190576, guid: e6969c2c79e4da842b8bc1ed7b1c19fb, type: 3}
       propertyPath: m_Name
       value: SD_Env_Railing_Stone_Pillar_02 (1)
+      objectReference: {fileID: 0}
+    - target: {fileID: 190576, guid: e6969c2c79e4da842b8bc1ed7b1c19fb, type: 3}
+      propertyPath: m_Layer
+      value: 8
+      objectReference: {fileID: 0}
+    - target: {fileID: 190576, guid: e6969c2c79e4da842b8bc1ed7b1c19fb, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 4294967295
       objectReference: {fileID: 0}
     - target: {fileID: 429468, guid: e6969c2c79e4da842b8bc1ed7b1c19fb, type: 3}
       propertyPath: m_LocalPosition.x
@@ -7565,6 +8032,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: SD_Env_Floor_Stone_ClearEdge_02 (49)
       objectReference: {fileID: 0}
+    - target: {fileID: 154948, guid: 2cf390c5e9363db42b4f2783fbe5991e, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 4294967295
+      objectReference: {fileID: 0}
     - target: {fileID: 401842, guid: 2cf390c5e9363db42b4f2783fbe5991e, type: 3}
       propertyPath: m_LocalPosition.x
       value: 10.780146
@@ -7639,6 +8110,14 @@ PrefabInstance:
     - target: {fileID: 163364, guid: 25e618ad9977daf44a684be7ffc5046b, type: 3}
       propertyPath: m_Name
       value: SD_Env_Wall_01 (10)
+      objectReference: {fileID: 0}
+    - target: {fileID: 163364, guid: 25e618ad9977daf44a684be7ffc5046b, type: 3}
+      propertyPath: m_Layer
+      value: 8
+      objectReference: {fileID: 0}
+    - target: {fileID: 163364, guid: 25e618ad9977daf44a684be7ffc5046b, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 4294967295
       objectReference: {fileID: 0}
     - target: {fileID: 461498, guid: 25e618ad9977daf44a684be7ffc5046b, type: 3}
       propertyPath: m_LocalPosition.x
@@ -7715,6 +8194,14 @@ PrefabInstance:
       propertyPath: m_Name
       value: SD_Env_Undead_Pillar_01 (3)
       objectReference: {fileID: 0}
+    - target: {fileID: 190988, guid: 8f7ca30ec6adeda40804f6426d61e3f7, type: 3}
+      propertyPath: m_Layer
+      value: 8
+      objectReference: {fileID: 0}
+    - target: {fileID: 190988, guid: 8f7ca30ec6adeda40804f6426d61e3f7, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 4294967295
+      objectReference: {fileID: 0}
     - target: {fileID: 452526, guid: 8f7ca30ec6adeda40804f6426d61e3f7, type: 3}
       propertyPath: m_LocalPosition.x
       value: 47.152966
@@ -7789,6 +8276,10 @@ PrefabInstance:
     - target: {fileID: 176172, guid: 835caca5433f2a44b95816ffef0a5187, type: 3}
       propertyPath: m_Name
       value: SD_Env_Floor_Stone_Broken_05 (27)
+      objectReference: {fileID: 0}
+    - target: {fileID: 176172, guid: 835caca5433f2a44b95816ffef0a5187, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 4294967295
       objectReference: {fileID: 0}
     - target: {fileID: 471116, guid: 835caca5433f2a44b95816ffef0a5187, type: 3}
       propertyPath: m_LocalPosition.x
@@ -7865,6 +8356,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: SD_Env_Floor_Stone_Broken_01 (16)
       objectReference: {fileID: 0}
+    - target: {fileID: 136950, guid: abeede308550bf74c8b88218b6b3e39f, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 4294967295
+      objectReference: {fileID: 0}
     - target: {fileID: 483442, guid: abeede308550bf74c8b88218b6b3e39f, type: 3}
       propertyPath: m_LocalPosition.x
       value: 33.04
@@ -7939,6 +8434,10 @@ PrefabInstance:
     - target: {fileID: 176172, guid: 835caca5433f2a44b95816ffef0a5187, type: 3}
       propertyPath: m_Name
       value: SD_Env_Floor_Stone_Broken_05 (3)
+      objectReference: {fileID: 0}
+    - target: {fileID: 176172, guid: 835caca5433f2a44b95816ffef0a5187, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 4294967295
       objectReference: {fileID: 0}
     - target: {fileID: 471116, guid: 835caca5433f2a44b95816ffef0a5187, type: 3}
       propertyPath: m_LocalPosition.x
@@ -8015,6 +8514,14 @@ PrefabInstance:
       propertyPath: m_Name
       value: SD_Env_Wall_01 (4)
       objectReference: {fileID: 0}
+    - target: {fileID: 163364, guid: 25e618ad9977daf44a684be7ffc5046b, type: 3}
+      propertyPath: m_Layer
+      value: 8
+      objectReference: {fileID: 0}
+    - target: {fileID: 163364, guid: 25e618ad9977daf44a684be7ffc5046b, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 4294967295
+      objectReference: {fileID: 0}
     - target: {fileID: 461498, guid: 25e618ad9977daf44a684be7ffc5046b, type: 3}
       propertyPath: m_LocalPosition.x
       value: -64.21432
@@ -8090,6 +8597,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: SD_Env_Floor_Stone_Broken_03 (25)
       objectReference: {fileID: 0}
+    - target: {fileID: 164310, guid: 0e20b0fba37f2f449b462588b4be11a3, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 4294967295
+      objectReference: {fileID: 0}
     - target: {fileID: 434746, guid: 0e20b0fba37f2f449b462588b4be11a3, type: 3}
       propertyPath: m_LocalPosition.x
       value: -3.130291
@@ -8163,12 +8674,12 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 830698225}
-  m_Layer: 0
+  m_Layer: 8
   m_Name: Paredes
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
+  m_StaticEditorFlags: 4294967295
   m_IsActive: 1
 --- !u!4 &830698225
 Transform:
@@ -8198,6 +8709,14 @@ PrefabInstance:
     - target: {fileID: 190988, guid: 8f7ca30ec6adeda40804f6426d61e3f7, type: 3}
       propertyPath: m_Name
       value: SD_Env_Undead_Pillar_01 (5)
+      objectReference: {fileID: 0}
+    - target: {fileID: 190988, guid: 8f7ca30ec6adeda40804f6426d61e3f7, type: 3}
+      propertyPath: m_Layer
+      value: 8
+      objectReference: {fileID: 0}
+    - target: {fileID: 190988, guid: 8f7ca30ec6adeda40804f6426d61e3f7, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 4294967295
       objectReference: {fileID: 0}
     - target: {fileID: 452526, guid: 8f7ca30ec6adeda40804f6426d61e3f7, type: 3}
       propertyPath: m_LocalPosition.x
@@ -8274,6 +8793,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: SD_Env_Floor_Stone_Broken_01 (34)
       objectReference: {fileID: 0}
+    - target: {fileID: 136950, guid: abeede308550bf74c8b88218b6b3e39f, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 4294967295
+      objectReference: {fileID: 0}
     - target: {fileID: 483442, guid: abeede308550bf74c8b88218b6b3e39f, type: 3}
       propertyPath: m_LocalPosition.x
       value: -25.390148
@@ -8348,6 +8871,10 @@ PrefabInstance:
     - target: {fileID: 176172, guid: 835caca5433f2a44b95816ffef0a5187, type: 3}
       propertyPath: m_Name
       value: SD_Env_Floor_Stone_Broken_05 (4)
+      objectReference: {fileID: 0}
+    - target: {fileID: 176172, guid: 835caca5433f2a44b95816ffef0a5187, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 4294967295
       objectReference: {fileID: 0}
     - target: {fileID: 471116, guid: 835caca5433f2a44b95816ffef0a5187, type: 3}
       propertyPath: m_LocalPosition.x
@@ -8424,6 +8951,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: SD_Env_Floor_Stone_Broken_01 (4)
       objectReference: {fileID: 0}
+    - target: {fileID: 136950, guid: abeede308550bf74c8b88218b6b3e39f, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 4294967295
+      objectReference: {fileID: 0}
     - target: {fileID: 483442, guid: abeede308550bf74c8b88218b6b3e39f, type: 3}
       propertyPath: m_LocalPosition.x
       value: 4.2997093
@@ -8498,6 +9029,10 @@ PrefabInstance:
     - target: {fileID: 164310, guid: 0e20b0fba37f2f449b462588b4be11a3, type: 3}
       propertyPath: m_Name
       value: SD_Env_Floor_Stone_Broken_03 (24)
+      objectReference: {fileID: 0}
+    - target: {fileID: 164310, guid: 0e20b0fba37f2f449b462588b4be11a3, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 4294967295
       objectReference: {fileID: 0}
     - target: {fileID: 434746, guid: 0e20b0fba37f2f449b462588b4be11a3, type: 3}
       propertyPath: m_LocalPosition.x
@@ -8574,6 +9109,14 @@ PrefabInstance:
       propertyPath: m_Name
       value: SD_Env_Wall_01 (15)
       objectReference: {fileID: 0}
+    - target: {fileID: 163364, guid: 25e618ad9977daf44a684be7ffc5046b, type: 3}
+      propertyPath: m_Layer
+      value: 8
+      objectReference: {fileID: 0}
+    - target: {fileID: 163364, guid: 25e618ad9977daf44a684be7ffc5046b, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 4294967295
+      objectReference: {fileID: 0}
     - target: {fileID: 461498, guid: 25e618ad9977daf44a684be7ffc5046b, type: 3}
       propertyPath: m_LocalPosition.x
       value: 16.21154
@@ -8648,6 +9191,10 @@ PrefabInstance:
     - target: {fileID: 154948, guid: 2cf390c5e9363db42b4f2783fbe5991e, type: 3}
       propertyPath: m_Name
       value: SD_Env_Floor_Stone_ClearEdge_02 (44)
+      objectReference: {fileID: 0}
+    - target: {fileID: 154948, guid: 2cf390c5e9363db42b4f2783fbe5991e, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 4294967295
       objectReference: {fileID: 0}
     - target: {fileID: 401842, guid: 2cf390c5e9363db42b4f2783fbe5991e, type: 3}
       propertyPath: m_LocalPosition.x
@@ -8736,6 +9283,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: SD_Env_Floor_Stone_ClearEdge_02 (52)
       objectReference: {fileID: 0}
+    - target: {fileID: 154948, guid: 2cf390c5e9363db42b4f2783fbe5991e, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 4294967295
+      objectReference: {fileID: 0}
     - target: {fileID: 401842, guid: 2cf390c5e9363db42b4f2783fbe5991e, type: 3}
       propertyPath: m_LocalPosition.x
       value: -10.580143
@@ -8810,6 +9361,10 @@ PrefabInstance:
     - target: {fileID: 154948, guid: 2cf390c5e9363db42b4f2783fbe5991e, type: 3}
       propertyPath: m_Name
       value: SD_Env_Floor_Stone_ClearEdge_02 (34)
+      objectReference: {fileID: 0}
+    - target: {fileID: 154948, guid: 2cf390c5e9363db42b4f2783fbe5991e, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 4294967295
       objectReference: {fileID: 0}
     - target: {fileID: 401842, guid: 2cf390c5e9363db42b4f2783fbe5991e, type: 3}
       propertyPath: m_LocalPosition.x
@@ -8886,6 +9441,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: SD_Env_Floor_Stone_Broken_01 (10)
       objectReference: {fileID: 0}
+    - target: {fileID: 136950, guid: abeede308550bf74c8b88218b6b3e39f, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 4294967295
+      objectReference: {fileID: 0}
     - target: {fileID: 483442, guid: abeede308550bf74c8b88218b6b3e39f, type: 3}
       propertyPath: m_LocalPosition.x
       value: 18.16015
@@ -8960,6 +9519,10 @@ PrefabInstance:
     - target: {fileID: 154948, guid: 2cf390c5e9363db42b4f2783fbe5991e, type: 3}
       propertyPath: m_Name
       value: SD_Env_Floor_Stone_ClearEdge_02 (14)
+      objectReference: {fileID: 0}
+    - target: {fileID: 154948, guid: 2cf390c5e9363db42b4f2783fbe5991e, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 4294967295
       objectReference: {fileID: 0}
     - target: {fileID: 401842, guid: 2cf390c5e9363db42b4f2783fbe5991e, type: 3}
       propertyPath: m_LocalPosition.x
@@ -9036,6 +9599,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: SD_Env_Floor_Stone_ClearEdge_02 (18)
       objectReference: {fileID: 0}
+    - target: {fileID: 154948, guid: 2cf390c5e9363db42b4f2783fbe5991e, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 4294967295
+      objectReference: {fileID: 0}
     - target: {fileID: 401842, guid: 2cf390c5e9363db42b4f2783fbe5991e, type: 3}
       propertyPath: m_LocalPosition.x
       value: 33.04
@@ -9110,6 +9677,10 @@ PrefabInstance:
     - target: {fileID: 154696, guid: 09a76891cfd8c9a48b3a6fb9f6676d5e, type: 3}
       propertyPath: m_Name
       value: SD_Env_Floor_Stone_Broken_02 (23)
+      objectReference: {fileID: 0}
+    - target: {fileID: 154696, guid: 09a76891cfd8c9a48b3a6fb9f6676d5e, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 4294967295
       objectReference: {fileID: 0}
     - target: {fileID: 423078, guid: 09a76891cfd8c9a48b3a6fb9f6676d5e, type: 3}
       propertyPath: m_LocalPosition.x
@@ -9186,6 +9757,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: SD_Env_Floor_Stone_Broken_03 (33)
       objectReference: {fileID: 0}
+    - target: {fileID: 164310, guid: 0e20b0fba37f2f449b462588b4be11a3, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 4294967295
+      objectReference: {fileID: 0}
     - target: {fileID: 434746, guid: 0e20b0fba37f2f449b462588b4be11a3, type: 3}
       propertyPath: m_LocalPosition.x
       value: -18.010143
@@ -9260,6 +9835,10 @@ PrefabInstance:
     - target: {fileID: 164310, guid: 0e20b0fba37f2f449b462588b4be11a3, type: 3}
       propertyPath: m_Name
       value: SD_Env_Floor_Stone_Broken_03 (1)
+      objectReference: {fileID: 0}
+    - target: {fileID: 164310, guid: 0e20b0fba37f2f449b462588b4be11a3, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 4294967295
       objectReference: {fileID: 0}
     - target: {fileID: 434746, guid: 0e20b0fba37f2f449b462588b4be11a3, type: 3}
       propertyPath: m_LocalPosition.x
@@ -9434,6 +10013,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: SD_Env_Floor_Stone_Broken_05 (6)
       objectReference: {fileID: 0}
+    - target: {fileID: 176172, guid: 835caca5433f2a44b95816ffef0a5187, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 4294967295
+      objectReference: {fileID: 0}
     - target: {fileID: 471116, guid: 835caca5433f2a44b95816ffef0a5187, type: 3}
       propertyPath: m_LocalPosition.x
       value: -25.410152
@@ -9508,6 +10091,10 @@ PrefabInstance:
     - target: {fileID: 154948, guid: 2cf390c5e9363db42b4f2783fbe5991e, type: 3}
       propertyPath: m_Name
       value: SD_Env_Floor_Stone_ClearEdge_02 (48)
+      objectReference: {fileID: 0}
+    - target: {fileID: 154948, guid: 2cf390c5e9363db42b4f2783fbe5991e, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 4294967295
       objectReference: {fileID: 0}
     - target: {fileID: 401842, guid: 2cf390c5e9363db42b4f2783fbe5991e, type: 3}
       propertyPath: m_LocalPosition.x
@@ -9603,17 +10190,17 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   abilityImage1: {fileID: 1256693037}
-  cooldown1: 5
+  cooldown1: 9
   ability1: 49
-  manaCost: 10
+  manaCost: 20
   abilityImage2: {fileID: 1293110902}
-  cooldown2: 4
+  cooldown2: 6
   ability2: 50
-  manaCost2: 5
+  manaCost2: 12
   abilityImage3: {fileID: 1441714364}
   cooldown3: 2
   ability3: 51
-  manaCost3: 5
+  manaCost3: 30
   spawnAbilities: {fileID: 1242129625}
   jarAbility: {fileID: 6054725814908208590, guid: e125cc7434cd11d48bac8616488ed259,
     type: 3}
@@ -9646,6 +10233,10 @@ PrefabInstance:
     - target: {fileID: 164310, guid: 0e20b0fba37f2f449b462588b4be11a3, type: 3}
       propertyPath: m_Name
       value: SD_Env_Floor_Stone_Broken_03 (16)
+      objectReference: {fileID: 0}
+    - target: {fileID: 164310, guid: 0e20b0fba37f2f449b462588b4be11a3, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 4294967295
       objectReference: {fileID: 0}
     - target: {fileID: 434746, guid: 0e20b0fba37f2f449b462588b4be11a3, type: 3}
       propertyPath: m_LocalPosition.x
@@ -9722,6 +10313,14 @@ PrefabInstance:
       propertyPath: m_Name
       value: SD_Env_Wall_01 (10)
       objectReference: {fileID: 0}
+    - target: {fileID: 163364, guid: 25e618ad9977daf44a684be7ffc5046b, type: 3}
+      propertyPath: m_Layer
+      value: 8
+      objectReference: {fileID: 0}
+    - target: {fileID: 163364, guid: 25e618ad9977daf44a684be7ffc5046b, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 4294967295
+      objectReference: {fileID: 0}
     - target: {fileID: 461498, guid: 25e618ad9977daf44a684be7ffc5046b, type: 3}
       propertyPath: m_LocalPosition.x
       value: 16.251543
@@ -9796,6 +10395,14 @@ PrefabInstance:
     - target: {fileID: 190576, guid: e6969c2c79e4da842b8bc1ed7b1c19fb, type: 3}
       propertyPath: m_Name
       value: SD_Env_Railing_Stone_Pillar_02 (5)
+      objectReference: {fileID: 0}
+    - target: {fileID: 190576, guid: e6969c2c79e4da842b8bc1ed7b1c19fb, type: 3}
+      propertyPath: m_Layer
+      value: 8
+      objectReference: {fileID: 0}
+    - target: {fileID: 190576, guid: e6969c2c79e4da842b8bc1ed7b1c19fb, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 4294967295
       objectReference: {fileID: 0}
     - target: {fileID: 429468, guid: e6969c2c79e4da842b8bc1ed7b1c19fb, type: 3}
       propertyPath: m_LocalPosition.x
@@ -9872,6 +10479,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: SD_Env_Floor_Stone_Broken_05 (30)
       objectReference: {fileID: 0}
+    - target: {fileID: 176172, guid: 835caca5433f2a44b95816ffef0a5187, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 4294967295
+      objectReference: {fileID: 0}
     - target: {fileID: 471116, guid: 835caca5433f2a44b95816ffef0a5187, type: 3}
       propertyPath: m_LocalPosition.x
       value: 33.019997
@@ -9947,6 +10558,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: SD_Env_Floor_Stone_Broken_05 (16)
       objectReference: {fileID: 0}
+    - target: {fileID: 176172, guid: 835caca5433f2a44b95816ffef0a5187, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 4294967295
+      objectReference: {fileID: 0}
     - target: {fileID: 471116, guid: 835caca5433f2a44b95816ffef0a5187, type: 3}
       propertyPath: m_LocalPosition.x
       value: 33.019997
@@ -10021,6 +10636,10 @@ PrefabInstance:
     - target: {fileID: 154696, guid: 09a76891cfd8c9a48b3a6fb9f6676d5e, type: 3}
       propertyPath: m_Name
       value: SD_Env_Floor_Stone_Broken_02 (32)
+      objectReference: {fileID: 0}
+    - target: {fileID: 154696, guid: 09a76891cfd8c9a48b3a6fb9f6676d5e, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 4294967295
       objectReference: {fileID: 0}
     - target: {fileID: 423078, guid: 09a76891cfd8c9a48b3a6fb9f6676d5e, type: 3}
       propertyPath: m_LocalPosition.x
@@ -10166,6 +10785,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: SD_Env_Floor_Stone_ClearEdge_02 (35)
       objectReference: {fileID: 0}
+    - target: {fileID: 154948, guid: 2cf390c5e9363db42b4f2783fbe5991e, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 4294967295
+      objectReference: {fileID: 0}
     - target: {fileID: 401842, guid: 2cf390c5e9363db42b4f2783fbe5991e, type: 3}
       propertyPath: m_LocalPosition.x
       value: 10.780146
@@ -10240,6 +10863,10 @@ PrefabInstance:
     - target: {fileID: 154948, guid: 2cf390c5e9363db42b4f2783fbe5991e, type: 3}
       propertyPath: m_Name
       value: SD_Env_Floor_Stone_ClearEdge_02 (29)
+      objectReference: {fileID: 0}
+    - target: {fileID: 154948, guid: 2cf390c5e9363db42b4f2783fbe5991e, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 4294967295
       objectReference: {fileID: 0}
     - target: {fileID: 401842, guid: 2cf390c5e9363db42b4f2783fbe5991e, type: 3}
       propertyPath: m_LocalPosition.x
@@ -10486,6 +11113,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: SD_Env_Floor_Stone_Broken_05
       objectReference: {fileID: 0}
+    - target: {fileID: 176172, guid: 835caca5433f2a44b95816ffef0a5187, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 4294967295
+      objectReference: {fileID: 0}
     - target: {fileID: 471116, guid: 835caca5433f2a44b95816ffef0a5187, type: 3}
       propertyPath: m_LocalPosition.x
       value: 62.709854
@@ -10560,6 +11191,10 @@ PrefabInstance:
     - target: {fileID: 176172, guid: 835caca5433f2a44b95816ffef0a5187, type: 3}
       propertyPath: m_Name
       value: SD_Env_Floor_Stone_Broken_05 (34)
+      objectReference: {fileID: 0}
+    - target: {fileID: 176172, guid: 835caca5433f2a44b95816ffef0a5187, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 4294967295
       objectReference: {fileID: 0}
     - target: {fileID: 471116, guid: 835caca5433f2a44b95816ffef0a5187, type: 3}
       propertyPath: m_LocalPosition.x
@@ -10636,6 +11271,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: SD_Env_Floor_Stone_ClearEdge_02 (13)
       objectReference: {fileID: 0}
+    - target: {fileID: 154948, guid: 2cf390c5e9363db42b4f2783fbe5991e, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 4294967295
+      objectReference: {fileID: 0}
     - target: {fileID: 401842, guid: 2cf390c5e9363db42b4f2783fbe5991e, type: 3}
       propertyPath: m_LocalPosition.x
       value: -32.77015
@@ -10710,6 +11349,10 @@ PrefabInstance:
     - target: {fileID: 154696, guid: 09a76891cfd8c9a48b3a6fb9f6676d5e, type: 3}
       propertyPath: m_Name
       value: SD_Env_Floor_Stone_Broken_02 (8)
+      objectReference: {fileID: 0}
+    - target: {fileID: 154696, guid: 09a76891cfd8c9a48b3a6fb9f6676d5e, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 4294967295
       objectReference: {fileID: 0}
     - target: {fileID: 423078, guid: 09a76891cfd8c9a48b3a6fb9f6676d5e, type: 3}
       propertyPath: m_LocalPosition.x
@@ -10786,6 +11429,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: SD_Env_Floor_Stone_ClearEdge_02 (51)
       objectReference: {fileID: 0}
+    - target: {fileID: 154948, guid: 2cf390c5e9363db42b4f2783fbe5991e, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 4294967295
+      objectReference: {fileID: 0}
     - target: {fileID: 401842, guid: 2cf390c5e9363db42b4f2783fbe5991e, type: 3}
       propertyPath: m_LocalPosition.x
       value: -3.0802956
@@ -10860,6 +11507,14 @@ PrefabInstance:
     - target: {fileID: 163364, guid: 25e618ad9977daf44a684be7ffc5046b, type: 3}
       propertyPath: m_Name
       value: SD_Env_Wall_01 (2)
+      objectReference: {fileID: 0}
+    - target: {fileID: 163364, guid: 25e618ad9977daf44a684be7ffc5046b, type: 3}
+      propertyPath: m_Layer
+      value: 8
+      objectReference: {fileID: 0}
+    - target: {fileID: 163364, guid: 25e618ad9977daf44a684be7ffc5046b, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 4294967295
       objectReference: {fileID: 0}
     - target: {fileID: 461498, guid: 25e618ad9977daf44a684be7ffc5046b, type: 3}
       propertyPath: m_LocalPosition.x
@@ -10936,6 +11591,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: SD_Env_Floor_Stone_ClearEdge_02 (4)
       objectReference: {fileID: 0}
+    - target: {fileID: 154948, guid: 2cf390c5e9363db42b4f2783fbe5991e, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 4294967295
+      objectReference: {fileID: 0}
     - target: {fileID: 401842, guid: 2cf390c5e9363db42b4f2783fbe5991e, type: 3}
       propertyPath: m_LocalPosition.x
       value: 33.04
@@ -11010,6 +11669,10 @@ PrefabInstance:
     - target: {fileID: 164310, guid: 0e20b0fba37f2f449b462588b4be11a3, type: 3}
       propertyPath: m_Name
       value: SD_Env_Floor_Stone_Broken_03 (20)
+      objectReference: {fileID: 0}
+    - target: {fileID: 164310, guid: 0e20b0fba37f2f449b462588b4be11a3, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 4294967295
       objectReference: {fileID: 0}
     - target: {fileID: 434746, guid: 0e20b0fba37f2f449b462588b4be11a3, type: 3}
       propertyPath: m_LocalPosition.x
@@ -11086,6 +11749,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: SD_Env_Floor_Stone_Broken_03 (30)
       objectReference: {fileID: 0}
+    - target: {fileID: 164310, guid: 0e20b0fba37f2f449b462588b4be11a3, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 4294967295
+      objectReference: {fileID: 0}
     - target: {fileID: 434746, guid: 0e20b0fba37f2f449b462588b4be11a3, type: 3}
       propertyPath: m_LocalPosition.x
       value: 25.61
@@ -11160,6 +11827,14 @@ PrefabInstance:
     - target: {fileID: 163364, guid: 25e618ad9977daf44a684be7ffc5046b, type: 3}
       propertyPath: m_Name
       value: SD_Env_Wall_01 (11)
+      objectReference: {fileID: 0}
+    - target: {fileID: 163364, guid: 25e618ad9977daf44a684be7ffc5046b, type: 3}
+      propertyPath: m_Layer
+      value: 8
+      objectReference: {fileID: 0}
+    - target: {fileID: 163364, guid: 25e618ad9977daf44a684be7ffc5046b, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 4294967295
       objectReference: {fileID: 0}
     - target: {fileID: 461498, guid: 25e618ad9977daf44a684be7ffc5046b, type: 3}
       propertyPath: m_LocalPosition.x
@@ -11236,6 +11911,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: SD_Env_Floor_Stone_Broken_01 (25)
       objectReference: {fileID: 0}
+    - target: {fileID: 136950, guid: abeede308550bf74c8b88218b6b3e39f, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 4294967295
+      objectReference: {fileID: 0}
     - target: {fileID: 483442, guid: abeede308550bf74c8b88218b6b3e39f, type: 3}
       propertyPath: m_LocalPosition.x
       value: 4.2997093
@@ -11310,6 +11989,10 @@ PrefabInstance:
     - target: {fileID: 176172, guid: 835caca5433f2a44b95816ffef0a5187, type: 3}
       propertyPath: m_Name
       value: SD_Env_Floor_Stone_Broken_05 (19)
+      objectReference: {fileID: 0}
+    - target: {fileID: 176172, guid: 835caca5433f2a44b95816ffef0a5187, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 4294967295
       objectReference: {fileID: 0}
     - target: {fileID: 471116, guid: 835caca5433f2a44b95816ffef0a5187, type: 3}
       propertyPath: m_LocalPosition.x
@@ -11386,6 +12069,14 @@ PrefabInstance:
       propertyPath: m_Name
       value: SD_Env_Wall_01 (14)
       objectReference: {fileID: 0}
+    - target: {fileID: 163364, guid: 25e618ad9977daf44a684be7ffc5046b, type: 3}
+      propertyPath: m_Layer
+      value: 8
+      objectReference: {fileID: 0}
+    - target: {fileID: 163364, guid: 25e618ad9977daf44a684be7ffc5046b, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 4294967295
+      objectReference: {fileID: 0}
     - target: {fileID: 461498, guid: 25e618ad9977daf44a684be7ffc5046b, type: 3}
       propertyPath: m_LocalPosition.x
       value: 16.251541
@@ -11460,6 +12151,10 @@ PrefabInstance:
     - target: {fileID: 176172, guid: 835caca5433f2a44b95816ffef0a5187, type: 3}
       propertyPath: m_Name
       value: SD_Env_Floor_Stone_Broken_05 (5)
+      objectReference: {fileID: 0}
+    - target: {fileID: 176172, guid: 835caca5433f2a44b95816ffef0a5187, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 4294967295
       objectReference: {fileID: 0}
     - target: {fileID: 471116, guid: 835caca5433f2a44b95816ffef0a5187, type: 3}
       propertyPath: m_LocalPosition.x
@@ -11536,6 +12231,14 @@ PrefabInstance:
       propertyPath: m_Name
       value: SD_Env_Wall_01 (10)
       objectReference: {fileID: 0}
+    - target: {fileID: 163364, guid: 25e618ad9977daf44a684be7ffc5046b, type: 3}
+      propertyPath: m_Layer
+      value: 8
+      objectReference: {fileID: 0}
+    - target: {fileID: 163364, guid: 25e618ad9977daf44a684be7ffc5046b, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 4294967295
+      objectReference: {fileID: 0}
     - target: {fileID: 461498, guid: 25e618ad9977daf44a684be7ffc5046b, type: 3}
       propertyPath: m_LocalPosition.x
       value: 16.251543
@@ -11610,6 +12313,10 @@ PrefabInstance:
     - target: {fileID: 154948, guid: 2cf390c5e9363db42b4f2783fbe5991e, type: 3}
       propertyPath: m_Name
       value: SD_Env_Floor_Stone_ClearEdge_02 (27)
+      objectReference: {fileID: 0}
+    - target: {fileID: 154948, guid: 2cf390c5e9363db42b4f2783fbe5991e, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 4294967295
       objectReference: {fileID: 0}
     - target: {fileID: 401842, guid: 2cf390c5e9363db42b4f2783fbe5991e, type: 3}
       propertyPath: m_LocalPosition.x
@@ -11686,6 +12393,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: SD_Env_Floor_Stone_Broken_02 (9)
       objectReference: {fileID: 0}
+    - target: {fileID: 154696, guid: 09a76891cfd8c9a48b3a6fb9f6676d5e, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 4294967295
+      objectReference: {fileID: 0}
     - target: {fileID: 423078, guid: 09a76891cfd8c9a48b3a6fb9f6676d5e, type: 3}
       propertyPath: m_LocalPosition.x
       value: 25.589998
@@ -11760,6 +12471,10 @@ PrefabInstance:
     - target: {fileID: 154948, guid: 2cf390c5e9363db42b4f2783fbe5991e, type: 3}
       propertyPath: m_Name
       value: SD_Env_Floor_Stone_ClearEdge_02 (6)
+      objectReference: {fileID: 0}
+    - target: {fileID: 154948, guid: 2cf390c5e9363db42b4f2783fbe5991e, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 4294967295
       objectReference: {fileID: 0}
     - target: {fileID: 401842, guid: 2cf390c5e9363db42b4f2783fbe5991e, type: 3}
       propertyPath: m_LocalPosition.x
@@ -11849,7 +12564,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1242129624}
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: 0.234, y: 0.372, z: 0.17177773}
+  m_LocalPosition: {x: -0.11, y: 0.372, z: 0.74}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 200139831}
@@ -11865,6 +12580,14 @@ PrefabInstance:
     - target: {fileID: 163364, guid: 25e618ad9977daf44a684be7ffc5046b, type: 3}
       propertyPath: m_Name
       value: SD_Env_Wall_01 (16)
+      objectReference: {fileID: 0}
+    - target: {fileID: 163364, guid: 25e618ad9977daf44a684be7ffc5046b, type: 3}
+      propertyPath: m_Layer
+      value: 8
+      objectReference: {fileID: 0}
+    - target: {fileID: 163364, guid: 25e618ad9977daf44a684be7ffc5046b, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 4294967295
       objectReference: {fileID: 0}
     - target: {fileID: 461498, guid: 25e618ad9977daf44a684be7ffc5046b, type: 3}
       propertyPath: m_LocalPosition.x
@@ -11940,6 +12663,10 @@ PrefabInstance:
     - target: {fileID: 154948, guid: 2cf390c5e9363db42b4f2783fbe5991e, type: 3}
       propertyPath: m_Name
       value: SD_Env_Floor_Stone_ClearEdge_02 (12)
+      objectReference: {fileID: 0}
+    - target: {fileID: 154948, guid: 2cf390c5e9363db42b4f2783fbe5991e, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 4294967295
       objectReference: {fileID: 0}
     - target: {fileID: 401842, guid: 2cf390c5e9363db42b4f2783fbe5991e, type: 3}
       propertyPath: m_LocalPosition.x
@@ -12028,6 +12755,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: SD_Env_Floor_Stone_Broken_02
       objectReference: {fileID: 0}
+    - target: {fileID: 154696, guid: 09a76891cfd8c9a48b3a6fb9f6676d5e, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 4294967295
+      objectReference: {fileID: 0}
     - target: {fileID: 423078, guid: 09a76891cfd8c9a48b3a6fb9f6676d5e, type: 3}
       propertyPath: m_LocalPosition.x
       value: 55.279854
@@ -12102,6 +12833,10 @@ PrefabInstance:
     - target: {fileID: 176172, guid: 835caca5433f2a44b95816ffef0a5187, type: 3}
       propertyPath: m_Name
       value: SD_Env_Floor_Stone_Broken_05 (14)
+      objectReference: {fileID: 0}
+    - target: {fileID: 176172, guid: 835caca5433f2a44b95816ffef0a5187, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 4294967295
       objectReference: {fileID: 0}
     - target: {fileID: 471116, guid: 835caca5433f2a44b95816ffef0a5187, type: 3}
       propertyPath: m_LocalPosition.x
@@ -12178,6 +12913,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: SD_Env_Floor_Stone_Broken_02 (20)
       objectReference: {fileID: 0}
+    - target: {fileID: 154696, guid: 09a76891cfd8c9a48b3a6fb9f6676d5e, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 4294967295
+      objectReference: {fileID: 0}
     - target: {fileID: 423078, guid: 09a76891cfd8c9a48b3a6fb9f6676d5e, type: 3}
       propertyPath: m_LocalPosition.x
       value: -32.84015
@@ -12252,6 +12991,10 @@ PrefabInstance:
     - target: {fileID: 164310, guid: 0e20b0fba37f2f449b462588b4be11a3, type: 3}
       propertyPath: m_Name
       value: SD_Env_Floor_Stone_Broken_03 (34)
+      objectReference: {fileID: 0}
+    - target: {fileID: 164310, guid: 0e20b0fba37f2f449b462588b4be11a3, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 4294967295
       objectReference: {fileID: 0}
     - target: {fileID: 434746, guid: 0e20b0fba37f2f449b462588b4be11a3, type: 3}
       propertyPath: m_LocalPosition.x
@@ -12340,6 +13083,14 @@ PrefabInstance:
       propertyPath: m_Name
       value: SD_Env_Wall_01
       objectReference: {fileID: 0}
+    - target: {fileID: 163364, guid: 25e618ad9977daf44a684be7ffc5046b, type: 3}
+      propertyPath: m_Layer
+      value: 8
+      objectReference: {fileID: 0}
+    - target: {fileID: 163364, guid: 25e618ad9977daf44a684be7ffc5046b, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 4294967295
+      objectReference: {fileID: 0}
     - target: {fileID: 461498, guid: 25e618ad9977daf44a684be7ffc5046b, type: 3}
       propertyPath: m_LocalPosition.x
       value: -64.21432
@@ -12415,6 +13166,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: SD_Env_Floor_Stone_Broken_01 (23)
       objectReference: {fileID: 0}
+    - target: {fileID: 136950, guid: abeede308550bf74c8b88218b6b3e39f, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 4294967295
+      objectReference: {fileID: 0}
     - target: {fileID: 483442, guid: abeede308550bf74c8b88218b6b3e39f, type: 3}
       propertyPath: m_LocalPosition.x
       value: 33.04
@@ -12489,6 +13244,10 @@ PrefabInstance:
     - target: {fileID: 176172, guid: 835caca5433f2a44b95816ffef0a5187, type: 3}
       propertyPath: m_Name
       value: SD_Env_Floor_Stone_Broken_05 (28)
+      objectReference: {fileID: 0}
+    - target: {fileID: 176172, guid: 835caca5433f2a44b95816ffef0a5187, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 4294967295
       objectReference: {fileID: 0}
     - target: {fileID: 471116, guid: 835caca5433f2a44b95816ffef0a5187, type: 3}
       propertyPath: m_LocalPosition.x
@@ -12577,6 +13336,14 @@ PrefabInstance:
       propertyPath: m_Name
       value: SD_Env_Wall_01 (15)
       objectReference: {fileID: 0}
+    - target: {fileID: 163364, guid: 25e618ad9977daf44a684be7ffc5046b, type: 3}
+      propertyPath: m_Layer
+      value: 8
+      objectReference: {fileID: 0}
+    - target: {fileID: 163364, guid: 25e618ad9977daf44a684be7ffc5046b, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 4294967295
+      objectReference: {fileID: 0}
     - target: {fileID: 461498, guid: 25e618ad9977daf44a684be7ffc5046b, type: 3}
       propertyPath: m_LocalPosition.x
       value: 16.21154
@@ -12656,7 +13423,7 @@ GameObject:
   - component: {fileID: 1350372967}
   m_Layer: 0
   m_Name: Sphere
-  m_TagString: Untagged
+  m_TagString: Enemy
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -12677,7 +13444,7 @@ MonoBehaviour:
   player: {fileID: 0}
   attackDistance: 10
   followDistance: 20
-  speed: 10
+  speed: 0
   _damage: 0
   _realDamege: 10
 --- !u!135 &1350372968
@@ -12764,6 +13531,14 @@ PrefabInstance:
       propertyPath: m_Name
       value: SD_Env_Wall_01 (9)
       objectReference: {fileID: 0}
+    - target: {fileID: 163364, guid: 25e618ad9977daf44a684be7ffc5046b, type: 3}
+      propertyPath: m_Layer
+      value: 8
+      objectReference: {fileID: 0}
+    - target: {fileID: 163364, guid: 25e618ad9977daf44a684be7ffc5046b, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 4294967295
+      objectReference: {fileID: 0}
     - target: {fileID: 461498, guid: 25e618ad9977daf44a684be7ffc5046b, type: 3}
       propertyPath: m_LocalPosition.x
       value: 16.251541
@@ -12838,6 +13613,14 @@ PrefabInstance:
     - target: {fileID: 163364, guid: 25e618ad9977daf44a684be7ffc5046b, type: 3}
       propertyPath: m_Name
       value: SD_Env_Wall_01 (13)
+      objectReference: {fileID: 0}
+    - target: {fileID: 163364, guid: 25e618ad9977daf44a684be7ffc5046b, type: 3}
+      propertyPath: m_Layer
+      value: 8
+      objectReference: {fileID: 0}
+    - target: {fileID: 163364, guid: 25e618ad9977daf44a684be7ffc5046b, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 4294967295
       objectReference: {fileID: 0}
     - target: {fileID: 461498, guid: 25e618ad9977daf44a684be7ffc5046b, type: 3}
       propertyPath: m_LocalPosition.x
@@ -12914,6 +13697,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: SD_Env_Floor_Stone_Broken_05 (21)
       objectReference: {fileID: 0}
+    - target: {fileID: 176172, guid: 835caca5433f2a44b95816ffef0a5187, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 4294967295
+      objectReference: {fileID: 0}
     - target: {fileID: 471116, guid: 835caca5433f2a44b95816ffef0a5187, type: 3}
       propertyPath: m_LocalPosition.x
       value: 62.709854
@@ -12988,6 +13775,10 @@ PrefabInstance:
     - target: {fileID: 176172, guid: 835caca5433f2a44b95816ffef0a5187, type: 3}
       propertyPath: m_Name
       value: SD_Env_Floor_Stone_Broken_05 (25)
+      objectReference: {fileID: 0}
+    - target: {fileID: 176172, guid: 835caca5433f2a44b95816ffef0a5187, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 4294967295
       objectReference: {fileID: 0}
     - target: {fileID: 471116, guid: 835caca5433f2a44b95816ffef0a5187, type: 3}
       propertyPath: m_LocalPosition.x
@@ -13064,6 +13855,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: SD_Env_Floor_Stone_Broken_05 (9)
       objectReference: {fileID: 0}
+    - target: {fileID: 176172, guid: 835caca5433f2a44b95816ffef0a5187, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 4294967295
+      objectReference: {fileID: 0}
     - target: {fileID: 471116, guid: 835caca5433f2a44b95816ffef0a5187, type: 3}
       propertyPath: m_LocalPosition.x
       value: 33.019997
@@ -13138,6 +13933,10 @@ PrefabInstance:
     - target: {fileID: 154696, guid: 09a76891cfd8c9a48b3a6fb9f6676d5e, type: 3}
       propertyPath: m_Name
       value: SD_Env_Floor_Stone_Broken_02 (34)
+      objectReference: {fileID: 0}
+    - target: {fileID: 154696, guid: 09a76891cfd8c9a48b3a6fb9f6676d5e, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 4294967295
       objectReference: {fileID: 0}
     - target: {fileID: 423078, guid: 09a76891cfd8c9a48b3a6fb9f6676d5e, type: 3}
       propertyPath: m_LocalPosition.x
@@ -13214,6 +14013,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: SD_Env_Floor_Stone_Broken_05 (12)
       objectReference: {fileID: 0}
+    - target: {fileID: 176172, guid: 835caca5433f2a44b95816ffef0a5187, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 4294967295
+      objectReference: {fileID: 0}
     - target: {fileID: 471116, guid: 835caca5433f2a44b95816ffef0a5187, type: 3}
       propertyPath: m_LocalPosition.x
       value: -10.600147
@@ -13289,6 +14092,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: SD_Env_Floor_Stone_Broken_05 (33)
       objectReference: {fileID: 0}
+    - target: {fileID: 176172, guid: 835caca5433f2a44b95816ffef0a5187, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 4294967295
+      objectReference: {fileID: 0}
     - target: {fileID: 471116, guid: 835caca5433f2a44b95816ffef0a5187, type: 3}
       propertyPath: m_LocalPosition.x
       value: -10.600147
@@ -13362,12 +14169,12 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 1400507779}
-  m_Layer: 0
+  m_Layer: 8
   m_Name: GameObject (2)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
+  m_StaticEditorFlags: 4294967295
   m_IsActive: 1
 --- !u!4 &1400507779
 Transform:
@@ -13402,6 +14209,10 @@ PrefabInstance:
     - target: {fileID: 154696, guid: 09a76891cfd8c9a48b3a6fb9f6676d5e, type: 3}
       propertyPath: m_Name
       value: SD_Env_Floor_Stone_Broken_02 (11)
+      objectReference: {fileID: 0}
+    - target: {fileID: 154696, guid: 09a76891cfd8c9a48b3a6fb9f6676d5e, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 4294967295
       objectReference: {fileID: 0}
     - target: {fileID: 423078, guid: 09a76891cfd8c9a48b3a6fb9f6676d5e, type: 3}
       propertyPath: m_LocalPosition.x
@@ -13490,6 +14301,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: SD_Env_Floor_Stone_Broken_02 (25)
       objectReference: {fileID: 0}
+    - target: {fileID: 154696, guid: 09a76891cfd8c9a48b3a6fb9f6676d5e, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 4294967295
+      objectReference: {fileID: 0}
     - target: {fileID: 423078, guid: 09a76891cfd8c9a48b3a6fb9f6676d5e, type: 3}
       propertyPath: m_LocalPosition.x
       value: -3.1502953
@@ -13564,6 +14379,10 @@ PrefabInstance:
     - target: {fileID: 154696, guid: 09a76891cfd8c9a48b3a6fb9f6676d5e, type: 3}
       propertyPath: m_Name
       value: SD_Env_Floor_Stone_Broken_02 (16)
+      objectReference: {fileID: 0}
+    - target: {fileID: 154696, guid: 09a76891cfd8c9a48b3a6fb9f6676d5e, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 4294967295
       objectReference: {fileID: 0}
     - target: {fileID: 423078, guid: 09a76891cfd8c9a48b3a6fb9f6676d5e, type: 3}
       propertyPath: m_LocalPosition.x
@@ -13640,6 +14459,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: SD_Env_Floor_Stone_ClearEdge_02 (15)
       objectReference: {fileID: 0}
+    - target: {fileID: 154948, guid: 2cf390c5e9363db42b4f2783fbe5991e, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 4294967295
+      objectReference: {fileID: 0}
     - target: {fileID: 401842, guid: 2cf390c5e9363db42b4f2783fbe5991e, type: 3}
       propertyPath: m_LocalPosition.x
       value: 55.349854
@@ -13714,6 +14537,10 @@ PrefabInstance:
     - target: {fileID: 164310, guid: 0e20b0fba37f2f449b462588b4be11a3, type: 3}
       propertyPath: m_Name
       value: SD_Env_Floor_Stone_Broken_03 (26)
+      objectReference: {fileID: 0}
+    - target: {fileID: 164310, guid: 0e20b0fba37f2f449b462588b4be11a3, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 4294967295
       objectReference: {fileID: 0}
     - target: {fileID: 434746, guid: 0e20b0fba37f2f449b462588b4be11a3, type: 3}
       propertyPath: m_LocalPosition.x
@@ -13790,6 +14617,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: SD_Env_Floor_Stone_Broken_01 (7)
       objectReference: {fileID: 0}
+    - target: {fileID: 136950, guid: abeede308550bf74c8b88218b6b3e39f, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 4294967295
+      objectReference: {fileID: 0}
     - target: {fileID: 483442, guid: abeede308550bf74c8b88218b6b3e39f, type: 3}
       propertyPath: m_LocalPosition.x
       value: 62.72986
@@ -13864,6 +14695,14 @@ PrefabInstance:
     - target: {fileID: 190988, guid: 8f7ca30ec6adeda40804f6426d61e3f7, type: 3}
       propertyPath: m_Name
       value: SD_Env_Undead_Pillar_01 (2)
+      objectReference: {fileID: 0}
+    - target: {fileID: 190988, guid: 8f7ca30ec6adeda40804f6426d61e3f7, type: 3}
+      propertyPath: m_Layer
+      value: 8
+      objectReference: {fileID: 0}
+    - target: {fileID: 190988, guid: 8f7ca30ec6adeda40804f6426d61e3f7, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 4294967295
       objectReference: {fileID: 0}
     - target: {fileID: 452526, guid: 8f7ca30ec6adeda40804f6426d61e3f7, type: 3}
       propertyPath: m_LocalPosition.x
@@ -13940,6 +14779,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: SD_Env_Floor_Stone_Broken_01
       objectReference: {fileID: 0}
+    - target: {fileID: 136950, guid: abeede308550bf74c8b88218b6b3e39f, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 4294967295
+      objectReference: {fileID: 0}
     - target: {fileID: 483442, guid: abeede308550bf74c8b88218b6b3e39f, type: 3}
       propertyPath: m_LocalPosition.x
       value: 62.72986
@@ -14014,6 +14857,14 @@ PrefabInstance:
     - target: {fileID: 163364, guid: 25e618ad9977daf44a684be7ffc5046b, type: 3}
       propertyPath: m_Name
       value: SD_Env_Wall_01 (6)
+      objectReference: {fileID: 0}
+    - target: {fileID: 163364, guid: 25e618ad9977daf44a684be7ffc5046b, type: 3}
+      propertyPath: m_Layer
+      value: 8
+      objectReference: {fileID: 0}
+    - target: {fileID: 163364, guid: 25e618ad9977daf44a684be7ffc5046b, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 4294967295
       objectReference: {fileID: 0}
     - target: {fileID: 461498, guid: 25e618ad9977daf44a684be7ffc5046b, type: 3}
       propertyPath: m_LocalPosition.x
@@ -14090,6 +14941,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: SD_Env_Floor_Stone_ClearEdge_02 (28)
       objectReference: {fileID: 0}
+    - target: {fileID: 154948, guid: 2cf390c5e9363db42b4f2783fbe5991e, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 4294967295
+      objectReference: {fileID: 0}
     - target: {fileID: 401842, guid: 2cf390c5e9363db42b4f2783fbe5991e, type: 3}
       propertyPath: m_LocalPosition.x
       value: 62.72986
@@ -14164,6 +15019,10 @@ PrefabInstance:
     - target: {fileID: 154696, guid: 09a76891cfd8c9a48b3a6fb9f6676d5e, type: 3}
       propertyPath: m_Name
       value: SD_Env_Floor_Stone_Broken_02 (24)
+      objectReference: {fileID: 0}
+    - target: {fileID: 154696, guid: 09a76891cfd8c9a48b3a6fb9f6676d5e, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 4294967295
       objectReference: {fileID: 0}
     - target: {fileID: 423078, guid: 09a76891cfd8c9a48b3a6fb9f6676d5e, type: 3}
       propertyPath: m_LocalPosition.x
@@ -14240,6 +15099,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: SD_Env_Floor_Stone_ClearEdge_02 (46)
       objectReference: {fileID: 0}
+    - target: {fileID: 154948, guid: 2cf390c5e9363db42b4f2783fbe5991e, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 4294967295
+      objectReference: {fileID: 0}
     - target: {fileID: 401842, guid: 2cf390c5e9363db42b4f2783fbe5991e, type: 3}
       propertyPath: m_LocalPosition.x
       value: 33.04
@@ -14314,6 +15177,10 @@ PrefabInstance:
     - target: {fileID: 164310, guid: 0e20b0fba37f2f449b462588b4be11a3, type: 3}
       propertyPath: m_Name
       value: SD_Env_Floor_Stone_Broken_03 (8)
+      objectReference: {fileID: 0}
+    - target: {fileID: 164310, guid: 0e20b0fba37f2f449b462588b4be11a3, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 4294967295
       objectReference: {fileID: 0}
     - target: {fileID: 434746, guid: 0e20b0fba37f2f449b462588b4be11a3, type: 3}
       propertyPath: m_LocalPosition.x
@@ -14390,6 +15257,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: SD_Env_Floor_Stone_Broken_01 (15)
       objectReference: {fileID: 0}
+    - target: {fileID: 136950, guid: abeede308550bf74c8b88218b6b3e39f, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 4294967295
+      objectReference: {fileID: 0}
     - target: {fileID: 483442, guid: abeede308550bf74c8b88218b6b3e39f, type: 3}
       propertyPath: m_LocalPosition.x
       value: 47.850006
@@ -14464,6 +15335,10 @@ PrefabInstance:
     - target: {fileID: 136950, guid: abeede308550bf74c8b88218b6b3e39f, type: 3}
       propertyPath: m_Name
       value: SD_Env_Floor_Stone_Broken_01 (14)
+      objectReference: {fileID: 0}
+    - target: {fileID: 136950, guid: abeede308550bf74c8b88218b6b3e39f, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 4294967295
       objectReference: {fileID: 0}
     - target: {fileID: 483442, guid: abeede308550bf74c8b88218b6b3e39f, type: 3}
       propertyPath: m_LocalPosition.x
@@ -14540,6 +15415,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: SD_Env_Floor_Stone_Broken_01 (31)
       objectReference: {fileID: 0}
+    - target: {fileID: 136950, guid: abeede308550bf74c8b88218b6b3e39f, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 4294967295
+      objectReference: {fileID: 0}
     - target: {fileID: 483442, guid: abeede308550bf74c8b88218b6b3e39f, type: 3}
       propertyPath: m_LocalPosition.x
       value: 18.16015
@@ -14614,6 +15493,10 @@ PrefabInstance:
     - target: {fileID: 154948, guid: 2cf390c5e9363db42b4f2783fbe5991e, type: 3}
       propertyPath: m_Name
       value: SD_Env_Floor_Stone_ClearEdge_02 (19)
+      objectReference: {fileID: 0}
+    - target: {fileID: 154948, guid: 2cf390c5e9363db42b4f2783fbe5991e, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 4294967295
       objectReference: {fileID: 0}
     - target: {fileID: 401842, guid: 2cf390c5e9363db42b4f2783fbe5991e, type: 3}
       propertyPath: m_LocalPosition.x
@@ -14690,6 +15573,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: SD_Env_Floor_Stone_ClearEdge_02 (16)
       objectReference: {fileID: 0}
+    - target: {fileID: 154948, guid: 2cf390c5e9363db42b4f2783fbe5991e, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 4294967295
+      objectReference: {fileID: 0}
     - target: {fileID: 401842, guid: 2cf390c5e9363db42b4f2783fbe5991e, type: 3}
       propertyPath: m_LocalPosition.x
       value: 47.850006
@@ -14764,6 +15651,10 @@ PrefabInstance:
     - target: {fileID: 154948, guid: 2cf390c5e9363db42b4f2783fbe5991e, type: 3}
       propertyPath: m_Name
       value: SD_Env_Floor_Stone_ClearEdge_02 (25)
+      objectReference: {fileID: 0}
+    - target: {fileID: 154948, guid: 2cf390c5e9363db42b4f2783fbe5991e, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 4294967295
       objectReference: {fileID: 0}
     - target: {fileID: 401842, guid: 2cf390c5e9363db42b4f2783fbe5991e, type: 3}
       propertyPath: m_LocalPosition.x
@@ -14840,6 +15731,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: SD_Env_Floor_Stone_Broken_05 (10)
       objectReference: {fileID: 0}
+    - target: {fileID: 176172, guid: 835caca5433f2a44b95816ffef0a5187, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 4294967295
+      objectReference: {fileID: 0}
     - target: {fileID: 471116, guid: 835caca5433f2a44b95816ffef0a5187, type: 3}
       propertyPath: m_LocalPosition.x
       value: 18.140146
@@ -14914,6 +15809,10 @@ PrefabInstance:
     - target: {fileID: 176172, guid: 835caca5433f2a44b95816ffef0a5187, type: 3}
       propertyPath: m_Name
       value: SD_Env_Floor_Stone_Broken_05 (23)
+      objectReference: {fileID: 0}
+    - target: {fileID: 176172, guid: 835caca5433f2a44b95816ffef0a5187, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 4294967295
       objectReference: {fileID: 0}
     - target: {fileID: 471116, guid: 835caca5433f2a44b95816ffef0a5187, type: 3}
       propertyPath: m_LocalPosition.x
@@ -14990,6 +15889,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: SD_Env_Floor_Stone_Broken_05 (15)
       objectReference: {fileID: 0}
+    - target: {fileID: 176172, guid: 835caca5433f2a44b95816ffef0a5187, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 4294967295
+      objectReference: {fileID: 0}
     - target: {fileID: 471116, guid: 835caca5433f2a44b95816ffef0a5187, type: 3}
       propertyPath: m_LocalPosition.x
       value: 47.83
@@ -15064,6 +15967,10 @@ PrefabInstance:
     - target: {fileID: 154948, guid: 2cf390c5e9363db42b4f2783fbe5991e, type: 3}
       propertyPath: m_Name
       value: SD_Env_Floor_Stone_ClearEdge_02 (32)
+      objectReference: {fileID: 0}
+    - target: {fileID: 154948, guid: 2cf390c5e9363db42b4f2783fbe5991e, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 4294967295
       objectReference: {fileID: 0}
     - target: {fileID: 401842, guid: 2cf390c5e9363db42b4f2783fbe5991e, type: 3}
       propertyPath: m_LocalPosition.x
@@ -15140,6 +16047,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: SD_Env_Floor_Stone_ClearEdge_02 (17)
       objectReference: {fileID: 0}
+    - target: {fileID: 154948, guid: 2cf390c5e9363db42b4f2783fbe5991e, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 4294967295
+      objectReference: {fileID: 0}
     - target: {fileID: 401842, guid: 2cf390c5e9363db42b4f2783fbe5991e, type: 3}
       propertyPath: m_LocalPosition.x
       value: 40.47
@@ -15214,6 +16125,10 @@ PrefabInstance:
     - target: {fileID: 164310, guid: 0e20b0fba37f2f449b462588b4be11a3, type: 3}
       propertyPath: m_Name
       value: SD_Env_Floor_Stone_Broken_03 (27)
+      objectReference: {fileID: 0}
+    - target: {fileID: 164310, guid: 0e20b0fba37f2f449b462588b4be11a3, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 4294967295
       objectReference: {fileID: 0}
     - target: {fileID: 434746, guid: 0e20b0fba37f2f449b462588b4be11a3, type: 3}
       propertyPath: m_LocalPosition.x
@@ -15290,6 +16205,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: SD_Env_Floor_Stone_ClearEdge_02
       objectReference: {fileID: 0}
+    - target: {fileID: 154948, guid: 2cf390c5e9363db42b4f2783fbe5991e, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 4294967295
+      objectReference: {fileID: 0}
     - target: {fileID: 401842, guid: 2cf390c5e9363db42b4f2783fbe5991e, type: 3}
       propertyPath: m_LocalPosition.x
       value: 62.72986
@@ -15364,6 +16283,10 @@ PrefabInstance:
     - target: {fileID: 136950, guid: abeede308550bf74c8b88218b6b3e39f, type: 3}
       propertyPath: m_Name
       value: SD_Env_Floor_Stone_Broken_01 (13)
+      objectReference: {fileID: 0}
+    - target: {fileID: 136950, guid: abeede308550bf74c8b88218b6b3e39f, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 4294967295
       objectReference: {fileID: 0}
     - target: {fileID: 483442, guid: abeede308550bf74c8b88218b6b3e39f, type: 3}
       propertyPath: m_LocalPosition.x
@@ -15506,6 +16429,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: SD_Env_Floor_Stone_Broken_05 (7)
       objectReference: {fileID: 0}
+    - target: {fileID: 176172, guid: 835caca5433f2a44b95816ffef0a5187, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 4294967295
+      objectReference: {fileID: 0}
     - target: {fileID: 471116, guid: 835caca5433f2a44b95816ffef0a5187, type: 3}
       propertyPath: m_LocalPosition.x
       value: 62.709854
@@ -15580,6 +16507,10 @@ PrefabInstance:
     - target: {fileID: 164310, guid: 0e20b0fba37f2f449b462588b4be11a3, type: 3}
       propertyPath: m_Name
       value: SD_Env_Floor_Stone_Broken_03 (31)
+      objectReference: {fileID: 0}
+    - target: {fileID: 164310, guid: 0e20b0fba37f2f449b462588b4be11a3, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 4294967295
       objectReference: {fileID: 0}
     - target: {fileID: 434746, guid: 0e20b0fba37f2f449b462588b4be11a3, type: 3}
       propertyPath: m_LocalPosition.x
@@ -15656,6 +16587,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: SD_Env_Floor_Stone_Broken_03 (28)
       objectReference: {fileID: 0}
+    - target: {fileID: 164310, guid: 0e20b0fba37f2f449b462588b4be11a3, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 4294967295
+      objectReference: {fileID: 0}
     - target: {fileID: 434746, guid: 0e20b0fba37f2f449b462588b4be11a3, type: 3}
       propertyPath: m_LocalPosition.x
       value: 55.29986
@@ -15730,6 +16665,10 @@ PrefabInstance:
     - target: {fileID: 136950, guid: abeede308550bf74c8b88218b6b3e39f, type: 3}
       propertyPath: m_Name
       value: SD_Env_Floor_Stone_Broken_01 (21)
+      objectReference: {fileID: 0}
+    - target: {fileID: 136950, guid: abeede308550bf74c8b88218b6b3e39f, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 4294967295
       objectReference: {fileID: 0}
     - target: {fileID: 483442, guid: abeede308550bf74c8b88218b6b3e39f, type: 3}
       propertyPath: m_LocalPosition.x
@@ -15806,6 +16745,14 @@ PrefabInstance:
       propertyPath: m_Name
       value: SD_Env_Undead_Pillar_01 (6)
       objectReference: {fileID: 0}
+    - target: {fileID: 190988, guid: 8f7ca30ec6adeda40804f6426d61e3f7, type: 3}
+      propertyPath: m_Layer
+      value: 8
+      objectReference: {fileID: 0}
+    - target: {fileID: 190988, guid: 8f7ca30ec6adeda40804f6426d61e3f7, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 4294967295
+      objectReference: {fileID: 0}
     - target: {fileID: 452526, guid: 8f7ca30ec6adeda40804f6426d61e3f7, type: 3}
       propertyPath: m_LocalPosition.x
       value: -50.247036
@@ -15879,12 +16826,12 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 1666129517}
-  m_Layer: 0
+  m_Layer: 8
   m_Name: Terreno
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
+  m_StaticEditorFlags: 4294967295
   m_IsActive: 1
 --- !u!4 &1666129517
 Transform:
@@ -16107,6 +17054,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: SD_Env_Floor_Stone_Broken_02 (15)
       objectReference: {fileID: 0}
+    - target: {fileID: 154696, guid: 09a76891cfd8c9a48b3a6fb9f6676d5e, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 4294967295
+      objectReference: {fileID: 0}
     - target: {fileID: 423078, guid: 09a76891cfd8c9a48b3a6fb9f6676d5e, type: 3}
       propertyPath: m_LocalPosition.x
       value: 40.4
@@ -16181,6 +17132,10 @@ PrefabInstance:
     - target: {fileID: 154948, guid: 2cf390c5e9363db42b4f2783fbe5991e, type: 3}
       propertyPath: m_Name
       value: SD_Env_Floor_Stone_ClearEdge_02 (21)
+      objectReference: {fileID: 0}
+    - target: {fileID: 154948, guid: 2cf390c5e9363db42b4f2783fbe5991e, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 4294967295
       objectReference: {fileID: 0}
     - target: {fileID: 401842, guid: 2cf390c5e9363db42b4f2783fbe5991e, type: 3}
       propertyPath: m_LocalPosition.x
@@ -16257,6 +17212,14 @@ PrefabInstance:
       propertyPath: m_Name
       value: SD_Env_Wall_01 (17)
       objectReference: {fileID: 0}
+    - target: {fileID: 163364, guid: 25e618ad9977daf44a684be7ffc5046b, type: 3}
+      propertyPath: m_Layer
+      value: 8
+      objectReference: {fileID: 0}
+    - target: {fileID: 163364, guid: 25e618ad9977daf44a684be7ffc5046b, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 4294967295
+      objectReference: {fileID: 0}
     - target: {fileID: 461498, guid: 25e618ad9977daf44a684be7ffc5046b, type: 3}
       propertyPath: m_LocalPosition.x
       value: 16.21154
@@ -16331,6 +17294,14 @@ PrefabInstance:
     - target: {fileID: 163364, guid: 25e618ad9977daf44a684be7ffc5046b, type: 3}
       propertyPath: m_Name
       value: SD_Env_Wall_01 (7)
+      objectReference: {fileID: 0}
+    - target: {fileID: 163364, guid: 25e618ad9977daf44a684be7ffc5046b, type: 3}
+      propertyPath: m_Layer
+      value: 8
+      objectReference: {fileID: 0}
+    - target: {fileID: 163364, guid: 25e618ad9977daf44a684be7ffc5046b, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 4294967295
       objectReference: {fileID: 0}
     - target: {fileID: 461498, guid: 25e618ad9977daf44a684be7ffc5046b, type: 3}
       propertyPath: m_LocalPosition.x
@@ -16407,6 +17378,14 @@ PrefabInstance:
       propertyPath: m_Name
       value: SD_Env_Wall_01 (12)
       objectReference: {fileID: 0}
+    - target: {fileID: 163364, guid: 25e618ad9977daf44a684be7ffc5046b, type: 3}
+      propertyPath: m_Layer
+      value: 8
+      objectReference: {fileID: 0}
+    - target: {fileID: 163364, guid: 25e618ad9977daf44a684be7ffc5046b, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 4294967295
+      objectReference: {fileID: 0}
     - target: {fileID: 461498, guid: 25e618ad9977daf44a684be7ffc5046b, type: 3}
       propertyPath: m_LocalPosition.x
       value: 16.21154
@@ -16481,6 +17460,10 @@ PrefabInstance:
     - target: {fileID: 154948, guid: 2cf390c5e9363db42b4f2783fbe5991e, type: 3}
       propertyPath: m_Name
       value: SD_Env_Floor_Stone_ClearEdge_02 (24)
+      objectReference: {fileID: 0}
+    - target: {fileID: 154948, guid: 2cf390c5e9363db42b4f2783fbe5991e, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 4294967295
       objectReference: {fileID: 0}
     - target: {fileID: 401842, guid: 2cf390c5e9363db42b4f2783fbe5991e, type: 3}
       propertyPath: m_LocalPosition.x
@@ -16557,6 +17540,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: SD_Env_Floor_Stone_Broken_05 (29)
       objectReference: {fileID: 0}
+    - target: {fileID: 176172, guid: 835caca5433f2a44b95816ffef0a5187, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 4294967295
+      objectReference: {fileID: 0}
     - target: {fileID: 471116, guid: 835caca5433f2a44b95816ffef0a5187, type: 3}
       propertyPath: m_LocalPosition.x
       value: 47.83
@@ -16631,6 +17618,10 @@ PrefabInstance:
     - target: {fileID: 154696, guid: 09a76891cfd8c9a48b3a6fb9f6676d5e, type: 3}
       propertyPath: m_Name
       value: SD_Env_Floor_Stone_Broken_02 (6)
+      objectReference: {fileID: 0}
+    - target: {fileID: 154696, guid: 09a76891cfd8c9a48b3a6fb9f6676d5e, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 4294967295
       objectReference: {fileID: 0}
     - target: {fileID: 423078, guid: 09a76891cfd8c9a48b3a6fb9f6676d5e, type: 3}
       propertyPath: m_LocalPosition.x
@@ -16707,6 +17698,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: SD_Env_Floor_Stone_ClearEdge_02 (47)
       objectReference: {fileID: 0}
+    - target: {fileID: 154948, guid: 2cf390c5e9363db42b4f2783fbe5991e, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 4294967295
+      objectReference: {fileID: 0}
     - target: {fileID: 401842, guid: 2cf390c5e9363db42b4f2783fbe5991e, type: 3}
       propertyPath: m_LocalPosition.x
       value: 25.659998
@@ -16781,6 +17776,10 @@ PrefabInstance:
     - target: {fileID: 154948, guid: 2cf390c5e9363db42b4f2783fbe5991e, type: 3}
       propertyPath: m_Name
       value: SD_Env_Floor_Stone_ClearEdge_02 (8)
+      objectReference: {fileID: 0}
+    - target: {fileID: 154948, guid: 2cf390c5e9363db42b4f2783fbe5991e, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 4294967295
       objectReference: {fileID: 0}
     - target: {fileID: 401842, guid: 2cf390c5e9363db42b4f2783fbe5991e, type: 3}
       propertyPath: m_LocalPosition.x
@@ -16857,6 +17856,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: SD_Env_Floor_Stone_Broken_05 (32)
       objectReference: {fileID: 0}
+    - target: {fileID: 176172, guid: 835caca5433f2a44b95816ffef0a5187, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 4294967295
+      objectReference: {fileID: 0}
     - target: {fileID: 471116, guid: 835caca5433f2a44b95816ffef0a5187, type: 3}
       propertyPath: m_LocalPosition.x
       value: 4.279705
@@ -16931,6 +17934,10 @@ PrefabInstance:
     - target: {fileID: 164310, guid: 0e20b0fba37f2f449b462588b4be11a3, type: 3}
       propertyPath: m_Name
       value: SD_Env_Floor_Stone_Broken_03
+      objectReference: {fileID: 0}
+    - target: {fileID: 164310, guid: 0e20b0fba37f2f449b462588b4be11a3, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 4294967295
       objectReference: {fileID: 0}
     - target: {fileID: 434746, guid: 0e20b0fba37f2f449b462588b4be11a3, type: 3}
       propertyPath: m_LocalPosition.x
@@ -17007,6 +18014,14 @@ PrefabInstance:
       propertyPath: m_Name
       value: SD_Env_Wall_01 (9)
       objectReference: {fileID: 0}
+    - target: {fileID: 163364, guid: 25e618ad9977daf44a684be7ffc5046b, type: 3}
+      propertyPath: m_Layer
+      value: 8
+      objectReference: {fileID: 0}
+    - target: {fileID: 163364, guid: 25e618ad9977daf44a684be7ffc5046b, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 4294967295
+      objectReference: {fileID: 0}
     - target: {fileID: 461498, guid: 25e618ad9977daf44a684be7ffc5046b, type: 3}
       propertyPath: m_LocalPosition.x
       value: 16.251541
@@ -17081,6 +18096,10 @@ PrefabInstance:
     - target: {fileID: 164310, guid: 0e20b0fba37f2f449b462588b4be11a3, type: 3}
       propertyPath: m_Name
       value: SD_Env_Floor_Stone_Broken_03 (17)
+      objectReference: {fileID: 0}
+    - target: {fileID: 164310, guid: 0e20b0fba37f2f449b462588b4be11a3, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 4294967295
       objectReference: {fileID: 0}
     - target: {fileID: 434746, guid: 0e20b0fba37f2f449b462588b4be11a3, type: 3}
       propertyPath: m_LocalPosition.x
@@ -17157,6 +18176,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: SD_Env_Floor_Stone_Broken_03 (5)
       objectReference: {fileID: 0}
+    - target: {fileID: 164310, guid: 0e20b0fba37f2f449b462588b4be11a3, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 4294967295
+      objectReference: {fileID: 0}
     - target: {fileID: 434746, guid: 0e20b0fba37f2f449b462588b4be11a3, type: 3}
       propertyPath: m_LocalPosition.x
       value: -18.010143
@@ -17231,6 +18254,10 @@ PrefabInstance:
     - target: {fileID: 154948, guid: 2cf390c5e9363db42b4f2783fbe5991e, type: 3}
       propertyPath: m_Name
       value: SD_Env_Floor_Stone_ClearEdge_02 (55)
+      objectReference: {fileID: 0}
+    - target: {fileID: 154948, guid: 2cf390c5e9363db42b4f2783fbe5991e, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 4294967295
       objectReference: {fileID: 0}
     - target: {fileID: 401842, guid: 2cf390c5e9363db42b4f2783fbe5991e, type: 3}
       propertyPath: m_LocalPosition.x
@@ -17307,6 +18334,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: SD_Env_Floor_Stone_Broken_05 (26)
       objectReference: {fileID: 0}
+    - target: {fileID: 176172, guid: 835caca5433f2a44b95816ffef0a5187, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 4294967295
+      objectReference: {fileID: 0}
     - target: {fileID: 471116, guid: 835caca5433f2a44b95816ffef0a5187, type: 3}
       propertyPath: m_LocalPosition.x
       value: -10.600147
@@ -17380,12 +18411,12 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 1799318769}
-  m_Layer: 0
+  m_Layer: 8
   m_Name: GameObject (1)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
+  m_StaticEditorFlags: 4294967295
   m_IsActive: 1
 --- !u!4 &1799318769
 Transform:
@@ -17420,6 +18451,10 @@ PrefabInstance:
     - target: {fileID: 136950, guid: abeede308550bf74c8b88218b6b3e39f, type: 3}
       propertyPath: m_Name
       value: SD_Env_Floor_Stone_Broken_01 (6)
+      objectReference: {fileID: 0}
+    - target: {fileID: 136950, guid: abeede308550bf74c8b88218b6b3e39f, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 4294967295
       objectReference: {fileID: 0}
     - target: {fileID: 483442, guid: abeede308550bf74c8b88218b6b3e39f, type: 3}
       propertyPath: m_LocalPosition.x
@@ -17496,6 +18531,14 @@ PrefabInstance:
       propertyPath: m_Name
       value: SD_Env_Railing_Stone_Pillar_02 (7)
       objectReference: {fileID: 0}
+    - target: {fileID: 190576, guid: e6969c2c79e4da842b8bc1ed7b1c19fb, type: 3}
+      propertyPath: m_Layer
+      value: 8
+      objectReference: {fileID: 0}
+    - target: {fileID: 190576, guid: e6969c2c79e4da842b8bc1ed7b1c19fb, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 4294967295
+      objectReference: {fileID: 0}
     - target: {fileID: 429468, guid: e6969c2c79e4da842b8bc1ed7b1c19fb, type: 3}
       propertyPath: m_LocalPosition.x
       value: -48.947037
@@ -17571,6 +18614,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: SD_Env_Floor_Stone_Broken_01 (19)
       objectReference: {fileID: 0}
+    - target: {fileID: 136950, guid: abeede308550bf74c8b88218b6b3e39f, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 4294967295
+      objectReference: {fileID: 0}
     - target: {fileID: 483442, guid: abeede308550bf74c8b88218b6b3e39f, type: 3}
       propertyPath: m_LocalPosition.x
       value: -10.580143
@@ -17645,6 +18692,10 @@ PrefabInstance:
     - target: {fileID: 154696, guid: 09a76891cfd8c9a48b3a6fb9f6676d5e, type: 3}
       propertyPath: m_Name
       value: SD_Env_Floor_Stone_Broken_02 (12)
+      objectReference: {fileID: 0}
+    - target: {fileID: 154696, guid: 09a76891cfd8c9a48b3a6fb9f6676d5e, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 4294967295
       objectReference: {fileID: 0}
     - target: {fileID: 423078, guid: 09a76891cfd8c9a48b3a6fb9f6676d5e, type: 3}
       propertyPath: m_LocalPosition.x
@@ -18090,6 +19141,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: SD_Env_Floor_Stone_Broken_03 (21)
       objectReference: {fileID: 0}
+    - target: {fileID: 164310, guid: 0e20b0fba37f2f449b462588b4be11a3, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 4294967295
+      objectReference: {fileID: 0}
     - target: {fileID: 434746, guid: 0e20b0fba37f2f449b462588b4be11a3, type: 3}
       propertyPath: m_LocalPosition.x
       value: 55.29986
@@ -18164,6 +19219,14 @@ PrefabInstance:
     - target: {fileID: 163364, guid: 25e618ad9977daf44a684be7ffc5046b, type: 3}
       propertyPath: m_Name
       value: SD_Env_Wall_01 (8)
+      objectReference: {fileID: 0}
+    - target: {fileID: 163364, guid: 25e618ad9977daf44a684be7ffc5046b, type: 3}
+      propertyPath: m_Layer
+      value: 8
+      objectReference: {fileID: 0}
+    - target: {fileID: 163364, guid: 25e618ad9977daf44a684be7ffc5046b, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 4294967295
       objectReference: {fileID: 0}
     - target: {fileID: 461498, guid: 25e618ad9977daf44a684be7ffc5046b, type: 3}
       propertyPath: m_LocalPosition.x
@@ -18240,6 +19303,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: SD_Env_Floor_Stone_Broken_05 (17)
       objectReference: {fileID: 0}
+    - target: {fileID: 176172, guid: 835caca5433f2a44b95816ffef0a5187, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 4294967295
+      objectReference: {fileID: 0}
     - target: {fileID: 471116, guid: 835caca5433f2a44b95816ffef0a5187, type: 3}
       propertyPath: m_LocalPosition.x
       value: 18.140146
@@ -18314,6 +19381,10 @@ PrefabInstance:
     - target: {fileID: 154696, guid: 09a76891cfd8c9a48b3a6fb9f6676d5e, type: 3}
       propertyPath: m_Name
       value: SD_Env_Floor_Stone_Broken_02 (5)
+      objectReference: {fileID: 0}
+    - target: {fileID: 154696, guid: 09a76891cfd8c9a48b3a6fb9f6676d5e, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 4294967295
       objectReference: {fileID: 0}
     - target: {fileID: 423078, guid: 09a76891cfd8c9a48b3a6fb9f6676d5e, type: 3}
       propertyPath: m_LocalPosition.x
@@ -18390,6 +19461,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: SD_Env_Floor_Stone_ClearEdge_02 (31)
       objectReference: {fileID: 0}
+    - target: {fileID: 154948, guid: 2cf390c5e9363db42b4f2783fbe5991e, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 4294967295
+      objectReference: {fileID: 0}
     - target: {fileID: 401842, guid: 2cf390c5e9363db42b4f2783fbe5991e, type: 3}
       propertyPath: m_LocalPosition.x
       value: 40.47
@@ -18464,6 +19539,10 @@ PrefabInstance:
     - target: {fileID: 136950, guid: abeede308550bf74c8b88218b6b3e39f, type: 3}
       propertyPath: m_Name
       value: SD_Env_Floor_Stone_Broken_01 (33)
+      objectReference: {fileID: 0}
+    - target: {fileID: 136950, guid: abeede308550bf74c8b88218b6b3e39f, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 4294967295
       objectReference: {fileID: 0}
     - target: {fileID: 483442, guid: abeede308550bf74c8b88218b6b3e39f, type: 3}
       propertyPath: m_LocalPosition.x
@@ -18540,6 +19619,14 @@ PrefabInstance:
       propertyPath: m_Name
       value: SD_Env_Wall_01 (15)
       objectReference: {fileID: 0}
+    - target: {fileID: 163364, guid: 25e618ad9977daf44a684be7ffc5046b, type: 3}
+      propertyPath: m_Layer
+      value: 8
+      objectReference: {fileID: 0}
+    - target: {fileID: 163364, guid: 25e618ad9977daf44a684be7ffc5046b, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 4294967295
+      objectReference: {fileID: 0}
     - target: {fileID: 461498, guid: 25e618ad9977daf44a684be7ffc5046b, type: 3}
       propertyPath: m_LocalPosition.x
       value: 16.21154
@@ -18615,6 +19702,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: SD_Env_Floor_Stone_ClearEdge_02 (43)
       objectReference: {fileID: 0}
+    - target: {fileID: 154948, guid: 2cf390c5e9363db42b4f2783fbe5991e, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 4294967295
+      objectReference: {fileID: 0}
     - target: {fileID: 401842, guid: 2cf390c5e9363db42b4f2783fbe5991e, type: 3}
       propertyPath: m_LocalPosition.x
       value: 55.349854
@@ -18689,6 +19780,10 @@ PrefabInstance:
     - target: {fileID: 136950, guid: abeede308550bf74c8b88218b6b3e39f, type: 3}
       propertyPath: m_Name
       value: SD_Env_Floor_Stone_Broken_01 (3)
+      objectReference: {fileID: 0}
+    - target: {fileID: 136950, guid: abeede308550bf74c8b88218b6b3e39f, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 4294967295
       objectReference: {fileID: 0}
     - target: {fileID: 483442, guid: abeede308550bf74c8b88218b6b3e39f, type: 3}
       propertyPath: m_LocalPosition.x
@@ -18770,6 +19865,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: SD_Env_Floor_Stone_Broken_05 (24)
       objectReference: {fileID: 0}
+    - target: {fileID: 176172, guid: 835caca5433f2a44b95816ffef0a5187, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 4294967295
+      objectReference: {fileID: 0}
     - target: {fileID: 471116, guid: 835caca5433f2a44b95816ffef0a5187, type: 3}
       propertyPath: m_LocalPosition.x
       value: 18.140146
@@ -18844,6 +19943,10 @@ PrefabInstance:
     - target: {fileID: 176172, guid: 835caca5433f2a44b95816ffef0a5187, type: 3}
       propertyPath: m_Name
       value: SD_Env_Floor_Stone_Broken_05 (2)
+      objectReference: {fileID: 0}
+    - target: {fileID: 176172, guid: 835caca5433f2a44b95816ffef0a5187, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 4294967295
       objectReference: {fileID: 0}
     - target: {fileID: 471116, guid: 835caca5433f2a44b95816ffef0a5187, type: 3}
       propertyPath: m_LocalPosition.x
@@ -18920,6 +20023,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: SD_Env_Floor_Stone_ClearEdge_02 (11)
       objectReference: {fileID: 0}
+    - target: {fileID: 154948, guid: 2cf390c5e9363db42b4f2783fbe5991e, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 4294967295
+      objectReference: {fileID: 0}
     - target: {fileID: 401842, guid: 2cf390c5e9363db42b4f2783fbe5991e, type: 3}
       propertyPath: m_LocalPosition.x
       value: -17.960148
@@ -18994,6 +20101,10 @@ PrefabInstance:
     - target: {fileID: 154696, guid: 09a76891cfd8c9a48b3a6fb9f6676d5e, type: 3}
       propertyPath: m_Name
       value: SD_Env_Floor_Stone_Broken_02 (26)
+      objectReference: {fileID: 0}
+    - target: {fileID: 154696, guid: 09a76891cfd8c9a48b3a6fb9f6676d5e, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 4294967295
       objectReference: {fileID: 0}
     - target: {fileID: 423078, guid: 09a76891cfd8c9a48b3a6fb9f6676d5e, type: 3}
       propertyPath: m_LocalPosition.x
@@ -19070,6 +20181,14 @@ PrefabInstance:
       propertyPath: m_Name
       value: SD_Env_Wall_01 (14)
       objectReference: {fileID: 0}
+    - target: {fileID: 163364, guid: 25e618ad9977daf44a684be7ffc5046b, type: 3}
+      propertyPath: m_Layer
+      value: 8
+      objectReference: {fileID: 0}
+    - target: {fileID: 163364, guid: 25e618ad9977daf44a684be7ffc5046b, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 4294967295
+      objectReference: {fileID: 0}
     - target: {fileID: 461498, guid: 25e618ad9977daf44a684be7ffc5046b, type: 3}
       propertyPath: m_LocalPosition.x
       value: 16.251541
@@ -19144,6 +20263,10 @@ PrefabInstance:
     - target: {fileID: 154948, guid: 2cf390c5e9363db42b4f2783fbe5991e, type: 3}
       propertyPath: m_Name
       value: SD_Env_Floor_Stone_ClearEdge_02 (37)
+      objectReference: {fileID: 0}
+    - target: {fileID: 154948, guid: 2cf390c5e9363db42b4f2783fbe5991e, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 4294967295
       objectReference: {fileID: 0}
     - target: {fileID: 401842, guid: 2cf390c5e9363db42b4f2783fbe5991e, type: 3}
       propertyPath: m_LocalPosition.x
@@ -19220,6 +20343,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: SD_Env_Floor_Stone_Broken_05 (20)
       objectReference: {fileID: 0}
+    - target: {fileID: 176172, guid: 835caca5433f2a44b95816ffef0a5187, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 4294967295
+      objectReference: {fileID: 0}
     - target: {fileID: 471116, guid: 835caca5433f2a44b95816ffef0a5187, type: 3}
       propertyPath: m_LocalPosition.x
       value: -25.410152
@@ -19294,6 +20421,10 @@ PrefabInstance:
     - target: {fileID: 136950, guid: abeede308550bf74c8b88218b6b3e39f, type: 3}
       propertyPath: m_Name
       value: SD_Env_Floor_Stone_Broken_01 (18)
+      objectReference: {fileID: 0}
+    - target: {fileID: 136950, guid: abeede308550bf74c8b88218b6b3e39f, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 4294967295
       objectReference: {fileID: 0}
     - target: {fileID: 483442, guid: abeede308550bf74c8b88218b6b3e39f, type: 3}
       propertyPath: m_LocalPosition.x
@@ -19370,6 +20501,14 @@ PrefabInstance:
       propertyPath: m_Name
       value: SD_Env_Wall_01 (17)
       objectReference: {fileID: 0}
+    - target: {fileID: 163364, guid: 25e618ad9977daf44a684be7ffc5046b, type: 3}
+      propertyPath: m_Layer
+      value: 8
+      objectReference: {fileID: 0}
+    - target: {fileID: 163364, guid: 25e618ad9977daf44a684be7ffc5046b, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 4294967295
+      objectReference: {fileID: 0}
     - target: {fileID: 461498, guid: 25e618ad9977daf44a684be7ffc5046b, type: 3}
       propertyPath: m_LocalPosition.x
       value: 16.21154
@@ -19444,6 +20583,10 @@ PrefabInstance:
     - target: {fileID: 154696, guid: 09a76891cfd8c9a48b3a6fb9f6676d5e, type: 3}
       propertyPath: m_Name
       value: SD_Env_Floor_Stone_Broken_02 (19)
+      objectReference: {fileID: 0}
+    - target: {fileID: 154696, guid: 09a76891cfd8c9a48b3a6fb9f6676d5e, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 4294967295
       objectReference: {fileID: 0}
     - target: {fileID: 423078, guid: 09a76891cfd8c9a48b3a6fb9f6676d5e, type: 3}
       propertyPath: m_LocalPosition.x
@@ -19520,6 +20663,14 @@ PrefabInstance:
       propertyPath: m_Name
       value: SD_Env_Railing_Stone_Pillar_02 (8)
       objectReference: {fileID: 0}
+    - target: {fileID: 190576, guid: e6969c2c79e4da842b8bc1ed7b1c19fb, type: 3}
+      propertyPath: m_Layer
+      value: 8
+      objectReference: {fileID: 0}
+    - target: {fileID: 190576, guid: e6969c2c79e4da842b8bc1ed7b1c19fb, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 4294967295
+      objectReference: {fileID: 0}
     - target: {fileID: 429468, guid: e6969c2c79e4da842b8bc1ed7b1c19fb, type: 3}
       propertyPath: m_LocalPosition.x
       value: -48.947037
@@ -19594,6 +20745,10 @@ PrefabInstance:
     - target: {fileID: 164310, guid: 0e20b0fba37f2f449b462588b4be11a3, type: 3}
       propertyPath: m_Name
       value: SD_Env_Floor_Stone_Broken_03 (12)
+      objectReference: {fileID: 0}
+    - target: {fileID: 164310, guid: 0e20b0fba37f2f449b462588b4be11a3, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 4294967295
       objectReference: {fileID: 0}
     - target: {fileID: 434746, guid: 0e20b0fba37f2f449b462588b4be11a3, type: 3}
       propertyPath: m_LocalPosition.x
@@ -19670,6 +20825,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: SD_Env_Floor_Stone_Broken_03 (11)
       objectReference: {fileID: 0}
+    - target: {fileID: 164310, guid: 0e20b0fba37f2f449b462588b4be11a3, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 4294967295
+      objectReference: {fileID: 0}
     - target: {fileID: 434746, guid: 0e20b0fba37f2f449b462588b4be11a3, type: 3}
       propertyPath: m_LocalPosition.x
       value: -3.130291
@@ -19744,6 +20903,10 @@ PrefabInstance:
     - target: {fileID: 164310, guid: 0e20b0fba37f2f449b462588b4be11a3, type: 3}
       propertyPath: m_Name
       value: SD_Env_Floor_Stone_Broken_03 (18)
+      objectReference: {fileID: 0}
+    - target: {fileID: 164310, guid: 0e20b0fba37f2f449b462588b4be11a3, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 4294967295
       objectReference: {fileID: 0}
     - target: {fileID: 434746, guid: 0e20b0fba37f2f449b462588b4be11a3, type: 3}
       propertyPath: m_LocalPosition.x
@@ -19820,6 +20983,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: SD_Env_Floor_Stone_Broken_02 (31)
       objectReference: {fileID: 0}
+    - target: {fileID: 154696, guid: 09a76891cfd8c9a48b3a6fb9f6676d5e, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 4294967295
+      objectReference: {fileID: 0}
     - target: {fileID: 423078, guid: 09a76891cfd8c9a48b3a6fb9f6676d5e, type: 3}
       propertyPath: m_LocalPosition.x
       value: 10.710146
@@ -19893,12 +21060,12 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 2019601912}
-  m_Layer: 0
+  m_Layer: 8
   m_Name: GameObject (3)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
+  m_StaticEditorFlags: 4294967295
   m_IsActive: 1
 --- !u!4 &2019601912
 Transform:
@@ -19933,6 +21100,14 @@ PrefabInstance:
     - target: {fileID: 163364, guid: 25e618ad9977daf44a684be7ffc5046b, type: 3}
       propertyPath: m_Name
       value: SD_Env_Wall_01 (3)
+      objectReference: {fileID: 0}
+    - target: {fileID: 163364, guid: 25e618ad9977daf44a684be7ffc5046b, type: 3}
+      propertyPath: m_Layer
+      value: 8
+      objectReference: {fileID: 0}
+    - target: {fileID: 163364, guid: 25e618ad9977daf44a684be7ffc5046b, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 4294967295
       objectReference: {fileID: 0}
     - target: {fileID: 461498, guid: 25e618ad9977daf44a684be7ffc5046b, type: 3}
       propertyPath: m_LocalPosition.x
@@ -20008,6 +21183,10 @@ PrefabInstance:
     - target: {fileID: 164310, guid: 0e20b0fba37f2f449b462588b4be11a3, type: 3}
       propertyPath: m_Name
       value: SD_Env_Floor_Stone_Broken_03 (2)
+      objectReference: {fileID: 0}
+    - target: {fileID: 164310, guid: 0e20b0fba37f2f449b462588b4be11a3, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 4294967295
       objectReference: {fileID: 0}
     - target: {fileID: 434746, guid: 0e20b0fba37f2f449b462588b4be11a3, type: 3}
       propertyPath: m_LocalPosition.x
@@ -20096,6 +21275,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: SD_Env_Floor_Stone_Broken_03 (15)
       objectReference: {fileID: 0}
+    - target: {fileID: 164310, guid: 0e20b0fba37f2f449b462588b4be11a3, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 4294967295
+      objectReference: {fileID: 0}
     - target: {fileID: 434746, guid: 0e20b0fba37f2f449b462588b4be11a3, type: 3}
       propertyPath: m_LocalPosition.x
       value: 40.420006
@@ -20170,6 +21353,10 @@ PrefabInstance:
     - target: {fileID: 154948, guid: 2cf390c5e9363db42b4f2783fbe5991e, type: 3}
       propertyPath: m_Name
       value: SD_Env_Floor_Stone_ClearEdge_02 (22)
+      objectReference: {fileID: 0}
+    - target: {fileID: 154948, guid: 2cf390c5e9363db42b4f2783fbe5991e, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 4294967295
       objectReference: {fileID: 0}
     - target: {fileID: 401842, guid: 2cf390c5e9363db42b4f2783fbe5991e, type: 3}
       propertyPath: m_LocalPosition.x
@@ -20246,6 +21433,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: SD_Env_Floor_Stone_Broken_03 (19)
       objectReference: {fileID: 0}
+    - target: {fileID: 164310, guid: 0e20b0fba37f2f449b462588b4be11a3, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 4294967295
+      objectReference: {fileID: 0}
     - target: {fileID: 434746, guid: 0e20b0fba37f2f449b462588b4be11a3, type: 3}
       propertyPath: m_LocalPosition.x
       value: -18.010143
@@ -20320,6 +21511,10 @@ PrefabInstance:
     - target: {fileID: 154696, guid: 09a76891cfd8c9a48b3a6fb9f6676d5e, type: 3}
       propertyPath: m_Name
       value: SD_Env_Floor_Stone_Broken_02 (17)
+      objectReference: {fileID: 0}
+    - target: {fileID: 154696, guid: 09a76891cfd8c9a48b3a6fb9f6676d5e, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 4294967295
       objectReference: {fileID: 0}
     - target: {fileID: 423078, guid: 09a76891cfd8c9a48b3a6fb9f6676d5e, type: 3}
       propertyPath: m_LocalPosition.x
@@ -20396,6 +21591,14 @@ PrefabInstance:
       propertyPath: m_Name
       value: SD_Env_Railing_Stone_Pillar_02 (3)
       objectReference: {fileID: 0}
+    - target: {fileID: 190576, guid: e6969c2c79e4da842b8bc1ed7b1c19fb, type: 3}
+      propertyPath: m_Layer
+      value: 8
+      objectReference: {fileID: 0}
+    - target: {fileID: 190576, guid: e6969c2c79e4da842b8bc1ed7b1c19fb, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 4294967295
+      objectReference: {fileID: 0}
     - target: {fileID: 429468, guid: e6969c2c79e4da842b8bc1ed7b1c19fb, type: 3}
       propertyPath: m_LocalPosition.x
       value: 0.15296572
@@ -20471,6 +21674,14 @@ PrefabInstance:
       propertyPath: m_Name
       value: SD_Env_Wall_01 (13)
       objectReference: {fileID: 0}
+    - target: {fileID: 163364, guid: 25e618ad9977daf44a684be7ffc5046b, type: 3}
+      propertyPath: m_Layer
+      value: 8
+      objectReference: {fileID: 0}
+    - target: {fileID: 163364, guid: 25e618ad9977daf44a684be7ffc5046b, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 4294967295
+      objectReference: {fileID: 0}
     - target: {fileID: 461498, guid: 25e618ad9977daf44a684be7ffc5046b, type: 3}
       propertyPath: m_LocalPosition.x
       value: 16.251541
@@ -20545,6 +21756,10 @@ PrefabInstance:
     - target: {fileID: 154948, guid: 2cf390c5e9363db42b4f2783fbe5991e, type: 3}
       propertyPath: m_Name
       value: SD_Env_Floor_Stone_ClearEdge_02 (2)
+      objectReference: {fileID: 0}
+    - target: {fileID: 154948, guid: 2cf390c5e9363db42b4f2783fbe5991e, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 4294967295
       objectReference: {fileID: 0}
     - target: {fileID: 401842, guid: 2cf390c5e9363db42b4f2783fbe5991e, type: 3}
       propertyPath: m_LocalPosition.x
