@@ -29,6 +29,7 @@ public class Abilities : MonoBehaviour
     [Header("Spawn Ability")]
     public Transform spawnAbilities;
     public GameObject jarAbility;
+    public GameObject player;
     public GameObject bombAbility;
     public GameObject shield;
     public float forceOfTroward = 40f;
@@ -36,7 +37,11 @@ public class Abilities : MonoBehaviour
     [Header("Pj")]
      public Pj pj;
 
-    public 
+    [SerializeField]
+    private AnimatorController _animator;
+
+    [SerializeField]
+    private float _animationTimer;
 
     // Start is called before the first frame update
     void Start()
@@ -66,10 +71,11 @@ public class Abilities : MonoBehaviour
                 abilityImage1.fillAmount = 1;
 
 
-                GameObject jar =Instantiate(jarAbility, spawnAbilities.position, spawnAbilities.rotation);
+                GameObject jar =Instantiate(jarAbility, spawnAbilities.position, player.transform.localRotation);
                 Rigidbody rb = jar.GetComponent<Rigidbody>();
-                rb.AddForce(transform.forward * forceOfTroward);
-
+                rb.AddForce(player.transform.forward * forceOfTroward);
+                _animator.Attack(true);
+                StartCoroutine(StopAnimation(1));
             }
 
 
@@ -94,9 +100,11 @@ public class Abilities : MonoBehaviour
                 isCooldown2 = true;
                 abilityImage2.fillAmount = 1;
 
-                GameObject bomb = Instantiate(bombAbility, spawnAbilities.position, spawnAbilities.rotation);
+                GameObject bomb = Instantiate(bombAbility, spawnAbilities.position, player.transform.localRotation);
                 Rigidbody rb = bomb.GetComponent<Rigidbody>();
-                rb.AddForce(transform.forward * forceOfTroward);
+                rb.AddForce(player.transform.forward * forceOfTroward);
+                _animator.Attack(true);
+                StartCoroutine(StopAnimation(2));
             }
            
 
@@ -126,8 +134,8 @@ public class Abilities : MonoBehaviour
                 Shield _sh = shield.GetComponent<Shield>();
                 _sh.activeShield = true;
                 shield.SetActive(true);
-                
-
+                _animator.Shield(true);
+                StartCoroutine(StopAnimation(3));
             }
           
             
@@ -144,5 +152,14 @@ public class Abilities : MonoBehaviour
         }
     }
 
-
+    IEnumerator StopAnimation(int numberAnimation)
+    {
+        yield return new WaitForSeconds(_animationTimer);
+        if (numberAnimation == 1)
+            _animator.Attack(false);
+        else if (numberAnimation == 2)
+            _animator.Attack(false);
+        else if (numberAnimation == 3)
+            _animator.Shield(false);
+    }
 }

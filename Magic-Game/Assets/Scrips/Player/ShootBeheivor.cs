@@ -20,6 +20,13 @@ public class ShootBeheivor : MonoBehaviour
     private void OnTriggerEnter(Collider other)
     {
         if (other.gameObject.layer != _layerMask)
+        {
+            if (other.gameObject.GetComponent<Entity>())
+            {
+                other.gameObject.GetComponent<Entity>().TakeDamage(5);
+            }
             Destroy(gameObject);
+        }
+            
     }
 }

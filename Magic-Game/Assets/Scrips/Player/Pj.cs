@@ -14,6 +14,18 @@ public class Pj : MonoBehaviour
     public HealthBar healthBar;
     public HealthBar manaBar;
 
+    [SerializeField]
+    private AnimatorController _animator;
+
+    [SerializeField]
+    private GameObject _model;
+
+    [SerializeField]
+    private GameObject move;
+
+    [SerializeField]
+    private WLCondition wl;
+
     private void Awake()
     {
         healthBar.SetMaxHealth(_life);
@@ -29,6 +41,11 @@ public class Pj : MonoBehaviour
     public void ManaRecharge()
     {
         _mana += manararecharge * Time.deltaTime;
+        if (_mana > 50)
+            _mana = 50;
+
+        if (_mana < 0)
+            _mana = 0;
     }
 
     public void PlayerDamage(float dmg)
@@ -68,6 +85,15 @@ public class Pj : MonoBehaviour
 
     void Death()
     {
-        Destroy(gameObject);
+        _animator.Death(true);
+        move.GetComponent<Movement>().enabled = false;
+        move.GetComponent<CameraRotation>().enabled = false;
+        StartCoroutine(LoadScene());
+    }
+
+    IEnumerator LoadScene()
+    {
+        yield return new WaitForSeconds(2);
+        wl.LoseScreen();
     }
 }

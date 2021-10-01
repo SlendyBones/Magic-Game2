@@ -11,15 +11,23 @@ public class Shooting : MonoBehaviour
     [SerializeField]
     private float _timerDuration;
 
+    [SerializeField]
+    private AnimatorController _animator;
+
     void Update()
     {
         if (Input.GetButtonDown("Fire1") && _canShoot == true)
+        {
+            _animator.Attack(true);
             SpawnBottle();
+        }
+            
     }
 
     void SpawnBottle()
     {
         _canShoot = false;
+        
         GameObject thisBottle = Instantiate(bottle, shootingPoint.position, shootingPoint.rotation);
         Destroy(thisBottle, 3f);
         StartCoroutine(Timer());
@@ -28,6 +36,7 @@ public class Shooting : MonoBehaviour
     IEnumerator Timer()
     {
         yield return new WaitForSeconds(_timerDuration);
+        _animator.Attack(false);
         _canShoot = true;
     }
 }

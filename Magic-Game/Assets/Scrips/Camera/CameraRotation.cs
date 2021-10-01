@@ -8,7 +8,11 @@ public class CameraRotation : MonoBehaviour
     public float rotationSpeedY;
     private float _mouseX;
     private float _mouseY;
-    private Vector3 _rotationVector;
+    private Vector3 _rotationVectorX;
+
+    private Vector3 _rotationVectorY;
+    [SerializeField]
+    private GameObject _rotationPoint;
 
     void Start()
     {
@@ -30,10 +34,13 @@ public class CameraRotation : MonoBehaviour
             _mouseY = -20;
 
         //Pasando rotacion en X
-        _rotationVector.y = _mouseX;
-        _rotationVector.x = _mouseY;
-
+        _rotationVectorX.y = _mouseX;
         //Aplicando rotacion
-        transform.localRotation = Quaternion.Euler(_rotationVector);
+        transform.localRotation = Quaternion.Euler(_rotationVectorX);
+
+        _rotationVectorY.x = _mouseY;
+        _rotationPoint.transform.localRotation = Quaternion.Euler(_rotationVectorY);
+
+
     }
 }

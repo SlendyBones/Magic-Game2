@@ -4,20 +4,34 @@ using UnityEngine;
 
 public class AnimatorController : MonoBehaviour
 {
-    private Animator _animator;
-
-    private void Awake()
+    public Animator _animator;
+    public void Walk(bool walkState)
     {
-        _animator = GetComponent<Animator>();
+        _animator.SetBool("Walk", walkState);
     }
 
-    public void Walk()
+    public void Attack(bool isAtacking)
     {
-        _animator.SetBool("Walk", true);
+        _animator.SetBool("Atack", isAtacking);
     }
 
-    public void Attack()
+    public void Jump(bool jumping)
     {
-        _animator.SetBool("Atack", true);
+        _animator.SetBool("Jump", jumping);
+    }
+
+    public void Shield(bool startShield)
+    {
+        _animator.SetBool("Shield", startShield);
+    }
+
+    public void Damage(bool takeDamage)
+    {
+        _animator.SetBool("Damage", takeDamage);
+    }
+
+    public void Death(bool death)
+    {
+        _animator.SetBool("Die", death);
     }
 }

@@ -21,6 +21,9 @@ public class Movement : MonoBehaviour
     [Header("GameObjects")]
     public GameObject rotationPoint;
 
+    [SerializeField]
+    private AnimatorController _animator;
+
     void Update()
     {
         Walk();
@@ -46,6 +49,11 @@ public class Movement : MonoBehaviour
         }
         else
             rb.MovePosition(transform.position + _playerInput * (speed * Time.deltaTime));
+
+        if (_playerInput != Vector3.zero)
+            _animator.Walk(true);
+        else
+            _animator.Walk(false);
     }
 
     private void Run()
@@ -65,6 +73,7 @@ public class Movement : MonoBehaviour
         if (Input.GetButtonDown("Jump") && _onFloor)
         {
             rb.AddForce(new Vector3(0, 300, 0));
+            _animator.Jump(true);
             _onFloor = false;
         }
     }
@@ -74,6 +83,7 @@ public class Movement : MonoBehaviour
         if(collision.gameObject.layer == _layerFloor)
         {
             Debug.Log("piso");
+            _animator.Jump(false);
             _onFloor = true;
         }
     }

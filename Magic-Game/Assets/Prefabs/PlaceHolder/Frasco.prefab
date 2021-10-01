@@ -124,3 +124,6 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   _rb: {fileID: 6711900893112840202}
   _rbForce: 750
+  _layerMask:
+    serializedVersion: 2
+    m_Bits: 512
