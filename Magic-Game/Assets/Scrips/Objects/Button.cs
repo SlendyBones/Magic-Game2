@@ -14,6 +14,7 @@ public class Button : MonoBehaviour
         if (other.gameObject.tag == "Player" && Input.GetKeyDown("e") && _startTimer._timerIsOnClass == false)
         {
             _startTimer.start = true;
+            Destroy(this.gameObject);
         }
     }
 }

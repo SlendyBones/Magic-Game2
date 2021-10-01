@@ -39,7 +39,7 @@ public class StartTimer : WLCondition
     public void TimerColor()
     {
         if (_timer > 15)
-            _timerText.color = Color.black;
+            _timerText.color = Color.white;
         else
             _timerText.color = Color.red;
     }
