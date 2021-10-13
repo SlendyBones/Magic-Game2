@@ -35,7 +35,7 @@ public class Abilities : MonoBehaviour
     public float forceOfTroward = 40f;
 
     [Header("Pj")]
-     public Pj pj;
+     public Movement pj;
 
     [SerializeField]
     private AnimatorController _animator;
@@ -74,7 +74,7 @@ public class Abilities : MonoBehaviour
                 GameObject jar =Instantiate(jarAbility, spawnAbilities.position, player.transform.localRotation);
                 Rigidbody rb = jar.GetComponent<Rigidbody>();
                 rb.AddForce(player.transform.forward * forceOfTroward);
-                _animator.Attack(true);
+                _animator.Animation("Atack", true);
                 StartCoroutine(StopAnimation(1));
             }
 
@@ -103,7 +103,7 @@ public class Abilities : MonoBehaviour
                 GameObject bomb = Instantiate(bombAbility, spawnAbilities.position, player.transform.localRotation);
                 Rigidbody rb = bomb.GetComponent<Rigidbody>();
                 rb.AddForce(player.transform.forward * forceOfTroward);
-                _animator.Attack(true);
+                _animator.Animation("Atack", true);
                 StartCoroutine(StopAnimation(2));
             }
            
@@ -134,7 +134,7 @@ public class Abilities : MonoBehaviour
                 Shield _sh = shield.GetComponent<Shield>();
                 _sh.activeShield = true;
                 shield.SetActive(true);
-                _animator.Shield(true);
+                _animator.Animation("Shield", true);
                 StartCoroutine(StopAnimation(3));
             }
           
@@ -156,10 +156,10 @@ public class Abilities : MonoBehaviour
     {
         yield return new WaitForSeconds(_animationTimer);
         if (numberAnimation == 1)
-            _animator.Attack(false);
+            _animator.Animation("Atack", false);
         else if (numberAnimation == 2)
-            _animator.Attack(false);
+            _animator.Animation("Atack", false);
         else if (numberAnimation == 3)
-            _animator.Shield(false);
+            _animator.Animation("Atack", false);
     }
 }

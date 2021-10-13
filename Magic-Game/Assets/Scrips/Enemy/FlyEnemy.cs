@@ -6,7 +6,6 @@ public class FlyEnemy : Entity
 {
     private void Start()
     {
-        gameObject.SetActive(true);
         CanMakeDamage();
     }
 
@@ -24,10 +23,7 @@ public class FlyEnemy : Entity
 
     private void OnTriggerEnter(Collider other)
     {
-        if(other.gameObject.tag == "Player")
-        {
-            other.gameObject.GetComponent<Pj>().PlayerDamage(_damage);
-        }
+        other.gameObject.GetComponent<Movement>().PlayerDamage(_damage);
         Death();
     }
 }

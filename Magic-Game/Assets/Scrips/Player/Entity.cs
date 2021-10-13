@@ -12,13 +12,13 @@ public class Entity : MonoBehaviour
     public float speed;
     public float _damage;
     public float _realDamege;
-    private GameObject _manager;
+    private SpawnManager _manager;
 
 
     private void Awake()
     {
         player = GameObject.FindGameObjectWithTag("Player").transform;
-        _manager = GameObject.FindGameObjectWithTag("Manager");
+        _manager = GameObject.FindGameObjectWithTag("Manager").GetComponent<SpawnManager>();
     }
 
     public void TakeDamage(float dmg)
@@ -33,7 +33,7 @@ public class Entity : MonoBehaviour
 
     public void Death()
     {
-        _manager.GetComponent<SpawnManager>().actualAmountOfEnemy--;
+        _manager.MinumEnemys(1);
         Destroy(gameObject);
     }
 

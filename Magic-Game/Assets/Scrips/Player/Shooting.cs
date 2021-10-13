@@ -18,7 +18,7 @@ public class Shooting : MonoBehaviour
     {
         if (Input.GetButtonDown("Fire1") && _canShoot == true)
         {
-            _animator.Attack(true);
+            _animator.Animation("Atack", true);
             SpawnBottle();
         }
             
@@ -36,7 +36,7 @@ public class Shooting : MonoBehaviour
     IEnumerator Timer()
     {
         yield return new WaitForSeconds(_timerDuration);
-        _animator.Attack(false);
+        _animator.Animation("Atack", false);
         _canShoot = true;
     }
 }

@@ -24,13 +24,11 @@ public class Pj : MonoBehaviour
     {
         healthBar.SetMaxHealth(_life);
         manaBar.SetMaxHealth(_mana);
-        //_animatorController = Instantiate<AnimatorController>();
     }
 
     private void Update()
     {
         ManaRecharge();
-        ManaBar();
     }
 
     public void ManaRecharge()
@@ -41,6 +39,8 @@ public class Pj : MonoBehaviour
 
         if (_mana < 0)
             _mana = 0;
+
+        ManaBar();
     }
 
     public void PlayerDamage(float dmg)
@@ -80,7 +80,7 @@ public class Pj : MonoBehaviour
 
     void Death()
     {
-        _animatorController.Death(true);
+        _animatorController.Animation("Die" ,true);
         /*move.GetComponent<Movement>().enabled = false;
         move.GetComponent<CameraRotation>().enabled = false;*/
         StartCoroutine(LoadScene());
