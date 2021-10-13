@@ -5,6 +5,17 @@ using UnityEngine;
 public class AnimatorController : MonoBehaviour
 {
     public Animator _animator;
+
+    private void Awake()
+    {
+        _animator = GetComponent<Animator>();
+    }
+
+    public void Animation(string anima, bool state)
+    {
+        _animator.SetBool(anima, state);
+    }
+
     public void Walk(bool walkState)
     {
         _animator.SetBool("Walk", walkState);

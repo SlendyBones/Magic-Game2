@@ -14,7 +14,7 @@ GameObject:
   - component: {fileID: 1429230352696596555}
   - component: {fileID: 6711900893112840202}
   - component: {fileID: -2705216845251656530}
-  m_Layer: 0
+  m_Layer: 12
   m_Name: Frasco
   m_TagString: Untagged
   m_Icon: {fileID: 0}

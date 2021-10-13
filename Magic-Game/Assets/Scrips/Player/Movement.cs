@@ -2,7 +2,7 @@
 using System.Collections.Generic;
 using UnityEngine;
 
-public class Movement : MonoBehaviour
+public class Movement : Pj
 {
     [Header("Inputs")]
     private float _horizontalMove;
@@ -20,9 +20,6 @@ public class Movement : MonoBehaviour
 
     [Header("GameObjects")]
     public GameObject rotationPoint;
-
-    [SerializeField]
-    private AnimatorController _animator;
 
     void Update()
     {
@@ -51,9 +48,9 @@ public class Movement : MonoBehaviour
             rb.MovePosition(transform.position + _playerInput * (speed * Time.deltaTime));
 
         if (_playerInput != Vector3.zero)
-            _animator.Walk(true);
+            _animatorController.Animation("Walk", true);
         else
-            _animator.Walk(false);
+            _animatorController.Animation("Walk", false);
     }
 
     private void Run()
@@ -73,7 +70,7 @@ public class Movement : MonoBehaviour
         if (Input.GetButtonDown("Jump") && _onFloor)
         {
             rb.AddForce(new Vector3(0, 300, 0));
-            _animator.Jump(true);
+            _animatorController.Animation("Jump", true);
             _onFloor = false;
         }
     }
@@ -83,7 +80,7 @@ public class Movement : MonoBehaviour
         if(collision.gameObject.layer == _layerFloor)
         {
             Debug.Log("piso");
-            _animator.Jump(false);
+            _animatorController.Animation("Jump", false);
             _onFloor = true;
         }
     }

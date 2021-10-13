@@ -15,13 +15,7 @@ public class Pj : MonoBehaviour
     public HealthBar manaBar;
 
     [SerializeField]
-    private AnimatorController _animator;
-
-    [SerializeField]
-    private GameObject _model;
-
-    [SerializeField]
-    private GameObject move;
+    public AnimatorController _animatorController;
 
     [SerializeField]
     private WLCondition wl;
@@ -30,6 +24,7 @@ public class Pj : MonoBehaviour
     {
         healthBar.SetMaxHealth(_life);
         manaBar.SetMaxHealth(_mana);
+        //_animatorController = Instantiate<AnimatorController>();
     }
 
     private void Update()
@@ -85,9 +80,9 @@ public class Pj : MonoBehaviour
 
     void Death()
     {
-        _animator.Death(true);
-        move.GetComponent<Movement>().enabled = false;
-        move.GetComponent<CameraRotation>().enabled = false;
+        _animatorController.Death(true);
+        /*move.GetComponent<Movement>().enabled = false;
+        move.GetComponent<CameraRotation>().enabled = false;*/
         StartCoroutine(LoadScene());
     }
 

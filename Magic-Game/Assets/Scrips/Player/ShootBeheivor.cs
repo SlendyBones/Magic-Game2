@@ -12,6 +12,8 @@ public class ShootBeheivor : MonoBehaviour
 
     [SerializeField]
     private LayerMask _layerMask;
+    [SerializeField]
+    private float dmg;
     void Start()
     {
         _rb.AddForce(transform.forward * _rbForce);
@@ -19,14 +21,11 @@ public class ShootBeheivor : MonoBehaviour
 
     private void OnTriggerEnter(Collider other)
     {
-        if (other.gameObject.layer != _layerMask)
+        Entity entity = other.gameObject.GetComponent<Entity>();
+        if (entity != null)
         {
-            if (other.gameObject.GetComponent<Entity>())
-            {
-                other.gameObject.GetComponent<Entity>().TakeDamage(5);
-            }
-            Destroy(gameObject);
+            entity.TakeDamage(dmg);
         }
-            
+        Destroy(gameObject);
     }
 }
