@@ -21,11 +21,16 @@ public class Movement : Pj
     [Header("GameObjects")]
     public GameObject rotationPoint;
 
+    public bool can = true;
+
     void Update()
     {
-        Walk();
-        Run();
-        Jump();
+        
+            Walk();
+            Run();
+            Jump();
+        
+       
     }
 
     private void Walk()

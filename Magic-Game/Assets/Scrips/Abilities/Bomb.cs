@@ -9,7 +9,7 @@ public class Bomb : MonoBehaviour
     public float force = 500f;
     public float damage = 15f;
 
-    public GameObject explosionEffect;
+   
 
     private float _countDown;
     bool _hasExploded = false;
@@ -31,7 +31,7 @@ public class Bomb : MonoBehaviour
     void Explote()
     {
         Debug.Log("Boom");
-        Instantiate(explosionEffect, transform.position, transform.rotation);
+        
         Collider [] collidersToDestroy =Physics.OverlapSphere(transform.position, radius);
         foreach (Collider nearbyObject in collidersToDestroy)
         {

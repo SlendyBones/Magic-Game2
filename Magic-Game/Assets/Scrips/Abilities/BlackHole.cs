@@ -5,6 +5,8 @@ using UnityEngine;
 public class BlackHole : MonoBehaviour
 {
     public float masa = 1f;
+    [SerializeField]
+    private float dmg =99999999f; 
   
 
     private void Awake()
@@ -18,7 +20,11 @@ public class BlackHole : MonoBehaviour
         {
             
             masa += collision.gameObject.GetComponent<Rigidbody>().mass;
-            Destroy(collision.gameObject);
+            Entity entity = collision.gameObject.GetComponent<Entity>();
+            if (entity != null)
+            {
+                entity.TakeDamage(dmg);
+            }
         }
     }
     // Update is called once per frame

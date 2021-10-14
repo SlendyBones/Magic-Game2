@@ -127,3 +127,4 @@ MonoBehaviour:
   _layerMask:
     serializedVersion: 2
     m_Bits: 512
+  dmg: 5

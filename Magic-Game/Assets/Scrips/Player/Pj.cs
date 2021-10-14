@@ -29,6 +29,7 @@ public class Pj : MonoBehaviour
     private void Update()
     {
         ManaRecharge();
+       
     }
 
     public void ManaRecharge()
