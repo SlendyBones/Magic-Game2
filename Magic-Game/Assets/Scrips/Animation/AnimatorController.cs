@@ -4,9 +4,13 @@ using UnityEngine;
 
 public class AnimatorController : MonoBehaviour
 {
-    public Animator _animator;
-  
-   
+    private Animator _animator;
+
+    public void OnStart()
+    {
+        _animator = GameObject.FindGameObjectWithTag("Animator").GetComponent<Animator>();
+    }
+
     public void Animation(string anima, bool state)
     {
         _animator.SetBool(anima, state);

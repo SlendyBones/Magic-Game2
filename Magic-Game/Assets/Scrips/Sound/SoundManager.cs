@@ -2,7 +2,6 @@
 using System.Collections.Generic;
 using UnityEngine;
 
-
 public class SoundManager : MonoBehaviour
 {
 
@@ -182,23 +181,14 @@ public class SoundManager : MonoBehaviour
 
 public enum SoundID
 {
-    JUMP,
-    FOOTSTEP,
-    TAKEDAMAGE,
-    NICE,
-    PAPER_BALL,
-    ROLLING_CART,
-    FLAME,
-    BLOCK,
-    POWERUP_START,
-    POWERUP_OVER,
-    BUY,
-    DENIED,
-    WALLRUN
+    EXPLOSION,
+    FLY,
+    FRASK,
+    EBULLET
+
 }
 
 public enum MusicID
 {
-    ELEVATOR,
-    MAINSONG
+
 }

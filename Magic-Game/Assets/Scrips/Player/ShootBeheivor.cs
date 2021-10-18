@@ -26,6 +26,7 @@ public class ShootBeheivor : MonoBehaviour
         {
             entity.TakeDamage(dmg);
         }
+        SoundManager.instance.PlaySound(SoundID.FRASK);
         Destroy(gameObject);
     }
 }

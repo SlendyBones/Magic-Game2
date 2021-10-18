@@ -26,12 +26,6 @@ public class Pj : MonoBehaviour
         manaBar.SetMaxHealth(_mana);
     }
 
-    private void Update()
-    {
-        ManaRecharge();
-       
-    }
-
     public void ManaRecharge()
     {
         _mana += manararecharge * Time.deltaTime;

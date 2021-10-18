@@ -23,14 +23,19 @@ public class Movement : Pj
 
     public bool can = true;
 
+    private void Awake()
+    {
+        _animatorController = new AnimatorController();
+        _animatorController.OnStart();
+    }
+
     void Update()
     {
-        
-            Walk();
-            Run();
-            Jump();
-        
-       
+        Walk();
+        Run();
+        Jump();
+        ManaRecharge();
+
     }
 
     private void Walk()
@@ -64,7 +69,7 @@ public class Movement : Pj
         if (Input.GetButtonDown("Sprint"))
         {
             speed *= 2;
-        } 
+        }
         else if (Input.GetButtonUp("Sprint"))
             speed /= 2;
     }
@@ -82,7 +87,7 @@ public class Movement : Pj
 
     private void OnCollisionEnter(Collision collision)
     {
-        if(collision.gameObject.layer == _layerFloor)
+        if (collision.gameObject.layer == _layerFloor)
         {
             Debug.Log("piso");
             _animatorController.Animation("Jump", false);

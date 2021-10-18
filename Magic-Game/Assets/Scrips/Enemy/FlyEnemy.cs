@@ -7,6 +7,7 @@ public class FlyEnemy : Entity
     private void Start()
     {
         CanMakeDamage();
+        SoundManager.instance.PlaySound(SoundID.FLY);
     }
 
 
@@ -23,7 +24,10 @@ public class FlyEnemy : Entity
 
     private void OnTriggerEnter(Collider other)
     {
-        other.gameObject.GetComponent<Movement>().PlayerDamage(_damage);
-        Death();
+        if (other.gameObject.tag == "Player")
+        {
+            other.gameObject.GetComponent<Movement>().PlayerDamage(_damage);
+            Death();
+        }
     }
 }

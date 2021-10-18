@@ -52,6 +52,12 @@ public class Abilities : MonoBehaviour
 
     }
 
+    private void Awake()
+    {
+        _animator = new AnimatorController();
+        _animator.OnStart();
+    }
+
     // Update is called once per frame
     void Update()
     {

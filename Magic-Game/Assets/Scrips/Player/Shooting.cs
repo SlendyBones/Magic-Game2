@@ -14,6 +14,12 @@ public class Shooting : MonoBehaviour
     [SerializeField]
     private AnimatorController _animator;
 
+    private void Awake()
+    {
+        _animator = new AnimatorController();
+        _animator.OnStart();
+    }
+
     void Update()
     {
         if (Input.GetButtonDown("Fire1") && _canShoot == true)
