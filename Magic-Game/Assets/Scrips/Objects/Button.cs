@@ -7,7 +7,7 @@ public class Button : MonoBehaviour
     [SerializeField]
     private LayerMask _playerMask;
     [SerializeField]
-    private StartTimer _startTimer;
+    private StartTimer _startTimer = null;
     [SerializeField]
     private SpawnManager _spawnManager;
 

@@ -5,15 +5,13 @@ using UnityEngine;
 public class ShootBeheivor : MonoBehaviour
 {
     [SerializeField]
-    private Rigidbody _rb;
+    private Rigidbody _rb = null;
 
     [SerializeField]
-    private float _rbForce;
+    private float _rbForce = 0;
 
     [SerializeField]
-    private LayerMask _layerMask;
-    [SerializeField]
-    private float dmg;
+    private float dmg = 0;
     void Start()
     {
         _rb.AddForce(transform.forward * _rbForce);

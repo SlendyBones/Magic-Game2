@@ -8,7 +8,7 @@ public class Shield : MonoBehaviour
     [SerializeField]
     float _timer;
     [SerializeField]
-    float _defaultTimer;
+    float _defaultTimer = 0;
     
     public bool activeShield;
 
