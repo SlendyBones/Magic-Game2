@@ -25,6 +25,9 @@ public class Movement : Pj
 
     private void Awake()
     {
+        EventManager.Subscribe("ManaUpgrade", ManaUpgrade);
+        EventManager.Subscribe("LifeUpgrade", LifeUpgrade);
+        EventManager.Subscribe("LifeRecharge", LifeRecharge);
         _animatorController = new AnimatorController();
         _animatorController.OnStart();
     }
@@ -35,7 +38,8 @@ public class Movement : Pj
         Run();
         Jump();
         ManaRecharge();
-
+        Debug.Log(_maxLife);
+        Debug.Log(_maxMana);
     }
 
     private void Walk()

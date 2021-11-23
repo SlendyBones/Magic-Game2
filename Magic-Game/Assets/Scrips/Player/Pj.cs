@@ -5,10 +5,21 @@ using UnityEngine;
 public class Pj : MonoBehaviour
 {
     [SerializeField]
-    private float _life;
+    protected float _life;
     [SerializeField]
-    private float _mana;
-    public float manararecharge;
+    protected float _maxLife;
+    [SerializeField]
+    protected float _mana;
+    [SerializeField]
+    protected float _maxMana;
+
+    [SerializeField]
+    private float _manaRecharge;
+    [SerializeField]
+    private float _lifeRecharge;
+
+    [SerializeField]
+    private float _upgradeValue;
 
     public bool manaOn = true;
     public HealthBar healthBar;
@@ -22,36 +33,44 @@ public class Pj : MonoBehaviour
 
     private void Awake()
     {
+        //Creo que no es necesario, probar despues
         healthBar.SetMaxHealth(_life);
         manaBar.SetMaxHealth(_mana);
+
     }
 
     public void ManaRecharge()
     {
-        _mana += manararecharge * Time.deltaTime;
-        if (_mana > 50)
-            _mana = 50;
-
-        if (_mana < 0)
-            _mana = 0;
+        _mana += _manaRecharge * Time.deltaTime;
+        if (_mana > _maxMana)
+            _mana = _maxMana;
 
         ManaBar();
+    }
+
+    public void LifeRecharge(params object[] parameter)
+    {
+        _life += _lifeRecharge;
+        if (_life > _maxLife)
+            _life = _maxLife;
+
+        LifeBar();
     }
 
     public void PlayerDamage(float dmg)
     {
         TakeDamage(dmg);
-        healthcheck();
+        LifeBar();
     }
 
-    public void healthcheck()
+    public void LifeBar()
     {
         healthBar.SetHealth(_life);
     }
 
     public void ManaBar()
     {
-        manaBar.SetHealth(_mana);
+        //manaBar.SetHealth(_mana);
     }
 
     public void TakeDamage(float dmg)
@@ -73,11 +92,21 @@ public class Pj : MonoBehaviour
             return (false);
     }
 
+    public void ManaUpgrade(params object[] parameter)
+    {
+        Debug.Log("mana");
+        _maxMana += _upgradeValue;
+    }
+    
+    public void LifeUpgrade(params object[] parameter)
+    {
+        Debug.Log("vida");
+        _maxLife += _upgradeValue;
+    }
+
     void Death()
     {
         _animatorController.Animation("Die" ,true);
-        /*move.GetComponent<Movement>().enabled = false;
-        move.GetComponent<CameraRotation>().enabled = false;*/
         StartCoroutine(LoadScene());
     }
 
