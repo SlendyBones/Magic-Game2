@@ -32,6 +32,7 @@ MonoBehaviour:
   speed: 10
   _damage: 0
   _realDamege: 5
+  _profitsCoins: 1
 --- !u!1001 &7597899449786321803
 PrefabInstance:
   m_ObjectHideFlags: 0

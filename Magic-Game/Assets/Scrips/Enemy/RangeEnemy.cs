@@ -11,7 +11,6 @@ public class RangeEnemy : Entity
     [SerializeField]
     private GameObject _shoot;
 
-    // Update is called once per frame
     void Update()
     {
         transform.forward = player.transform.position - transform.position;

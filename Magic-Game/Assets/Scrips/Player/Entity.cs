@@ -14,6 +14,9 @@ public class Entity : MonoBehaviour
     public float _realDamege;
     private SpawnManager _manager;
 
+    [SerializeField]
+    private int _profitsCoins;
+
 
     private void Awake()
     {
@@ -33,6 +36,7 @@ public class Entity : MonoBehaviour
 
     public void Death()
     {
+        EventManager.Trigger("AddCoin", _profitsCoins);
         _manager.MinumEnemys(1);
         Destroy(gameObject);
     }

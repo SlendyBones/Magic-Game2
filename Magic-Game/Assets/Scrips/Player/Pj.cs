@@ -15,8 +15,6 @@ public class Pj : MonoBehaviour
 
     [SerializeField]
     private float _manaRecharge;
-    [SerializeField]
-    private float _lifeRecharge;
 
     [SerializeField]
     private float _upgradeValue;
@@ -31,13 +29,13 @@ public class Pj : MonoBehaviour
     [SerializeField]
     private WLCondition wl;
 
-    private void Awake()
+    /*private void Awake()
     {
         //Creo que no es necesario, probar despues
         healthBar.SetMaxHealth(_life);
         manaBar.SetMaxHealth(_mana);
 
-    }
+    }*/
 
     public void ManaRecharge()
     {
@@ -50,7 +48,7 @@ public class Pj : MonoBehaviour
 
     public void LifeRecharge(params object[] parameter)
     {
-        _life += _lifeRecharge;
+        _life += (float)parameter[0];
         if (_life > _maxLife)
             _life = _maxLife;
 
@@ -70,7 +68,7 @@ public class Pj : MonoBehaviour
 
     public void ManaBar()
     {
-        //manaBar.SetHealth(_mana);
+        manaBar.SetHealth(_mana);
     }
 
     public void TakeDamage(float dmg)
@@ -113,6 +111,7 @@ public class Pj : MonoBehaviour
     IEnumerator LoadScene()
     {
         yield return new WaitForSeconds(2);
+        EventManager.Trigger("DeathCoin");
         wl.LoseScreen();
     }
 }

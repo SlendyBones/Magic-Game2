@@ -145,8 +145,12 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   _life: 50
+  _maxLife: 50
   _mana: 50
-  manararecharge: 5
+  _maxMana: 50
+  _manaRecharge: 0
+  _lifeRecharge: 0
+  _upgradeValue: 0
   manaOn: 1
   healthBar: {fileID: 0}
   manaBar: {fileID: 0}

@@ -23930,6 +23930,21 @@ PrefabInstance:
       propertyPath: wl
       value: 
       objectReference: {fileID: 999192877}
+    - target: {fileID: 4979825619832221059, guid: 1f02812186cf71b4ab9878ae9bff82ec,
+        type: 3}
+      propertyPath: _maxMana
+      value: 50
+      objectReference: {fileID: 0}
+    - target: {fileID: 4979825619832221059, guid: 1f02812186cf71b4ab9878ae9bff82ec,
+        type: 3}
+      propertyPath: _maxLife
+      value: 50
+      objectReference: {fileID: 0}
+    - target: {fileID: 4979825619832221059, guid: 1f02812186cf71b4ab9878ae9bff82ec,
+        type: 3}
+      propertyPath: _manaRecharge
+      value: 2
+      objectReference: {fileID: 0}
     - target: {fileID: 4979825619832221062, guid: 1f02812186cf71b4ab9878ae9bff82ec,
         type: 3}
       propertyPath: _animator

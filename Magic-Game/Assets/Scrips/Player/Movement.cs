@@ -38,8 +38,6 @@ public class Movement : Pj
         Run();
         Jump();
         ManaRecharge();
-        Debug.Log(_maxLife);
-        Debug.Log(_maxMana);
     }
 
     private void Walk()
