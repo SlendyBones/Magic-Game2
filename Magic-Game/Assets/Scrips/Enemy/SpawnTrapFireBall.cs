@@ -5,16 +5,28 @@ using UnityEngine;
 public class SpawnTrapFireBall : MonoBehaviour
 {
     [SerializeField]
-    private List<GameObject> _fireBall;
+    private GameObject _fireBall;
     [SerializeField]
     private float _timer;
     [SerializeField]
     private float _timeforspawn;
+    [SerializeField]
+    private bool _on = false;
+    [SerializeField]
+    private Button button;
 
-
+    private void Start()
+    {
+        _timer = _timeforspawn;
+        button.OnTouchButton += Star;
+    }
     private void Update()
     {
-        _timer -= Time.deltaTime;
+        if (_on == true)
+        {
+            _timer -= Time.deltaTime;
+        }
+
     }
 
     private void OnTriggerStay(Collider other)
@@ -23,11 +35,18 @@ public class SpawnTrapFireBall : MonoBehaviour
         {
             if (other.gameObject.tag == "Player")
             {
-                int _spawnFireBall = (Random.Range(0, 6));
-                Instantiate(_fireBall[_spawnFireBall], transform.position, transform.rotation);
+                Instantiate(_fireBall, transform.position, transform.rotation);
+                _timer = _timeforspawn;
+
             }
-            _timer = _timeforspawn;
+
         }
     }
-
+    public void Star()
+    {
+        _on = true;
+    }
 }
+
+
+
