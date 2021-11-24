@@ -15,6 +15,7 @@ public class CoinBeheivor : MonoBehaviour
     {
         EventManager.Subscribe("AddCoin", AddCoin);
         EventManager.Subscribe("DeathCoin", DeathCoins);
+        EventManager.Trigger("UpdateCoins", _coins);
         DontDestroyOnLoad(this);
     }
 
@@ -26,11 +27,13 @@ public class CoinBeheivor : MonoBehaviour
     void AddCoin(params object[] parameter)
     {
         _coins += (int)parameter[0];
+        EventManager.Trigger("UpdateCoins", _coins);
     }
 
     public void SubstractCoin(int cost)
     {
         _coins -= cost;
+        EventManager.Trigger("UpdateCoins", _coins);
     }
 
     public int Coins()
@@ -41,10 +44,12 @@ public class CoinBeheivor : MonoBehaviour
     public void DeathCoins(params object[] parameter)
     {
         _coins = _initialLVLCoins;
+        EventManager.Trigger("UpdateCoins", _coins);
     }
 
     public void ResetCoins(params object[] parameter)
     {
         _coins = _initialCoins;
+        EventManager.Trigger("UpdateCoins", _coins);
     }
 }
