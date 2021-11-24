@@ -2898,6 +2898,7 @@ MonoBehaviour:
   - {fileID: 8300000, guid: 0effbdd5904238041a88f36ca9c23fd9, type: 3}
   - {fileID: 8300000, guid: 948e8ad36769373468de61a409b4ed48, type: 3}
   - {fileID: 8300000, guid: c96f3def62b3c3e40aefa8c92017a114, type: 3}
+  - {fileID: 8300000, guid: 0616c0f9cf766994fa526edf0d36759b, type: 3}
   music: []
   sfxChannel:
   - {fileID: 163087174}
