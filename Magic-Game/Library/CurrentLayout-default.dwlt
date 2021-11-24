@@ -410,9 +410,9 @@ MonoBehaviour:
   m_SceneHierarchy:
     m_TreeViewState:
       scrollPos: {x: 0, y: 0}
-      m_SelectedIDs: 
-      m_LastClickedID: 0
-      m_ExpandedIDs: 76fbffff
+      m_SelectedIDs: 44410000
+      m_LastClickedID: 16708
+      m_ExpandedIDs: 76fbffff44410000
       m_RenameOverlay:
         m_UserAcceptedRename: 0
         m_Name: 
@@ -472,9 +472,9 @@ MonoBehaviour:
   m_PlayAudio: 0
   m_AudioPlay: 0
   m_Position:
-    m_Target: {x: 11.850682, y: 13.337577, z: 27.527802}
+    m_Target: {x: -0.11996937, y: 11.663904, z: 11.367876}
     speed: 2
-    m_Value: {x: 11.91697, y: 13.400003, z: 27.480566}
+    m_Value: {x: -0.11996937, y: 11.663904, z: 11.367876}
   m_RenderMode: 0
   m_CameraMode:
     drawMode: 0
@@ -503,13 +503,13 @@ MonoBehaviour:
       speed: 2
       m_Value: 0
   m_Rotation:
-    m_Target: {x: 0.06129289, y: 0.93926686, z: -0.23672882, w: 0.24178101}
+    m_Target: {x: 0.20496668, y: 0.032657813, z: -0.0063703987, w: 0.9784503}
     speed: 2
-    m_Value: {x: 0.0616332, y: 0.93867904, z: -0.23658012, w: 0.2431316}
+    m_Value: {x: 0.20931701, y: 0.0326209, z: -0.00651586, w: 0.9772818}
   m_Size:
-    m_Target: 4.121766
+    m_Target: 19.157694
     speed: 2
-    m_Value: 4.4217663
+    m_Value: 20.060411
   m_Ortho:
     m_Target: 0
     speed: 2
@@ -655,20 +655,20 @@ MonoBehaviour:
     m_SkipHidden: 0
     m_SearchArea: 1
     m_Folders:
-    - Assets
+    - Assets/Sounds
   m_ViewMode: 1
   m_StartGridSize: 64
   m_LastFolders:
-  - Assets
+  - Assets/Sounds
   m_LastFoldersGridSize: -1
   m_LastProjectPath: D:\GitHub\Magic-Game2\Magic-Game
   m_LockTracker:
     m_IsLocked: 0
   m_FolderTreeState:
-    scrollPos: {x: 0, y: 0}
-    m_SelectedIDs: 4c2f0000
-    m_LastClickedID: 12108
-    m_ExpandedIDs: 000000004c2f000000ca9a3b
+    scrollPos: {x: 0, y: 62}
+    m_SelectedIDs: ee300000
+    m_LastClickedID: 12526
+    m_ExpandedIDs: 000000004e2f0000e62f0000ae36000000ca9a3b
     m_RenameOverlay:
       m_UserAcceptedRename: 0
       m_Name: 
@@ -696,7 +696,7 @@ MonoBehaviour:
     scrollPos: {x: 0, y: 0}
     m_SelectedIDs: 
     m_LastClickedID: 0
-    m_ExpandedIDs: 000000004c2f0000
+    m_ExpandedIDs: 000000004e2f0000
     m_RenameOverlay:
       m_UserAcceptedRename: 0
       m_Name: 
@@ -806,7 +806,7 @@ MonoBehaviour:
   m_ViewDataDictionary: {fileID: 0}
   m_LockTracker:
     m_IsLocked: 0
-  m_LastSelectedObjectID: -4808
+  m_LastSelectedObjectID: -11704
 --- !u!114 &20
 MonoBehaviour:
   m_ObjectHideFlags: 52

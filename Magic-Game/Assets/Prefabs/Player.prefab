@@ -149,7 +149,6 @@ MonoBehaviour:
   _mana: 50
   _maxMana: 50
   _manaRecharge: 0
-  _lifeRecharge: 0
   _upgradeValue: 0
   manaOn: 1
   healthBar: {fileID: 0}
@@ -689,11 +688,6 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 4979825619832221056}
     m_Modifications:
-    - target: {fileID: 6233974028401664276, guid: 94f75ae5dabb3f14c8fd119a9dc03d13,
-        type: 3}
-      propertyPath: _defaultTimer
-      value: 10
-      objectReference: {fileID: 0}
     - target: {fileID: 6233974028401664277, guid: 94f75ae5dabb3f14c8fd119a9dc03d13,
         type: 3}
       propertyPath: m_LocalPosition.x
