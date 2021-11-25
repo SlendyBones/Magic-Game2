@@ -21,6 +21,9 @@ EditorBuildSettings:
     path: Assets/Scenes/Nivel1.unity
     guid: 9fc0d4010bbf28b4594072e72b8655ab
   - enabled: 1
+    path: Assets/Scenes/LobbyShop.unity
+    guid: f968a14fa005c6c4db6b51e0c2904488
+  - enabled: 1
     path: Assets/Scenes/LoseScene.unity
     guid: 1127c86d5ad937746a0b687b0f0152fc
   - enabled: 1

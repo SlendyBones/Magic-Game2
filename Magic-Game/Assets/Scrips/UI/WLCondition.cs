@@ -14,4 +14,9 @@ public class WLCondition : MonoBehaviour
     {
         SceneManager.LoadScene("WinScene");
     }
+
+    public void Shop()
+    {
+        SceneManager.LoadScene("LobbyShop");
+    }
 }

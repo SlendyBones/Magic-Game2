@@ -29,14 +29,6 @@ public class Pj : MonoBehaviour
     [SerializeField]
     private WLCondition wl;
 
-    /*private void Awake()
-    {
-        //Creo que no es necesario, probar despues
-        healthBar.SetMaxHealth(_life);
-        manaBar.SetMaxHealth(_mana);
-
-    }*/
-
     public void ManaRecharge()
     {
         _mana += _manaRecharge * Time.deltaTime;

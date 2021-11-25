@@ -17,7 +17,7 @@ public class SpawnManager : MonoBehaviour
 
     public void WinCondition()
     {
-        wl.WinScreen();
+        wl.Shop();
     }
 
     public void StartSpawn()
