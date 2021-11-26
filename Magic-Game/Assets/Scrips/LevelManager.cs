@@ -17,10 +17,8 @@ public class LevelManager : MonoBehaviour
     [Header("PlayerReference")]
     public GameObject player;
 
-
     [Header("CoinBeheivor")]
     public CoinBeheivor coinsBeheivor;
-
 
     private void Awake()
     {
@@ -28,7 +26,15 @@ public class LevelManager : MonoBehaviour
         EventManager.Subscribe("StartScene", StartScene);
         EventManager.Subscribe("AddWave", AddWave);
         EventManager.Subscribe("DmgUpgrade", DamageUpgrade);
+        
         DontDestroyOnLoad(this);
+    }
+
+    public void LevelFakeAwake()
+    {
+        EventManager.Subscribe("StartScene", StartScene);
+        EventManager.Subscribe("AddWave", AddWave);
+        EventManager.Subscribe("DmgUpgrade", DamageUpgrade);
     }
 
     void StartScene(params object[] parameter)

@@ -11,18 +11,29 @@ public class CoinBeheivor : MonoBehaviour
     [SerializeField]
     private int _initialCoins;
 
+    public static CoinBeheivor cb;
     
     private void Start()
     {
         EventManager.Subscribe("AddCoin", AddCoin);
         EventManager.Subscribe("DeathCoin", DeathCoins);
         EventManager.Subscribe("CheckCoins", CheckCoins);
-        DontDestroyOnLoad(this);
+        
     }
 
     private void Awake()
     {
+        cb = this;
+        DontDestroyOnLoad(this);
         _initialLVLCoins = coins;
+        EventManager.Trigger("UpdateCoins", coins);
+    }
+
+    public void CoinFakeAwake()
+    {
+        EventManager.Subscribe("AddCoin", AddCoin);
+        EventManager.Subscribe("DeathCoin", DeathCoins);
+        EventManager.Subscribe("CheckCoins", CheckCoins);
         EventManager.Trigger("UpdateCoins", coins);
     }
 
