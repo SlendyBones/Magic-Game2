@@ -1,0 +1,79 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!21 &2100000
+Material:
+  serializedVersion: 6
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_Name: Portal
+  m_Shader: {fileID: 4800000, guid: 30d119fb5f4dc3f409866b05177ffbef, type: 3}
+  m_ShaderKeywords: 
+  m_LightmapFlags: 0
+  m_EnableInstancingVariants: 0
+  m_DoubleSidedGI: 0
+  m_CustomRenderQueue: -1
+  stringTagMap: {}
+  disabledShaderPasses: []
+  m_SavedProperties:
+    serializedVersion: 3
+    m_TexEnvs:
+    - _Flowmap:
+        m_Texture: {fileID: 2800000, guid: b47331d80f703fc4a8fe8a7d36f94603, type: 3}
+        m_Scale: {x: 1, y: 1}
+        m_Offset: {x: 0, y: 0}
+    - _MainTexture:
+        m_Texture: {fileID: 2800000, guid: 5042044934003d247ab4063321151b2f, type: 3}
+        m_Scale: {x: 1, y: 1}
+        m_Offset: {x: 0, y: 0}
+    - _RenderTexture:
+        m_Texture: {fileID: 2800000, guid: 622ce35a9648aa24e938a92c7e065959, type: 3}
+        m_Scale: {x: 1, y: 1}
+        m_Offset: {x: 0, y: 0}
+    - _TextureSample0:
+        m_Texture: {fileID: 2800000, guid: c213e378f783bb749a00b3dc61970703, type: 3}
+        m_Scale: {x: 1, y: 1}
+        m_Offset: {x: 0, y: 0}
+    - _texcoord:
+        m_Texture: {fileID: 0}
+        m_Scale: {x: 1, y: 1}
+        m_Offset: {x: 0, y: 0}
+    m_Floats:
+    - _Alpha: 0.05
+    - _Center: 0.85
+    - _ChromaticAberration: 1
+    - _Cutoff: 5
+    - _Divide: 2.59
+    - _EXP: 1.75
+    - _EdgeLength: 15
+    - _Float0: 1
+    - _Float1: 0.5
+    - _Float2: 0
+    - _Float3: 0.05
+    - _Float4: 3.17
+    - _Float5: 0.89
+    - _FlowmapIntensity: 0.047058832
+    - _Intensity: 11.7
+    - _Mul: 2.59
+    - _Offset: 0.49
+    - _Power: 18.75
+    - _Range: 0.15
+    - _Scale: 0.27
+    - _ScaleNormal: 0.09
+    - _Speed: 0.63
+    - _Tilling: 2.08
+    - _TransAmbient: 0.2
+    - _TransDirect: 1
+    - _TransNormalDistortion: 0.1
+    - _TransScattering: 2
+    - _TransShadow: 0.9
+    - _Translucency: 1
+    - __dirty: 0
+    m_Colors:
+    - _Distance: {r: 0.5, g: 0.5, b: 0, a: 0}
+    - _MainColor: {r: 1.854406, g: 0, b: 2.5945864, a: 0}
+    - _Offset1: {r: 0.005, g: 0, b: 0, a: 0}
+    - _Offset2: {r: 0, g: 0.005, b: 0, a: 0}
+    - _SecondaryColor: {r: 2.5188365, g: 0, b: 3.5203424, a: 0}
+    - _Vector0: {r: 0.5, g: 0.5, b: 0, a: 0}

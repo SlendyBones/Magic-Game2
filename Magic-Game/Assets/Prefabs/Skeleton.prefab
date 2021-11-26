@@ -51,6 +51,7 @@ MonoBehaviour:
   _realDamege: 10
   _profitsCoins: 2
   _shoot: {fileID: 5798250639880752860, guid: 2ee55b4f28e5628498a2bd5ad0330a96, type: 3}
+  _ani: {fileID: 4743955391204445570}
 --- !u!1001 &7648622089276443618
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -158,6 +159,12 @@ PrefabInstance:
 --- !u!1 &1802759619010368235 stripped
 GameObject:
   m_CorrespondingSourceObject: {fileID: -927199367670048503, guid: 97f86fd0c71357c48abf3ba2ba7185f2,
+    type: 3}
+  m_PrefabInstance: {fileID: 7648622089276443618}
+  m_PrefabAsset: {fileID: 0}
+--- !u!95 &4743955391204445570 stripped
+Animator:
+  m_CorrespondingSourceObject: {fileID: -6057140222963153312, guid: 97f86fd0c71357c48abf3ba2ba7185f2,
     type: 3}
   m_PrefabInstance: {fileID: 7648622089276443618}
   m_PrefabAsset: {fileID: 0}
