@@ -22,14 +22,15 @@ public class Movement : Pj
     public GameObject rotationPoint;
 
     public bool can = true;
+    [SerializeField]
+    private Animator _ani;
 
     private void Awake()
     {
         EventManager.Subscribe("ManaUpgrade", ManaUpgrade);
         EventManager.Subscribe("LifeUpgrade", LifeUpgrade);
         EventManager.Subscribe("LifeRecharge", LifeRecharge);
-        _animatorController = new AnimatorController();
-        _animatorController.OnStart();
+
     }
 
     void Update()
@@ -45,6 +46,12 @@ public class Movement : Pj
         _horizontalMove = Input.GetAxisRaw("Horizontal");
         _verticalMove = Input.GetAxisRaw("Vertical");
 
+        // _animatorController.Horizontal(_horizontalMove);
+        // _animatorController.Vertical(_verticalMove);
+        _ani.SetFloat("HorizontalInput", _horizontalMove);
+        _ani.SetFloat("VerticalInput", _verticalMove);
+
+
         _movementMagnitud = _playerInput.magnitude;
 
         _playerInput = rotationPoint.transform.right * _horizontalMove + rotationPoint.transform.forward * _verticalMove * Mathf.Abs(_verticalMove);
@@ -58,11 +65,11 @@ public class Movement : Pj
         }
         else
             rb.MovePosition(transform.position + _playerInput * (speed * Time.deltaTime));
+       
+        
+        
 
-        if (_playerInput != Vector3.zero)
-            _animatorController.Animation("Walk", true);
-        else
-            _animatorController.Animation("Walk", false);
+
     }
 
     private void Run()

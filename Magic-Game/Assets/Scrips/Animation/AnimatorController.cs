@@ -4,12 +4,10 @@ using UnityEngine;
 
 public class AnimatorController : MonoBehaviour
 {
+    [SerializeField]
     private Animator _animator;
 
-    public void OnStart()
-    {
-        _animator = GameObject.FindGameObjectWithTag("Animator").GetComponent<Animator>();
-    }
+   
 
     public void Animation(string anima, bool state)
     {
@@ -19,7 +17,16 @@ public class AnimatorController : MonoBehaviour
     {
         _animator.SetTrigger("Damage");
     }
-
+    
+    public void Horizontal(float H)
+    {
+        _animator.SetFloat("HorizontalInput", H);
+        
+    }
+    public void Vertical(float V)
+    {
+        _animator.SetFloat("VerticalInput", V);
+    }
 
 }
 
