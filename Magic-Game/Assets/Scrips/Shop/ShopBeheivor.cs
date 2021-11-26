@@ -33,7 +33,7 @@ public class ShopBeheivor : MonoBehaviour
 
     private void OnTriggerStay(Collider other)
     {
-        if (Input.GetKeyDown("e") && _coinsBeheivor.Coins() >= _cost)
+        if (Input.GetKeyDown("e") && _coinsBeheivor.coins >= _cost)
         {
             Debug.Log("e");
             _coinsBeheivor.SubstractCoin(_cost);

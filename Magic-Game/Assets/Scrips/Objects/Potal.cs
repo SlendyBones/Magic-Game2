@@ -9,6 +9,7 @@ public class Potal : MonoBehaviour
     private string _lvlName;
     private void OnTriggerEnter(Collider other)
     {
+        EventManager.ResetEventDictionary();
         SceneManager.LoadScene(_lvlName);
     }
 }

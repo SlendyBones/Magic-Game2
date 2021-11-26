@@ -5,8 +5,8 @@ using UnityEngine.SceneManagement;
 
 public class CoinBeheivor : MonoBehaviour
 {
-    [SerializeField]
-    private int _coins;
+    
+    public int coins;
     private int _initialLVLCoins;
     [SerializeField]
     private int _initialCoins;
@@ -22,41 +22,37 @@ public class CoinBeheivor : MonoBehaviour
 
     private void Awake()
     {
-        _initialLVLCoins = _coins;
-        EventManager.Trigger("UpdateCoins", _coins);
+        _initialLVLCoins = coins;
+        EventManager.Trigger("UpdateCoins", coins);
     }
 
     void CheckCoins(params object[] parameter)
     {
-        EventManager.Trigger("UpdateCoins", _coins);
+        EventManager.Trigger("UpdateCoins", coins);
     }
 
     void AddCoin(params object[] parameter)
     {
-        _coins += (int)parameter[0];
-        EventManager.Trigger("UpdateCoins", _coins);
+        coins += (int)parameter[0];
+        EventManager.Trigger("UpdateCoins", coins);
     }
 
     public void SubstractCoin(int cost)
     {
-        _coins -= cost;
-        EventManager.Trigger("UpdateCoins", _coins);
+        coins -= cost;
+        EventManager.Trigger("UpdateCoins", coins);
     }
 
-    public int Coins()
-    {
-        return _coins;
-    }
-
+   
     public void DeathCoins(params object[] parameter)
     {
-        _coins = _initialLVLCoins;
-        EventManager.Trigger("UpdateCoins", _coins);
+        coins = _initialLVLCoins;
+        EventManager.Trigger("UpdateCoins", coins);
     }
 
     public void ResetCoins(params object[] parameter)
     {
-        _coins = _initialCoins;
-        EventManager.Trigger("UpdateCoins", _coins);
+        coins = _initialCoins;
+        EventManager.Trigger("UpdateCoins", coins);
     }
 }

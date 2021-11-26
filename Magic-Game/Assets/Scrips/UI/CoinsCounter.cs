@@ -8,12 +8,12 @@ public class CoinsCounter : MonoBehaviour
     [SerializeField]
     private Text _coinsText;
 
-    void Awake()
+   
+    void Start()
     {
         EventManager.Subscribe("UpdateCoins", UpdateCoins);
         EventManager.Trigger("CheckCoins");
     }
-
     private void UpdateCoins(params object[] parameter)
     {
         _coinsText.text = parameter[0].ToString();
