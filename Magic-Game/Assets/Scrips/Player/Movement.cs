@@ -65,11 +65,6 @@ public class Movement : Pj
         }
         else
             rb.MovePosition(transform.position + _playerInput * (speed * Time.deltaTime));
-       
-        
-        
-
-
     }
 
     private void Run()

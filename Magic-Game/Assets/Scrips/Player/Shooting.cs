@@ -21,7 +21,6 @@ public class Shooting : MonoBehaviour
         if (Input.GetButtonDown("Fire1") && _canShoot == true)
         {
             _animator.Animation("Atack", true);
-           
         }
             
     }
@@ -40,5 +39,10 @@ public class Shooting : MonoBehaviour
         yield return new WaitForSeconds(_timerDuration);
         _animator.Animation("Atack", false);
         _canShoot = true;
+    }
+
+    void DamageUpgrade()
+    {
+
     }
 }
