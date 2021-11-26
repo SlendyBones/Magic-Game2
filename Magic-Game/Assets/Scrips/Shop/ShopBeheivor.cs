@@ -23,7 +23,7 @@ public class ShopBeheivor : MonoBehaviour
     private void OnTriggerEnter(Collider other)
     {
         _infoText.gameObject.SetActive(true);
-        _infoText.text = "Press E to Upgrade " + _infoUpgrade;
+        _infoText.text = "Press E to Upgrade " + _infoUpgrade + ". Cost: " + _cost.ToString();
     }
 
     private void OnTriggerStay(Collider other)
