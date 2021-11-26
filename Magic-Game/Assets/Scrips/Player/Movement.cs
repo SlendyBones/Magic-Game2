@@ -25,7 +25,7 @@ public class Movement : Pj
     [SerializeField]
     private Animator _ani;
 
-    private void Awake()
+    private void Start()
     {
         EventManager.Subscribe("ManaUpgrade", ManaUpgrade);
         EventManager.Subscribe("LifeUpgrade", LifeUpgrade);

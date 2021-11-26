@@ -22,7 +22,7 @@ public class ShopBeheivor : MonoBehaviour
 
     private void Awake()
     {
-        _coinsBeheivor = LevelManager.instance.coinsBeheivor;
+        _coinsBeheivor = LevelManager.instances.coinsBeheivor;
     }
 
     private void OnTriggerEnter(Collider other)

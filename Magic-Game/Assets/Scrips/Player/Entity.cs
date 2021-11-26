@@ -19,7 +19,7 @@ public class Entity : MonoBehaviour
 
     private void Awake()
     {
-        player = LevelManager.instance.player.transform;
+        player = LevelManager.instances.player.transform;
     }
 
     public void TakeDamage(float dmg)

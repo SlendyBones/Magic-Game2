@@ -86,20 +86,20 @@ public class Pj : MonoBehaviour
     {
         Debug.Log("mana");
         _maxMana += _upgradeValue;
-        LevelManager.instance.maxMana += _upgradeValue;
+        LevelManager.instances.maxMana += _upgradeValue;
     }
     
     public void LifeUpgrade(params object[] parameter)
     {
         Debug.Log("vida");
         _maxLife += _upgradeValue;
-        LevelManager.instance.maxMana += _upgradeValue;
+        LevelManager.instances.maxMana += _upgradeValue;
     }
 
     protected void ComparativeStats()
     {
-        _maxLife = LevelManager.instance.maxLife;
-        _maxMana = LevelManager.instance.maxMana;
+        _maxLife = LevelManager.instances.maxLife;
+        _maxMana = LevelManager.instances.maxMana;
     }
 
     void Death()

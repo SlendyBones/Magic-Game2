@@ -4,7 +4,7 @@ using UnityEngine;
 
 public class LevelManager : MonoBehaviour
 {
-    public static LevelManager instance;
+    public static LevelManager instances;
 
     [Header("Stats")]
     public float maxLife;
@@ -21,13 +21,14 @@ public class LevelManager : MonoBehaviour
     [Header("CoinBeheivor")]
     public CoinBeheivor coinsBeheivor;
 
-    void Start()
+
+    private void Awake()
     {
+        instances = this;
         EventManager.Subscribe("StartScene", StartScene);
         EventManager.Subscribe("AddWave", AddWave);
         EventManager.Subscribe("DmgUpgrade", DamageUpgrade);
         DontDestroyOnLoad(this);
-        instance = this;
     }
 
     void StartScene(params object[] parameter)

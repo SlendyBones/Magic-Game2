@@ -14,7 +14,7 @@ public class ShootBeheivor : MonoBehaviour
     private float _dmg = 0;
     void Start()
     {
-        _dmg = LevelManager.instance.dmg;
+        _dmg = LevelManager.instances.dmg;
         _rb.AddForce(transform.forward * _rbForce);
     }
 
