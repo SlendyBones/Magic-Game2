@@ -1,6 +1,7 @@
 ﻿using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.SceneManagement;
 
 public class CoinBeheivor : MonoBehaviour
 {
@@ -15,13 +16,19 @@ public class CoinBeheivor : MonoBehaviour
     {
         EventManager.Subscribe("AddCoin", AddCoin);
         EventManager.Subscribe("DeathCoin", DeathCoins);
-        EventManager.Trigger("UpdateCoins", _coins);
+        EventManager.Subscribe("CheckCoins", CheckCoins);
         DontDestroyOnLoad(this);
     }
 
     private void Awake()
     {
         _initialLVLCoins = _coins;
+        EventManager.Trigger("UpdateCoins", _coins);
+    }
+
+    void CheckCoins(params object[] parameter)
+    {
+        EventManager.Trigger("UpdateCoins", _coins);
     }
 
     void AddCoin(params object[] parameter)

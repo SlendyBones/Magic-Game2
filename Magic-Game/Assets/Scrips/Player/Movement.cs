@@ -30,7 +30,7 @@ public class Movement : Pj
         EventManager.Subscribe("ManaUpgrade", ManaUpgrade);
         EventManager.Subscribe("LifeUpgrade", LifeUpgrade);
         EventManager.Subscribe("LifeRecharge", LifeRecharge);
-
+        ComparativeStats();
     }
 
     void Update()

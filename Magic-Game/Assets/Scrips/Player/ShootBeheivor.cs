@@ -11,9 +11,10 @@ public class ShootBeheivor : MonoBehaviour
     private float _rbForce = 0;
 
     [SerializeField]
-    private float dmg = 0;
+    private float _dmg = 0;
     void Start()
     {
+        _dmg = LevelManager.instance.dmg;
         _rb.AddForce(transform.forward * _rbForce);
     }
 
@@ -22,7 +23,7 @@ public class ShootBeheivor : MonoBehaviour
         Entity entity = other.gameObject.GetComponent<Entity>();
         if (entity != null)
         {
-            entity.TakeDamage(dmg);
+            entity.TakeDamage(_dmg);
         }
         SoundManager.instance.PlaySound(SoundID.FRASK);
         Destroy(gameObject);

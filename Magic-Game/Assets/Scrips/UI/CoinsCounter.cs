@@ -11,6 +11,7 @@ public class CoinsCounter : MonoBehaviour
     void Awake()
     {
         EventManager.Subscribe("UpdateCoins", UpdateCoins);
+        EventManager.Trigger("CheckCoins");
     }
 
     private void UpdateCoins(params object[] parameter)

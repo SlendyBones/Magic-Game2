@@ -125,7 +125,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   _rb: {fileID: 6711900893112840202}
   _rbForce: 750
-  dmg: 5
+  _dmg: 0
 --- !u!1001 &7905331648023707962
 PrefabInstance:
   m_ObjectHideFlags: 0

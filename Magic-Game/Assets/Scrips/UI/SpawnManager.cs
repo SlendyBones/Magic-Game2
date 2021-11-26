@@ -15,8 +15,21 @@ public class SpawnManager : MonoBehaviour
     [SerializeField]
     private WLCondition wl;
 
+    [SerializeField]
+    private int _minEnemy;
+    [SerializeField]
+    private int _maxEnemy;
+
+    private void Awake()
+    {
+        EventManager.Subscribe("SubstractEnemy", MinumEnemys);
+        EventManager.Subscribe("SpawnAddWave", SpawnAddWave);
+        EventManager.Trigger("StartScene");
+    }
+
     public void WinCondition()
     {
+        EventManager.Trigger("AddWave");
         wl.Shop();
     }
 
@@ -25,22 +38,28 @@ public class SpawnManager : MonoBehaviour
         StartCoroutine(StartEnemys());
     }
 
-    public void MinumEnemys(int deathEnemy)
+    public void MinumEnemys(params object[] parameter)
     {
-        actualAmountOfEnemy -= deathEnemy;
+        actualAmountOfEnemy -= 1;
         if(actualAmountOfEnemy <= 0)
         {
             WinCondition();
         }
     }
 
+    private void SpawnAddWave(params object[] parameter)
+    {
+        _minEnemy += (int)parameter[0] * 2;
+        _maxEnemy += (int)parameter[0] * 2;
+    }
+
     IEnumerator StartEnemys()
     {
-        _amountOfEnemy = Random.Range(8, 15);
+        _amountOfEnemy = Random.Range(_minEnemy, _maxEnemy);
 
         for (int i = 0; i < _amountOfEnemy; i++)
         {
-            yield return new WaitForSeconds(0.5f);
+            yield return new WaitForSeconds(1f);
             Instantiate(_tipeOfEnemy[Random.Range(0, 2)], _spawns[Random.Range(0, 4)].transform.position, _spawns[Random.Range(0, 4)].transform.rotation);
             actualAmountOfEnemy++;
         }

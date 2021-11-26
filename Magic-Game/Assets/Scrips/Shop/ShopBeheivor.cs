@@ -20,6 +20,11 @@ public class ShopBeheivor : MonoBehaviour
     [SerializeField]
     private int _actualCoins;
 
+    private void Awake()
+    {
+        _coinsBeheivor = LevelManager.instance.coinsBeheivor;
+    }
+
     private void OnTriggerEnter(Collider other)
     {
         _infoText.gameObject.SetActive(true);

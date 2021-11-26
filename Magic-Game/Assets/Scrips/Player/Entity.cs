@@ -12,7 +12,6 @@ public class Entity : MonoBehaviour
     public float speed;
     public float _damage;
     public float _realDamege;
-    private SpawnManager _manager;
 
     [SerializeField]
     private int _profitsCoins;
@@ -20,8 +19,7 @@ public class Entity : MonoBehaviour
 
     private void Awake()
     {
-        player = GameObject.FindGameObjectWithTag("Player").transform;
-        _manager = GameObject.FindGameObjectWithTag("Manager").GetComponent<SpawnManager>();
+        player = LevelManager.instance.player.transform;
     }
 
     public void TakeDamage(float dmg)
@@ -37,7 +35,7 @@ public class Entity : MonoBehaviour
     public void Death()
     {
         EventManager.Trigger("AddCoin", _profitsCoins);
-        _manager.MinumEnemys(1);
+        EventManager.Trigger("SubstractEnemy");
         Destroy(gameObject);
     }
 
