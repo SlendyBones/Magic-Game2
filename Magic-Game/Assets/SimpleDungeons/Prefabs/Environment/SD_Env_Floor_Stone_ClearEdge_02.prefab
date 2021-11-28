@@ -11,7 +11,7 @@ GameObject:
   - component: {fileID: 401842}
   - component: {fileID: 3328602}
   - component: {fileID: 2300198}
-  - component: {fileID: 64777137488876924}
+  - component: {fileID: 6348669859235379325}
   m_Layer: 8
   m_Name: SD_Env_Floor_Stone_ClearEdge_02
   m_TagString: Untagged
@@ -79,8 +79,8 @@ MeshRenderer:
   m_SortingLayerID: 0
   m_SortingLayer: 0
   m_SortingOrder: 0
---- !u!64 &64777137488876924
-MeshCollider:
+--- !u!65 &6348669859235379325
+BoxCollider:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
@@ -89,7 +89,6 @@ MeshCollider:
   m_Material: {fileID: 0}
   m_IsTrigger: 0
   m_Enabled: 1
-  serializedVersion: 3
-  m_Convex: 1
-  m_CookingOptions: 14
-  m_Mesh: {fileID: 43959000736152394, guid: 6082907225e99fa449d0eedbcb5b3fd3, type: 2}
+  serializedVersion: 2
+  m_Size: {x: 5.000002, y: 0, z: 5}
+  m_Center: {x: 2.500001, y: 0, z: -2.5}

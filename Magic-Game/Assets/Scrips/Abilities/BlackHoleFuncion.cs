@@ -28,5 +28,32 @@ public class BlackHoleFuncion : MonoBehaviour
            
     }
 
+     void OnTriggerEnter(Collider other)
+    {
+        if (other.attachedRigidbody)
+        {
+
+            if (other.gameObject.tag == "Enemy")
+            {
+                float gravityIntensity = Vector3.Distance(transform.position, other.transform.position) / m_GravityRadius;
+                other.attachedRigidbody.AddForce((transform.position - other.transform.position) * gravityIntensity * other.attachedRigidbody.mass * _gravityPull * Time.deltaTime);
+                Debug.DrawRay(other.transform.position, transform.position - other.transform.position);
+            }
+        }
+    }
+
+    private void OnTriggerExit(Collider other)
+    {
+        if (other.attachedRigidbody)
+        {
+
+            if (other.gameObject.tag == "Enemy")
+            {
+                float gravityIntensity = Vector3.Distance(transform.position, other.transform.position) / m_GravityRadius;
+                other.attachedRigidbody.AddForce((transform.position - other.transform.position) * gravityIntensity * other.attachedRigidbody.mass * _gravityPull * Time.deltaTime);
+                Debug.DrawRay(other.transform.position, transform.position - other.transform.position);
+            }
+        }
+    }
 }
 
