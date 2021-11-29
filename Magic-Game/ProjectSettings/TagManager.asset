@@ -9,6 +9,7 @@ TagManager:
   - Animator
   - Floor
   - Button
+  - Shield
   layers:
   - Default
   - TransparentFX

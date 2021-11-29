@@ -20,9 +20,16 @@ public class SpawnManager : MonoBehaviour
     [SerializeField]
     private int _maxEnemy;
 
+    [Header("EnemyDmg")]
+    public float enemyDamage;
+
+
+
+
     private void Awake()
     {
         EventManager.Subscribe("SubstractEnemy", MinumEnemys);
+        EventManager.Subscribe("SpawnAddWave", SpawnAddWave);
         EventManager.Subscribe("SpawnAddWave", SpawnAddWave);
         EventManager.Trigger("StartScene");
     }
@@ -64,4 +71,5 @@ public class SpawnManager : MonoBehaviour
             actualAmountOfEnemy++;
         }
     }
+
 }

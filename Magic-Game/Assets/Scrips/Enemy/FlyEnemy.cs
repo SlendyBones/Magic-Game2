@@ -24,6 +24,11 @@ public class FlyEnemy : Entity
 
     private void OnTriggerEnter(Collider other)
     {
+        if(other.gameObject.tag == "Shield")
+        {
+            Destroy(gameObject);
+        }
+        
         if (other.gameObject.tag == "Player")
         {
             EventManager.Trigger("PlayerDamage", _damage);
