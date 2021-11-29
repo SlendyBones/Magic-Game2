@@ -5,20 +5,23 @@ using UnityEngine;
 public class Button : MonoBehaviour
 {
     [SerializeField]
-    private LayerMask _playerMask;
-    [SerializeField]
     private StartTimer _startTimer = null;
     [SerializeField]
     private SpawnManager _spawnManager;
 
     public Action OnTouchButton;
 
-   
-    private void OnTriggerStay(Collider other)
+
+    private void Start()
     {
-        if (other.gameObject.tag == "Player" && Input.GetKeyDown("e") && _startTimer._timerIsOnClass == false)
+        EventManager.Subscribe("StartTimer", StartTimer);
+    }
+
+    private void StartTimer(params object[] parameter)
+    {
+        if(_startTimer._timerIsOnClass == false)
         {
-            if (OnTouchButton !=null)
+            if (OnTouchButton != null)
             {
                 OnTouchButton();
             }

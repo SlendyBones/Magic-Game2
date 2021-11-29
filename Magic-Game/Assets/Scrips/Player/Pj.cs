@@ -29,11 +29,18 @@ public class Pj : MonoBehaviour
     [SerializeField]
     private WLCondition wl;
 
-    public void ManaRecharge()
+    protected delegate void DelegateManaRecharge();
+    protected DelegateManaRecharge ManaRecharge;
+
+
+    public void MRecharge()
     {
         _mana += _manaRecharge * Time.deltaTime;
         if (_mana > _maxMana)
+        {
             _mana = _maxMana;
+            ManaRecharge -= MRecharge;
+        }
 
         ManaBar();
     }
@@ -47,9 +54,9 @@ public class Pj : MonoBehaviour
         LifeBar();
     }
 
-    public void PlayerDamage(float dmg)
+    public void PlayerDamage(params object[] parameter)
     {
-        TakeDamage(dmg);
+        TakeDamage((float)parameter[0]);
         LifeBar();
     }
 
@@ -71,12 +78,12 @@ public class Pj : MonoBehaviour
     }
     public bool UseMana(float um)
     {
+        ManaRecharge += MRecharge;
         if (_mana >= um)
         {
             _mana -= um;
             ManaBar();
             return (true);
-
         }
         else
             return (false);
@@ -113,5 +120,10 @@ public class Pj : MonoBehaviour
         yield return new WaitForSeconds(2);
         EventManager.Trigger("DeathCoin");
         wl.LoseScreen();
+    }
+
+    protected void EmptyVoid()
+    {
+
     }
 }

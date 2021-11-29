@@ -4,7 +4,6 @@ using UnityEngine;
 
 public class Shield : MonoBehaviour
 {
-   
     [SerializeField]
     float _timer;
     [SerializeField]
@@ -16,22 +15,7 @@ public class Shield : MonoBehaviour
     {
         _timer = _defaultTimer;
         activeShield = true;
-    }
-
-    private void OnTriggerEnter(Collider other)
-    {
-        if (other.gameObject.GetComponent<Entity>())
-        {
-            if (activeShield == true)
-            {
-                other.GetComponent<Entity>().CantMakeDamage();
-            }
-            else
-            {
-                other.GetComponent<Entity>().CanMakeDamage();
-
-            }
-        }
+        EventManager.Trigger("CantDamage");
     }
 
     private void Update()
@@ -41,6 +25,7 @@ public class Shield : MonoBehaviour
             _timer -= Time.deltaTime;
             if (_timer <= 0)
             {
+                EventManager.Trigger("CanDamage");
                 activeShield = false;
                 StartCoroutine(Timer());
             }
@@ -49,8 +34,6 @@ public class Shield : MonoBehaviour
         {
             return;
         }
-     
-       
     }
 
     IEnumerator Timer()
@@ -58,7 +41,6 @@ public class Shield : MonoBehaviour
         _timer = _defaultTimer;
         
         yield return new WaitForSeconds(0.1f);
-        this.gameObject.SetActive(false);
-        
+        this.gameObject.SetActive(false);  
     }
 }

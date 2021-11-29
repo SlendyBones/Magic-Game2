@@ -26,7 +26,7 @@ public class FlyEnemy : Entity
     {
         if (other.gameObject.tag == "Player")
         {
-            other.gameObject.GetComponent<Movement>().PlayerDamage(_damage);
+            EventManager.Trigger("PlayerDamage", _damage);
             Death();
         }
     }

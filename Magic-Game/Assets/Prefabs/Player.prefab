@@ -188,6 +188,7 @@ MonoBehaviour:
   rotationPoint: {fileID: 4979825619757920813}
   can: 0
   _ani: {fileID: 5812607302738391544}
+  _shooting: {fileID: 7996810287150569922}
 --- !u!136 &4979825619832221063
 CapsuleCollider:
   m_ObjectHideFlags: 0

@@ -25,20 +25,20 @@ public class ShopBeheivor : MonoBehaviour
         _coinsBeheivor = LevelManager.instances.coinsBeheivor;
     }
 
-    private void OnTriggerEnter(Collider other)
+    public void Buy()
     {
-        _infoText.gameObject.SetActive(true);
-        _infoText.text = "Press E to Upgrade " + _infoUpgrade + ". Cost: " + _cost.ToString();
-    }
-
-    private void OnTriggerStay(Collider other)
-    {
-        if (Input.GetKeyDown("e") && _coinsBeheivor.coins >= _cost)
+        if(_coinsBeheivor.coins >= _cost)
         {
             Debug.Log("e");
             _coinsBeheivor.SubstractCoin(_cost);
             EventManager.Trigger(_statToUpgrade);
         }
+    }
+
+    private void OnTriggerEnter(Collider other)
+    {
+        _infoText.gameObject.SetActive(true);
+        _infoText.text = "Press E to Upgrade " + _infoUpgrade + ". Cost: " + _cost.ToString();
     }
 
     private void OnTriggerExit(Collider other)

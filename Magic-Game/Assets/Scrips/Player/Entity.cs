@@ -20,6 +20,8 @@ public abstract class Entity : MonoBehaviour
     private void Awake()
     {
         player = LevelManager.instances.player.transform;
+        EventManager.Subscribe("CanDamage", CanMakeDamage);
+        EventManager.Subscribe("CantDamage", CantMakeDamage);
     }
 
     public void TakeDamage(float dmg)
@@ -39,12 +41,12 @@ public abstract class Entity : MonoBehaviour
         Destroy(gameObject);
     }
 
-    public void CantMakeDamage()
+    public void CantMakeDamage(params object[] parameter)
     {
         _damage = 0;
     }
 
-    public void CanMakeDamage()
+    public void CanMakeDamage(params object[] parameter)
     {
         _damage = _realDamege;
     }

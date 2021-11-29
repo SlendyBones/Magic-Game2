@@ -25,12 +25,17 @@ public class Movement : Pj
     [SerializeField]
     private Animator _ani;
 
+    [SerializeField]
+    private Shooting _shooting;
+
     private void Start()
     {
         EventManager.Subscribe("ManaUpgrade", ManaUpgrade);
         EventManager.Subscribe("LifeUpgrade", LifeUpgrade);
         EventManager.Subscribe("LifeRecharge", LifeRecharge);
+        EventManager.Subscribe("PlayerDamage", PlayerDamage);
         ComparativeStats();
+        ManaRecharge += EmptyVoid;
     }
 
     void Update()
@@ -39,6 +44,11 @@ public class Movement : Pj
         Run();
         Jump();
         ManaRecharge();
+
+        if (Input.GetButtonDown("Fire1"))
+        {
+            _shooting.canShoot();
+        }
     }
 
     private void Walk()
@@ -46,11 +56,8 @@ public class Movement : Pj
         _horizontalMove = Input.GetAxisRaw("Horizontal");
         _verticalMove = Input.GetAxisRaw("Vertical");
 
-        // _animatorController.Horizontal(_horizontalMove);
-        // _animatorController.Vertical(_verticalMove);
         _ani.SetFloat("HorizontalInput", _horizontalMove);
         _ani.SetFloat("VerticalInput", _verticalMove);
-
 
         _movementMagnitud = _playerInput.magnitude;
 
@@ -96,6 +103,22 @@ public class Movement : Pj
             Debug.Log("piso");
             _animatorController.Animation("Jump", false);
             _onFloor = true;
+        }
+    }
+
+    private void OnTriggerStay(Collider other)
+    {
+        if (Input.GetKeyDown("e"))
+        {
+            if (other.gameObject.tag == "Button")
+            {
+                EventManager.Trigger("StartTimer");
+            }
+
+            if (other.gameObject.tag == "Shop")
+            {
+                other.gameObject.GetComponent<ShopBeheivor>().Buy();
+            }
         }
     }
 }
