@@ -29,35 +29,6 @@ MonoBehaviour:
   shootingPoint: {fileID: 4979825618681852610}
   _timerDuration: 0.5
   _animator: {fileID: 3032980358458360680}
---- !u!114 &1807457436
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 611325797249216145}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 9449ad67f3ec74b44a5f99b66ebbe0fc, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  bottle: {fileID: 2469293475396079073, guid: d6b066164bfc0fd419bf59d52fdd7158, type: 3}
-  shootingPoint: {fileID: 4979825618681852610}
-  _timerDuration: 0.5
-  _animator: {fileID: 1807457437}
---- !u!114 &1807457437
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 611325797249216145}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: e817258d2867ecb4bbbe2d3ddc6bf5d1, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  _animator: {fileID: 5812607302738391544}
 --- !u!1 &4979825618681852611
 GameObject:
   m_ObjectHideFlags: 0
@@ -148,7 +119,6 @@ GameObject:
   - component: {fileID: 4979825619832221058}
   - component: {fileID: 4979825619832221059}
   - component: {fileID: 4979825619832221063}
-  - component: {fileID: 4979825619832221062}
   - component: {fileID: 4979825619832221061}
   m_Layer: 0
   m_Name: Player
@@ -211,7 +181,7 @@ MonoBehaviour:
   manaOn: 1
   healthBar: {fileID: 0}
   manaBar: {fileID: 0}
-  _animatorController: {fileID: 1807457437}
+  _animatorController: {fileID: 3032980358458360680}
   wl: {fileID: 0}
   rb: {fileID: 4979825619832221058}
   speed: 10
@@ -232,22 +202,6 @@ CapsuleCollider:
   m_Height: 2.1505055
   m_Direction: 1
   m_Center: {x: -0.028657675, y: 0.26322675, z: 0}
---- !u!114 &4979825619832221062
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 4979825619832221068}
-  m_Enabled: 0
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 9449ad67f3ec74b44a5f99b66ebbe0fc, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  bottle: {fileID: 2469293475396079073, guid: d6b066164bfc0fd419bf59d52fdd7158, type: 3}
-  shootingPoint: {fileID: 4979825618681852610}
-  _timerDuration: 0.5
-  _animator: {fileID: 0}
 --- !u!114 &4979825619832221061
 MonoBehaviour:
   m_ObjectHideFlags: 0
