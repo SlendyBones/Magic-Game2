@@ -4,10 +4,6 @@ using UnityEngine;
 
 public class EnemyBullet : Entity
 {
-    private void Start()
-    {
-        CanMakeDamage();
-    }
     void Update()
     {
         transform.position += transform.forward * Time.deltaTime * 10;

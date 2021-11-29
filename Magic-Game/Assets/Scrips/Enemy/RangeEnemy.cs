@@ -33,8 +33,8 @@ public class RangeEnemy : Entity
     }
     public void Shoot()
     {
-       
         GameObject Bullet = Instantiate(_shoot, transform.position + transform.forward, transform.localRotation);
+        Bullet.GetComponent<EnemyBullet>()._damage = _damage;
         Destroy(Bullet, 3f);
         _timer = 0;
     }

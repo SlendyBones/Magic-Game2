@@ -15,7 +15,6 @@ public class Shield : MonoBehaviour
     {
         _timer = _defaultTimer;
         activeShield = true;
-        EventManager.Trigger("CantDamage");
     }
 
     private void Update()

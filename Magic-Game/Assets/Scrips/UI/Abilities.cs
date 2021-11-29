@@ -131,6 +131,7 @@ public class Abilities : MonoBehaviour
         {
             if (pj.UseMana(manaCost3))
             {
+                EventManager.Trigger("CantDamage");
                 isCooldown3 = true;
                 abilityImage3.fillAmount = 1;
                 Shield _sh = shield.GetComponent<Shield>();
