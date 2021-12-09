@@ -16,8 +16,7 @@ public class MeleEnemy : Entity
 
     private void Awake()
     {
-        
-       // player = LevelManager.instances.player.transform;
+        player = LevelManager.instances.player.transform;
         EventManager.Subscribe("CanDamage", CanMakeDamage);
         EventManager.Subscribe("CantDamage", CantMakeDamage);
     }
@@ -42,7 +41,6 @@ public class MeleEnemy : Entity
     {
         transform.forward = player.position - transform.position;
         transform.position += transform.forward * speed * Time.deltaTime;
-        Debug.Log("Howa");
     }
 
     //Se llama al inicio de la animacion

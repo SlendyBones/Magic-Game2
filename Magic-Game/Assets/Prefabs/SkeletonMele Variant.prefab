@@ -16,7 +16,7 @@ MonoBehaviour:
   player: {fileID: 0}
   attackDistance: 2
   followDistance: 20
-  speed: 2
+  speed: 4
   _damage: 0
   _realDamege: 10
   _profitsCoins: 3
@@ -50,8 +50,8 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 5751602064491681309}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 0.0003, y: 0.01366, z: 0.0113}
-  m_LocalScale: {x: 0.0259655, y: 0.020176735, z: 0.01472877}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 1811266117826066536}
   m_RootOrder: 9
@@ -113,8 +113,8 @@ BoxCollider:
   m_IsTrigger: 1
   m_Enabled: 1
   serializedVersion: 2
-  m_Size: {x: 1, y: 1, z: 1}
-  m_Center: {x: -0.00000047683713, y: 0, z: 0.0000019073486}
+  m_Size: {x: 0.020310925, y: 0.029419458, z: 0.026402755}
+  m_Center: {x: -0.0013485494, y: 0.014997303, z: 0.013043161}
 --- !u!114 &157000774309540092
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -128,7 +128,8 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   _dmg: 10
-  _force: 1
+  _force: 2
+  _upForce: 1
 --- !u!1001 &3926296076178938000
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -480,6 +481,26 @@ PrefabInstance:
         type: 3}
       propertyPath: m_LocalEulerAnglesHint.z
       value: 5.1567483
+      objectReference: {fileID: 0}
+    - target: {fileID: 5293362589750294562, guid: 28e3e0de9cf1a72408cfdbff0422bcc0,
+        type: 3}
+      propertyPath: m_Height
+      value: 0.03035774
+      objectReference: {fileID: 0}
+    - target: {fileID: 5293362589750294562, guid: 28e3e0de9cf1a72408cfdbff0422bcc0,
+        type: 3}
+      propertyPath: m_Center.x
+      value: 0.000047843576
+      objectReference: {fileID: 0}
+    - target: {fileID: 5293362589750294562, guid: 28e3e0de9cf1a72408cfdbff0422bcc0,
+        type: 3}
+      propertyPath: m_Center.y
+      value: 0.01564577
+      objectReference: {fileID: 0}
+    - target: {fileID: 5293362589750294562, guid: 28e3e0de9cf1a72408cfdbff0422bcc0,
+        type: 3}
+      propertyPath: m_Center.z
+      value: 0.0003080585
       objectReference: {fileID: 0}
     - target: {fileID: 6153500661018500759, guid: 28e3e0de9cf1a72408cfdbff0422bcc0,
         type: 3}
