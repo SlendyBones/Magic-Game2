@@ -11,7 +11,16 @@ public class MeleEnemy : Entity
     Moving _move;
 
     [SerializeField] private GameObject _atackHitBox;
+    [SerializeField] private Animator _ani;
+    
 
+    private void Awake()
+    {
+        
+       // player = LevelManager.instances.player.transform;
+        EventManager.Subscribe("CanDamage", CanMakeDamage);
+        EventManager.Subscribe("CantDamage", CantMakeDamage);
+    }
     private void Start()
     {
         _move = Movement;
@@ -25,14 +34,15 @@ public class MeleEnemy : Entity
         if(distancePlayer <= attackDistance && isAtack == false)
         {
             isAtack = true;
-            //animacion de ataque
+            _ani.SetTrigger("Attack");
         }
     }
 
     private void Movement()
     {
-        transform.forward = transform.position - player.position;
+        transform.forward = player.position - transform.position;
         transform.position += transform.forward * speed * Time.deltaTime;
+        Debug.Log("Howa");
     }
 
     //Se llama al inicio de la animacion
