@@ -20,12 +20,8 @@ public abstract class Entity : MonoBehaviour
     private int _randomNumber;
     private int _probability;
 
-    private void Awake()
-    {
-        player = LevelManager.instances.player.transform;
-        EventManager.Subscribe("CanDamage", CanMakeDamage);
-        EventManager.Subscribe("CantDamage", CantMakeDamage);
-    }
+    [SerializeField] private bool _boss = false;
+
 
     public void TakeDamage(float dmg)
     {
@@ -44,6 +40,11 @@ public abstract class Entity : MonoBehaviour
         if(_randomNumber < _probability)
         {
             Instantiate(_heal, transform.position, transform.rotation);
+        }
+
+        if(_boss == true)
+        {
+            EventManager.Trigger("WinScene");
         }
 
         EventManager.Trigger("AddCoin", _profitsCoins);

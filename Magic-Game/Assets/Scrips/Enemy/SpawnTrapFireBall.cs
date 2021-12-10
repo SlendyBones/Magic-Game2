@@ -15,10 +15,18 @@ public class SpawnTrapFireBall : MonoBehaviour
     [SerializeField]
     private Button button;
 
+    [SerializeField] private bool _isButton = true;
+
     private void Start()
     {
         _timer = _timeforspawn;
-        button.OnTouchButton += Star;
+
+        if (_isButton == true)
+        {
+            button.OnTouchButton += Star;
+        }
+        else
+            _on = true;
     }
     private void Update()
     {

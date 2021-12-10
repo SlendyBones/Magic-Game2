@@ -129,8 +129,10 @@ MonoBehaviour:
   followDistance: 0
   speed: 0
   _damage: 0
-  _realDamege: 0
+  _realDamege: 10
   _profitsCoins: 0
+  _heal: {fileID: 0}
+  _boss: 0
 --- !u!1 &8990674434444693554
 GameObject:
   m_ObjectHideFlags: 0

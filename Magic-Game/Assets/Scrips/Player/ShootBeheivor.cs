@@ -23,6 +23,7 @@ public class ShootBeheivor : MonoBehaviour
         Entity entity = other.gameObject.GetComponent<Entity>();
         if (entity != null)
         {
+            Debug.Log("pege");
             entity.TakeDamage(_dmg);
         }
         SoundManager.instance.PlaySound(SoundID.FRASK);

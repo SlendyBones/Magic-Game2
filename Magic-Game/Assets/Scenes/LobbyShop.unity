@@ -1332,6 +1332,8 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   _lvlName: Nivel1
+  _lvlName2: Nivel2
+  _lvlName3: Nivel3
 --- !u!1001 &877616073
 PrefabInstance:
   m_ObjectHideFlags: 0

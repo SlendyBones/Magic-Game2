@@ -12,7 +12,7 @@ public class LevelManager : MonoBehaviour
     public float dmg;
 
     [Header("Waves")]
-    public int numberWave;
+    public int numberLVL;
 
     [Header("PlayerReference")]
     public GameObject player;
@@ -44,7 +44,7 @@ public class LevelManager : MonoBehaviour
 
     void AddWave(params object[] parameter)
     {
-        numberWave++;
+        numberLVL++;
     }
 
     public void DamageUpgrade(params object[] parameter)

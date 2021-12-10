@@ -1,6 +1,8 @@
 ﻿using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.UI;
+
 
 public class Boss : Entity
 {
@@ -20,12 +22,15 @@ public class Boss : Entity
 
     [SerializeField] private int _minEnemy, _maxEnemy, _minSpawn, _maxSpawn;
 
+    [SerializeField] private Image _lifeBar;
+    private float _originalLife;
+
     void Start()
     {
-        player = LevelManager.instances.player.transform;
         EventManager.Subscribe("CanDamage", CanMakeDamage);
         EventManager.Subscribe("CantDamage", CantMakeDamage);
         _move = Movement;
+        _originalLife = life;
     }
 
     // Update is called once per frame
@@ -33,7 +38,8 @@ public class Boss : Entity
     {
         distancePlayer = Vector3.Distance(player.transform.position, transform.position);
         _move();
-
+        Debug.Log(life);
+        _lifeBar.fillAmount = life/_originalLife;
     }
 
     void Movement()
@@ -75,7 +81,8 @@ public class Boss : Entity
 
     public void SpawnEnemy()
     {
-        Instantiate(_enemys[Random.Range(_minEnemy, _maxEnemy)], _spawnPointEnemy[Random.Range(_minSpawn, _maxSpawn)]);
+        Debug.Log("xd");
+        Instantiate(_enemys[Random.Range(_minEnemy, _maxEnemy)], _spawnPointEnemy[Random.Range(_minSpawn, _maxSpawn)].position, _spawnPointEnemy[Random.Range(_minSpawn, _maxSpawn)].rotation);
     }
 
     //Llamar al final de la animacion para poder volver a caminar

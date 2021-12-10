@@ -6,6 +6,9 @@ public class FlyEnemy : Entity
 {
     private void Start()
     {
+        player = LevelManager.instances.player.transform;
+        EventManager.Subscribe("CanDamage", CanMakeDamage);
+        EventManager.Subscribe("CantDamage", CantMakeDamage);
         CanMakeDamage();
         SoundManager.instance.PlaySound(SoundID.FLY);
     }
