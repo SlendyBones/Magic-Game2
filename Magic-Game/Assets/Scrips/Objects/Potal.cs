@@ -15,11 +15,11 @@ public class Potal : MonoBehaviour
     {
         EventManager.ResetEventDictionary();
 
-        if (LevelManager.instances.numberLVL == 0)
+        if (LevelManager.instances.numberLVL == 1)
             SceneManager.LoadScene(_lvlName);
-        else if (LevelManager.instances.numberLVL == 1)
-            SceneManager.LoadScene(_lvlName2);
         else if (LevelManager.instances.numberLVL == 2)
+            SceneManager.LoadScene(_lvlName2);
+        else if (LevelManager.instances.numberLVL == 3)
             SceneManager.LoadScene(_lvlName3);
     }
 }
