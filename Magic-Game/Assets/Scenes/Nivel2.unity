@@ -16512,6 +16512,7 @@ MonoBehaviour:
   _minEnemy: 8
   _maxEnemy: 15
   enemyDamage: 0
+  _isLvl2: 1
 --- !u!1001 &1009071575
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -31744,7 +31745,8 @@ MonoBehaviour:
   maxLife: 50
   maxMana: 50
   dmg: 5
-  numberWave: 0
+  numberLVL: 1
+  lvl2: 0
   player: {fileID: 127908759}
   coinsBeheivor: {fileID: 1048545595}
 --- !u!1001 &2083960944

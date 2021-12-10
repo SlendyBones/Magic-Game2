@@ -12,7 +12,9 @@ public class LevelManager : MonoBehaviour
     public float dmg;
 
     [Header("Waves")]
-    public int numberLVL;
+    public int numberLVL= 1;
+
+    public bool lvl2 = false;
 
     [Header("PlayerReference")]
     public GameObject player;
@@ -44,6 +46,7 @@ public class LevelManager : MonoBehaviour
 
     void AddWave(params object[] parameter)
     {
+        Debug.Log("addin");
         numberLVL++;
     }
 

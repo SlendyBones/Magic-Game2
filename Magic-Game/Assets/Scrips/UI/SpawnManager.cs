@@ -23,7 +23,7 @@ public class SpawnManager : MonoBehaviour
     [Header("EnemyDmg")]
     public float enemyDamage;
 
-
+    [SerializeField] private bool _isLvl2 = false;
 
 
     private void Awake()
@@ -36,6 +36,11 @@ public class SpawnManager : MonoBehaviour
 
     public void WinCondition()
     {
+        Debug.Log("addout");
+        if(_isLvl2 == true)
+        {
+            LevelManager.instances.lvl2 = true;
+        }
         EventManager.Trigger("AddWave");
         wl.Shop();
     }
