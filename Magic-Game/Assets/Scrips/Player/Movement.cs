@@ -100,7 +100,6 @@ public class Movement : Pj
     {
         if (collision.gameObject.layer == _layerFloor)
         {
-            Debug.Log("piso");
             _animatorController.Animation("Jump", false);
             _onFloor = true;
         }

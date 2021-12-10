@@ -16,6 +16,9 @@ public abstract class Entity : MonoBehaviour
     [SerializeField]
     private int _profitsCoins;
 
+    [SerializeField] private GameObject _heal;
+    private int _randomNumber;
+    private int _probability;
 
     private void Awake()
     {
@@ -36,6 +39,13 @@ public abstract class Entity : MonoBehaviour
 
     public void Death()
     {
+        _randomNumber = Random.Range(1, 101);
+
+        if(_randomNumber < _probability)
+        {
+            Instantiate(_heal, transform.position, transform.rotation);
+        }
+
         EventManager.Trigger("AddCoin", _profitsCoins);
         EventManager.Trigger("SubstractEnemy");
         Destroy(gameObject);

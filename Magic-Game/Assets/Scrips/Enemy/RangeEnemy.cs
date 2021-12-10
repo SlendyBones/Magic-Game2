@@ -13,6 +13,14 @@ public class RangeEnemy : Entity
     [SerializeField]
     private Animator _ani;
 
+    private void Start()
+    {
+        player = LevelManager.instances.player.transform;
+        EventManager.Subscribe("CanDamage", CanMakeDamage);
+        EventManager.Subscribe("CantDamage", CantMakeDamage);
+        CanMakeDamage();
+    }
+
     void Update()
     {
         transform.forward = player.transform.position - transform.position;

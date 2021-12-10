@@ -20,6 +20,7 @@ MonoBehaviour:
   _damage: 0
   _realDamege: 10
   _profitsCoins: 3
+  _heal: {fileID: 5313088146365214043, guid: c659ba40141197448b12ed142343866f, type: 3}
   _atackHitBox: {fileID: 5751602064491681309}
   _ani: {fileID: 8622400085049578770}
 --- !u!1 &5751602064491681309

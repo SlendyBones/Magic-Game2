@@ -50,6 +50,7 @@ MonoBehaviour:
   _damage: 0
   _realDamege: 10
   _profitsCoins: 2
+  _heal: {fileID: 5313088146365214043, guid: c659ba40141197448b12ed142343866f, type: 3}
   _shoot: {fileID: 5798250639880752860, guid: 2ee55b4f28e5628498a2bd5ad0330a96, type: 3}
   _ani: {fileID: 4743955391204445570}
 --- !u!1001 &7648622089276443618

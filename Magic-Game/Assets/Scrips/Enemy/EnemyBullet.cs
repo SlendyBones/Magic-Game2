@@ -13,6 +13,7 @@ public class EnemyBullet : Entity
     {
         if(other.gameObject.tag == "Player")
         {
+            Debug.Log(_damage);
             EventManager.Trigger("PlayerDamage", _damage);
             SoundManager.instance.PlaySound(SoundID.EBULLET);
             Destroy(gameObject);

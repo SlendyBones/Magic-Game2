@@ -13,15 +13,11 @@ public class MeleEnemy : Entity
     [SerializeField] private GameObject _atackHitBox;
     [SerializeField] private Animator _ani;
     
-
-    private void Awake()
+    private void Start()
     {
         player = LevelManager.instances.player.transform;
         EventManager.Subscribe("CanDamage", CanMakeDamage);
         EventManager.Subscribe("CantDamage", CantMakeDamage);
-    }
-    private void Start()
-    {
         _move = Movement;
     }
     void Update()
