@@ -11,7 +11,11 @@ public class EnemyBullet : Entity
 
     private void OnTriggerEnter(Collider other)
     {
-        if(other.gameObject.tag == "Player")
+        if (other.gameObject.tag == "Shield")
+        {
+            Destroy(gameObject);
+        }
+        if (other.gameObject.tag == "Player")
         {
             Debug.Log(_damage);
             EventManager.Trigger("PlayerDamage", _damage);
