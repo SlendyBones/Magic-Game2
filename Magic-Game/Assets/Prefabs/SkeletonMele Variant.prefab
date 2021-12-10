@@ -128,8 +128,8 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   _dmg: 10
-  _force: 2
-  _upForce: 1
+  _force: 0.5
+  _upForce: 0.5
 --- !u!1001 &3926296076178938000
 PrefabInstance:
   m_ObjectHideFlags: 0
