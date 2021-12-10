@@ -761,13 +761,13 @@ Transform:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1835681308127287576}
-  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalRotation: {x: -0.24057484, y: -0, z: -0, w: 0.9706306}
   m_LocalPosition: {x: 0, y: 0.024, z: 0.0163}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 6630163564581648944}
   m_RootOrder: 7
-  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+  m_LocalEulerAnglesHint: {x: -27.841002, y: 0, z: 0}
 --- !u!1 &1924827025571560285
 GameObject:
   m_ObjectHideFlags: 0
@@ -3944,7 +3944,7 @@ MonoBehaviour:
   _damage: 0
   _realDamege: 15
   _profitsCoins: 30
-  _heal: {fileID: 0}
+  _heal: {fileID: 5313088146365214043, guid: c659ba40141197448b12ed142343866f, type: 3}
   _ani: {fileID: 3641460894559688522}
   _invokeTime: 5
   _fireBall: {fileID: 7360400001386241540, guid: d3faf57f8d6e0f049931b96bce7c5a5b,
