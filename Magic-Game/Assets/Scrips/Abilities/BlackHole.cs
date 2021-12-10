@@ -6,7 +6,7 @@ public class BlackHole : MonoBehaviour
 {
     public float masa = 1f;
     [SerializeField]
-    private float dmg =99999999f; 
+    private float dmg =10f; 
   
 
     private void Awake()

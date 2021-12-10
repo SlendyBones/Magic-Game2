@@ -352,7 +352,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   masa: 3.59
-  dmg: 100000000
+  dmg: 10
 --- !u!54 &8523060877327876672
 Rigidbody:
   m_ObjectHideFlags: 0

@@ -29,7 +29,7 @@ public class FlyEnemy : Entity
     {
         if(other.gameObject.tag == "Shield")
         {
-            Destroy(gameObject);
+            Death();
         }
         
         if (other.gameObject.tag == "Player")

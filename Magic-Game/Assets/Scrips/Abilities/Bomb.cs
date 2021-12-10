@@ -82,6 +82,24 @@ public class Bomb : MonoBehaviour
 
             }
         }
+        foreach (Collider nearbyObject in collidersToMakeDamage)
+        {
+            MeleEnemy meleeni = nearbyObject.GetComponent<MeleEnemy>();
+            if (meleeni != null)
+            {
+               meleeni.TakeDamage(damage);
+
+            }
+        }
+        foreach (Collider nearbyObject in collidersToMakeDamage)
+        {
+            Boss bossu = nearbyObject.GetComponent<Boss>();
+            if (bossu != null)
+            {
+                bossu.TakeDamage(damage);
+
+            }
+        }
         Destroy(gameObject);
     }
 }
