@@ -11,8 +11,7 @@ public class Shooting : MonoBehaviour
     [SerializeField]
     private float _timerDuration;
 
-    [SerializeField]
-    private AnimatorController _animator;
+    public AnimatorController _animator;
 
     public delegate void DS();
     public DS canShoot;
@@ -20,13 +19,12 @@ public class Shooting : MonoBehaviour
 
     private void Start()
     {
-        canShoot += Shoot;
-        canShoot += EmptyVoid;
+        canShoot = Shoot;
     }
 
     public void Shoot()
     {
-        canShoot -= Shoot;
+        canShoot = delegate { };
         _animator.Animation("Atack", true);
     }
 
@@ -41,11 +39,6 @@ public class Shooting : MonoBehaviour
     {
         yield return new WaitForSeconds(_timerDuration);
         _animator.Animation("Atack", false);
-        canShoot += Shoot;
-    }
-
-    private void EmptyVoid()
-    {
-
+        canShoot = Shoot;
     }
 }

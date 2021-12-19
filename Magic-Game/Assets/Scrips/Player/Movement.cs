@@ -22,11 +22,16 @@ public class Movement : Pj
     public GameObject rotationPoint;
 
     public bool can = true;
-    [SerializeField]
-    private Animator _ani;
 
-    [SerializeField]
-    private Shooting _shooting;
+    private bool _shop = false;
+    private bool _timer = false;
+
+    [SerializeField] private Animator _animator; 
+
+
+    private ShopBeheivor _shopBeheivor;
+    private Controllers _controlls;
+    [SerializeField] private Shooting _shoting;
 
     private void Start()
     {
@@ -35,30 +40,26 @@ public class Movement : Pj
         EventManager.Subscribe("LifeRecharge", LifeRecharge);
         EventManager.Subscribe("PlayerDamage", PlayerDamage);
         ComparativeStats();
-        ManaRecharge += EmptyVoid;
+
+        _controlls = new Controllers();
+        _controlls._move = this;
+        _controlls._shoot = _shoting;
+
+        _ani = new AnimatorController();
+        _ani._animator = _animator;
+
+        _shoting._animator = _ani;
     }
 
     void Update()
     {
-        Walk();
-        Run();
-        Jump();
+        _controlls.OnUpdate();
+        Move();
         ManaRecharge();
-
-        if (Input.GetButtonDown("Fire1"))
-        {
-            _shooting.canShoot();
-        }
     }
 
-    private void Walk()
+    private void Move()
     {
-        _horizontalMove = Input.GetAxisRaw("Horizontal");
-        _verticalMove = Input.GetAxisRaw("Vertical");
-
-        _ani.SetFloat("HorizontalInput", _horizontalMove);
-        _ani.SetFloat("VerticalInput", _verticalMove);
-
         _movementMagnitud = _playerInput.magnitude;
 
         _playerInput = rotationPoint.transform.right * _horizontalMove + rotationPoint.transform.forward * _verticalMove * Mathf.Abs(_verticalMove);
@@ -74,50 +75,76 @@ public class Movement : Pj
             rb.MovePosition(transform.position + _playerInput * (speed * Time.deltaTime));
     }
 
-    private void Run()
+    public void Axies(float h, float v)
     {
-        //Correr
-        if (Input.GetButtonDown("Sprint"))
-        {
-            speed *= 2;
-        }
-        else if (Input.GetButtonUp("Sprint"))
-            speed /= 2;
+        _horizontalMove = h;
+        _verticalMove = v;
+        _ani.MovementAnimation(_horizontalMove, _verticalMove);
     }
 
-    private void Jump()
+    public void Run()
     {
-        //Saltar
-        if (Input.GetButtonDown("Jump") && _onFloor)
+        speed *= 2;
+    }
+
+    public void Walk()
+    {
+        speed *= 0.5f;
+    }
+
+    public void Jump()
+    {
+        if (_onFloor)
         {
             rb.AddForce(new Vector3(0, 300, 0));
-            _animatorController.Animation("Jump", true);
+            _ani.Animation("Jump", true);
             _onFloor = false;
         }
+    }
+
+    public void Interactive()
+    {
+        if(_timer)
+            EventManager.Trigger("StartTimer");
+
+        if (_shop)
+            _shopBeheivor.Buy();
     }
 
     private void OnCollisionEnter(Collision collision)
     {
         if (collision.gameObject.layer == _layerFloor)
         {
-            _animatorController.Animation("Jump", false);
+            _ani.Animation("Jump", false);
             _onFloor = true;
         }
     }
 
-    private void OnTriggerStay(Collider other)
+    private void OnTriggerEnter(Collider other)
     {
-        if (Input.GetKeyDown("e"))
+        if (other.gameObject.tag == "Button")
         {
-            if (other.gameObject.tag == "Button")
-            {
-                EventManager.Trigger("StartTimer");
-            }
+            _timer = true;
+        }
 
-            if (other.gameObject.tag == "Shop")
-            {
-                other.gameObject.GetComponent<ShopBeheivor>().Buy();
-            }
+        if (other.gameObject.tag == "Shop")
+        {
+            _shop = true;
+            _shopBeheivor = other.gameObject.GetComponent<ShopBeheivor>();
+        }
+    }
+
+    private void OnTriggerExit(Collider other)
+    {
+        if (other.gameObject.tag == "Button")
+        {
+            _timer = false;
+        }
+
+        if (other.gameObject.tag == "Shop")
+        {
+            _shop = false;
+            _shopBeheivor = null;
         }
     }
 }

@@ -24,13 +24,12 @@ public class Pj : MonoBehaviour
     public HealthBar manaBar;
 
     [SerializeField]
-    public AnimatorController _animatorController;
-
-    [SerializeField]
     private WLCondition wl;
 
+    protected AnimatorController _ani;
+
     protected delegate void DelegateManaRecharge();
-    protected DelegateManaRecharge ManaRecharge;
+    protected DelegateManaRecharge ManaRecharge = delegate { };
 
 
     public void MRecharge()
@@ -39,7 +38,7 @@ public class Pj : MonoBehaviour
         if (_mana > _maxMana)
         {
             _mana = _maxMana;
-            ManaRecharge -= MRecharge;
+            ManaRecharge = delegate { };
         }
 
         ManaBar();
@@ -78,7 +77,7 @@ public class Pj : MonoBehaviour
     }
     public bool UseMana(float um)
     {
-        ManaRecharge += MRecharge;
+        ManaRecharge = MRecharge;
         if (_mana >= um)
         {
             _mana -= um;
@@ -111,7 +110,7 @@ public class Pj : MonoBehaviour
 
     void Death()
     {
-        _animatorController.Animation("Die" ,true);
+        _ani.Animation("Die" ,true);
         StartCoroutine(LoadScene());
     }
 
@@ -120,10 +119,5 @@ public class Pj : MonoBehaviour
         yield return new WaitForSeconds(2);
         EventManager.Trigger("DeathCoin");
         wl.LoseScreen();
-    }
-
-    protected void EmptyVoid()
-    {
-
     }
 }

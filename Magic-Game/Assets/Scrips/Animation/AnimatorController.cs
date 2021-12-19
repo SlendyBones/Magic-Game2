@@ -2,12 +2,9 @@
 using System.Collections.Generic;
 using UnityEngine;
 
-public class AnimatorController : MonoBehaviour
+public class AnimatorController
 {
-    [SerializeField]
-    private Animator _animator;
-
-   
+    public Animator _animator;
 
     public void Animation(string anima, bool state)
     {
@@ -17,17 +14,12 @@ public class AnimatorController : MonoBehaviour
     {
         _animator.SetTrigger("Damage");
     }
-    
-    public void Horizontal(float H)
-    {
-        _animator.SetFloat("HorizontalInput", H);
-        
-    }
-    public void Vertical(float V)
-    {
-        _animator.SetFloat("VerticalInput", V);
-    }
 
+    public void MovementAnimation(float _h, float _v)
+    {
+        _animator.SetFloat("HorizontalInput", _h);
+        _animator.SetFloat("VerticalInput", _v);
+    }
 }
 
 
