@@ -126,6 +126,8 @@ MonoBehaviour:
   _rb: {fileID: 6711900893112840202}
   _rbForce: 750
   _dmg: 0
+  _particleBottle: {fileID: 4025699190740325148, guid: cbc5ce67737faa14ab6438a8db17b72c,
+    type: 3}
 --- !u!1001 &7905331648023707962
 PrefabInstance:
   m_ObjectHideFlags: 0

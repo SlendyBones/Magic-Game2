@@ -12,6 +12,9 @@ public class ShootBeheivor : MonoBehaviour
 
     [SerializeField]
     private float _dmg = 0;
+
+    [SerializeField]
+    private GameObject _particleBottle;
     void Start()
     {
         _dmg = LevelManager.instances.dmg;
@@ -27,6 +30,7 @@ public class ShootBeheivor : MonoBehaviour
             entity.TakeDamage(_dmg);
         }
         SoundManager.instance.PlaySound(SoundID.FRASK);
+        Instantiate(_particleBottle, transform.position, transform.rotation);
         Destroy(gameObject);
     }
 }

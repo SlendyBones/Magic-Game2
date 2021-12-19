@@ -9,7 +9,8 @@ public class Bomb : MonoBehaviour
     public float force = 500f;
     public float damage = 15f;
 
-   
+    [SerializeField]
+    private GameObject _particleExplosion;
 
     private float _countDown;
     bool _hasExploded = false;
@@ -100,6 +101,7 @@ public class Bomb : MonoBehaviour
 
             }
         }
+        Instantiate(_particleExplosion, transform.position, transform.rotation);
         Destroy(gameObject);
     }
 }
