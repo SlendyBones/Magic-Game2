@@ -2210,7 +2210,8 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   _infoText: {fileID: 1487473360}
   _infoUpgrade: Mana
-  _statToUpgrade: ManaUpgrade
+  _numberUpgrade: 0
+  _addStat: 10
   _cost: 10
   _coinsBeheivor: {fileID: 0}
   _actualCoins: 0
@@ -2385,7 +2386,8 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   _infoText: {fileID: 1487473360}
   _infoUpgrade: Damage
-  _statToUpgrade: DmgUpgrade
+  _numberUpgrade: 2
+  _addStat: 10
   _cost: 10
   _coinsBeheivor: {fileID: 0}
   _actualCoins: 0
@@ -4607,7 +4609,8 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   _infoText: {fileID: 1487473360}
   _infoUpgrade: Life
-  _statToUpgrade: LifeUpgrade
+  _numberUpgrade: 1
+  _addStat: 10
   _cost: 10
   _coinsBeheivor: {fileID: 0}
   _actualCoins: 0
