@@ -6,13 +6,13 @@ using UnityEngine.UI;
 public class Abilities : MonoBehaviour
 {
     [Header("Ability One")]
-    private int _blackHoleMana;
+    [SerializeField] private int _blackHoleMana;
 
     [Header("Ability Two")]
-    private int _explosionMana;
+    [SerializeField] private int _explosionMana;
 
     [Header("Ability Three")]
-    private int _shieldMana;
+    [SerializeField] private int _shieldMana;
 
     [Header("Spawn Ability")]
     public Transform spawnAbilities;
@@ -24,18 +24,28 @@ public class Abilities : MonoBehaviour
 
     [Header("Pj")]
     [SerializeField] private Movement pj;
-    [SerializeField] private AnimatorController _animator;
 
-    [SerializeField] private StatsManager _stats;
+    private AnimatorController _ani;
+    [SerializeField] private Animator _animator;
+
     [SerializeField] private UIManager _uiManager;
+
+    private void Start()
+    {
+        _ani = new AnimatorController();
+        _ani._animator = _animator;
+    }
 
     public void Ability1()
     {
+        Debug.Log("antes if");
         if (_uiManager._isCD[0] == false)
         {
+            Debug.Log("Despues if");
             if (pj.UseMana(_blackHoleMana))
             {
-                _uiManager._isCD[0] = true;
+                Debug.Log("uso mana");
+                _uiManager.SetOff(0);
 
                 GameObject jar =Instantiate(jarAbility, spawnAbilities.position, player.transform.rotation);
                 _animator.SetTrigger("Atack");
@@ -48,7 +58,7 @@ public class Abilities : MonoBehaviour
         {
             if (pj.UseMana(_explosionMana))
             {
-                _uiManager._isCD[1] = true;
+                _uiManager.SetOff(1);
 
                 GameObject bomb = Instantiate(bombAbility, spawnAbilities.position, player.transform.rotation);
                 _animator.SetTrigger("Atack");
@@ -62,8 +72,8 @@ public class Abilities : MonoBehaviour
         {
             if (pj.UseMana(_shieldMana))
             {
-                _stats.ShieldOn();
-                _uiManager._isCD[2] = true;
+                pj.ShieldOn();
+                _uiManager.SetOff(2);
                 Shield _sh = shield.GetComponent<Shield>();
                 _sh.activeShield = true;
                 shield.SetActive(true);

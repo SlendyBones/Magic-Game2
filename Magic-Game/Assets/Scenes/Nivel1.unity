@@ -11829,6 +11829,9 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 51fc5839adfc6cd4488e15f534bb4f80, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  _blackHoleMana: 15
+  _explosionMana: 10
+  _shieldMana: 20
   spawnAbilities: {fileID: 1242129625}
   player: {fileID: 127908759}
   jarAbility: {fileID: 6054725814908208590, guid: e125cc7434cd11d48bac8616488ed259,
@@ -11837,7 +11840,7 @@ MonoBehaviour:
     type: 3}
   shield: {fileID: 1334919822}
   pj: {fileID: 127908760}
-  _stats: {fileID: 127908760}
+  _animator: {fileID: 252205040}
   _uiManager: {fileID: 1115304049}
 --- !u!4 &999192875
 Transform:
@@ -12875,7 +12878,7 @@ PrefabInstance:
     - target: {fileID: 3277000350559323558, guid: c08f0b51abc199f4ab5d8c337ce79311,
         type: 3}
       propertyPath: m_RootOrder
-      value: 11
+      value: 10
       objectReference: {fileID: 0}
     - target: {fileID: 3309585688891697199, guid: c08f0b51abc199f4ab5d8c337ce79311,
         type: 3}
@@ -13075,7 +13078,7 @@ PrefabInstance:
     - target: {fileID: 8064177073879529770, guid: c08f0b51abc199f4ab5d8c337ce79311,
         type: 3}
       propertyPath: m_RootOrder
-      value: 10
+      value: 11
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: c08f0b51abc199f4ab5d8c337ce79311, type: 3}
@@ -24783,6 +24786,16 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 0}
     m_Modifications:
+    - target: {fileID: 1411987738315291688, guid: 1f02812186cf71b4ab9878ae9bff82ec,
+        type: 3}
+      propertyPath: _defaultTimer
+      value: 5
+      objectReference: {fileID: 0}
+    - target: {fileID: 1411987738315291688, guid: 1f02812186cf71b4ab9878ae9bff82ec,
+        type: 3}
+      propertyPath: stats
+      value: 
+      objectReference: {fileID: 127908760}
     - target: {fileID: 4979825619832221056, guid: 1f02812186cf71b4ab9878ae9bff82ec,
         type: 3}
       propertyPath: m_LocalPosition.x

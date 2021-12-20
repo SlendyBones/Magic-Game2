@@ -14,7 +14,7 @@ GameObject:
   - component: {fileID: 3927128802891050008}
   - component: {fileID: 2454141453783666972}
   - component: {fileID: 8505790008868724721}
-  m_Layer: 8
+  m_Layer: 14
   m_Name: Jar
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -125,3 +125,5 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   _blackHole: {fileID: 768432312882749060, guid: e2076efbdbeec3146a0cbc4d9f028b5d,
     type: 3}
+  rb: {fileID: 2454141453783666972}
+  forceOfTroward: 40

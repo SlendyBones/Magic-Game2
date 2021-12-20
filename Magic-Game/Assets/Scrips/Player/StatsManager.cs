@@ -4,7 +4,7 @@ using UnityEngine;
 
 public class StatsManager : Entity
 {
-    [SerializeField] private UIManager _uiManager;
+    [SerializeField] protected UIManager _uiManager;
 
     protected delegate void DelegateManaRecharge();
     protected DelegateManaRecharge _manaDelegate = delegate { };

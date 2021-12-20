@@ -11,12 +11,17 @@ public class Shield : MonoBehaviour
     
     public bool activeShield;
 
-    [SerializeField] StatsManager stats;
+    [SerializeField] Movement stats;
 
     private void Start()
     {
         _timer = _defaultTimer;
         activeShield = true;
+    }
+
+    private void OnEnable()
+    {
+        stats.ShieldOn();
     }
 
     private void Update()
@@ -26,7 +31,7 @@ public class Shield : MonoBehaviour
             _timer -= Time.deltaTime;
             if (_timer <= 0)
             {
-                EventManager.Trigger("CanDamage");
+                stats.ShieldOff();
                 activeShield = false;
                 StartCoroutine(Timer());
             }
@@ -42,7 +47,6 @@ public class Shield : MonoBehaviour
         _timer = _defaultTimer;
         
         yield return new WaitForSeconds(0.1f);
-        stats.ShieldOff();
         gameObject.SetActive(false);
     }
 }

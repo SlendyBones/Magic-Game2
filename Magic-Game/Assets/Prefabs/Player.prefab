@@ -148,7 +148,7 @@ MonoBehaviour:
   _maxMana: 50
   _manaRecharge: 2
   speed: 10
-  _damage: 0
+  _damage: 5
   isEnemy: 0
   _boss: 0
   _heal: {fileID: 5313088146365214043, guid: c659ba40141197448b12ed142343866f, type: 3}
@@ -161,6 +161,7 @@ MonoBehaviour:
   rotationPoint: {fileID: 4979825619757920813}
   _animator: {fileID: 5812607302738391544}
   _shoting: {fileID: 7996810287150569922}
+  _abilities: {fileID: 0}
 --- !u!136 &4979825619832221063
 CapsuleCollider:
   m_ObjectHideFlags: 0

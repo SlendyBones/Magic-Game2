@@ -33,6 +33,9 @@ public class Movement : StatsManager
     {
         ComparativeStats();
 
+        _uiManager.SetMaxHealth(_life);
+        _uiManager.SetMaxMana(_mana);
+
         _dmgDelegate = PlayerDamage;
 
         _controlls = new Controllers();

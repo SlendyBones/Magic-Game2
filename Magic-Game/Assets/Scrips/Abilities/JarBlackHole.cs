@@ -4,8 +4,14 @@ using UnityEngine;
 
 public class JarBlackHole : MonoBehaviour
 {
-    [SerializeField]
-    GameObject _blackHole;
+    [SerializeField] private GameObject _blackHole;
+    [SerializeField] private Rigidbody rb;
+    [SerializeField] private float forceOfTroward;
+
+    private void Start()
+    {
+        rb.AddForce(transform.forward * forceOfTroward);
+    }
 
     private void OnCollisionEnter(Collision collision)
     {

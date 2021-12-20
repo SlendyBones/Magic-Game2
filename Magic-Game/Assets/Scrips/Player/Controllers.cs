@@ -8,7 +8,6 @@ public class Controllers
     public Shooting _shoot;
     public Abilities abilities;
     private float _hAxie, _vAxie;
-    [SerializeField] private KeyCode _blackHole, _explosion, _shield;
 
     public void OnUpdate()
     {
@@ -66,17 +65,17 @@ public class Controllers
 
     private void Abilities()
     {
-        if(Input.GetKey(_blackHole))
+        if(Input.GetButtonDown("Ability1"))
         {
             abilities.Ability1();
         }
 
-        if (Input.GetKey(_explosion))
+        if (Input.GetButtonDown("Ability2"))
         {
             abilities.Ability2();
         }
 
-        if (Input.GetKey(_shield))
+        if (Input.GetButtonDown("Ability3"))
         {
             abilities.Ability3();
         }

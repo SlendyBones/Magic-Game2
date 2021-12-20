@@ -65,7 +65,6 @@ public class UIManager : MonoBehaviour
                 {
                     _abilitiesImage[i].fillAmount = 0;
                     _isCD[i] = false;
-                    SetOff(i);
                 }
             }
         }
