@@ -3545,18 +3545,6 @@ Transform:
     type: 3}
   m_PrefabInstance: {fileID: 465721742}
   m_PrefabAsset: {fileID: 0}
---- !u!114 &475775210 stripped
-MonoBehaviour:
-  m_CorrespondingSourceObject: {fileID: 3309585688712794981, guid: c08f0b51abc199f4ab5d8c337ce79311,
-    type: 3}
-  m_PrefabInstance: {fileID: 637816318}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 0}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: fe87c0e1cc204ed48ad3b37840f39efc, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
 --- !u!1001 &500759828
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -6467,29 +6455,16 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 51fc5839adfc6cd4488e15f534bb4f80, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  abilityImage1: {fileID: 1730656350}
-  cooldown1: 9
-  ability1: 49
-  manaCost: 20
-  abilityImage2: {fileID: 2071479127}
-  cooldown2: 6
-  ability2: 50
-  manaCost2: 12
-  abilityImage3: {fileID: 475775210}
-  cooldown3: 20
-  ability3: 51
-  manaCost3: 30
   spawnAbilities: {fileID: 1242129625}
+  player: {fileID: 127908759}
   jarAbility: {fileID: 6054725814908208590, guid: e125cc7434cd11d48bac8616488ed259,
     type: 3}
-  player: {fileID: 127908759}
   bombAbility: {fileID: 2171771462579390001, guid: 48f59e0b84ed406499885d969329c0b0,
     type: 3}
   shield: {fileID: 1334919822}
-  forceOfTroward: 1000
   pj: {fileID: 127908760}
-  _animator: {fileID: 1887414894}
-  _animationTimer: 0.5
+  _stats: {fileID: 0}
+  _uiManager: {fileID: 0}
 --- !u!4 &999192875
 Transform:
   m_ObjectHideFlags: 0
@@ -10303,18 +10278,6 @@ Transform:
     type: 3}
   m_PrefabInstance: {fileID: 1722309107}
   m_PrefabAsset: {fileID: 0}
---- !u!114 &1730656350 stripped
-MonoBehaviour:
-  m_CorrespondingSourceObject: {fileID: 3309585690217248440, guid: c08f0b51abc199f4ab5d8c337ce79311,
-    type: 3}
-  m_PrefabInstance: {fileID: 637816318}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 0}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: fe87c0e1cc204ed48ad3b37840f39efc, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
 --- !u!1001 &1736556222
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -12649,18 +12612,6 @@ Transform:
     type: 3}
   m_PrefabInstance: {fileID: 2055934893}
   m_PrefabAsset: {fileID: 0}
---- !u!114 &2071479127 stripped
-MonoBehaviour:
-  m_CorrespondingSourceObject: {fileID: 3309585688904728874, guid: c08f0b51abc199f4ab5d8c337ce79311,
-    type: 3}
-  m_PrefabInstance: {fileID: 637816318}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 0}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: fe87c0e1cc204ed48ad3b37840f39efc, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
 --- !u!1001 &2079775950
 PrefabInstance:
   m_ObjectHideFlags: 0
