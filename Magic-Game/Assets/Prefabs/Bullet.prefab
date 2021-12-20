@@ -106,14 +106,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 9fcc3ab92381bb24b92284cf0d262b5d, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  life: 0
-  player: {fileID: 0}
-  attackDistance: 10
-  followDistance: 20
-  speed: 10
-  _damage: 0
-  _realDamege: 5
-  _profitsCoins: 0
+  _damage: 5
 --- !u!95 &3612173237290012190
 Animator:
   serializedVersion: 3

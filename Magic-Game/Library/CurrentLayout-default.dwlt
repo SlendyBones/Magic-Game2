@@ -21,7 +21,7 @@ MonoBehaviour:
   m_ShowMode: 4
   m_Title: 
   m_RootView: {fileID: 2}
-  m_MinSize: {x: 950, y: 300}
+  m_MinSize: {x: 950, y: 544}
   m_MaxSize: {x: 10000, y: 10000}
 --- !u!114 &2
 MonoBehaviour:
@@ -111,10 +111,10 @@ MonoBehaviour:
     y: 30
     width: 1920
     height: 947
-  m_MinSize: {x: 881, y: 344}
-  m_MaxSize: {x: 16006, y: 8044}
+  m_MinSize: {x: 881, y: 494}
+  m_MaxSize: {x: 16006, y: 14044}
   vertical: 0
-  controlID: 54
+  controlID: 75
 --- !u!114 &6
 MonoBehaviour:
   m_ObjectHideFlags: 52
@@ -136,10 +136,10 @@ MonoBehaviour:
     y: 0
     width: 1458
     height: 947
-  m_MinSize: {x: 606, y: 344}
-  m_MaxSize: {x: 12006, y: 8044}
+  m_MinSize: {x: 606, y: 494}
+  m_MaxSize: {x: 12006, y: 14044}
   vertical: 1
-  controlID: 55
+  controlID: 76
 --- !u!114 &7
 MonoBehaviour:
   m_ObjectHideFlags: 52
@@ -165,7 +165,7 @@ MonoBehaviour:
   m_MinSize: {x: 606, y: 222}
   m_MaxSize: {x: 12006, y: 4022}
   vertical: 0
-  controlID: 56
+  controlID: 77
 --- !u!114 &8
 MonoBehaviour:
   m_ObjectHideFlags: 52
@@ -264,15 +264,15 @@ MonoBehaviour:
     y: 671
     width: 1458
     height: 276
-  m_MinSize: {x: 100, y: 100}
-  m_MaxSize: {x: 4000, y: 4000}
-  m_ActualView: {fileID: 18}
+  m_MinSize: {x: 232, y: 272}
+  m_MaxSize: {x: 10002, y: 10022}
+  m_ActualView: {fileID: 17}
   m_Panes:
   - {fileID: 17}
   - {fileID: 18}
   - {fileID: 19}
-  m_Selected: 1
-  m_LastSelected: 0
+  m_Selected: 0
+  m_LastSelected: 1
 --- !u!114 &12
 MonoBehaviour:
   m_ObjectHideFlags: 52
@@ -410,9 +410,9 @@ MonoBehaviour:
   m_SceneHierarchy:
     m_TreeViewState:
       scrollPos: {x: 0, y: 0}
-      m_SelectedIDs: f0340000
+      m_SelectedIDs: 84810000
       m_LastClickedID: 0
-      m_ExpandedIDs: fe2bffff1030ffff7445ffffe06affff0ca9ffff18c3ffff84d3ffff80ebffffd2faffff76fbffff3c5b0000947e0000
+      m_ExpandedIDs: 56c1feff
       m_RenameOverlay:
         m_UserAcceptedRename: 0
         m_Name: 
@@ -797,14 +797,14 @@ MonoBehaviour:
   m_LastFolders:
   - Assets/Prefabs
   m_LastFoldersGridSize: 89
-  m_LastProjectPath: D:\GitHub\Magic-Game2\Magic-Game
+  m_LastProjectPath: C:\Users\agust\Documents\GitHub\Magic-Game2\Magic-Game
   m_LockTracker:
     m_IsLocked: 0
   m_FolderTreeState:
-    scrollPos: {x: 0, y: 79}
-    m_SelectedIDs: f0370000
-    m_LastClickedID: 14320
-    m_ExpandedIDs: 000000008a2f000070320000f0370000643e000000ca9a3b
+    scrollPos: {x: 0, y: 55}
+    m_SelectedIDs: c88d0000
+    m_LastClickedID: 36296
+    m_ExpandedIDs: 00000000748b00004a8c0000c88d00007e8e00007c8f000000ca9a3b
     m_RenameOverlay:
       m_UserAcceptedRename: 0
       m_Name: 
@@ -832,7 +832,7 @@ MonoBehaviour:
     scrollPos: {x: 0, y: 0}
     m_SelectedIDs: 
     m_LastClickedID: 0
-    m_ExpandedIDs: 000000008a2f000070320000f0370000643e0000
+    m_ExpandedIDs: 00000000748b00004a8c0000c88d00007c8f0000
     m_RenameOverlay:
       m_UserAcceptedRename: 0
       m_Name: 
@@ -857,10 +857,10 @@ MonoBehaviour:
       m_Icon: {fileID: 0}
       m_ResourceFile: 
   m_ListAreaState:
-    m_SelectedInstanceIDs: f0340000
-    m_LastClickedInstanceID: 13552
-    m_HadKeyboardFocusLastEvent: 1
-    m_ExpandedInstanceIDs: c62300002e4c00000e4c0000124c00003e4c00000c39000096350000c4360000ca6e00001e870000d2480000c42f0000c04c0000b6390000843800005c3900003c360000e6390000a6380000423a00000a390000a8390000da360000428000004a8000008a38000056370000dac40000b0380000b27b000020370000683b0000b67e0000ba7e0000be7e0000be4c000090910000da2f0000744000009e360000000000003e900000
+    m_SelectedInstanceIDs: 
+    m_LastClickedInstanceID: 0
+    m_HadKeyboardFocusLastEvent: 0
+    m_ExpandedInstanceIDs: c62300002e4c00000e4c0000124c00003e4c00000c39000096350000c4360000ca6e00001e870000d2480000c42f0000c04c0000b6390000843800005c3900003c360000e6390000a6380000423a00000a390000a8390000da360000428000004a8000008a38000056370000dac40000b0380000b27b000020370000683b0000b67e0000ba7e0000be7e0000be4c000090910000da2f0000744000009e360000000000003e90000066900000
     m_RenameOverlay:
       m_UserAcceptedRename: 0
       m_Name: 
@@ -884,7 +884,7 @@ MonoBehaviour:
       m_Icon: {fileID: 0}
       m_ResourceFile: 
     m_NewAssetIndexInList: -1
-    m_ScrollPosition: {x: 0, y: 60}
+    m_ScrollPosition: {x: 0, y: 0}
     m_GridSize: 89
   m_SkipHiddenPackages: 0
   m_DirectoriesAreaWidth: 160
@@ -980,7 +980,7 @@ MonoBehaviour:
     m_PrefName: Preview_InspectorPreview
   m_PreviewWindow: {fileID: 0}
   m_LastInspectedObjectInstanceID: -1
-  m_LastVerticalScrollValue: 100
+  m_LastVerticalScrollValue: 0
 --- !u!114 &21
 MonoBehaviour:
   m_ObjectHideFlags: 52

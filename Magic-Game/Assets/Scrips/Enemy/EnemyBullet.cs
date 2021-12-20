@@ -19,7 +19,7 @@ public class EnemyBullet : MonoBehaviour
         }
         if (other.gameObject.tag == "Player")
         {
-            other.gameObject.GetComponent<StatsManager>().PlayerDamage(_damage);
+            other.gameObject.GetComponent<Movement>()._dmgDelegate(_damage);
             SoundManager.instance.PlaySound(SoundID.EBULLET);
             Destroy(gameObject);
         }

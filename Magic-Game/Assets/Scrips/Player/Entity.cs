@@ -74,6 +74,7 @@ public abstract class Entity : MonoBehaviour
     IEnumerator LoadScene()
     {
         yield return new WaitForSeconds(2);
+        Debug.Log("aca");
         EventManager.Trigger("DeathCoin");
         EventManager.Trigger("LoseScreen");
     }
