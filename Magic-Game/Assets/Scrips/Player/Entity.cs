@@ -53,8 +53,7 @@ public abstract class Entity : MonoBehaviour
         if (_randomNumber < _probability)
         {
             Instantiate(_heal, transform.position, transform.rotation);
-            EventManager.Trigger("AddCoin", _profitsCoins);
-            EventManager.Trigger("SubstractEnemy");
+            
         }
 
         if (_boss == true)
@@ -62,6 +61,8 @@ public abstract class Entity : MonoBehaviour
             EventManager.Trigger("WinScene");
         }
 
+        EventManager.Trigger("AddCoin", _profitsCoins);
+        EventManager.Trigger("SubstractEnemy");
         Destroy(gameObject);
     }
 
