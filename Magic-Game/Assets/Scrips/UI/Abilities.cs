@@ -48,7 +48,7 @@ public class Abilities : MonoBehaviour
                 _uiManager.SetOff(0);
 
                 GameObject jar =Instantiate(jarAbility, spawnAbilities.position, player.transform.rotation);
-                _animator.SetTrigger("Atack");
+                _animator.SetTrigger("Ability");
             }
         }
     }
@@ -61,7 +61,7 @@ public class Abilities : MonoBehaviour
                 _uiManager.SetOff(1);
 
                 GameObject bomb = Instantiate(bombAbility, spawnAbilities.position, player.transform.rotation);
-                _animator.SetTrigger("Atack");
+                _animator.SetTrigger("Ability");
             }
         }
     }

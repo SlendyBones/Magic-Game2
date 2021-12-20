@@ -8,6 +8,7 @@ public abstract class Entity : MonoBehaviour
     [SerializeField]protected float _life, _maxLife, _mana, _maxMana, _manaRecharge;
     public float speed;
     public float _damage;
+    
     protected AnimatorController _ani;
 
     [Header("PlayerVar")]

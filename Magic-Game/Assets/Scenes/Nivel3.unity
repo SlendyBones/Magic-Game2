@@ -307,6 +307,32 @@ PrefabInstance:
       propertyPath: _boss
       value: 1
       objectReference: {fileID: 0}
+    - target: {fileID: 1835681309208989992, guid: 7bc6e2fffc9982543a9b2fae2196869f,
+        type: 3}
+      propertyPath: _enemys.Array.data[1]
+      value: 
+      objectReference: {fileID: 985185540127120235, guid: a269c8b4bcdacb340a1fc6ed3a6c2c5e,
+        type: 3}
+    - target: {fileID: 1835681309208989992, guid: 7bc6e2fffc9982543a9b2fae2196869f,
+        type: 3}
+      propertyPath: _life
+      value: 100
+      objectReference: {fileID: 0}
+    - target: {fileID: 1835681309208989992, guid: 7bc6e2fffc9982543a9b2fae2196869f,
+        type: 3}
+      propertyPath: _maxLife
+      value: 100
+      objectReference: {fileID: 0}
+    - target: {fileID: 1835681309208989992, guid: 7bc6e2fffc9982543a9b2fae2196869f,
+        type: 3}
+      propertyPath: _damage
+      value: 15
+      objectReference: {fileID: 0}
+    - target: {fileID: 1835681309208989992, guid: 7bc6e2fffc9982543a9b2fae2196869f,
+        type: 3}
+      propertyPath: _animator
+      value: 
+      objectReference: {fileID: 1889567934}
     - target: {fileID: 6630163564581648944, guid: 7bc6e2fffc9982543a9b2fae2196869f,
         type: 3}
       propertyPath: m_LocalPosition.x
@@ -1747,6 +1773,12 @@ Transform:
     type: 3}
   m_PrefabInstance: {fileID: 177484220}
   m_PrefabAsset: {fileID: 0}
+--- !u!95 &181854099 stripped
+Animator:
+  m_CorrespondingSourceObject: {fileID: 5812607302738391544, guid: 1f02812186cf71b4ab9878ae9bff82ec,
+    type: 3}
+  m_PrefabInstance: {fileID: 4979825619922753051}
+  m_PrefabAsset: {fileID: 0}
 --- !u!1001 &208148751
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -2059,6 +2091,18 @@ Transform:
     type: 3}
   m_PrefabInstance: {fileID: 231647607}
   m_PrefabAsset: {fileID: 0}
+--- !u!114 &234343696 stripped
+MonoBehaviour:
+  m_CorrespondingSourceObject: {fileID: 2362066820902782415, guid: c08f0b51abc199f4ab5d8c337ce79311,
+    type: 3}
+  m_PrefabInstance: {fileID: 637816318}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 1b9a3a1f09d883d48a3e5a4cbfca9d19, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1001 &252054951
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -4403,6 +4447,11 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 0}
     m_Modifications:
+    - target: {fileID: 3277000350559323558, guid: c08f0b51abc199f4ab5d8c337ce79311,
+        type: 3}
+      propertyPath: m_RootOrder
+      value: 13
+      objectReference: {fileID: 0}
     - target: {fileID: 3309585689698892681, guid: c08f0b51abc199f4ab5d8c337ce79311,
         type: 3}
       propertyPath: m_AnchorMax.x
@@ -6455,6 +6504,9 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 51fc5839adfc6cd4488e15f534bb4f80, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  _blackHoleMana: 15
+  _explosionMana: 10
+  _shieldMana: 20
   spawnAbilities: {fileID: 1242129625}
   player: {fileID: 127908759}
   jarAbility: {fileID: 6054725814908208590, guid: e125cc7434cd11d48bac8616488ed259,
@@ -6463,8 +6515,8 @@ MonoBehaviour:
     type: 3}
   shield: {fileID: 1334919822}
   pj: {fileID: 127908760}
-  _stats: {fileID: 0}
-  _uiManager: {fileID: 0}
+  _animator: {fileID: 181854099}
+  _uiManager: {fileID: 234343696}
 --- !u!4 &999192875
 Transform:
   m_ObjectHideFlags: 0
@@ -11329,6 +11381,12 @@ GameObject:
     type: 3}
   m_PrefabInstance: {fileID: 50308593}
   m_PrefabAsset: {fileID: 0}
+--- !u!95 &1889567934 stripped
+Animator:
+  m_CorrespondingSourceObject: {fileID: 3641460894559688522, guid: 7bc6e2fffc9982543a9b2fae2196869f,
+    type: 3}
+  m_PrefabInstance: {fileID: 50308593}
+  m_PrefabAsset: {fileID: 0}
 --- !u!4 &1889567935 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: 6630163564581648944, guid: 7bc6e2fffc9982543a9b2fae2196869f,
@@ -13130,6 +13188,16 @@ PrefabInstance:
       propertyPath: _manaRecharge
       value: 2
       objectReference: {fileID: 0}
+    - target: {fileID: 4979825619832221059, guid: 1f02812186cf71b4ab9878ae9bff82ec,
+        type: 3}
+      propertyPath: _uiManager
+      value: 
+      objectReference: {fileID: 234343696}
+    - target: {fileID: 4979825619832221059, guid: 1f02812186cf71b4ab9878ae9bff82ec,
+        type: 3}
+      propertyPath: _abilities
+      value: 
+      objectReference: {fileID: 999192874}
     - target: {fileID: 4979825619832221062, guid: 1f02812186cf71b4ab9878ae9bff82ec,
         type: 3}
       propertyPath: _animator

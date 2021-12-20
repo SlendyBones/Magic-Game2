@@ -42,13 +42,13 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 553d18b4df87fe640a66e1463fc01d91, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  _life: 0
-  _maxLife: 0
+  _life: 15
+  _maxLife: 15
   _mana: 0
   _maxMana: 0
   _manaRecharge: 0
   speed: 10
-  _damage: 0
+  _damage: 5
   isEnemy: 1
   _boss: 0
   _heal: {fileID: 5313088146365214043, guid: c659ba40141197448b12ed142343866f, type: 3}

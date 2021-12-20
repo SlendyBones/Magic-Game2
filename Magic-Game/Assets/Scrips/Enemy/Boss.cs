@@ -21,10 +21,13 @@ public class Boss : Entity
     [SerializeField] private int _minEnemy, _maxEnemy, _minSpawn, _maxSpawn;
 
     [SerializeField] private Image _lifeBar;
+    [SerializeField] private Animator _animator;
 
     void Start()
     {
         _move = Movement;
+        _ani = new AnimatorController();
+        _ani._animator = _animator;
     }
 
     // Update is called once per frame

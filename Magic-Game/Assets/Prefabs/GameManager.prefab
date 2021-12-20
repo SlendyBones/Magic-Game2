@@ -1,0 +1,99 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!1 &4743394756560866140
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 4743394756560866142}
+  - component: {fileID: 4743394756560866143}
+  - component: {fileID: 4743394756560866136}
+  - component: {fileID: 4743394756560866139}
+  m_Layer: 0
+  m_Name: GameManager
+  m_TagString: Manager
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &4743394756560866142
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 4743394756560866140}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: -10.239515, y: 20.551212, z: 12.23128}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children: []
+  m_Father: {fileID: 0}
+  m_RootOrder: 0
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &4743394756560866143
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 4743394756560866140}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 51fc5839adfc6cd4488e15f534bb4f80, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  _blackHoleMana: 15
+  _explosionMana: 10
+  _shieldMana: 20
+  spawnAbilities: {fileID: 0}
+  player: {fileID: 0}
+  jarAbility: {fileID: 6054725814908208590, guid: e125cc7434cd11d48bac8616488ed259,
+    type: 3}
+  bombAbility: {fileID: 2171771462579390001, guid: 48f59e0b84ed406499885d969329c0b0,
+    type: 3}
+  shield: {fileID: 0}
+  pj: {fileID: 0}
+  _animator: {fileID: 0}
+  _uiManager: {fileID: 0}
+--- !u!114 &4743394756560866136
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 4743394756560866140}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ffede98625ff7224581e00aeec6861e6, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+--- !u!114 &4743394756560866139
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 4743394756560866140}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 689ba1015ac24df4ab3375162515f181, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  actualAmountOfEnemy: 0
+  _spawns:
+  - {fileID: 0}
+  - {fileID: 0}
+  - {fileID: 0}
+  - {fileID: 0}
+  _tipeOfEnemy:
+  - {fileID: 7597899449786420523, guid: 721d6ab508ab51645a8912d1e8b1fea6, type: 3}
+  - {fileID: 1802759619010368235, guid: 28e3e0de9cf1a72408cfdbff0422bcc0, type: 3}
+  - {fileID: 985185540127120235, guid: a269c8b4bcdacb340a1fc6ed3a6c2c5e, type: 3}
+  wl: {fileID: 4743394756560866136}
+  _minEnemy: 8
+  _maxEnemy: 15
+  enemyDamage: 0
+  _isLvl2: 0

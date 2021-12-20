@@ -377,8 +377,6 @@ GameObject:
   - component: {fileID: 6255652343097931829}
   - component: {fileID: 5924161612764349777}
   - component: {fileID: 7642107071542965694}
-  - component: {fileID: 5668401902239886586}
-  - component: {fileID: 215219989180496386}
   m_Layer: 0
   m_Name: polySurface17
   m_TagString: Untagged
@@ -446,32 +444,6 @@ MeshRenderer:
   m_SortingLayerID: 0
   m_SortingLayer: 0
   m_SortingOrder: 0
---- !u!65 &5668401902239886586
-BoxCollider:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 3044648031307726606}
-  m_Material: {fileID: 0}
-  m_IsTrigger: 1
-  m_Enabled: 1
-  serializedVersion: 2
-  m_Size: {x: 0.030629782, y: 0.02018402, z: 0.12162122}
-  m_Center: {x: 0.00043824976, y: 0, z: -0.00000006301034}
---- !u!65 &215219989180496386
-BoxCollider:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 3044648031307726606}
-  m_Material: {fileID: 0}
-  m_IsTrigger: 1
-  m_Enabled: 1
-  serializedVersion: 2
-  m_Size: {x: 0.119172655, y: 0.02018402, z: 0.028056}
-  m_Center: {x: 0.0000000105168105, y: 0, z: -0.00033895695}
 --- !u!1 &3395141960237439495
 GameObject:
   m_ObjectHideFlags: 0
@@ -626,6 +598,8 @@ GameObject:
   - component: {fileID: 7701900631855295}
   - component: {fileID: 1865002377227876933}
   - component: {fileID: 3383358436429405198}
+  - component: {fileID: 6388622787404024874}
+  - component: {fileID: 4538503925873337226}
   m_Layer: 0
   m_Name: Cosa que gira
   m_TagString: Untagged
@@ -682,6 +656,35 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   _damage: 10
+--- !u!54 &6388622787404024874
+Rigidbody:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 3909130036742398636}
+  serializedVersion: 2
+  m_Mass: 1
+  m_Drag: 0
+  m_AngularDrag: 0.05
+  m_UseGravity: 0
+  m_IsKinematic: 0
+  m_Interpolate: 0
+  m_Constraints: 126
+  m_CollisionDetection: 0
+--- !u!65 &4538503925873337226
+BoxCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 3909130036742398636}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 1
+  m_Enabled: 1
+  serializedVersion: 2
+  m_Size: {x: 0.10124344, y: 0.020411827, z: 0.091250196}
+  m_Center: {x: -0.0030525227, y: 0.030670235, z: -0.004350886}
 --- !u!1 &3997518329856465486
 GameObject:
   m_ObjectHideFlags: 0
