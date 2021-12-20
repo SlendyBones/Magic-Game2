@@ -9,6 +9,9 @@ public class Bomb : MonoBehaviour
     public float force = 500f;
     public float damage = 15f;
 
+    [SerializeField] private Rigidbody rb;
+    [SerializeField] private float forceOfTroward = 40f;
+
     [SerializeField]
     private GameObject _particleExplosion;
 
@@ -17,6 +20,7 @@ public class Bomb : MonoBehaviour
     void Start()
     {
         _countDown = delay;
+        rb.AddForce(transform.forward * forceOfTroward);
     }
 
     void Update()

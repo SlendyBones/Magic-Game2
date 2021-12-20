@@ -11,13 +11,10 @@ public class MeleEnemy : Entity
     Moving _move;
 
     [SerializeField] private GameObject _atackHitBox;
-    [SerializeField] private Animator _ani;
     
     private void Start()
     {
         player = LevelManager.instances.player.transform;
-        EventManager.Subscribe("CanDamage", CanMakeDamage);
-        EventManager.Subscribe("CantDamage", CantMakeDamage);
         _move = Movement;
     }
     void Update()

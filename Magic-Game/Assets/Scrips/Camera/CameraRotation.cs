@@ -40,7 +40,5 @@ public class CameraRotation : MonoBehaviour
 
         _rotationVectorY.x = _mouseY;
         _rotationPoint.transform.localRotation = Quaternion.Euler(_rotationVectorY);
-
-
     }
 }

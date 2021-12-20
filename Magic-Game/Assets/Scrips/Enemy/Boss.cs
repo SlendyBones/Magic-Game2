@@ -9,8 +9,6 @@ public class Boss : Entity
     private delegate void Move();
     Move _move;
 
-    [SerializeField] private Animator _ani;
-
     [SerializeField] private float _invokeTime;
     private float _countTime;
 
@@ -23,14 +21,10 @@ public class Boss : Entity
     [SerializeField] private int _minEnemy, _maxEnemy, _minSpawn, _maxSpawn;
 
     [SerializeField] private Image _lifeBar;
-    private float _originalLife;
 
     void Start()
     {
-        EventManager.Subscribe("CanDamage", CanMakeDamage);
-        EventManager.Subscribe("CantDamage", CantMakeDamage);
         _move = Movement;
-        _originalLife = life;
     }
 
     // Update is called once per frame
@@ -38,8 +32,7 @@ public class Boss : Entity
     {
         distancePlayer = Vector3.Distance(player.transform.position, transform.position);
         _move();
-        Debug.Log(life);
-        _lifeBar.fillAmount = life/_originalLife;
+        //_lifeBar.fillAmount = life/_originalLife;
     }
 
     void Movement()

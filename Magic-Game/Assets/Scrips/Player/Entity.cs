@@ -4,45 +4,56 @@ using UnityEngine;
 
 public abstract class Entity : MonoBehaviour
 {
-    public float life;
-    protected float distancePlayer;
-    public Transform player;
-    public float attackDistance = 10f;
-    public float followDistance = 20f;
+    [Header("GeneralVar")]
+    [SerializeField]protected float _life, _maxLife, _mana, _maxMana, _manaRecharge;
     public float speed;
     public float _damage;
-    public float _realDamege;
+    protected AnimatorController _ani;
 
-    [SerializeField]
-    private int _profitsCoins;
+    [Header("PlayerVar")]
+    protected WLCondition winLose;
+
+    [Header("EnemyVar")]
+    [SerializeField] private bool isEnemy;
+    [SerializeField] private bool _boss = false;
 
     [SerializeField] private GameObject _heal;
     private int _randomNumber;
     private int _probability;
+    [SerializeField] private int _profitsCoins;
 
-    [SerializeField] private bool _boss = false;
+    #region EnemyVar
+    protected float distancePlayer;
+    public Transform player;
+
+    public float attackDistance = 10f;
+    public float followDistance = 20f;
+    #endregion
 
 
     public void TakeDamage(float dmg)
     {
-        life -= dmg;
+        _life -= dmg;
 
-        if(life <= 0)
+        if (_life <= 0)
         {
-            Death();
+            if (isEnemy)
+                EnemyDeath();
+            else
+                Death();
         }
     }
 
-    public void Death()
+    protected void EnemyDeath()
     {
         _randomNumber = Random.Range(1, 101);
 
-        if(_randomNumber < _probability)
+        if (_randomNumber < _probability)
         {
             Instantiate(_heal, transform.position, transform.rotation);
         }
 
-        if(_boss == true)
+        if (_boss == true)
         {
             EventManager.Trigger("WinScene");
         }
@@ -52,13 +63,15 @@ public abstract class Entity : MonoBehaviour
         Destroy(gameObject);
     }
 
-    public void CantMakeDamage(params object[] parameter)
+    protected void Death()
     {
-        _damage = 0;
+        _ani.Animation("Die", true);
+        StartCoroutine(LoadScene());
     }
-
-    public void CanMakeDamage(params object[] parameter)
+    IEnumerator LoadScene()
     {
-        _damage = _realDamege;
+        yield return new WaitForSeconds(2);
+        EventManager.Trigger("DeathCoin");
+        winLose.LoseScreen();
     }
 }

@@ -10,15 +10,15 @@ public class FireBall : Entity
         if (other.gameObject.tag == "Player")
         {
             other.gameObject.GetComponent<Movement>().PlayerDamage(_damage);
-            Destroy(this.gameObject);
+            Destroy(gameObject);
         }
         else if (other.gameObject.tag == "Floor")
         {
-            Destroy(this.gameObject);
+            Destroy(gameObject);
         }
         else if (_timer <= 0)
         {
-            Destroy(this.gameObject);
+            Destroy(gameObject);
         }
     }
 }

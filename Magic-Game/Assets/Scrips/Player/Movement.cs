@@ -2,7 +2,7 @@
 using System.Collections.Generic;
 using UnityEngine;
 
-public class Movement : Pj
+public class Movement : StatsManager
 {
     [Header("Inputs")]
     private float _horizontalMove;
@@ -13,7 +13,6 @@ public class Movement : Pj
     public Rigidbody rb;
 
     [Header("Variables")]
-    public float speed;
     private float _movementMagnitud;
     private bool _onFloor;
     private int _layerFloor = 8;
@@ -21,25 +20,19 @@ public class Movement : Pj
     [Header("GameObjects")]
     public GameObject rotationPoint;
 
-    public bool can = true;
-
     private bool _shop = false;
     private bool _timer = false;
 
     [SerializeField] private Animator _animator; 
-
-
+    [SerializeField] private Shooting _shoting;
     private ShopBeheivor _shopBeheivor;
     private Controllers _controlls;
-    [SerializeField] private Shooting _shoting;
 
     private void Start()
     {
-        EventManager.Subscribe("ManaUpgrade", ManaUpgrade);
-        EventManager.Subscribe("LifeUpgrade", LifeUpgrade);
-        EventManager.Subscribe("LifeRecharge", LifeRecharge);
-        EventManager.Subscribe("PlayerDamage", PlayerDamage);
         ComparativeStats();
+
+        _dmgDelegate = PlayerDamage;
 
         _controlls = new Controllers();
         _controlls._move = this;
@@ -55,7 +48,7 @@ public class Movement : Pj
     {
         _controlls.OnUpdate();
         Move();
-        ManaRecharge();
+        _manaDelegate();
     }
 
     private void Move()

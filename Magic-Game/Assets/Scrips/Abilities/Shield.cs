@@ -11,6 +11,8 @@ public class Shield : MonoBehaviour
     
     public bool activeShield;
 
+    [SerializeField] StatsManager stats;
+
     private void Start()
     {
         _timer = _defaultTimer;
@@ -40,6 +42,7 @@ public class Shield : MonoBehaviour
         _timer = _defaultTimer;
         
         yield return new WaitForSeconds(0.1f);
-        this.gameObject.SetActive(false);  
+        stats.ShieldOff();
+        gameObject.SetActive(false);
     }
 }

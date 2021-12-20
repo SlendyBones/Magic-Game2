@@ -10,15 +10,10 @@ public class RangeEnemy : Entity
 
     [SerializeField]
     private GameObject _shoot;
-    [SerializeField]
-    private Animator _ani;
 
     private void Start()
     {
         player = LevelManager.instances.player.transform;
-        EventManager.Subscribe("CanDamage", CanMakeDamage);
-        EventManager.Subscribe("CantDamage", CantMakeDamage);
-        CanMakeDamage();
     }
 
     void Update()
@@ -27,13 +22,13 @@ public class RangeEnemy : Entity
         _distance = Vector3.Distance(player.transform.position, transform.position);
         if (_distance < attackDistance && _timer > 1)
         {
-            _ani.SetBool("Walk", false);
+            _ani.Animation("Walk", false);
             Shoot();
         }
         else
         {
             transform.position += transform.forward * Time.deltaTime;
-            _ani.SetBool("Walk", true);
+            _ani.Animation("Walk", true);
         }
             
 
@@ -42,7 +37,6 @@ public class RangeEnemy : Entity
     public void Shoot()
     {
         GameObject Bullet = Instantiate(_shoot, transform.position + transform.forward, transform.localRotation);
-        Bullet.GetComponent<EnemyBullet>()._damage = _damage;
         Destroy(Bullet, 3f);
         _timer = 0;
     }

@@ -6,7 +6,9 @@ public class Controllers
 {
     public Movement _move;
     public Shooting _shoot;
+    public Abilities abilities;
     private float _hAxie, _vAxie;
+    [SerializeField] private KeyCode _blackHole, _explosion, _shield;
 
     public void OnUpdate()
     {
@@ -15,6 +17,7 @@ public class Controllers
         Space();
         Interactive();
         RightClick();
+        Abilities();
     }
 
     private void Axies()
@@ -58,6 +61,24 @@ public class Controllers
         if (Input.GetButtonDown("Fire1"))
         {
             _shoot.canShoot();
+        }
+    }
+
+    private void Abilities()
+    {
+        if(Input.GetKey(_blackHole))
+        {
+            abilities.Ability1();
+        }
+
+        if (Input.GetKey(_explosion))
+        {
+            abilities.Ability2();
+        }
+
+        if (Input.GetKey(_shield))
+        {
+            abilities.Ability3();
         }
     }
 }

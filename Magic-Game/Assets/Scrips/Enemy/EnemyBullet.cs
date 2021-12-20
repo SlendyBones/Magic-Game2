@@ -2,8 +2,10 @@
 using System.Collections.Generic;
 using UnityEngine;
 
-public class EnemyBullet : Entity
+public class EnemyBullet : MonoBehaviour
 {
+    [SerializeField] private float _damage;
+
     void Update()
     {
         transform.position += transform.forward * Time.deltaTime * 10;
@@ -17,8 +19,7 @@ public class EnemyBullet : Entity
         }
         if (other.gameObject.tag == "Player")
         {
-            Debug.Log(_damage);
-            EventManager.Trigger("PlayerDamage", _damage);
+            other.gameObject.GetComponent<StatsManager>().PlayerDamage(_damage);
             SoundManager.instance.PlaySound(SoundID.EBULLET);
             Destroy(gameObject);
         }

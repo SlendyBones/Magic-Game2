@@ -428,18 +428,21 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: e47eefa6b9e2e434e82b7707b85d1bc4, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  life: 15
+  _life: 0
+  _maxLife: 0
+  _mana: 0
+  _maxMana: 0
+  _manaRecharge: 0
+  speed: 4
+  _damage: 0
+  isEnemy: 0
+  _boss: 0
+  _heal: {fileID: 5313088146365214043, guid: c659ba40141197448b12ed142343866f, type: 3}
+  _profitsCoins: 3
   player: {fileID: 0}
   attackDistance: 2
   followDistance: 20
-  speed: 4
-  _damage: 0
-  _realDamege: 10
-  _profitsCoins: 3
-  _heal: {fileID: 5313088146365214043, guid: c659ba40141197448b12ed142343866f, type: 3}
-  _boss: 0
   _atackHitBox: {fileID: 6514789038989365056}
-  _ani: {fileID: 6160166856329167874}
 --- !u!1 &1216026994422262506
 GameObject:
   m_ObjectHideFlags: 0
@@ -2149,6 +2152,7 @@ GameObject:
   m_Component:
   - component: {fileID: 733803389723891102}
   - component: {fileID: 2742644129901677426}
+  - component: {fileID: 5107025345761481989}
   m_Layer: 0
   m_Name: HitBox
   m_TagString: Untagged
@@ -2183,6 +2187,21 @@ BoxCollider:
   serializedVersion: 2
   m_Size: {x: 0.033587087, y: 0.022038791, z: 0.016020421}
   m_Center: {x: 0.0012625147, y: 0.015896868, z: 0.013220178}
+--- !u!114 &5107025345761481989
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 6514789038989365056}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 7e082b17109a37d45a8c204a885ccffe, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  _dmg: 0
+  _force: 0
+  _upForce: 0
 --- !u!1 &6574605274668520422
 GameObject:
   m_ObjectHideFlags: 0

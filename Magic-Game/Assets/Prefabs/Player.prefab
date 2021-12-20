@@ -1,18 +1,5 @@
 %YAML 1.1
 %TAG !u! tag:unity3d.com,2011:
---- !u!114 &3032980358458360680
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 611325797249216145}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: e817258d2867ecb4bbbe2d3ddc6bf5d1, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  _animator: {fileID: 5812607302738391544}
 --- !u!114 &7996810287150569922
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -28,7 +15,6 @@ MonoBehaviour:
   bottle: {fileID: 2469293475396079073, guid: d6b066164bfc0fd419bf59d52fdd7158, type: 3}
   shootingPoint: {fileID: 4979825618681852610}
   _timerDuration: 0.5
-  _animator: {fileID: 3032980358458360680}
 --- !u!1 &4979825618681852611
 GameObject:
   m_ObjectHideFlags: 0
@@ -68,7 +54,6 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 4979825619757920812}
-  - component: {fileID: 4979825619757920803}
   m_Layer: 0
   m_Name: Rotation Point
   m_TagString: Untagged
@@ -92,21 +77,6 @@ Transform:
   m_Father: {fileID: 4979825619832221056}
   m_RootOrder: 2
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!114 &4979825619757920803
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 4979825619757920813}
-  m_Enabled: 0
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 8090763bd54e867428853b70628cd867, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  rotationSpeedX: 40
-  rotationSpeedY: 20
-  _rotationPoint: {fileID: 0}
 --- !u!1 &4979825619832221068
 GameObject:
   m_ObjectHideFlags: 0
@@ -181,14 +151,13 @@ MonoBehaviour:
   manaOn: 1
   healthBar: {fileID: 0}
   manaBar: {fileID: 0}
-  _animatorController: {fileID: 3032980358458360680}
   wl: {fileID: 0}
   rb: {fileID: 4979825619832221058}
   speed: 10
   rotationPoint: {fileID: 4979825619757920813}
   can: 0
-  _ani: {fileID: 5812607302738391544}
-  _shooting: {fileID: 7996810287150569922}
+  _animator: {fileID: 5812607302738391544}
+  _shoting: {fileID: 7996810287150569922}
 --- !u!136 &4979825619832221063
 CapsuleCollider:
   m_ObjectHideFlags: 0

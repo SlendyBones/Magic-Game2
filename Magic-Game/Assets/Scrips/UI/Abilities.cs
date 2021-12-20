@@ -6,163 +6,69 @@ using UnityEngine.UI;
 public class Abilities : MonoBehaviour
 {
     [Header("Ability One")]
-    public Image abilityImage1;
-    public float cooldown1 = 5;
-    bool isCooldown1 = false;
-    public KeyCode ability1;
-    public int manaCost;
+    private int _blackHoleMana;
 
     [Header("Ability Two")]
-    public Image abilityImage2;
-    public float cooldown2 = 5;
-    bool isCooldown2 = false;
-    public KeyCode ability2;
-    public int manaCost2;
+    private int _explosionMana;
 
     [Header("Ability Three")]
-    public Image abilityImage3;
-    public float cooldown3 = 5;
-    bool isCooldown3 = false;
-    public KeyCode ability3;
-    public int manaCost3;
+    private int _shieldMana;
 
     [Header("Spawn Ability")]
     public Transform spawnAbilities;
-    public GameObject jarAbility;
     public GameObject player;
+    public GameObject jarAbility;
     public GameObject bombAbility;
     public GameObject shield;
-    public float forceOfTroward = 40f;
+
 
     [Header("Pj")]
-     public Movement pj;
+    [SerializeField] private Movement pj;
+    [SerializeField] private AnimatorController _animator;
 
-    [SerializeField]
-    private AnimatorController _animator;
+    [SerializeField] private StatsManager _stats;
+    [SerializeField] private UIManager _uiManager;
 
-    [SerializeField]
-    private float _animationTimer;
-
-    // Start is called before the first frame update
-    void Start()
+    public void Ability1()
     {
-        abilityImage1.fillAmount = 0;
-        abilityImage2.fillAmount = 0;
-        abilityImage3.fillAmount = 0;
-
-    }
-
-
-
-    // Update is called once per frame
-    void Update()
-    {
-        Ability1();
-        Ability2();
-        Ability3();
-    }
-
-    void Ability1()
-    {
-        if (Input.GetKey(ability1) && isCooldown1 == false)
+        if (_uiManager._isCD[0] == false)
         {
-
-            if (pj.UseMana(manaCost))
+            if (pj.UseMana(_blackHoleMana))
             {
-                isCooldown1 = true;
-                abilityImage1.fillAmount = 1;
+                _uiManager._isCD[0] = true;
 
-
-                GameObject jar =Instantiate(jarAbility, spawnAbilities.position, player.transform.localRotation);
-                Rigidbody rb = jar.GetComponent<Rigidbody>();
-                rb.AddForce(player.transform.forward * forceOfTroward);
-                _animator.Animation("Atack", true);
-                StartCoroutine(StopAnimation(1));
-            }
-
-
-        }
-
-        if (isCooldown1)
-        {
-            abilityImage1.fillAmount -= 1 / cooldown1 * Time.deltaTime;
-            if (abilityImage1.fillAmount <= 0)
-            {
-                abilityImage1.fillAmount = 0;
-                isCooldown1 = false;
+                GameObject jar =Instantiate(jarAbility, spawnAbilities.position, player.transform.rotation);
+                _animator.SetTrigger("Atack");
             }
         }
     }
-    void Ability2()
+    public void Ability2()
     {
-        if (Input.GetKey(ability2) && isCooldown2 == false)
+        if (_uiManager._isCD[1] == false)
         {
-            if (pj.UseMana(manaCost2))
+            if (pj.UseMana(_explosionMana))
             {
-                isCooldown2 = true;
-                abilityImage2.fillAmount = 1;
+                _uiManager._isCD[1] = true;
 
-                GameObject bomb = Instantiate(bombAbility, spawnAbilities.position, player.transform.localRotation);
-                Rigidbody rb = bomb.GetComponent<Rigidbody>();
-                rb.AddForce(player.transform.forward * forceOfTroward);
-                _animator.Animation("Atack", true);
-                StartCoroutine(StopAnimation(2));
-            }
-           
-
-
-
-        }
-
-        if (isCooldown2)
-        {
-            abilityImage2.fillAmount -= 1 / cooldown2 * Time.deltaTime;
-            if (abilityImage2.fillAmount <= 0)
-            {
-                abilityImage2.fillAmount = 0;
-                isCooldown2 = false;
+                GameObject bomb = Instantiate(bombAbility, spawnAbilities.position, player.transform.rotation);
+                _animator.SetTrigger("Atack");
             }
         }
     }
 
-    void Ability3()
+    public void Ability3()
     {
-        if (Input.GetKey(ability3) && isCooldown3 == false)
+        if (_uiManager._isCD[2] == false)
         {
-            if (pj.UseMana(manaCost3))
+            if (pj.UseMana(_shieldMana))
             {
-                EventManager.Trigger("CantDamage");
-                isCooldown3 = true;
-                abilityImage3.fillAmount = 1;
+                _stats.ShieldOn();
+                _uiManager._isCD[2] = true;
                 Shield _sh = shield.GetComponent<Shield>();
                 _sh.activeShield = true;
                 shield.SetActive(true);
-                _animator.Animation("Shield", true);
-                StartCoroutine(StopAnimation(3));
-            }
-          
-            
-        }
-
-        if (isCooldown3)
-        {
-            abilityImage3.fillAmount -= 1 / cooldown3 * Time.deltaTime;
-            if (abilityImage3.fillAmount <= 0)
-            {
-                abilityImage3.fillAmount = 0;
-                isCooldown3 = false;
+                _animator.SetTrigger("Shield");
             }
         }
-    }
-
-    IEnumerator StopAnimation(int numberAnimation)
-    {
-        yield return new WaitForSeconds(_animationTimer);
-        if (numberAnimation == 1)
-            _animator.Animation("Atack", false);
-        else if (numberAnimation == 2)
-            _animator.Animation("Atack", false);
-        else if (numberAnimation == 3)
-            _animator.Animation("Atack", false);
     }
 }

@@ -21,7 +21,6 @@ public class Enemy : Entity
     void Start()
     {
         _patrolEnemy = gameObject.GetComponent<PatrolEnemy>();
-        _damage = _realDamege;
     }
 
     // Update is called once per frame
@@ -68,9 +67,9 @@ public class Enemy : Entity
 
     private void OnCollisionEnter(Collision collision)
     {
-        if (collision.gameObject.GetComponent<Pj>())
+        if (collision.gameObject.GetComponent<StatsManager>())
         {
-            collision.gameObject.GetComponent<Pj>().PlayerDamage(_damage);
+            collision.gameObject.GetComponent<StatsManager>().PlayerDamage(_damage);
         }
     }
 

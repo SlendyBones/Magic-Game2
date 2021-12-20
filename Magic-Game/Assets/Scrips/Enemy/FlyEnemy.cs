@@ -7,9 +7,6 @@ public class FlyEnemy : Entity
     private void Start()
     {
         player = LevelManager.instances.player.transform;
-        EventManager.Subscribe("CanDamage", CanMakeDamage);
-        EventManager.Subscribe("CantDamage", CantMakeDamage);
-        CanMakeDamage();
         SoundManager.instance.PlaySound(SoundID.FLY);
     }
 
@@ -29,13 +26,13 @@ public class FlyEnemy : Entity
     {
         if(other.gameObject.tag == "Shield")
         {
-            Death();
+            EnemyDeath();
         }
         
         if (other.gameObject.tag == "Player")
         {
-            EventManager.Trigger("PlayerDamage", _damage);
-            Death();
+            other.gameObject.GetComponent<StatsManager>().PlayerDamage(_damage);
+            EnemyDeath();
         }
     }
 }

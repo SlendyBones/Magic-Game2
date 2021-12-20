@@ -15,6 +15,11 @@ public class AnimatorController
         _animator.SetTrigger("Damage");
     }
 
+    public void SetTrigger(string anima)
+    {
+        _animator.SetTrigger(anima);
+    }
+
     public void MovementAnimation(float _h, float _v)
     {
         _animator.SetFloat("HorizontalInput", _h);
