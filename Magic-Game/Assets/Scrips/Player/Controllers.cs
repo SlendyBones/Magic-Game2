@@ -18,6 +18,7 @@ public class Controllers
         Interactive();
         RightClick();
         Abilities();
+        Esc();
     }
 
     private void Axies()

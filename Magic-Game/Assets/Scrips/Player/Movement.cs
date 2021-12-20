@@ -41,7 +41,7 @@ public class Movement : StatsManager
         _controlls._move = this;
         _controlls._shoot = _shoting;
         _controlls.abilities = _abilities;
-
+        _controlls.uiManager = _uiManager;
         _ani = new AnimatorController();
         _ani._animator = _animator;
 
