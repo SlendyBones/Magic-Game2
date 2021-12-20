@@ -435,7 +435,7 @@ MonoBehaviour:
   _manaRecharge: 0
   speed: 4
   _damage: 0
-  isEnemy: 0
+  isEnemy: 1
   _boss: 0
   _heal: {fileID: 5313088146365214043, guid: c659ba40141197448b12ed142343866f, type: 3}
   _profitsCoins: 3

@@ -147,15 +147,18 @@ MonoBehaviour:
   _mana: 50
   _maxMana: 50
   _manaRecharge: 2
-  _upgradeValue: 5
-  manaOn: 1
-  healthBar: {fileID: 0}
-  manaBar: {fileID: 0}
-  wl: {fileID: 0}
-  rb: {fileID: 4979825619832221058}
   speed: 10
+  _damage: 0
+  isEnemy: 0
+  _boss: 0
+  _heal: {fileID: 5313088146365214043, guid: c659ba40141197448b12ed142343866f, type: 3}
+  _profitsCoins: 0
+  player: {fileID: 0}
+  attackDistance: 10
+  followDistance: 20
+  _uiManager: {fileID: 0}
+  rb: {fileID: 4979825619832221058}
   rotationPoint: {fileID: 4979825619757920813}
-  can: 0
   _animator: {fileID: 5812607302738391544}
   _shoting: {fileID: 7996810287150569922}
 --- !u!136 &4979825619832221063

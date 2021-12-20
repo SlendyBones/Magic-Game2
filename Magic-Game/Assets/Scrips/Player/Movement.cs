@@ -25,6 +25,7 @@ public class Movement : StatsManager
 
     [SerializeField] private Animator _animator; 
     [SerializeField] private Shooting _shoting;
+    [SerializeField] private Abilities _abilities;
     private ShopBeheivor _shopBeheivor;
     private Controllers _controlls;
 
@@ -37,6 +38,7 @@ public class Movement : StatsManager
         _controlls = new Controllers();
         _controlls._move = this;
         _controlls._shoot = _shoting;
+        _controlls.abilities = _abilities;
 
         _ani = new AnimatorController();
         _ani._animator = _animator;

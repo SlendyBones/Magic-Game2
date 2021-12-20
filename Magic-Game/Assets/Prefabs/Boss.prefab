@@ -3936,16 +3936,20 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: e1080a00c1a945541aa371b1dccb4ac3, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  life: 80
+  _life: 0
+  _maxLife: 0
+  _mana: 0
+  _maxMana: 0
+  _manaRecharge: 0
+  speed: 3
+  _damage: 0
+  isEnemy: 0
+  _boss: 1
+  _heal: {fileID: 5313088146365214043, guid: c659ba40141197448b12ed142343866f, type: 3}
+  _profitsCoins: 30
   player: {fileID: 0}
   attackDistance: 10
   followDistance: 20
-  speed: 3
-  _damage: 0
-  _realDamege: 15
-  _profitsCoins: 30
-  _heal: {fileID: 5313088146365214043, guid: c659ba40141197448b12ed142343866f, type: 3}
-  _ani: {fileID: 3641460894559688522}
   _invokeTime: 5
   _fireBall: {fileID: 7360400001386241540, guid: d3faf57f8d6e0f049931b96bce7c5a5b,
     type: 3}
@@ -3959,6 +3963,7 @@ MonoBehaviour:
   _maxEnemy: 0
   _minSpawn: 0
   _maxSpawn: 0
+  _lifeBar: {fileID: 0}
 --- !u!1 &7665687030624402502
 GameObject:
   m_ObjectHideFlags: 0
