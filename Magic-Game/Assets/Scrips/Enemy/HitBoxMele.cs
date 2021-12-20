@@ -11,7 +11,7 @@ public class HitBoxMele : MonoBehaviour
 
     private void OnTriggerEnter(Collider other)
     {
-        other.gameObject.GetComponent<StatsManager>().PlayerDamage(_dmg);
+        other.gameObject.GetComponent<Movement>()._dmgDelegate(_dmg);
         Transform playerTransform = other.gameObject.GetComponent<Transform>();
         playerTransform.transform.position += ((playerTransform.transform.position - transform.position) * _force)  + transform.up * _upForce;
         gameObject.SetActive(false);

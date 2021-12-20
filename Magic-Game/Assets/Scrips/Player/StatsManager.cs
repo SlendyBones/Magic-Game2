@@ -9,8 +9,8 @@ public class StatsManager : Entity
     protected delegate void DelegateManaRecharge();
     protected DelegateManaRecharge _manaDelegate = delegate { };
 
-    protected delegate void DelegatePlayerDamage(float dmg);
-    protected DelegatePlayerDamage _dmgDelegate;
+    public delegate void DelegatePlayerDamage(float dmg);
+    public DelegatePlayerDamage _dmgDelegate;
 
     public void ManaRecharge()
     {
