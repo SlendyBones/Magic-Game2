@@ -65,25 +65,30 @@ public class StatsManager : Entity
     public void ManaUpgrade(float addMana)
     {
         _maxMana += addMana;
-        LevelManager.instances.maxMana += addMana;
+        _mana = _maxMana;
+        LevelManager.instances.maxMana = _maxMana;
     }
 
     public void DamageUpgrade(float addDmg)
     {
         _damage += addDmg;
-        LevelManager.instances.maxMana += addDmg;
+        LevelManager.instances.dmg = _damage;
     }
 
     public void LifeUpgrade(float addHealth)
     {
         _maxLife += addHealth;
-        LevelManager.instances.maxMana += addHealth;
+        _life = _maxLife;
+        LevelManager.instances.maxLife = _maxLife;
     }
 
     protected void ComparativeStats()
     {
         _maxLife = LevelManager.instances.maxLife;
+        _life = _maxLife;
         _maxMana = LevelManager.instances.maxMana;
+        _mana = _maxMana;
+        _damage = LevelManager.instances.dmg;
     } 
 
     public void LifeBar()

@@ -7,6 +7,7 @@ public class Controllers
     public Movement _move;
     public Shooting _shoot;
     public Abilities abilities;
+    public UIManager uiManager;
     private float _hAxie, _vAxie;
 
     public void OnUpdate()
@@ -78,6 +79,14 @@ public class Controllers
         if (Input.GetButtonDown("Ability3"))
         {
             abilities.Ability3();
+        }
+    }
+
+    private void Esc()
+    {
+        if (Input.GetButtonDown("Cancel"))
+        {
+            uiManager.PauseOn();
         }
     }
 }

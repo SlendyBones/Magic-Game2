@@ -10,6 +10,7 @@ public class WLCondition : MonoBehaviour
     {
         EventManager.Subscribe("LoseScene", LoseScreen);
         EventManager.Subscribe("WinScene", WinScreen);
+        EventManager.Subscribe("Menu", GoMenu);
     }
     public void LoseScreen(params object[] parameter)
     {
@@ -21,6 +22,12 @@ public class WLCondition : MonoBehaviour
     {
         EventManager.ResetEventDictionary();
         SceneManager.LoadScene("WinScene");
+    }
+
+    public void GoMenu(params object[] parameter)
+    {
+        EventManager.ResetEventDictionary();
+        SceneManager.LoadScene("Menu");
     }
 
     public void Shop()

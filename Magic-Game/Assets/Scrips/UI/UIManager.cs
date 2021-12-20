@@ -5,7 +5,7 @@ using UnityEngine.UI;
 
 public class UIManager : MonoBehaviour
 {
-    [Header ("Sliders")]
+    [Header("Sliders")]
     [SerializeField] private Slider _hSlider, _mSlider;
     [SerializeField] private Gradient _hGradient, _mGradient;
     [SerializeField] private Image _hFill, _mFill;
@@ -58,7 +58,7 @@ public class UIManager : MonoBehaviour
     {
         for (int i = 0; i < _isCD.Count; i++)
         {
-            if(_isCD[i] == true)
+            if (_isCD[i] == true)
             {
                 _abilitiesImage[i].fillAmount -= 1 / _cooldown[i] * Time.deltaTime;
                 if (_abilitiesImage[i].fillAmount <= 0)
@@ -74,5 +74,30 @@ public class UIManager : MonoBehaviour
     {
         _abilitiesImage[image].fillAmount = 1;
         _isCD[image] = true;
+    }
+
+    [Header("Menu")]
+    [SerializeField] private GameObject _menu;
+
+    public void PauseOn()
+    {
+        _menu.gameObject.SetActive(true);
+        Cursor.visible = true;
+        Cursor.lockState = CursorLockMode.Confined;
+        Time.timeScale = 0;
+    }
+
+    public void PauseOff()
+    {
+        _menu.gameObject.SetActive(false);
+        Cursor.visible = false;
+        Cursor.lockState = CursorLockMode.Locked;
+        Time.timeScale = 1;
+    }
+
+    public void BackToMenu()
+    {
+        Time.timeScale = 1;
+        EventManager.Trigger("Menu");
     }
 }
