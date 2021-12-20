@@ -9,7 +9,7 @@ public class HealItem : MonoBehaviour
     {
         if (other.gameObject.tag == "Player")
         {
-            EventManager.Trigger("LifeRecharge", _heals);
+            other.GetComponent<Movement>().LifeRecharge(_heals);
             Destroy(gameObject);
         }  
     }

@@ -9,8 +9,8 @@ public class ShopBeheivor : MonoBehaviour
     private Text _infoText;
     [SerializeField]
     private string _infoUpgrade;
-    [SerializeField]
-    private string _statToUpgrade;
+    [SerializeField] private int _numberUpgrade;
+    [SerializeField] private float _addStat; 
     [SerializeField]
     private int _cost;
 
@@ -25,13 +25,23 @@ public class ShopBeheivor : MonoBehaviour
         _coinsBeheivor = LevelManager.instances.coinsBeheivor;
     }
 
-    public void Buy()
+    public void Buy(Movement stat)
     {
         if(_coinsBeheivor.coins >= _cost)
         {
-            Debug.Log("e");
             _coinsBeheivor.SubstractCoin(_cost);
-            EventManager.Trigger(_statToUpgrade);
+            if(_numberUpgrade == 0)
+            {
+                stat.ManaUpgrade(_addStat);
+            }
+            else if(_numberUpgrade == 1)
+            {
+                stat.LifeUpgrade(_addStat);
+            }
+            else if(_numberUpgrade == 2)
+            {
+                stat.DamageUpgrade(_addStat);
+            }
         }
     }
 

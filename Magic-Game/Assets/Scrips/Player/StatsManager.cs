@@ -67,7 +67,13 @@ public class StatsManager : Entity
         _maxMana += addMana;
         LevelManager.instances.maxMana += addMana;
     }
-    
+
+    public void DamageUpgrade(float addDmg)
+    {
+        _damage += addDmg;
+        LevelManager.instances.maxMana += addDmg;
+    }
+
     public void LifeUpgrade(float addHealth)
     {
         _maxLife += addHealth;

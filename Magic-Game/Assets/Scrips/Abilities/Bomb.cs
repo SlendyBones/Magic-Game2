@@ -35,7 +35,6 @@ public class Bomb : MonoBehaviour
 
     void Explote()
     {
-        Debug.Log("Boom");
         SoundManager.instance.PlaySound(SoundID.EXPLOSION);
 
         Collider [] collidersToDestroy =Physics.OverlapSphere(transform.position, radius);

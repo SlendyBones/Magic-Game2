@@ -21,21 +21,21 @@ public class Boss : Entity
     [SerializeField] private int _minEnemy, _maxEnemy, _minSpawn, _maxSpawn;
 
     [SerializeField] private Image _lifeBar;
-    [SerializeField] private Animator _animator;
 
+    private Vector3 _lastPlayerPosition;
     void Start()
     {
         _move = Movement;
         _ani = new AnimatorController();
         _ani._animator = _animator;
+        SetHealth(_life);
     }
 
-    // Update is called once per frame
     void Update()
     {
         distancePlayer = Vector3.Distance(player.transform.position, transform.position);
         _move();
-        //_lifeBar.fillAmount = life/_originalLife;
+        SetHealth(_life);
     }
 
     void Movement()
@@ -65,19 +65,19 @@ public class Boss : Entity
     //Se llama cuando esta casteando la bola de fuego o enemigos
     public void OnlyRotate()
     {
+        _lastPlayerPosition = player.position + new Vector3(0, 5, 0);
         _move = Rotate;
     }
 
     //Se llama cuando quieras Instanciar la bola de fuego
     public void AttackFire()
     {
-        GameObject fireball = Instantiate(_fireBall, _spawnPointFire.position, _spawnPointFire.rotation);
+        GameObject fireball = Instantiate(_fireBall, _lastPlayerPosition, _spawnPointFire.rotation);
         Destroy(fireball, 2f);
     }
 
     public void SpawnEnemy()
     {
-        Debug.Log("xd");
         Instantiate(_enemys[Random.Range(_minEnemy, _maxEnemy)], _spawnPointEnemy[Random.Range(_minSpawn, _maxSpawn)].position, _spawnPointEnemy[Random.Range(_minSpawn, _maxSpawn)].rotation);
     }
 
@@ -85,5 +85,10 @@ public class Boss : Entity
     public void ContinousMoving()
     {
         _move = Movement;
+    }
+
+    public void SetHealth(float actualVar)
+    {
+        _lifeBar.fillAmount = actualVar / _maxLife;
     }
 }

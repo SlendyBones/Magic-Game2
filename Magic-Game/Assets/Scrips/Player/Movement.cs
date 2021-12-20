@@ -23,7 +23,6 @@ public class Movement : StatsManager
     private bool _shop = false;
     private bool _timer = false;
 
-    [SerializeField] private Animator _animator; 
     [SerializeField] private Shooting _shoting;
     [SerializeField] private Abilities _abilities;
     private ShopBeheivor _shopBeheivor;
@@ -106,7 +105,7 @@ public class Movement : StatsManager
             EventManager.Trigger("StartTimer");
 
         if (_shop)
-            _shopBeheivor.Buy();
+            _shopBeheivor.Buy(this);
     }
 
     private void OnCollisionEnter(Collision collision)

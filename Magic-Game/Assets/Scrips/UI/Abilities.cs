@@ -38,13 +38,10 @@ public class Abilities : MonoBehaviour
 
     public void Ability1()
     {
-        Debug.Log("antes if");
         if (_uiManager._isCD[0] == false)
         {
-            Debug.Log("Despues if");
             if (pj.UseMana(_blackHoleMana))
             {
-                Debug.Log("uso mana");
                 _uiManager.SetOff(0);
 
                 GameObject jar =Instantiate(jarAbility, spawnAbilities.position, player.transform.rotation);

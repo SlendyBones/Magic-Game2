@@ -13,8 +13,8 @@ GameObject:
   - component: {fileID: 7360400001386241543}
   - component: {fileID: 7360400001386241542}
   - component: {fileID: 7360400001386241541}
-  - component: {fileID: -7669291373323191511}
-  m_Layer: 0
+  - component: {fileID: 6299955441891790397}
+  m_Layer: 15
   m_Name: FireBall
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -111,7 +111,7 @@ Rigidbody:
   m_Interpolate: 0
   m_Constraints: 112
   m_CollisionDetection: 0
---- !u!114 &-7669291373323191511
+--- !u!114 &6299955441891790397
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -120,19 +120,11 @@ MonoBehaviour:
   m_GameObject: {fileID: 7360400001386241540}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: b399f4bc91857fa4f8bcac3cf9346215, type: 3}
+  m_Script: {fileID: 11500000, guid: 2625f6db4570b834bb124383d10769eb, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  life: 1
-  player: {fileID: 0}
-  attackDistance: 0
-  followDistance: 0
-  speed: 0
-  _damage: 0
-  _realDamege: 10
-  _profitsCoins: 0
-  _heal: {fileID: 0}
-  _boss: 0
+  _damage: 10
+  _isFireBall: 1
 --- !u!1 &8990674434444693554
 GameObject:
   m_ObjectHideFlags: 0

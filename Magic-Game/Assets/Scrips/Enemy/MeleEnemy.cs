@@ -15,6 +15,8 @@ public class MeleEnemy : Entity
     private void Start()
     {
         player = LevelManager.instances.player.transform;
+        _ani = new AnimatorController();
+        _ani._animator = _animator;
         _move = Movement;
     }
     void Update()
