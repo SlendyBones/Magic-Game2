@@ -2185,7 +2185,7 @@ GameObject:
   - component: {fileID: 733803389723891102}
   - component: {fileID: 2742644129901677426}
   - component: {fileID: 5107025345761481989}
-  m_Layer: 11
+  m_Layer: 13
   m_Name: HitBox
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -2231,9 +2231,9 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 7e082b17109a37d45a8c204a885ccffe, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  _dmg: 0
-  _force: 0
-  _upForce: 0
+  _dmg: 5
+  _force: 5
+  _upForce: 1
 --- !u!1 &6574605274668520422
 GameObject:
   m_ObjectHideFlags: 0
