@@ -76,6 +76,6 @@ public abstract class Entity : MonoBehaviour
         yield return new WaitForSeconds(2);
         Debug.Log("aca");
         EventManager.Trigger("DeathCoin");
-        EventManager.Trigger("LoseScreen");
+        EventManager.Trigger("LoseScene");
     }
 }
