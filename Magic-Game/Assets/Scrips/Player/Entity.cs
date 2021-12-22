@@ -18,6 +18,8 @@ public abstract class Entity : MonoBehaviour
     [Header("EnemyVar")]
     [SerializeField] private bool isEnemy;
     [SerializeField] private bool _boss = false;
+    [SerializeField] private bool _goblin = false;
+    [SerializeField] private int _coinsPerHit;
 
     [SerializeField] private GameObject _heal;
     private int _randomNumber;
@@ -36,6 +38,11 @@ public abstract class Entity : MonoBehaviour
     public void TakeDamage(float dmg)
     {
         _life -= dmg;
+
+        if (_goblin)
+        {
+            EventManager.Trigger("AddCoin", _coinsPerHit);
+        }
 
         if (isEnemy)
         {

@@ -410,7 +410,7 @@ MonoBehaviour:
   m_SceneHierarchy:
     m_TreeViewState:
       scrollPos: {x: 0, y: 0}
-      m_SelectedIDs: ba530000
+      m_SelectedIDs: f2270000
       m_LastClickedID: 0
       m_ExpandedIDs: 76fbffff
       m_RenameOverlay:
@@ -825,20 +825,20 @@ MonoBehaviour:
     m_SkipHidden: 0
     m_SearchArea: 1
     m_Folders:
-    - Assets/Scrips/Enemy
+    - Assets/Scrips/Sound
   m_ViewMode: 1
   m_StartGridSize: 89
   m_LastFolders:
-  - Assets/Scrips/Enemy
+  - Assets/Scrips/Sound
   m_LastFoldersGridSize: 89
   m_LastProjectPath: C:\Users\agust\Documents\GitHub\Magic-Game2\Magic-Game
   m_LockTracker:
     m_IsLocked: 0
   m_FolderTreeState:
-    scrollPos: {x: 0, y: 127}
-    m_SelectedIDs: 8c390000
-    m_LastClickedID: 14732
-    m_ExpandedIDs: 00000000982f0000ee320000a8380000ca3b000000ca9a3b
+    scrollPos: {x: 0, y: 295}
+    m_SelectedIDs: a4320000
+    m_LastClickedID: 12964
+    m_ExpandedIDs: 000000009a2f0000f0320000aa380000cc3b000000ca9a3b
     m_RenameOverlay:
       m_UserAcceptedRename: 0
       m_Name: 
@@ -866,7 +866,7 @@ MonoBehaviour:
     scrollPos: {x: 0, y: 0}
     m_SelectedIDs: 
     m_LastClickedID: 0
-    m_ExpandedIDs: 00000000982f0000ee320000a8380000
+    m_ExpandedIDs: 000000009a2f0000f0320000aa380000
     m_RenameOverlay:
       m_UserAcceptedRename: 0
       m_Name: 
