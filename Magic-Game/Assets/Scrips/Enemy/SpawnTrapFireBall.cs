@@ -44,6 +44,7 @@ public class SpawnTrapFireBall : MonoBehaviour
             if (other.gameObject.tag == "Player")
             {
                 Instantiate(_fireBall, transform.position, transform.rotation);
+                SoundManager.instance.PlaySound(SoundID.FIREBALL);
                 _timer = _timeforspawn;
 
             }

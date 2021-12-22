@@ -11,6 +11,8 @@ TagManager:
   - Button
   - Shield
   - Shop
+  - Mago
+  - Goblin
   layers:
   - Default
   - TransparentFX
@@ -28,7 +30,7 @@ TagManager:
   - HitBoxEnemy
   - JarBlack
   - FireBall
-  - 
+  - Wall
   - 
   - 
   - 

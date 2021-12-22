@@ -6,7 +6,8 @@ public class BlackHole : MonoBehaviour
 {
     public float masa = 1f;
     [SerializeField]
-    private float dmg =10f; 
+    private float dmg =10f;
+    [SerializeField] private LayerMask enemy;
   
 
     private void Awake()
@@ -16,7 +17,7 @@ public class BlackHole : MonoBehaviour
 
     private void OnTriggerEnter(Collider collision)
     {
-        if (collision.gameObject.tag == "Enemy")
+        if (collision.gameObject.layer == enemy)
         {
             
             masa += collision.gameObject.GetComponent<Rigidbody>().mass;
@@ -27,7 +28,7 @@ public class BlackHole : MonoBehaviour
             }
         }
     }
-    // Update is called once per frame
+   
     
     
 }

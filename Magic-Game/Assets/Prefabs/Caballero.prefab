@@ -440,6 +440,8 @@ MonoBehaviour:
   _animator: {fileID: 6160166856329167874}
   isEnemy: 1
   _boss: 0
+  _goblin: 0
+  _coinsPerHit: 0
   _heal: {fileID: 5313088146365214043, guid: c659ba40141197448b12ed142343866f, type: 3}
   _profitsCoins: 3
   player: {fileID: 0}
@@ -2232,7 +2234,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   _dmg: 5
-  _force: 5
+  _force: 1
   _upForce: 1
 --- !u!1 &6574605274668520422
 GameObject:

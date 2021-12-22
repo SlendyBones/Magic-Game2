@@ -185,13 +185,18 @@ public enum SoundID
     FLY,
     FRASK,
     EBULLET,
+    FIREBALL,
     PLAYERDAMAGE,
     ENEMYDAMAGE,
-    BOSSDAMAGE
+    BOSSDAMAGE,
+    BUYSHOP,
+    CANTBUY
 
 }
 
 public enum MusicID
 {
-
+    SKELETONDANCE,
+    LURKINGSHADOWS,
+    FUNHOUSE
 }

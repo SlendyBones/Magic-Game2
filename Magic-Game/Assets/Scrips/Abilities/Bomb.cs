@@ -104,6 +104,24 @@ public class Bomb : MonoBehaviour
 
             }
         }
+        foreach (Collider nearbyObject in collidersToMakeDamage)
+        {
+            HealthEnemy heal = nearbyObject.GetComponent<HealthEnemy>();
+            if (heal != null)
+            {
+                heal.TakeDamage(damage);
+
+            }
+        }
+        foreach (Collider nearbyObject in collidersToMakeDamage)
+        {
+            GoldEnemy gold = nearbyObject.GetComponent<GoldEnemy>();
+            if (gold != null)
+            {
+                gold.TakeDamage(damage);
+
+            }
+        }
         Instantiate(_particleExplosion, transform.position, transform.rotation);
         Destroy(gameObject);
     }

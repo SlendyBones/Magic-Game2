@@ -50,11 +50,19 @@ MonoBehaviour:
   - {fileID: 8300000, guid: 948e8ad36769373468de61a409b4ed48, type: 3}
   - {fileID: 8300000, guid: c96f3def62b3c3e40aefa8c92017a114, type: 3}
   - {fileID: 8300000, guid: 0616c0f9cf766994fa526edf0d36759b, type: 3}
-  music: []
+  - {fileID: 8300000, guid: 9a7d54f8f7017fe49b270d0248fd8d84, type: 3}
+  - {fileID: 8300000, guid: cf503161aa3d57a4dac09041a91ff629, type: 3}
+  - {fileID: 8300000, guid: 0e46a39683e387e4e81fe6aeada362a1, type: 3}
+  - {fileID: 8300000, guid: 05981d7d584508f479355edb172a4295, type: 3}
+  - {fileID: 8300000, guid: aa7586e02811ccc4e8c2365a62010b9c, type: 3}
+  music:
+  - {fileID: 8300000, guid: 3be8d2a53da64d54ba6c2bebb8ee2e3f, type: 3}
+  - {fileID: 8300000, guid: 09f0e6102ea6f3f4b9f50f8bb5577319, type: 3}
+  - {fileID: 8300000, guid: 1184efa323b1f424ab8b023d7029d362, type: 3}
   sfxChannel:
-  - {fileID: 6252623665234371323}
+  - {fileID: 0}
   musicChannel:
-  - {fileID: 6252623665234371323}
+  - {fileID: 0}
   volumeSFX: 1
   volumeMusic: 1
 --- !u!82 &6252623665234371323

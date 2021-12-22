@@ -4999,6 +4999,9 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   _gravityPull: 4.84
+  enemy:
+    serializedVersion: 2
+    m_Bits: 2048
 --- !u!1 &8523060877327876679
 GameObject:
   m_ObjectHideFlags: 0
@@ -5107,6 +5110,9 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   masa: 3.59
   dmg: 10
+  enemy:
+    serializedVersion: 2
+    m_Bits: 2048
 --- !u!54 &8523060877327876672
 Rigidbody:
   m_ObjectHideFlags: 0

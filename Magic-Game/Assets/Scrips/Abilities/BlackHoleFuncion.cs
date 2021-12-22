@@ -8,6 +8,7 @@ public class BlackHoleFuncion : MonoBehaviour
     [SerializeField] 
     float _gravityPull = .78f;
     public static float m_GravityRadius = 1f;
+    [SerializeField] private LayerMask enemy;
     void Awake()
     {
         m_GravityRadius = GetComponent<SphereCollider>().radius;
@@ -18,7 +19,7 @@ public class BlackHoleFuncion : MonoBehaviour
         if (other.attachedRigidbody)
         {
            
-            if(other.gameObject.tag == "Enemy")
+            if(other.gameObject.layer == enemy)
             {
                 float gravityIntensity = Vector3.Distance(transform.position, other.transform.position) / m_GravityRadius;
                 other.attachedRigidbody.AddForce((transform.position - other.transform.position) * gravityIntensity * other.attachedRigidbody.mass * _gravityPull * Time.deltaTime);
@@ -33,7 +34,7 @@ public class BlackHoleFuncion : MonoBehaviour
         if (other.attachedRigidbody)
         {
 
-            if (other.gameObject.tag == "Enemy")
+            if (other.gameObject.layer == enemy)
             {
                 float gravityIntensity = Vector3.Distance(transform.position, other.transform.position) / m_GravityRadius;
                 other.attachedRigidbody.AddForce((transform.position - other.transform.position) * gravityIntensity * other.attachedRigidbody.mass * _gravityPull * Time.deltaTime);
@@ -47,7 +48,7 @@ public class BlackHoleFuncion : MonoBehaviour
         if (other.attachedRigidbody)
         {
 
-            if (other.gameObject.tag == "Enemy")
+            if (other.gameObject.layer == enemy)
             {
                 float gravityIntensity = Vector3.Distance(transform.position, other.transform.position) / m_GravityRadius;
                 other.attachedRigidbody.AddForce((transform.position - other.transform.position) * gravityIntensity * other.attachedRigidbody.mass * _gravityPull * Time.deltaTime);

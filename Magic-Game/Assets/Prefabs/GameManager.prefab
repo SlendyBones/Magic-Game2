@@ -92,6 +92,7 @@ MonoBehaviour:
   - {fileID: 7597899449786420523, guid: 721d6ab508ab51645a8912d1e8b1fea6, type: 3}
   - {fileID: 1802759619010368235, guid: 28e3e0de9cf1a72408cfdbff0422bcc0, type: 3}
   - {fileID: 985185540127120235, guid: a269c8b4bcdacb340a1fc6ed3a6c2c5e, type: 3}
+  - {fileID: 5966186776163075447, guid: d84205ea05bf6d2418425f0905f89e67, type: 3}
   wl: {fileID: 4743394756560866136}
   _minEnemy: 8
   _maxEnemy: 15

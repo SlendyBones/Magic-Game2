@@ -86,7 +86,11 @@ public abstract class Entity : MonoBehaviour
         }
 
         EventManager.Trigger("AddCoin", _profitsCoins);
-        EventManager.Trigger("SubstractEnemy");
+        if (_goblin==false)
+        {
+            EventManager.Trigger("SubstractEnemy");
+        }
+       
         Destroy(gameObject);
     }
 

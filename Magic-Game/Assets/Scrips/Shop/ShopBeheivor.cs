@@ -30,6 +30,7 @@ public class ShopBeheivor : MonoBehaviour
         if(_coinsBeheivor.coins >= _cost)
         {
             _coinsBeheivor.SubstractCoin(_cost);
+            SoundManager.instance.PlaySound(SoundID.BUYSHOP);
             if(_numberUpgrade == 0)
             {
                 stat.ManaUpgrade(_addStat);
@@ -42,6 +43,10 @@ public class ShopBeheivor : MonoBehaviour
             {
                 stat.DamageUpgrade(_addStat);
             }
+        }
+        else
+        {
+            SoundManager.instance.PlaySound(SoundID.CANTBUY);
         }
     }
 

@@ -68,7 +68,7 @@ public class HealthEnemy : Entity
     {
         for (int i = 0; i < _enemys.Count; i++)
         {
-            if (_nearEnemy = null)
+            if (_nearEnemy == null)
             {
                 _nearEnemy = _enemys[i];
             }

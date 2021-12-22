@@ -72,7 +72,7 @@ public class SpawnManager : MonoBehaviour
         for (int i = 0; i < _amountOfEnemy; i++)
         {
             yield return new WaitForSeconds(1f);
-            Instantiate(_tipeOfEnemy[Random.Range(0, 3)], _spawns[Random.Range(0, 4)].transform.position, _spawns[Random.Range(0, 4)].transform.rotation);
+            Instantiate(_tipeOfEnemy[Random.Range(0, 4)], _spawns[Random.Range(0, 4)].transform.position, _spawns[Random.Range(0, 4)].transform.rotation);
             actualAmountOfEnemy++;
         }
     }
