@@ -10370,6 +10370,69 @@ Transform:
     type: 3}
   m_PrefabInstance: {fileID: 837198625}
   m_PrefabAsset: {fileID: 0}
+--- !u!1 &838054152
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 838054154}
+  - component: {fileID: 838054153}
+  m_Layer: 0
+  m_Name: Enemigoxd
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 0
+--- !u!114 &838054153
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 838054152}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: b7bac75584faaa54ea30c74ac1b3c445, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  _life: 0
+  _maxLife: 0
+  _mana: 0
+  _maxMana: 0
+  _manaRecharge: 0
+  speed: 0
+  _damage: 0
+  _animator: {fileID: 0}
+  isEnemy: 0
+  _boss: 0
+  _heal: {fileID: 0}
+  _profitsCoins: 0
+  player: {fileID: 0}
+  attackDistance: 10
+  followDistance: 20
+  _healAmount: 0
+  _actualTargetDistance: 0
+  _castDistance: 0
+  _timerToCast: 0
+  _enemys: []
+--- !u!4 &838054154
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 838054152}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 5.7898636, y: 3.9917774, z: 8.251488}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children: []
+  m_Father: {fileID: 0}
+  m_RootOrder: 28
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1001 &840090311
 PrefabInstance:
   m_ObjectHideFlags: 0

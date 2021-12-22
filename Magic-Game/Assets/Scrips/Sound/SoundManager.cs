@@ -184,7 +184,10 @@ public enum SoundID
     EXPLOSION,
     FLY,
     FRASK,
-    EBULLET
+    EBULLET,
+    PLAYERDAMAGE,
+    ENEMYDAMAGE,
+    BOSSDAMAGE
 
 }
 

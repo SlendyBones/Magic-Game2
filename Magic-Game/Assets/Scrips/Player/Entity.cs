@@ -5,7 +5,7 @@ using UnityEngine;
 public abstract class Entity : MonoBehaviour
 {
     [Header("GeneralVar")]
-    [SerializeField]protected float _life, _maxLife, _mana, _maxMana, _manaRecharge;
+    [SerializeField] protected float _life, _maxLife, _mana, _maxMana, _manaRecharge;
     public float speed;
     public float _damage;
     
@@ -36,6 +36,23 @@ public abstract class Entity : MonoBehaviour
     public void TakeDamage(float dmg)
     {
         _life -= dmg;
+
+        if (isEnemy)
+        {
+            if (_boss)
+            {
+                SoundManager.instance.PlaySound(SoundID.BOSSDAMAGE);
+            }
+            else
+            {
+                SoundManager.instance.PlaySound(SoundID.ENEMYDAMAGE);
+            }
+        }
+        else
+        {
+            SoundManager.instance.PlaySound(SoundID.PLAYERDAMAGE);
+        }
+
 
         if (_life <= 0)
         {
@@ -77,5 +94,12 @@ public abstract class Entity : MonoBehaviour
         Debug.Log("aca");
         EventManager.Trigger("DeathCoin");
         EventManager.Trigger("LoseScene");
+    }
+
+    public void Heal(float healAmount)
+    {
+        _life += healAmount;
+        if (_life > _maxLife)
+            _life = _maxLife;
     }
 }
