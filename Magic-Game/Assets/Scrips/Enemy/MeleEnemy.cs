@@ -21,6 +21,10 @@ public class MeleEnemy : Entity
     }
     void Update()
     {
+        if (player == null)
+        {
+            player = LevelManager.instances.player.transform;
+        }
         _move();
 
         distancePlayer = Vector3.Distance(player.transform.position, transform.position);

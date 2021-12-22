@@ -28,8 +28,10 @@ public class Movement : StatsManager
     private ShopBeheivor _shopBeheivor;
     private Controllers _controlls;
 
+
     private void Start()
     {
+        LevelManager.instances.player = this.gameObject;
         ComparativeStats();
 
         _uiManager.SetMaxHealth(_life);

@@ -20,7 +20,7 @@ public class ShopBeheivor : MonoBehaviour
     [SerializeField]
     private int _actualCoins;
 
-    private void Awake()
+    private void Start()
     {
         _coinsBeheivor = LevelManager.instances.coinsBeheivor;
     }

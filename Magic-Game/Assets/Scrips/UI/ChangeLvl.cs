@@ -9,6 +9,13 @@ public class ChangeLvl : MonoBehaviour
     string _lvl;
     [SerializeField]
     string _scene;
+
+    private void Start()
+    {
+        Cursor.visible = true;
+        Cursor.lockState = CursorLockMode.None;
+    }
+
     public void ChangeLVL()
     {
         SceneManager.LoadScene(_lvl);

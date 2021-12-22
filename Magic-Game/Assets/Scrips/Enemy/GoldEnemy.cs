@@ -26,6 +26,11 @@ public class GoldEnemy : Entity
 
     void Update()
     {
+        if(player == null)
+        {
+            player = LevelManager.instances.player.transform;
+        }
+
         _actualDistance = Vector3.Distance(player.transform.position, transform.position);
         _rotate();
         if(_actualDistance < _distanceToRun)

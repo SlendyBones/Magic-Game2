@@ -20,6 +20,10 @@ public class RangeEnemy : Entity
 
     void Update()
     {
+        if (player == null)
+        {
+            player = LevelManager.instances.player.transform;
+        }
         transform.forward = player.transform.position - transform.position;
         _distance = Vector3.Distance(player.transform.position, transform.position);
         if (_distance < attackDistance && _timer > 1)

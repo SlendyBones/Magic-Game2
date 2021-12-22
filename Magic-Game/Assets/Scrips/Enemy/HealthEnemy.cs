@@ -30,7 +30,12 @@ public class HealthEnemy : Entity
 
     void Update()
     {
-        if(_nearEnemy != null)
+        if (player == null)
+        {
+            player = LevelManager.instances.player.transform;
+        }
+
+        if (_nearEnemy != null)
         {
             _move();
         }

@@ -13,6 +13,10 @@ public class FlyEnemy : Entity
 
     void Update()
     {
+        if (player == null)
+        {
+            player = LevelManager.instances.player.transform;
+        }
         Move();
     }
 
