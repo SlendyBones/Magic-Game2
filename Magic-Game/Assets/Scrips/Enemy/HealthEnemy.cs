@@ -87,6 +87,7 @@ public class HealthEnemy : Entity
     public void Heal()
     {
         _nearEnemy.GetComponent<Entity>().Heal(_healAmount);
+        _interenalTimer = 0;
     }
 
     public void CanMove()
