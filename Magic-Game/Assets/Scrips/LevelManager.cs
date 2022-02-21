@@ -1,6 +1,7 @@
 ﻿using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.Serialization;
 
 public class LevelManager : MonoBehaviour
 {
@@ -11,8 +12,8 @@ public class LevelManager : MonoBehaviour
     public float maxMana;
     public float dmg;
 
-    [Header("Waves")]
-    public int numberLVL= 1;
+    [FormerlySerializedAs("numberLVL")] [Header("Waves")]
+    public int numberLvl= 1;
 
     public bool lvl2 = false;
 
@@ -44,10 +45,10 @@ public class LevelManager : MonoBehaviour
         EventManager.Trigger("SpawnAddWave");
     }
 
-    void AddWave(params object[] parameter)
+    private void AddWave(params object[] parameter)
     {
         Debug.Log("addin");
-        numberLVL++;
+        numberLvl++;
     }
 
     public void DamageUpgrade(params object[] parameter)

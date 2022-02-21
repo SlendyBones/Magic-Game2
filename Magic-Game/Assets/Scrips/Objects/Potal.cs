@@ -18,7 +18,7 @@ public class Potal : MonoBehaviour
         
         if (LevelManager.instances.lvl2 == true)
             SceneManager.LoadScene(_lvlName3);
-        else if(LevelManager.instances.numberLVL == 3)
+        else if(LevelManager.instances.numberLvl == 3)
             SceneManager.LoadScene(_lvlName2);
     }
 }
