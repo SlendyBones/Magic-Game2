@@ -57,7 +57,7 @@ public class Abilities : MonoBehaviour
             {
                 _uiManager.SetOff(1);
 
-                GameObject bomb = Instantiate(bombAbility, spawnAbilities.position, player.transform.rotation);
+                GameObject bomb = Instantiate(bombAbility, spawnAbilities.position, spawnAbilities.transform.rotation);
                 _animator.SetTrigger("Ability");
             }
         }
