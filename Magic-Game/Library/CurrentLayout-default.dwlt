@@ -21,7 +21,7 @@ MonoBehaviour:
   m_ShowMode: 4
   m_Title: 
   m_RootView: {fileID: 2}
-  m_MinSize: {x: 950, y: 544}
+  m_MinSize: {x: 950, y: 300}
   m_MaxSize: {x: 10000, y: 10000}
 --- !u!114 &2
 MonoBehaviour:
@@ -45,7 +45,7 @@ MonoBehaviour:
     y: 0
     width: 1920
     height: 997
-  m_MinSize: {x: 950, y: 544}
+  m_MinSize: {x: 950, y: 300}
   m_MaxSize: {x: 10000, y: 10000}
 --- !u!114 &3
 MonoBehaviour:
@@ -111,10 +111,10 @@ MonoBehaviour:
     y: 30
     width: 1920
     height: 947
-  m_MinSize: {x: 709, y: 494}
-  m_MaxSize: {x: 18004, y: 14044}
+  m_MinSize: {x: 713, y: 494}
+  m_MaxSize: {x: 18008, y: 14044}
   vertical: 0
-  controlID: 33
+  controlID: 85
 --- !u!114 &6
 MonoBehaviour:
   m_ObjectHideFlags: 52
@@ -136,10 +136,10 @@ MonoBehaviour:
     y: 0
     width: 1481
     height: 947
-  m_MinSize: {x: 434, y: 494}
-  m_MaxSize: {x: 14004, y: 14044}
+  m_MinSize: {x: 436, y: 494}
+  m_MaxSize: {x: 14006, y: 14044}
   vertical: 1
-  controlID: 34
+  controlID: 86
 --- !u!114 &7
 MonoBehaviour:
   m_ObjectHideFlags: 52
@@ -164,7 +164,7 @@ MonoBehaviour:
   m_MinSize: {x: 406, y: 222}
   m_MaxSize: {x: 8006, y: 4022}
   vertical: 0
-  controlID: 35
+  controlID: 87
 --- !u!114 &8
 MonoBehaviour:
   m_ObjectHideFlags: 52
@@ -240,10 +240,10 @@ MonoBehaviour:
     y: 675
     width: 1481
     height: 272
-  m_MinSize: {x: 434, y: 272}
-  m_MaxSize: {x: 14004, y: 10022}
+  m_MinSize: {x: 436, y: 272}
+  m_MaxSize: {x: 14006, y: 10022}
   vertical: 0
-  controlID: 81
+  controlID: 111
 --- !u!114 &11
 MonoBehaviour:
   m_ObjectHideFlags: 52
@@ -263,8 +263,8 @@ MonoBehaviour:
     y: 0
     width: 289
     height: 272
-  m_MinSize: {x: 200, y: 200}
-  m_MaxSize: {x: 4000, y: 4000}
+  m_MinSize: {x: 202, y: 222}
+  m_MaxSize: {x: 4002, y: 4022}
   m_ActualView: {fileID: 18}
   m_Panes:
   - {fileID: 18}
@@ -317,8 +317,8 @@ MonoBehaviour:
     y: 0
     width: 439
     height: 947
-  m_MinSize: {x: 275, y: 50}
-  m_MaxSize: {x: 4000, y: 4000}
+  m_MinSize: {x: 277, y: 72}
+  m_MaxSize: {x: 4002, y: 4022}
   m_ActualView: {fileID: 22}
   m_Panes:
   - {fileID: 22}
@@ -442,9 +442,9 @@ MonoBehaviour:
   m_PlayAudio: 0
   m_AudioPlay: 0
   m_Position:
-    m_Target: {x: -1.9760246, y: 5.9563274, z: 34.787174}
+    m_Target: {x: -9.236384, y: 12.678445, z: 30.368467}
     speed: 2
-    m_Value: {x: -1.9760246, y: 5.9563274, z: 34.787174}
+    m_Value: {x: -11.553444, y: 11.890411, z: 29.864506}
   m_RenderMode: 0
   m_CameraMode:
     drawMode: 0
@@ -473,13 +473,13 @@ MonoBehaviour:
       speed: 2
       m_Value: 0
   m_Rotation:
-    m_Target: {x: 0.07825267, y: 0.48225218, z: -0.040151637, w: 0.8721811}
+    m_Target: {x: -0.39920762, y: -0.5491084, z: 0.32982564, w: -0.6568343}
     speed: 2
-    m_Value: {x: 0.073714, y: 0.49521312, z: -0.039068747, w: 0.8647565}
+    m_Value: {x: -0.40585235, y: -0.5453097, z: 0.3353955, w: -0.6522508}
   m_Size:
-    m_Target: 58.694424
+    m_Target: 107.84965
     speed: 2
-    m_Value: 58.791977
+    m_Value: 103.20541
   m_Ortho:
     m_Target: 0
     speed: 2
@@ -674,10 +674,10 @@ MonoBehaviour:
   m_ViewDataDictionary: {fileID: 0}
   m_SceneHierarchy:
     m_TreeViewState:
-      scrollPos: {x: 0, y: 884}
-      m_SelectedIDs: b2ce0000
-      m_LastClickedID: 52914
-      m_ExpandedIDs: 3cccfdff6a37feff6e37feff7637feff7837feff7a37feff8037feff8237feff8437feff8637feff8837feff8e37feff9037feff9237feff9837feffaa37feffc837feffd437feff0c38feff0e38feff2e51feff0255feff706dfeff
+      scrollPos: {x: 0, y: 1428}
+      m_SelectedIDs: 9aa8ffff9ea8ffff9ca8ffff96a8ffff98a8ffff
+      m_LastClickedID: -22376
+      m_ExpandedIDs: b8eaffff2aedffff76fbffff
       m_RenameOverlay:
         m_UserAcceptedRename: 0
         m_Name: 
@@ -740,20 +740,20 @@ MonoBehaviour:
     m_SkipHidden: 0
     m_SearchArea: 1
     m_Folders:
-    - Assets/Assets/Animations
+    - Assets/Materiales
   m_ViewMode: 1
   m_StartGridSize: 89
   m_LastFolders:
-  - Assets/Assets/Animations
+  - Assets/Materiales
   m_LastFoldersGridSize: 89
-  m_LastProjectPath: C:\Users\agust\Documents\GitHub\Magic-Game2\Magic-Game
+  m_LastProjectPath: D:\GitHub\Magic-Game2\Magic-Game
   m_LockTracker:
     m_IsLocked: 0
   m_FolderTreeState:
-    scrollPos: {x: 0, y: 99}
-    m_SelectedIDs: ae050100
-    m_LastClickedID: 66990
-    m_ExpandedIDs: 00000000cab0000006b1000014b30000ceb3000000ca9a3b
+    scrollPos: {x: 0, y: 0}
+    m_SelectedIDs: 263d0000
+    m_LastClickedID: 15654
+    m_ExpandedIDs: 000000009e2f000000ca9a3b
     m_RenameOverlay:
       m_UserAcceptedRename: 0
       m_Name: 
@@ -781,7 +781,7 @@ MonoBehaviour:
     scrollPos: {x: 0, y: 0}
     m_SelectedIDs: 
     m_LastClickedID: 0
-    m_ExpandedIDs: 00000000cab00000
+    m_ExpandedIDs: 000000009e2f0000
     m_RenameOverlay:
       m_UserAcceptedRename: 0
       m_Name: 
