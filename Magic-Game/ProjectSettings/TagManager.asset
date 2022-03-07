@@ -16,6 +16,8 @@ TagManager:
   - Bomb
   - Red
   - AOE
+  - Left
+  - Right
   layers:
   - Default
   - TransparentFX
