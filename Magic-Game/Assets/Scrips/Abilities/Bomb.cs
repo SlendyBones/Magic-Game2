@@ -37,16 +37,6 @@ public class Bomb : MonoBehaviour
     {
         SoundManager.instance.PlaySound(SoundID.EXPLOSION);
 
-        Collider [] collidersToDestroy =Physics.OverlapSphere(transform.position, radius);
-        foreach (Collider nearbyObject in collidersToDestroy)
-        {
-            Destructible dest = nearbyObject.GetComponent<Destructible>();
-            if (dest != null)
-            {
-                dest.Destroy();
-            }
-        }
-
         Collider[] collidersToMove = Physics.OverlapSphere(transform.position, radius);
 
         foreach (Collider nearbyObject in collidersToMove)

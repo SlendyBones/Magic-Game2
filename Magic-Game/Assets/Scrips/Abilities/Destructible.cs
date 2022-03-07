@@ -4,18 +4,14 @@ using UnityEngine;
 
 public class Destructible : MonoBehaviour
 {
-    //public GameObject destoyedVercion;
+    [SerializeField] private GameObject _particle;
     
-    public void Destroy()
-    {
-        //Instantiate(destoyedVercion, transform.position, transform.rotation);
-        Destroy(gameObject);
-    }
-
     private void OnCollisionEnter(Collision collision)
     {
         if(collision.gameObject.tag == "Bomb")
         {
+            GameObject particulas = Instantiate(_particle, transform.position, transform.rotation);
+            Destroy(particulas, 2f);
             Destroy(collision.gameObject);
             Destroy(gameObject);
         }
