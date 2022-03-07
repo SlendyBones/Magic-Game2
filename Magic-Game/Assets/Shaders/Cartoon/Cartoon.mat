@@ -24,7 +24,7 @@ Material:
         m_Scale: {x: 1, y: 1}
         m_Offset: {x: 0, y: 0}
     - _TextureSample1:
-        m_Texture: {fileID: 0}
+        m_Texture: {fileID: 2800000, guid: 9c66a01f96be243459860235991a978f, type: 3}
         m_Scale: {x: 1, y: 1}
         m_Offset: {x: 0, y: 0}
     - _texcoord:
@@ -32,9 +32,9 @@ Material:
         m_Scale: {x: 1, y: 1}
         m_Offset: {x: 0, y: 0}
     m_Floats:
-    - _ASEOutlineWidth: 0.01
+    - _ASEOutlineWidth: 0.015
     - _SAclaeAndOffset: 0.5
     - __dirty: 0
     m_Colors:
     - _ASEOutlineColor: {r: 0, g: 0, b: 0, a: 0}
-    - _Color0: {r: 0, g: 0, b: 0, a: 0}
+    - _Color0: {r: 0.735849, g: 0.735849, b: 0.735849, a: 0}
