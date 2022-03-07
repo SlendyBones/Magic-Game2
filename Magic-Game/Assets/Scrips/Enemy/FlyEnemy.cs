@@ -17,7 +17,13 @@ public class FlyEnemy : Entity
         {
             player = LevelManager.instances.player.transform;
         }
-        Move();
+
+        distancePlayer = Vector3.Distance(player.transform.position, transform.position);
+        if (distancePlayer < followDistance)
+        {
+            Move();
+        }
+        
     }
 
     void Move()

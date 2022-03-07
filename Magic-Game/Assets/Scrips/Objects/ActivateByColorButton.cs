@@ -5,6 +5,10 @@ using UnityEngine;
 public class ActivateByColorButton : MonoBehaviour
 {
     [SerializeField] private bool _itemA, _itemB, _itemC;
+    [SerializeField] private Door _mydoor;
+    [SerializeField] private GameObject _whatDestroy;
+
+    [SerializeField] private bool isDoor;
 
     public void ActivateMyItem(int nameItem, bool stateItem)
     {
@@ -31,7 +35,14 @@ public class ActivateByColorButton : MonoBehaviour
     {
         if(_itemA && _itemB && _itemC)
         {
-            Destroy(gameObject);
+            if (isDoor)
+            {
+                _mydoor.Open();
+            }
+            else
+            {
+                Destroy(_whatDestroy.gameObject);
+            }
         }
     }
 }

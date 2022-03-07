@@ -18,6 +18,7 @@ TagManager:
   - AOE
   - Left
   - Right
+  - Amarillo
   layers:
   - Default
   - TransparentFX

@@ -26,17 +26,21 @@ public class RangeEnemy : Entity
         }
         transform.forward = player.transform.position - transform.position;
         _distance = Vector3.Distance(player.transform.position, transform.position);
-        if (_distance < attackDistance && _timer > 1)
+
+        if (_distance < followDistance && _distance > attackDistance)
+        {
+            transform.position += transform.forward * Time.deltaTime;
+            _ani.Animation("Walk", true);
+        }
+        else if (_distance < attackDistance && _timer > 1)
         {
             _ani.Animation("Walk", false);
             Shoot();
         }
         else
         {
-            transform.position += transform.forward * Time.deltaTime;
             _ani.Animation("Walk", true);
-        }
-            
+        }  
 
         _timer += 1 * Time.deltaTime;
     }

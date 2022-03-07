@@ -1486,7 +1486,7 @@ PrefabInstance:
     - target: {fileID: 3309585690065118291, guid: c08f0b51abc199f4ab5d8c337ce79311,
         type: 3}
       propertyPath: m_RootOrder
-      value: 8
+      value: 10
       objectReference: {fileID: 0}
     - target: {fileID: 3309585690065118291, guid: c08f0b51abc199f4ab5d8c337ce79311,
         type: 3}
@@ -2165,7 +2165,7 @@ Transform:
   m_Children:
   - {fileID: 498660806}
   m_Father: {fileID: 0}
-  m_RootOrder: 6
+  m_RootOrder: 7
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!54 &637888456
 Rigidbody:
@@ -3778,7 +3778,7 @@ Transform:
   - {fileID: 1833652113}
   - {fileID: 516241857}
   m_Father: {fileID: 0}
-  m_RootOrder: 18
+  m_RootOrder: 19
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1001 &1010446576
 PrefabInstance:
@@ -4849,7 +4849,7 @@ Transform:
   - {fileID: 906017769}
   - {fileID: 2010365196}
   m_Father: {fileID: 0}
-  m_RootOrder: 12
+  m_RootOrder: 14
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!4 &1354145472 stripped
 Transform:
@@ -7128,7 +7128,7 @@ PrefabInstance:
     - target: {fileID: 2617159194877908042, guid: 91184edc744f6b745822920c5e54f703,
         type: 3}
       propertyPath: _whatLVL
-      value: Second
+      value: Nivel3
       objectReference: {fileID: 0}
     - target: {fileID: 2617159194877908044, guid: 91184edc744f6b745822920c5e54f703,
         type: 3}
