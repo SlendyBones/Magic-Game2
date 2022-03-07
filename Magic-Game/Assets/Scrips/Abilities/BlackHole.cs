@@ -4,31 +4,20 @@ using UnityEngine;
 
 public class BlackHole : MonoBehaviour
 {
-    public float masa = 1f;
-    [SerializeField]
-    private float dmg =10f;
+    [SerializeField] private float dmg = 1f;
     [SerializeField] private LayerMask enemy;
-  
+    [SerializeField] private float _timer;
 
-    private void Awake()
+    private void OnTriggerStay(Collider other)
     {
-        masa = gameObject.GetComponent<Rigidbody>().mass;
-    }
-
-    private void OnTriggerEnter(Collider collision)
-    {
-        if (collision.gameObject.layer == enemy)
+        Entity entity = other.gameObject.GetComponent<Entity>();
+        if (entity != null && _timer > 1)
         {
-            
-            masa += collision.gameObject.GetComponent<Rigidbody>().mass;
-            Entity entity = collision.gameObject.GetComponent<Entity>();
-            if (entity != null)
-            {
-                entity.TakeDamage(dmg);
-            }
+            entity.TakeDamage(dmg);
+            _timer = 0;
         }
+
+        _timer += Time.deltaTime;
     }
-   
-    
-    
+
 }

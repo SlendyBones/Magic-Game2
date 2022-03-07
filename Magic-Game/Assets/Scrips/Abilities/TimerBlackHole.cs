@@ -4,21 +4,14 @@ using UnityEngine;
 
 public class TimerBlackHole : MonoBehaviour
 {
-    [SerializeField]
-    float _timer;
-   
-    // Start is called before the first frame update
-    void Start()
-    {
-        
-    }
+    [SerializeField] private float _timer;
 
-    // Update is called once per frame
     void Update()
     {
         _timer  -= Time.deltaTime;
         if (_timer <= 0)
-            Destroy(this.gameObject);
+        {
+            Destroy(gameObject);
+        }
     }
-   
 }

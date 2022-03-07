@@ -126,4 +126,4 @@ MonoBehaviour:
   _blackHole: {fileID: 768432312882749060, guid: e2076efbdbeec3146a0cbc4d9f028b5d,
     type: 3}
   rb: {fileID: 2454141453783666972}
-  forceOfTroward: 40
+  forceOfTroward: 1000
