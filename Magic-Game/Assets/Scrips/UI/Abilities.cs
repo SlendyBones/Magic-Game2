@@ -38,7 +38,7 @@ public class Abilities : MonoBehaviour
 
     public void Ability1()
     {
-        if (_uiManager._isCD[0] == false)
+        if (_uiManager._isCD[0] == false && LevelManager.instances.BH)
         {
             if (pj.UseMana(_blackHoleMana))
             {
@@ -51,7 +51,7 @@ public class Abilities : MonoBehaviour
     }
     public void Ability2()
     {
-        if (_uiManager._isCD[1] == false)
+        if (_uiManager._isCD[1] == false && LevelManager.instances.Explosion)
         {
             if (pj.UseMana(_explosionMana))
             {
@@ -65,7 +65,7 @@ public class Abilities : MonoBehaviour
 
     public void Ability3()
     {
-        if (_uiManager._isCD[2] == false)
+        if (_uiManager._isCD[2] == false && LevelManager.instances.Shield)
         {
             if (pj.UseMana(_shieldMana))
             {

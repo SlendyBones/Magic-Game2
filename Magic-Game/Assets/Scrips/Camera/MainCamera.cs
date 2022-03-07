@@ -7,6 +7,7 @@ public class MainCamera : MonoBehaviour
     public GameObject player;
     private Vector3 _vectorD;
     private float _maxDistance;
+    private float _actualDistance;
     [SerializeField] private LayerMask _wall;
 
     private void Start()
@@ -20,12 +21,13 @@ public class MainCamera : MonoBehaviour
         _vectorD = player.transform.position - transform.position;
         transform.forward = _vectorD;
 
-        if(Physics.Raycast(transform.position, transform.forward * -1, 2, _wall))
+        _actualDistance = Vector3.Distance(player.transform.position, transform.position);
+
+        if (Physics.Raycast(transform.position, transform.forward * -1, 2, _wall) && _actualDistance > 0.5f)
         {
-            Debug.Log("ola");
             transform.position += transform.forward * Time.deltaTime * 10;
         }
-        else if(Vector3.Distance(player.transform.position, transform.position) < _maxDistance)
+        else if(_actualDistance < _maxDistance)
         {
             transform.position += transform.forward * -1 * Time.deltaTime;
         }

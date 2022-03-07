@@ -5,15 +5,17 @@ using UnityEngine;
 public class ColorButton : MonoBehaviour
 {
     [SerializeField] private string _myTag;
-    [SerializeField] private ActivateByColorButton _activateItem;
+    [SerializeField] private List<ActivateByColorButton> _activateItem;
     [SerializeField] private int _myNumber;
 
     private void OnTriggerEnter(Collider other)
     {
         if(other.gameObject.tag == _myTag)
         {
-            Debug.Log("TriggerD");
-            _activateItem.ActivateMyItem(_myNumber, true);
+            for (int i = 0; i < _activateItem.Count; i++)
+            {
+                _activateItem[i].ActivateMyItem(_myNumber, true);
+            }
         }
     }
 
@@ -21,8 +23,10 @@ public class ColorButton : MonoBehaviour
     {
         if (other.gameObject.tag == _myTag)
         {
-            Debug.Log("TriggerF");
-            _activateItem.ActivateMyItem(_myNumber, false);
+            for (int i = 0; i < _activateItem.Count; i++)
+            {
+                _activateItem[i].ActivateMyItem(_myNumber, false);
+            }
         }
     }
 }

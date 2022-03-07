@@ -8,12 +8,14 @@ public class TrampaDisparo : MonoBehaviour
     [SerializeField] private float _myTimer;
     [SerializeField] private float _shootTime;
 
+    [SerializeField] private Transform _spawnPoint;
+
     void Update()
     {
         if(_myTimer > _shootTime)
         {
             _myTimer = 0;
-            GameObject _thisBullet = Instantiate(_proyectil, transform.position, transform.rotation);
+            GameObject _thisBullet = Instantiate(_proyectil, _spawnPoint.position, _spawnPoint.rotation);
             Destroy(_thisBullet, 2f);
         }
 

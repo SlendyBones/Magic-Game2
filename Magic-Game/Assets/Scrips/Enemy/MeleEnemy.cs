@@ -25,9 +25,21 @@ public class MeleEnemy : Entity
         {
             player = LevelManager.instances.player.transform;
         }
-        _move();
 
         distancePlayer = Vector3.Distance(player.transform.position, transform.position);
+        if (distancePlayer > followDistance)
+        {
+            StopMoving();
+        }
+        else
+        {
+            CanMove();
+        }
+
+
+        _move();
+
+        
 
         if(distancePlayer <= attackDistance && isAtack == false)
         {
@@ -40,6 +52,11 @@ public class MeleEnemy : Entity
     {
         transform.forward = player.position - transform.position;
         transform.position += transform.forward * speed * Time.deltaTime;
+    }
+
+    public void CanMove()
+    {
+        _move = Movement;
     }
 
     //Se llama al inicio de la animacion

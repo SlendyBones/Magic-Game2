@@ -89,10 +89,12 @@ public class UIManager : MonoBehaviour
 
     public void PauseOff()
     {
+        Debug.Log("oa");
         _menu.gameObject.SetActive(false);
         Cursor.visible = false;
         Cursor.lockState = CursorLockMode.Locked;
         Time.timeScale = 1;
+        Debug.Log("Esto deberia anda");
     }
 
     public void BackToMenu()

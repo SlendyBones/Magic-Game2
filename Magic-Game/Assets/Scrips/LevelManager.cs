@@ -15,6 +15,9 @@ public class LevelManager : MonoBehaviour
     [Header("LVL Stats")]
     public float lifeLVL = 1, manaLVL = 1, dmgLVL = 1;
 
+    [Header("Obetencio Objetos")]
+    public bool BH = false, Explosion = false, Shield = false;
+
     [FormerlySerializedAs("numberLVL")] [Header("Waves")]
     public int numberLvl= 1;
 

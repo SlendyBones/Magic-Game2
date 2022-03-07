@@ -38,6 +38,21 @@ public class MovePlataform : MonoBehaviour
         }
     }
 
+    /*private void OnCollisionStay(Collision collision)
+    {
+        if (collision.gameObject.tag == "Player")
+        {
+            if (_left)
+            {
+                collision.transform.position += transform.forward * -1 * _speed * Time.deltaTime;
+            }
+            else
+            {
+                collision.transform.position += transform.forward * _speed * Time.deltaTime;
+            }
+        }
+    }*/
+
     private void OnCollisionExit(Collision collision)
     {
         if (collision.gameObject.tag == "Player")
