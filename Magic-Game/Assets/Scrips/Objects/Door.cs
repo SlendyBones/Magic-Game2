@@ -6,6 +6,6 @@ public class Door : MonoBehaviour
 {
     public void Open()
     {
-        Destroy(gameObject);
+        transform.Rotate(new Vector3(0, -90, 0));
     }
 }

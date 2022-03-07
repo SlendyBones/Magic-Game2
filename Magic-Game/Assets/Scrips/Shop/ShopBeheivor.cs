@@ -27,22 +27,24 @@ public class ShopBeheivor : MonoBehaviour
 
     public void Buy(Movement stat)
     {
-        if(_coinsBeheivor.coins >= _cost)
+        
+        if(_coinsBeheivor.coins >= _cost && _numberUpgrade == 0 && LevelManager.instances.manaLVL <= 7)
         {
             _coinsBeheivor.SubstractCoin(_cost);
             SoundManager.instance.PlaySound(SoundID.BUYSHOP);
-            if(_numberUpgrade == 0)
-            {
-                stat.ManaUpgrade(_addStat);
-            }
-            else if(_numberUpgrade == 1)
-            {
-                stat.LifeUpgrade(_addStat);
-            }
-            else if(_numberUpgrade == 2)
-            {
-                stat.DamageUpgrade(_addStat);
-            }
+            stat.ManaUpgrade(_addStat);
+        }
+        else if (_coinsBeheivor.coins >= _cost && _numberUpgrade == 1 && LevelManager.instances.lifeLVL <= 7)
+        {
+            _coinsBeheivor.SubstractCoin(_cost);
+            SoundManager.instance.PlaySound(SoundID.BUYSHOP);
+            stat.LifeUpgrade(_addStat);
+        }
+        else if (_coinsBeheivor.coins >= _cost && _numberUpgrade == 2 && LevelManager.instances.dmgLVL <= 7)
+        {
+            _coinsBeheivor.SubstractCoin(_cost);
+            SoundManager.instance.PlaySound(SoundID.BUYSHOP);
+            stat.DamageUpgrade(_addStat);
         }
         else
         {

@@ -5,20 +5,13 @@ using UnityEngine.SceneManagement;
 
 public class Potal : MonoBehaviour
 {
-    [SerializeField]
-    private string _lvlName;
-    [SerializeField]
-    private string _lvlName2;
-    [SerializeField]
-    private string _lvlName3;
+    [SerializeField] private string _whatLVL;
+
     private void OnTriggerEnter(Collider other)
     {
-        EventManager.ResetEventDictionary();
-
-        
-        if (LevelManager.instances.lvl2 == true)
-            SceneManager.LoadScene(_lvlName3);
-        else if(LevelManager.instances.numberLvl == 3)
-            SceneManager.LoadScene(_lvlName2);
+        if(other.gameObject.tag == "Player")
+        {
+            SceneManager.LoadScene(_whatLVL);
+        }
     }
 }

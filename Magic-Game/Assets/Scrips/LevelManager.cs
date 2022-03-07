@@ -12,6 +12,9 @@ public class LevelManager : MonoBehaviour
     public float maxMana;
     public float dmg;
 
+    [Header("LVL Stats")]
+    public float lifeLVL = 1, manaLVL = 1, dmgLVL = 1;
+
     [FormerlySerializedAs("numberLVL")] [Header("Waves")]
     public int numberLvl= 1;
 
