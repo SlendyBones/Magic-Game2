@@ -1,1 +1,0 @@
-Assets/Starfield Skybox/Demo/Textures/Front_Tex.png
